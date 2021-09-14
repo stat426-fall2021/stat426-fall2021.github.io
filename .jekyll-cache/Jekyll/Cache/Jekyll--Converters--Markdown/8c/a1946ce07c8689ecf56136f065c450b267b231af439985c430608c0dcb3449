@@ -1,0 +1,66 @@
+I")<p>This post will show you how the content will look like in the post pages and how the headlines, quotes and quotes will be represented. Jekyll is mainly used to write simple markdown and after that it renders out a static pages, so you need to know the basics of writing markdown for that.
+For more information about writing markdown you can checkout the following markdown cheatsheets:</p>
+<ul>
+  <li><a href="https://guides.github.com/features/mastering-markdown/">Mastering Markdown</a></li>
+  <li><a href="https://www.markdownguide.org/cheat-sheet/">Markdown Guide</a></li>
+  <li><a href="https://github.github.com/gfm/">GitHub Flavored Markdown Spec</a></li>
+</ul>
+
+<hr />
+
+<h1 id="this-is-the-h1-text">This is the h1 text</h1>
+<h2 id="this-is-the-h2-text">This is the h2 text</h2>
+<h3 id="this-is-the-h3-text">This is the h3 text</h3>
+<h4 id="this-is-the-h4-text">This is the h4 text</h4>
+<h5 id="this-is-the-h5-text">This is the h5 text</h5>
+<h6 id="this-is-the-h6-text">This is the h6 text</h6>
+
+<p><strong>Bold Text in the post will look like:</strong><br />
+<strong>This text is Bold</strong></p>
+
+<p><strong>Italic Text in the post will look like:</strong><br />
+<em>This text is Italic</em></p>
+
+<blockquote>
+  <p>Quotes on your post will look like this</p>
+</blockquote>
+
+<p><code class="language-plaintext highlighter-rouge">Codes on your post will look like this</code></p>
+
+<p><strong>Link in the post will look like:</strong><br />
+<a href="#">This is a link</a></p>
+
+<p><strong>Bullet list in the post will look like:</strong></p>
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+  <li>Item 4</li>
+  <li>Item 5</li>
+</ul>
+
+<p><strong>Number list in the post will look like:</strong></p>
+<ol>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+  <li>Item 4</li>
+  <li>Item 5</li>
+</ol>
+
+<p><strong>Images in the post will look like:</strong><br />
+<img src="/assets/images/canada.jpg" alt="Test Image" /></p>
+
+<p><strong>Normal text in the post will look like</strong><br />
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id finibus nisl. Etiam in hendrerit est. Nulla non erat ac lectus interdum lobortis. Vestibulum at mi ex. Mauris nisl mi, venenatis et feugiat nec, finibus porttitor velit. Suspendisse tincidunt lobortis leo, quis tristique tellus iaculis quis. Donec eleifend pulvinar gravida. Proin non lorem eros. Donec sit amet finibus ex, eget vestibulum nunc. Ut ut enim id purus porttitor tristique. Vivamus tincidunt eleifend hendrerit. Proin metus felis, ultrices vel dui in, porta dapibus dui. Sed sagittis ex vitae dui tristique dignissim. Cras vel leo ipsum.</p>
+
+<p>Aenean ac neque et risus mattis accumsan. Sed ac tellus molestie, lacinia ante sit amet, convallis felis. Maecenas aliquet lectus nec euismod auctor. Donec finibus pellentesque tortor, ac efficitur metus suscipit non. Proin diam orci, blandit quis malesuada ac, efficitur a nisl. Mauris eleifend consequat blandit. Sed egestas quam et orci gravida, non euismod metus scelerisque. Curabitur venenatis pellentesque erat commodo pharetra. Fusce id ante nec ipsum fringilla auctor. In justo quam, feugiat placerat eleifend dapibus, luctus et quam. Fusce facilisis erat ut odio convallis viverra et id mauris. Sed vehicula tempus consectetur. Aliquam pharetra, purus non egestas tristique, tellus massa fringilla est, id sagittis tellus urna non mauris. Suspendisse fringilla, velit nec blandit facilisis, ligula ante imperdiet est, et placerat magna sem quis tortor.</p>
+
+<p>Vestibulum vitae fermentum velit, rhoncus egestas orci. Nulla at purus ut orci posuere vulputate. In eget leo diam. In congue in diam nec elementum. Suspendisse fringilla ante nulla, eu tristique orci ultrices eget. Aenean non lorem tellus. Vestibulum tempor metus sit amet tellus feugiat, sit amet consequat lacus ultricies.</p>
+
+<p>Donec imperdiet, lectus eget congue cursus, dolor enim finibus risus, ut molestie lorem tellus non tortor. Donec quam nibh, molestie in dapibus et, efficitur non tortor. Morbi orci tellus, mollis vel mi vitae, auctor lobortis erat. Ut gravida velit eget ligula lacinia, id rhoncus tellus gravida. Maecenas laoreet rutrum consequat. Suspendisse sed nibh dui. Curabitur dictum euismod mollis. Sed egestas libero libero, eu accumsan augue placerat non. Nunc id condimentum orci. Mauris vitae sollicitudin quam.</p>
+
+<p><strong>Giphy Gifs will look like:</strong><br /></p>
+<iframe src="https://giphy.com/embed/ZqlvCTNHpqrio" width="480" height="259" frameborder="0" class="giphy-embed" allowfullscreen=""></iframe>
+<p><a href="https://giphy.com/gifs/laughing-despicable-me-minions-ZqlvCTNHpqrio">via GIPHY</a></p>
+:ET

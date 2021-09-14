@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-09-14T12:17:41-06:00</updated><id>/feed.xml</id><title type="html">Stat 426 - Fall 2021</title><subtitle>Data Science Methods and Application in Statistics</subtitle><entry><title type="html">Using SSH with GitHub</title><link href="/blog/ssh-and-github" rel="alternate" type="text/html" title="Using SSH with GitHub" /><published>2021-09-13T00:00:00-06:00</published><updated>2021-09-13T00:00:00-06:00</updated><id>/blog/ssh-and-github</id><content type="html" xml:base="/blog/ssh-and-github">&lt;p&gt;This post is adapted from the GitHub documentation page
+&lt;a href=&quot;https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh&quot;&gt;Connecting to GitHub with SSH&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;You can use the SSH protocol by setting up SSH keys to connect with GitHub without
+needing to supply your username and access token.  SSH stands for Secure Shell
+and it protocol for operating network services securely over an unsecured network.
+You can read more about SSH &lt;a href=&quot;https://en.wikipedia.org/wiki/Secure_Shell&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;check-for-existing-ssh-keys&quot;&gt;Check for existing SSH keys&lt;/h1&gt;
+&lt;ol&gt;
+  &lt;li&gt;Open the terminal (Mac) or Git Bash (Windows)&lt;/li&gt;
+  &lt;li&gt;Enter &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ls -la ~/.ssh&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Check the directory listing to see if you have a public SSH key, usually:&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;id_rsa.pub&lt;/li&gt;
+      &lt;li&gt;id_ecdsa.pub&lt;/li&gt;
+      &lt;li&gt;id_ed25519.pub&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;If you receive an error that ~/.ssh doesn’t exist, then you don’t have ssh keys&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;generating-new-ssh-keys&quot;&gt;Generating New SSH Keys&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;(If you already have SSH keys, skip to the next section.)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Below are instructions for generating SSH keys.  When doing this, you have the choice of an algorithm to use (with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-t&lt;/code&gt; option) and the key size (with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-b&lt;/code&gt; option).  You can read more about SSH keys and the different algorithm/key size options &lt;a href=&quot;https://www.ssh.com/academy/ssh/keygen&quot;&gt;here&lt;/a&gt;.  The instructions below use the rsa algorithm with a 4096 bit key size.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Open the terminal (Mac) or Git Bash (Windows)&lt;/li&gt;
+  &lt;li&gt;In the terminal type&lt;br /&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ssh-keygen -t rsa -b 4096 -C &quot;your_github_email@email.com&quot;&lt;/code&gt; &lt;br /&gt;
+(be sure to use your actual GitHub email address)&lt;/li&gt;
+  &lt;li&gt;When you are prompted to “Enter a file in which to save the key”, just press enter to accept the default location&lt;/li&gt;
+  &lt;li&gt;Add a passphrase for extra security or press enter for no passphrase&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;adding-ssh-keys-to-your-github-account&quot;&gt;Adding SSH Keys to your GitHub Account&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Copy the SSH public key to the clipboard.&lt;br /&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cat ~/.ssh/id_rsa.pub&lt;/code&gt;
+will show you the public key and you can copy it.&lt;/li&gt;
+  &lt;li&gt;Go to GitHub.  In the upper-right corner, click on your profile photo, then click &lt;strong&gt;Settings&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;In the user settings sidebar, click &lt;em&gt;SSH and GPG keys&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;Click &lt;strong&gt;New SSH key&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;In the “Title” field, add a label for your key.  For example “Personal MacBook Air”&lt;/li&gt;
+  &lt;li&gt;Paste your key into the “Key” field.&lt;/li&gt;
+  &lt;li&gt;Click &lt;strong&gt;Add SSH key&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;using-ssh-key&quot;&gt;Using SSH Key&lt;/h1&gt;
+&lt;p&gt;In GitHub, when cloning repositories, or setting up the remote repository, use SSH instead of HTTP:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/github-ssh.png&quot; alt=&quot;screenshot&quot; /&gt;&lt;/p&gt;</content><author><name>E. Shannon Tass</name><email>esnt@byu.edu</email></author><category term="ssh" /><category term="git" /><category term="github" /><summary type="html">This post is adapted from the GitHub documentation page Connecting to GitHub with SSH.</summary></entry><entry><title type="html">Sample Post</title><link href="/blog/sample-post" rel="alternate" type="text/html" title="Sample Post" /><published>2020-04-24T00:00:00-06:00</published><updated>2020-04-24T00:00:00-06:00</updated><id>/blog/sample-post</id><content type="html" xml:base="/blog/sample-post">&lt;p&gt;This post will show you how the content will look like in the post pages and how the headlines, quotes and quotes will be represented. Jekyll is mainly used to write simple markdown and after that it renders out a static pages, so you need to know the basics of writing markdown for that.
+For more information about writing markdown you can checkout the following markdown cheatsheets:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://guides.github.com/features/mastering-markdown/&quot;&gt;Mastering Markdown&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.markdownguide.org/cheat-sheet/&quot;&gt;Markdown Guide&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.github.com/gfm/&quot;&gt;GitHub Flavored Markdown Spec&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;this-is-the-h1-text&quot;&gt;This is the h1 text&lt;/h1&gt;
+&lt;h2 id=&quot;this-is-the-h2-text&quot;&gt;This is the h2 text&lt;/h2&gt;
+&lt;h3 id=&quot;this-is-the-h3-text&quot;&gt;This is the h3 text&lt;/h3&gt;
+&lt;h4 id=&quot;this-is-the-h4-text&quot;&gt;This is the h4 text&lt;/h4&gt;
+&lt;h5 id=&quot;this-is-the-h5-text&quot;&gt;This is the h5 text&lt;/h5&gt;
+&lt;h6 id=&quot;this-is-the-h6-text&quot;&gt;This is the h6 text&lt;/h6&gt;
+
+&lt;p&gt;&lt;strong&gt;Bold Text in the post will look like:&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;This text is Bold&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Italic Text in the post will look like:&lt;/strong&gt;&lt;br /&gt;
+&lt;em&gt;This text is Italic&lt;/em&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Quotes on your post will look like this&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Codes on your post will look like this&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Link in the post will look like:&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&quot;#&quot;&gt;This is a link&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Bullet list in the post will look like:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+  &lt;li&gt;Item 3&lt;/li&gt;
+  &lt;li&gt;Item 4&lt;/li&gt;
+  &lt;li&gt;Item 5&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Number list in the post will look like:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+  &lt;li&gt;Item 3&lt;/li&gt;
+  &lt;li&gt;Item 4&lt;/li&gt;
+  &lt;li&gt;Item 5&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Images in the post will look like:&lt;/strong&gt;&lt;br /&gt;
+&lt;img src=&quot;/assets/images/canada.jpg&quot; alt=&quot;Test Image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Normal text in the post will look like&lt;/strong&gt;&lt;br /&gt;
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id finibus nisl. Etiam in hendrerit est. Nulla non erat ac lectus interdum lobortis. Vestibulum at mi ex. Mauris nisl mi, venenatis et feugiat nec, finibus porttitor velit. Suspendisse tincidunt lobortis leo, quis tristique tellus iaculis quis. Donec eleifend pulvinar gravida. Proin non lorem eros. Donec sit amet finibus ex, eget vestibulum nunc. Ut ut enim id purus porttitor tristique. Vivamus tincidunt eleifend hendrerit. Proin metus felis, ultrices vel dui in, porta dapibus dui. Sed sagittis ex vitae dui tristique dignissim. Cras vel leo ipsum.&lt;/p&gt;
+
+&lt;p&gt;Aenean ac neque et risus mattis accumsan. Sed ac tellus molestie, lacinia ante sit amet, convallis felis. Maecenas aliquet lectus nec euismod auctor. Donec finibus pellentesque tortor, ac efficitur metus suscipit non. Proin diam orci, blandit quis malesuada ac, efficitur a nisl. Mauris eleifend consequat blandit. Sed egestas quam et orci gravida, non euismod metus scelerisque. Curabitur venenatis pellentesque erat commodo pharetra. Fusce id ante nec ipsum fringilla auctor. In justo quam, feugiat placerat eleifend dapibus, luctus et quam. Fusce facilisis erat ut odio convallis viverra et id mauris. Sed vehicula tempus consectetur. Aliquam pharetra, purus non egestas tristique, tellus massa fringilla est, id sagittis tellus urna non mauris. Suspendisse fringilla, velit nec blandit facilisis, ligula ante imperdiet est, et placerat magna sem quis tortor.&lt;/p&gt;
+
+&lt;p&gt;Vestibulum vitae fermentum velit, rhoncus egestas orci. Nulla at purus ut orci posuere vulputate. In eget leo diam. In congue in diam nec elementum. Suspendisse fringilla ante nulla, eu tristique orci ultrices eget. Aenean non lorem tellus. Vestibulum tempor metus sit amet tellus feugiat, sit amet consequat lacus ultricies.&lt;/p&gt;
+
+&lt;p&gt;Donec imperdiet, lectus eget congue cursus, dolor enim finibus risus, ut molestie lorem tellus non tortor. Donec quam nibh, molestie in dapibus et, efficitur non tortor. Morbi orci tellus, mollis vel mi vitae, auctor lobortis erat. Ut gravida velit eget ligula lacinia, id rhoncus tellus gravida. Maecenas laoreet rutrum consequat. Suspendisse sed nibh dui. Curabitur dictum euismod mollis. Sed egestas libero libero, eu accumsan augue placerat non. Nunc id condimentum orci. Mauris vitae sollicitudin quam.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Giphy Gifs will look like:&lt;/strong&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;iframe src=&quot;https://giphy.com/embed/ZqlvCTNHpqrio&quot; width=&quot;480&quot; height=&quot;259&quot; frameborder=&quot;0&quot; class=&quot;giphy-embed&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href=&quot;https://giphy.com/gifs/laughing-despicable-me-minions-ZqlvCTNHpqrio&quot;&gt;via GIPHY&lt;/a&gt;&lt;/p&gt;</content><author><name>The DevsLot</name><email>thedevslot@gmail.com</email></author><category term="sample" /><category term="post" /><category term="test" /><summary type="html">This post will show you how the content will look like in the post pages and how the headlines, quotes and quotes will be represented. Jekyll is mainly used to write simple markdown and after that it renders out a static pages, so you need to know the basics of writing markdown for that. For more information about writing markdown you can checkout the following markdown cheatsheets: Mastering Markdown Markdown Guide GitHub Flavored Markdown Spec This is the h1 text This is the h2 text This is the h3 text This is the h4 text This is the h5 text This is the h6 text Bold Text in the post will look like: This text is Bold Italic Text in the post will look like: This text is Italic Quotes on your post will look like this Codes on your post will look like this Link in the post will look like: This is a link Bullet list in the post will look like: Item 1 Item 2 Item 3 Item 4 Item 5 Number list in the post will look like: Item 1 Item 2 Item 3 Item 4 Item 5 Images in the post will look like: Normal text in the post will look like Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id finibus nisl. Etiam in hendrerit est. Nulla non erat ac lectus interdum lobortis. Vestibulum at mi ex. Mauris nisl mi, venenatis et feugiat nec, finibus porttitor velit. Suspendisse tincidunt lobortis leo, quis tristique tellus iaculis quis. Donec eleifend pulvinar gravida. Proin non lorem eros. Donec sit amet finibus ex, eget vestibulum nunc. Ut ut enim id purus porttitor tristique. Vivamus tincidunt eleifend hendrerit. Proin metus felis, ultrices vel dui in, porta dapibus dui. Sed sagittis ex vitae dui tristique dignissim. Cras vel leo ipsum. Aenean ac neque et risus mattis accumsan. Sed ac tellus molestie, lacinia ante sit amet, convallis felis. Maecenas aliquet lectus nec euismod auctor. Donec finibus pellentesque tortor, ac efficitur metus suscipit non. Proin diam orci, blandit quis malesuada ac, efficitur a nisl. Mauris eleifend consequat blandit. Sed egestas quam et orci gravida, non euismod metus scelerisque. Curabitur venenatis pellentesque erat commodo pharetra. Fusce id ante nec ipsum fringilla auctor. In justo quam, feugiat placerat eleifend dapibus, luctus et quam. Fusce facilisis erat ut odio convallis viverra et id mauris. Sed vehicula tempus consectetur. Aliquam pharetra, purus non egestas tristique, tellus massa fringilla est, id sagittis tellus urna non mauris. Suspendisse fringilla, velit nec blandit facilisis, ligula ante imperdiet est, et placerat magna sem quis tortor. Vestibulum vitae fermentum velit, rhoncus egestas orci. Nulla at purus ut orci posuere vulputate. In eget leo diam. In congue in diam nec elementum. Suspendisse fringilla ante nulla, eu tristique orci ultrices eget. Aenean non lorem tellus. Vestibulum tempor metus sit amet tellus feugiat, sit amet consequat lacus ultricies. Donec imperdiet, lectus eget congue cursus, dolor enim finibus risus, ut molestie lorem tellus non tortor. Donec quam nibh, molestie in dapibus et, efficitur non tortor. Morbi orci tellus, mollis vel mi vitae, auctor lobortis erat. Ut gravida velit eget ligula lacinia, id rhoncus tellus gravida. Maecenas laoreet rutrum consequat. Suspendisse sed nibh dui. Curabitur dictum euismod mollis. Sed egestas libero libero, eu accumsan augue placerat non. Nunc id condimentum orci. Mauris vitae sollicitudin quam. Giphy Gifs will look like: via GIPHY</summary></entry></feed>
