@@ -11,7 +11,7 @@ title: Stat 426 - Fall 2021
 # Description of the Site
 description: Data Science Methods and Application in Statistics
 # URL of Image of the Site
-site-image: /assets/images/neeleytass.jpg
+site-image: /assets/images/logo.png
 # Keywords of the Site
 site-keywords: BYU, Data Science, Projects
 # URL for the Image of custom Favicon
@@ -42,9 +42,10 @@ google-analytics:
 disqus-shortname:
 
 # Name of the Author
-author-name: Shannon Tass and Stat 426 Class
+author-name: Stat 426 Class
 # URL for the Image of the Author
 author-image: /assets/images/logo.png
+author-image-alt: /assets/images/Stat426.png
 # 60 Words About the Author
 author-about: Statistics 426 is a class taught in the Statistics Department at Brigham Young University.  In this class, we cover the data science pipeline including collecting and wrangling data, version control, analyzing, evaluating and interpreting machine learning models, and ethics and bias.
 

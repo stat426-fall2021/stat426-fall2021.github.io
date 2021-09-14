@@ -2,7 +2,7 @@
 title: Using SSH with GitHub
 layout: post
 author: shannon_tass
-post-image: /assets/images/norway-house2.jpg
+post-image: /assets/images/blogimages/norway-house2.jpg
 description: Short tutorial about setting up SSH keys for GitHub.
 tags:
 - ssh
