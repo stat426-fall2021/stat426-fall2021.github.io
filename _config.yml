@@ -2,7 +2,7 @@
 markdown: kramdown
 
 # URL of the Site
-url: esnt.github.io
+url: https://esnt.github.io
 # Base URL of the Site (i.e., Name of the Repository in which the Site is hosted)
 baseurl: /426-21-blog
 
