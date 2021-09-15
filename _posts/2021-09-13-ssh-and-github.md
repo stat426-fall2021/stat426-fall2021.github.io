@@ -59,3 +59,4 @@ will show you the public key and you can copy it.
 In GitHub, when cloning repositories, or setting up the remote repository, use SSH instead of HTTP:
 
 ![screenshot](/assets/images/blogimages/github-ssh.png)
+<img src="/assets/images/blogimages/github-ssh.png" width=300 align=right>
