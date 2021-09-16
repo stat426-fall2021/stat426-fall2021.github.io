@@ -2,7 +2,7 @@
 title: Using SSH with GitHub
 layout: post
 author: shannon_tass
-post-image: /assets/images/blogimages/norway-house2.jpg
+post-image: "https://raw.githubusercontent.com/stat426-fall2021/stat426-fall2021.github.io/01691d6f3977d01eb138982573d1ae44381f9adf/assets/images/blogimages/norway-house2.JPG"
 description: Short tutorial about setting up SSH keys for GitHub.
 tags:
 - ssh
@@ -59,4 +59,3 @@ will show you the public key and you can copy it.
 In GitHub, when cloning repositories, or setting up the remote repository, use SSH instead of HTTP:
 
 ![screenshot](/assets/images/blogimages/github-ssh.png)
-<img src="/assets/images/blogimages/github-ssh.png" width=300 align=right>
