@@ -23,23 +23,23 @@ these instructions were created using PowerPoint for Mac.  On Windows, the idea 
 
 ## Blurring the Photo
 
-{:start="1"}
-1.  Open your photo in PowerPoint (Insert --> Picture --> Picture from file) or simply drag the file of the photo into a PowerPoint Page.
+
+    1.  Open your photo in PowerPoint (Insert --> Picture --> Picture from file) or simply drag the file of the photo into a PowerPoint Page.
 
 ![open](/assets/images/blogimages/open-pic.png)
 
-{:start="2"}
-2.  Select the picture.  When the picture is selected a new top menu should appear named "Picture Format".  Select that menu and then find the arrow next to "Artistic Effects".
+
+    2. Select the picture.  When the picture is selected a new top menu should appear named "Picture Format".  Select that menu and then find the arrow next to "Artistic Effects".
 
 ![art](/assets/images/blogimages/menu.png)
 
-{:start="3"}
-3.  Click the arrow next to "Artistic Effects" and choose the "Blur" option.  Your picture is now blurred, but the default effect is quite subtle.
+
+    3.  Click the arrow next to "Artistic Effects" and choose the "Blur" option.  Your picture is now blurred, but the default effect is quite subtle.
 
 ![blur](/assets/images/blogimages/blur.png)
 
-{:start="4"}
-4.  To change the level of blurring, go back to "Artistic Effects" and select "Artistic Effects Options".  This will open the "Format Picture" pane on the right.  Select the "Effects" tab (the pentagon), then "Artistic Effects" and adjust the radius.  
+
+    4.  To change the level of blurring, go back to "Artistic Effects" and select "Artistic Effects Options".  This will open the "Format Picture" pane on the right.  Select the "Effects" tab (the pentagon), then "Artistic Effects" and adjust the radius.  
 
 ![sidebar](/assets/images/blogimages/sidebar-complete.png)
 
