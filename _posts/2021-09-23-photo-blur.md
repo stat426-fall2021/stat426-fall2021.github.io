@@ -14,7 +14,7 @@ tags:
 
 A cool way to make your blog title stand out, is to blur a picture and add the text of your blog title in bold letters, as in the example below.
 
-![example](/assests/images/blogimages/ss-blog2.png)
+![example](/assets/images/blogimages/ss-blog2.png)
 
 There are many ways that this can be done, but this is the method that I used.  
 
