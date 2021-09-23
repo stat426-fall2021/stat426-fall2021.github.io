@@ -21,6 +21,7 @@ There are many ways that this can be done, but this is the method that I used.
 Note that
 these instructions were created using PowerPoint for Mac.  On Windows, the idea is the same, but the menus might be in slightly different places.  See [this post](https://www.howtogeek.com/437476/how-to-blur-an-image-in-powerpoint/) for Windows illustrations, at least for the photo blurring section.
 
+----
 ## Blurring the Photo
 
 
@@ -48,24 +49,24 @@ The higher the radius, the more blurred the picture will be.  See the figure bel
 
 ![blur-example](/assets/images/blogimages/blur-compare.png)
 
-
+----
 ## Adding Text
 
 1. Create a new text box
 2. Change text color to white
 3. Increase text size to 54
 4. Bold the text
-5. Add a subtle shadow:
+5. Add a subtle shadow
 
-    * Double click on the text box to open the "Format Shape" menu on the right
-    * Select the "Text Options" tab and then select the "Text Effects" tab
-    * Expand the "Shadow" option and open the "Presets" dropdown menu.  Select the first option under "Outer".
-    * Position the textbox in the center of the blurred photo.
-
-
+### Add a subtle shadow to the text 
+1. Double click on the text box to open the "Format Shape" menu on the right
+2. Select the "Text Options" tab and then select the "Text Effects" tab
+3. Expand the "Shadow" option and open the "Presets" dropdown menu.  Select the first option under "Outer".
+4. Position the textbox in the center of the blurred photo.
 
 ![shadow](/assets/images/blogimages/shadow.png)
 
+----
 ## Saving the picture
 
 To save your work as a .png file:
