@@ -55,11 +55,13 @@ The higher the radius, the more blurred the picture will be.  See the figure bel
 2. Change text color to white
 3. Increase text size to 54
 4. Bold the text
-5. Add a subtle shadow
+5. Add a subtle shadow:
+
     * Double click on the text box to open the "Format Shape" menu on the right
     * Select the "Text Options" tab and then select the "Text Effects" tab
     * Expand the "Shadow" option and open the "Presets" dropdown menu.  Select the first option under "Outer".
     * Position the textbox in the center of the blurred photo.
+
 
 
 ![shadow](/assets/images/blogimages/shadow.png)
