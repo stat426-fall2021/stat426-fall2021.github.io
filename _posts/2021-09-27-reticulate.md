@@ -27,8 +27,7 @@ Since reticulate is an R package, it is installed using `install.packages('retic
 
 One aspect of this package that can get a little bit complicated is specifying which Python interpreter you want the reticulate package to use. Python can be installed from various places, some of which are:
   * [Python Website](https://www.python.org)
-  * [Anaconda](https://www.anaconda.com)
-    - [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
+  * [Anaconda](https://www.anaconda.com) / [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
   * [Homebrew (MacOS only)](https://brew.sh)
 
 Additionally, Python virtual environments have their own executable files (*.exe*) so each virtual environment is another Python interpreter.
@@ -37,14 +36,12 @@ All in all, it's quite possible you could have multiple Python interpreters inst
 
 The simplest solution that I have found is using [RStudio](https://www.rstudio.com). In the newest version of RStudio (1.4.1717), it is able to detect all the Python interpreters on your machine and allows you to choose which one to use.
   * **Tools**
-    * **Global Options**
-      * Click on **Python**  
-        ![RStudio Global Options](https://support.rstudio.com/hc/article_attachments/1500011460282/Screen_Shot_2021-04-21_at_3.33.02_PM.png)
-
-      * Then **Select...**
-        ![Select Python Interpreter](https://support.rstudio.com/hc/article_attachments/1500011460302/Screen_Shot_2021-04-21_at_3.34.00_PM.png)  
-
-      * After selecting a Python interpreter, click **Select** then **Apply**. *This will restart your R session.*
+  * **Global Options**
+  * Click on **Python**  
+  ![RStudio Global Options](https://support.rstudio.com/hc/article_attachments/1500011460282/Screen_Shot_2021-04-21_at_3.33.02_PM.png)
+  * Then **Select...**
+  ![Select Python Interpreter](https://support.rstudio.com/hc/article_attachments/1500011460302/Screen_Shot_2021-04-21_at_3.34.00_PM.png)  
+  * After selecting a Python interpreter, click **Select** then **Apply**. *This will restart your R session.*
 
 After this, you should be all good to go. To check which Python interpreter reticulate is using you can run the `py_config()` function. The output of which should look similar to something like this:
 
@@ -163,7 +160,7 @@ reticulate also allows for seamless integration of Python into R Markdown (_.Rmd
   library(reticulate)
   ```
   ````
-  2. Create Python chunks by specifying `python` at the top of the chunk instead of `r`. After this, you can code in Python like you would in any other IDE (Jupyter, Spyder, etc)
+  2. Create Python chunks by specifying `python` at the top of the chunk instead of `r`. After this, you can code in Python like you would in any other IDE (Jupyter, Spyder, etc):
   ````md
   ```{python}
   import numpy as np
@@ -177,11 +174,13 @@ reticulate also allows for seamless integration of Python into R Markdown (_.Rmd
 
   perfect_sq(25)
   ```
+  ````
+  ```
   Python 3.9.7 (/usr/local/bin/python)
   Reticulate 1.22 REPL -- A Python interpreter in R.
   Enter 'exit' or 'quit' to exit the REPL and return to R.
   25 is a perfect square of 5
-  ````
+  ```
   _These Python chunks can be run the same way R chunks are run in R Markdown files_
 
   3. The output message displaying the Python and reticulate version info will always be output unless suppressed
@@ -204,8 +203,10 @@ reticulate also allows for seamless integration of Python into R Markdown (_.Rmd
 
   perfect_sq(25)
   ```
-  25 is a perfect square root of 5
   ````
+  ```
+  25 is a perfect square root of 5
+  ```
 
 The reticulate package has many more functions that allow R and Python to communicate with each other. The following article explains these functions in much greater detail:
   * [Calling Python from R](https://rstudio.github.io/reticulate/articles/calling_python.html)
