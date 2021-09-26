@@ -11,8 +11,6 @@ tags:
 - RStudio
 ---
 
-# reticulate
-
 In the data science field, the debate between R and Python rages on. Both languages claim to be superior to the other for data science. In my experience, both R and Python are good languages and each one has its strong-suits in certain areas. Recently, I came across reticulate, an R package leading the way in bringing R and Python together and allowing for data scientists to get the best out of both languages. Now, instead of having to choose between R and Python, you can have both!
 
 ![El Dorado - Both](https://media.giphy.com/media/3o7aCRloybJlXpNjSU/giphy.gif)
@@ -38,9 +36,9 @@ The simplest solution that I have found is using [RStudio](https://www.rstudio.c
   * **Tools**
   * **Global Options**
   * Click on **Python**  
-  ![RStudio Global Options](https://support.rstudio.com/hc/article_attachments/1500011460282/Screen_Shot_2021-04-21_at_3.33.02_PM.png)
+![RStudio Global Options](https://support.rstudio.com/hc/article_attachments/1500011460282/Screen_Shot_2021-04-21_at_3.33.02_PM.png)
   * Then **Select...**
-  ![Select Python Interpreter](https://support.rstudio.com/hc/article_attachments/1500011460302/Screen_Shot_2021-04-21_at_3.34.00_PM.png)  
+![Select Python Interpreter](https://support.rstudio.com/hc/article_attachments/1500011460302/Screen_Shot_2021-04-21_at_3.34.00_PM.png)  
   * After selecting a Python interpreter, click **Select** then **Apply**. *This will restart your R session.*
 
 After this, you should be all good to go. To check which Python interpreter reticulate is using you can run the `py_config()` function. The output of which should look similar to something like this:
@@ -161,7 +159,6 @@ reticulate also allows for seamless integration of Python into R Markdown (_.Rmd
   ```
   ````
   2. Create Python chunks by specifying `python` at the top of the chunk instead of `r`. After this, you can code in Python like you would in any other IDE (Jupyter, Spyder, etc):
-  ````md
   ```{python}
   import numpy as np
 
@@ -173,9 +170,7 @@ reticulate also allows for seamless integration of Python into R Markdown (_.Rmd
       return(False)
 
   perfect_sq(25)
-  ```
-  ````
-  ```
+
   Python 3.9.7 (/usr/local/bin/python)
   Reticulate 1.22 REPL -- A Python interpreter in R.
   Enter 'exit' or 'quit' to exit the REPL and return to R.
