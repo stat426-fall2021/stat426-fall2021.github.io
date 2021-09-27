@@ -1,4 +1,73 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-09-15T13:50:14-06:00</updated><id>/feed.xml</id><title type="html">Stat 426 - Fall 2021</title><subtitle>Class Blog and Projects</subtitle><entry><title type="html">Using SSH with GitHub</title><link href="/blog/ssh-and-github" rel="alternate" type="text/html" title="Using SSH with GitHub" /><published>2021-09-13T00:00:00-06:00</published><updated>2021-09-13T00:00:00-06:00</updated><id>/blog/ssh-and-github</id><content type="html" xml:base="/blog/ssh-and-github">&lt;p&gt;This post is adapted from the GitHub documentation page
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-09-26T18:13:14-06:00</updated><id>/feed.xml</id><title type="html">Stat 426 - Fall 2021</title><subtitle>Class Blog and Projects</subtitle><entry><title type="html">Create a blog post title picture</title><link href="/blog/photo-blur" rel="alternate" type="text/html" title="Create a blog post title picture" /><published>2021-09-23T00:00:00-06:00</published><updated>2021-09-23T00:00:00-06:00</updated><id>/blog/photo-blur</id><content type="html" xml:base="/blog/photo-blur">&lt;h1 id=&quot;create-a-blog-post-title-picture&quot;&gt;Create a Blog Post Title Picture&lt;/h1&gt;
+
+&lt;p&gt;A cool way to make your blog title stand out, is to blur a picture and add the text of your blog title in bold letters, as in the example below.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-09-23/ss-blog2.png&quot; alt=&quot;example&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;There are many ways that this can be done, but this is the method that I used.&lt;/p&gt;
+
+&lt;p&gt;Note that
+these instructions were created using PowerPoint for Mac.  On Windows, the idea is the same, but the menus might be in slightly different places.  See &lt;a href=&quot;https://www.howtogeek.com/437476/how-to-blur-an-image-in-powerpoint/&quot;&gt;this post&lt;/a&gt; for Windows illustrations, at least for the photo blurring section.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;h2 id=&quot;blurring-the-photo&quot;&gt;Blurring the Photo&lt;/h2&gt;
+
+&lt;h4 id=&quot;1&quot;&gt;1&lt;/h4&gt;
+&lt;p&gt;Open your photo in PowerPoint (Insert –&amp;gt; Picture –&amp;gt; Picture from file) or simply drag the file of the photo into a PowerPoint Page.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-09-23/open-pic.png&quot; alt=&quot;open&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;2&quot;&gt;2&lt;/h4&gt;
+&lt;p&gt;Select the picture.  When the picture is selected a new top menu should appear named “Picture Format”.  Select that menu and then find the arrow next to “Artistic Effects”.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-09-23/menu.png&quot; alt=&quot;art&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;3&quot;&gt;3&lt;/h4&gt;
+&lt;p&gt;Click the arrow next to “Artistic Effects” and choose the “Blur” option.  Your picture is now blurred, but the default effect is quite subtle.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-09-23/blur.png&quot; alt=&quot;blur&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;4&quot;&gt;4&lt;/h4&gt;
+&lt;p&gt;To change the level of blurring, go back to “Artistic Effects” and select “Artistic Effects Options”.  This will open the “Format Picture” pane on the right.  Select the “Effects” tab (the pentagon), then “Artistic Effects” and adjust the radius.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-09-23/sidebar-complete.png&quot; alt=&quot;sidebar&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The higher the radius, the more blurred the picture will be.  See the figure below with examples of radius 20, 50, and 85.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-09-23/blur-compare.png&quot; alt=&quot;blur-example&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;h2 id=&quot;adding-text&quot;&gt;Adding Text&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Create a new text box&lt;/li&gt;
+  &lt;li&gt;Change text color to white&lt;/li&gt;
+  &lt;li&gt;Increase text size to 54&lt;/li&gt;
+  &lt;li&gt;Bold the text&lt;/li&gt;
+  &lt;li&gt;Add a subtle shadow&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;add-a-subtle-shadow-to-the-text&quot;&gt;Add a subtle shadow to the text&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;Double click on the text box to open the “Format Shape” menu on the right&lt;/li&gt;
+  &lt;li&gt;Select the “Text Options” tab and then select the “Text Effects” tab&lt;/li&gt;
+  &lt;li&gt;Expand the “Shadow” option and open the “Presets” dropdown menu.  Select the first option under “Outer”.&lt;/li&gt;
+  &lt;li&gt;Position the textbox in the center of the blurred photo.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-09-23/shadow.png&quot; alt=&quot;shadow&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;h2 id=&quot;saving-the-picture&quot;&gt;Saving the picture&lt;/h2&gt;
+
+&lt;p&gt;To save your work as a .png file:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Select the blurred photo and the text box&lt;/li&gt;
+  &lt;li&gt;Right click and select “Save as Figure”&lt;/li&gt;
+  &lt;li&gt;Save the figure in your desired location&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-09-23/saving.png&quot; alt=&quot;save&quot; /&gt;&lt;/p&gt;</content><author><name>E. Shannon Tass</name><email>esnt@byu.edu</email></author><category term="photo effects" /><category term="powerpoint" /><category term="picture" /><category term="blog" /><summary type="html">Create a Blog Post Title Picture</summary></entry><entry><title type="html">Using SSH with GitHub</title><link href="/blog/ssh-and-github" rel="alternate" type="text/html" title="Using SSH with GitHub" /><published>2021-09-13T00:00:00-06:00</published><updated>2021-09-13T00:00:00-06:00</updated><id>/blog/ssh-and-github</id><content type="html" xml:base="/blog/ssh-and-github">&lt;p&gt;This post is adapted from the GitHub documentation page
 &lt;a href=&quot;https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh&quot;&gt;Connecting to GitHub with SSH&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;You can use the SSH protocol by setting up SSH keys to connect with GitHub without
@@ -53,7 +122,7 @@ will show you the public key and you can copy it.&lt;/li&gt;
 &lt;h1 id=&quot;using-ssh-key&quot;&gt;Using SSH Key&lt;/h1&gt;
 &lt;p&gt;In GitHub, when cloning repositories, or setting up the remote repository, use SSH instead of HTTP:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/github-ssh.png&quot; alt=&quot;screenshot&quot; /&gt;&lt;/p&gt;</content><author><name>E. Shannon Tass</name><email>esnt@byu.edu</email></author><category term="ssh" /><category term="git" /><category term="github" /><summary type="html">This post is adapted from the GitHub documentation page Connecting to GitHub with SSH.</summary></entry><entry><title type="html">Sample Post</title><link href="/blog/sample-post" rel="alternate" type="text/html" title="Sample Post" /><published>2020-04-24T00:00:00-06:00</published><updated>2020-04-24T00:00:00-06:00</updated><id>/blog/sample-post</id><content type="html" xml:base="/blog/sample-post">&lt;p&gt;This post will show you how the content will look like in the post pages and how the headlines, quotes and quotes will be represented. Jekyll is mainly used to write simple markdown and after that it renders out a static pages, so you need to know the basics of writing markdown for that.
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-09-13/github-ssh.png&quot; alt=&quot;screenshot&quot; /&gt;&lt;/p&gt;</content><author><name>E. Shannon Tass</name><email>esnt@byu.edu</email></author><category term="ssh" /><category term="git" /><category term="github" /><summary type="html">This post is adapted from the GitHub documentation page Connecting to GitHub with SSH.</summary></entry><entry><title type="html">Sample Post</title><link href="/blog/sample-post" rel="alternate" type="text/html" title="Sample Post" /><published>2020-04-24T00:00:00-06:00</published><updated>2020-04-24T00:00:00-06:00</updated><id>/blog/sample-post</id><content type="html" xml:base="/blog/sample-post">&lt;p&gt;This post will show you how the content will look like in the post pages and how the headlines, quotes and quotes will be represented. Jekyll is mainly used to write simple markdown and after that it renders out a static pages, so you need to know the basics of writing markdown for that.
 For more information about writing markdown you can checkout the following markdown cheatsheets:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://guides.github.com/features/mastering-markdown/&quot;&gt;Mastering Markdown&lt;/a&gt;&lt;/li&gt;
