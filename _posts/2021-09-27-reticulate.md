@@ -36,9 +36,13 @@ The simplest solution that I have found is using [RStudio](https://www.rstudio.c
   * **Tools**
   * **Global Options**
   * Click on **Python**  
+ 
 ![RStudio Global Options](https://support.rstudio.com/hc/article_attachments/1500011460282/Screen_Shot_2021-04-21_at_3.33.02_PM.png)
+
   * Then **Select...**
+ 
 ![Select Python Interpreter](https://support.rstudio.com/hc/article_attachments/1500011460302/Screen_Shot_2021-04-21_at_3.34.00_PM.png)  
+
   * After selecting a Python interpreter, click **Select** then **Apply**. *This will restart your R session.*
 
 After this, you should be all good to go. To check which Python interpreter reticulate is using you can run the `py_config()` function. The output of which should look similar to something like this:
