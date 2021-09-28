@@ -1,6 +1,6 @@
 ---
 layout: post
-title: reticulate: Merging R and Python
+title: reticulate - Merging R and Python
 author: mrmorgan17
 post-image: '/assets/images/blogimages/figs-09-27/reticulate.jpeg'
 description: reticulate is an R package that interfaces with Python. The user can run Python code, create and manage virtual environments, and import modules all from R
