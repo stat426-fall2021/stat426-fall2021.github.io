@@ -36,13 +36,9 @@ The simplest solution that I have found is using [RStudio](https://www.rstudio.c
   * **Tools**
   * **Global Options**
   * Click on **Python**  
- 
 ![RStudio Global Options](https://support.rstudio.com/hc/article_attachments/1500011460282/Screen_Shot_2021-04-21_at_3.33.02_PM.png)
-
   * Then **Select...**
- 
 ![Select Python Interpreter](https://support.rstudio.com/hc/article_attachments/1500011460302/Screen_Shot_2021-04-21_at_3.34.00_PM.png)  
-
   * After selecting a Python interpreter, click **Select** then **Apply**. *This will restart your R session.*
 
 After this, you should be all good to go. To check which Python interpreter reticulate is using you can run the `py_config()` function. The output of which should look similar to something like this:
@@ -156,40 +152,14 @@ With reticulate, Python scripts can easily be run in RStudio.
   4. Run `quit` in the **Console** to end the Python session
 
 reticulate also allows for seamless integration of Python into R Markdown (_.Rmd_) files
-  1. Initialize an R chunk:
-  ````md
-  ```{r setup, include = FALSE}
-  library(reticulate)
-  ```
-  ````
-  2. Create Python chunks by specifying `python` at the top of the chunk instead of `r`. After this, you can code in Python like you would in any other IDE (Jupyter, Spyder, etc):
-  ```{python}
-  import numpy as np
-
-  def perfect_sq(n):
-    sqrt_n = np.sqrt(n)
-    if sqrt_n * sqrt_n == n:
-      print(n, 'is a perfect square of', int(sqrt_n))
-    else:
-      return(False)
-
-  perfect_sq(25)
-
-  Python 3.9.7 (/usr/local/bin/python)
-  Reticulate 1.22 REPL -- A Python interpreter in R.
-  Enter 'exit' or 'quit' to exit the REPL and return to R.
-  25 is a perfect square of 5
-  ```
-  _These Python chunks can be run the same way R chunks are run in R Markdown files_
-
-  3. The output message displaying the Python and reticulate version info will always be output unless suppressed
-  ````md
-  ```{r}
-  options(reticulate.repl.quiet = TRUE) # Could be added to the setup chunk in step 1
-  ```
-  ````
-
-  ````md
+1. Initialize an R chunk:
+````md
+```{r setup, include = FALSE}
+library(reticulate)
+```
+````
+2. Create Python chunks by specifying `python` at the top of the chunk instead of `r`. After this, you can code in Python like you would in any other IDE (Jupyter, Spyder, etc):
+````md
   ```{python}
   import numpy as np
 
@@ -202,10 +172,37 @@ reticulate also allows for seamless integration of Python into R Markdown (_.Rmd
 
   perfect_sq(25)
   ```
-  ````
-  ```
+Python 3.9.7 (/usr/local/bin/python)
+Reticulate 1.22 REPL -- A Python interpreter in R.
+Enter 'exit' or 'quit' to exit the REPL and return to R.
+25 is a perfect square of 5
+````
+
+_These Python chunks can be run the same way R chunks are run in R Markdown files_
+
+3. The output message displaying the Python and reticulate version info will always be output unless suppressed
+````md
+```{r}
+options(reticulate.repl.quiet = TRUE) # Could be added to the setup chunk in step 1
+```
+````
+
+  ````md
+  ```{python}
+  import numpy as np
+
+  def perfect_sq(n):
+    sqrt_n = np.sqrt(n)
+    if sqrt_n * sqrt_n == n:
+      print(n, 'is a perfect square of', int(sqrt_n))
+    else:
+      return(False)
+
+  perfect_sq(25)
+
   25 is a perfect square root of 5
   ```
+  ````
 
 The reticulate package has many more functions that allow R and Python to communicate with each other. The following article explains these functions in much greater detail:
   * [Calling Python from R](https://rstudio.github.io/reticulate/articles/calling_python.html)
