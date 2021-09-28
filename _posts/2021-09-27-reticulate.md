@@ -160,7 +160,7 @@ library(reticulate)
 ````
 2. Create Python chunks by specifying `python` at the top of the chunk instead of `r`. After this, you can code in Python like you would in any other IDE (Jupyter, Spyder, etc):
 ````md
-  ```{python}
+```{python}
   import numpy as np
 
   def perfect_sq(n):
@@ -171,11 +171,12 @@ library(reticulate)
       return(False)
 
   perfect_sq(25)
-  ```
+  
 Python 3.9.7 (/usr/local/bin/python)
 Reticulate 1.22 REPL -- A Python interpreter in R.
 Enter 'exit' or 'quit' to exit the REPL and return to R.
 25 is a perfect square of 5
+```
 ````
 
 _These Python chunks can be run the same way R chunks are run in R Markdown files_
