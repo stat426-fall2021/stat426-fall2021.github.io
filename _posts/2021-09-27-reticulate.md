@@ -178,9 +178,6 @@ Reticulate 1.22 REPL -- A Python interpreter in R.
 Enter 'exit' or 'quit' to exit the REPL and return to R.
 25 is a perfect square of 5
 ```
-
-
-
 _These Python chunks can be run the same way R chunks are run in R Markdown files_
 
 3. The output message displaying the Python and reticulate version info will always be output unless suppressed
