@@ -1,5 +1,5 @@
 ---
-title: Time Series Analysis
+title: Introduction to Time Series Analysis
 layout: post
 author: joshegladwell
 post-image: 
@@ -12,7 +12,7 @@ tags:
 ---
 
 # Time-Series Analysis
-Time-Series analysis is a way of analyzing time-series data. The main characteristic of time-series data is that they are collected over time, usually at equal intervals. These data are frequently plotted with time on the x-axis and will track observations for every day, month, quarter, year, or other set unit of time. Some common examples of time-series data include measuring a country’s Gross Domestic Product, deaths by a certain illness, environmental or weather patterns, etc. There are limitations to using this type of data in linear regression because the goal of analyzing these data is usually to make inference about the future. Projecting a linear model into the future, however, is extrapolation and is often very unwieldy. That is why we use different kinds of statistical analysis tools for time-series data.
+Time-Series analysis is a way of analyzing time-series data. The main characteristic of time-series data is that they are collected over time, usually at equal intervals. These data are frequently plotted with time on the x-axis and will track observations for every day, month, quarter, year, or other set unit of time. Some common examples of time-series data include measuring a country’s Gross Domestic Product, deaths by a certain illness, environmental or weather patterns, etc. There are limitations to using this type of data in linear regression because the goal of analyzing these data is usually to make inference about the future. Projecting a linear model into the future, however, is extrapolation and is often very unwieldy. That is why we use different kinds of statistical analysis tools for time-series data. In this post, we will not dive deeply into the modelling process of time-series data but we will identify things to look for in exploratory data analysis.
 
 # Plotting
 ![Air Passengers](/assets/images/blogimages/figs-09-28/passengers.png)
