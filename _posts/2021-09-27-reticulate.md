@@ -158,7 +158,9 @@ reticulate also allows for seamless integration of Python into R Markdown (_.Rmd
 library(reticulate)
 ```
 ````
+
 2. Create Python chunks by specifying `python` at the top of the chunk instead of `r`. After this, you can code in Python like you would in any other IDE (Jupyter, Spyder, etc):
+[//]: # ({% raw %})
 ````md
 ```{python}
   import numpy as np
@@ -178,6 +180,7 @@ Enter 'exit' or 'quit' to exit the REPL and return to R.
 25 is a perfect square of 5
 ```
 ````
+[//]: # ({% endraw%})
 
 _These Python chunks can be run the same way R chunks are run in R Markdown files_
 
