@@ -2,7 +2,7 @@
 title: Introduction to Time Series Analysis
 layout: post
 author: joshegladwell
-post-image: 
+post-image: "/assets/images/blogimages/figs-09-28/icons8-team-dhZtNlvNE8M-unsplash.jpg"
 description: Time Series Analysis is a way to analyze continuous, fluid data.
 tags:
 - Time-Series
@@ -38,4 +38,8 @@ Autocorrelation is an important factor to consider in analyzing time-series data
 # Conclusion
 Time-series data can often require difficult solutions for modeling (which will not be covered in this post), but it is important to recognize when we are dealing with time-series data and treat it accordingly.
 
+
+<font size="8"> Header photo by <a href="https://unsplash.com/@icons8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Icons8 Team</a> on <a href="https://unsplash.com/s/photos/time-series?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> </font>
+
+  
 
