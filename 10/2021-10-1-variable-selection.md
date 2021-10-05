@@ -32,7 +32,7 @@ import pandas as pd
 stop = pd.read_csv("StoppingDistance.txt", sep = " ")
 stop.head()
 ```
-
+![Stop head - python](SpeedDist.png)
 ![Stop head - python](/assets/images/blogimages/figs-mm-dd/file.png)
 
 Next, we want to perform some exploratory data analysis (EDA) to better understand our data. In R, it is common to use ```ggplot``` or R-base plotting packages to create EDA graphs. In python, we can also create the same things using the ```matplotlib``` package. Let's compare the two languages.
@@ -50,7 +50,7 @@ stop_plot <- ggplot(data = stop, mapping = aes(x = Speed, y = Distance)) +
 # create scatterplot of speed and distance variable
 plt.scatter(stop["Speed"], stop["Distance"])
 ```
-
+![Scatterplot - python](pythonscatter.png)
 ![Scatterplot - python](/assets/images/blogimages/figs-mm-dd/file.png)
 
 We see that speed and distance have a linear relationship. This encourages us to run a linear regression model since we see that these variables are linearly related. Now let us run a linear regression model. We run the model in R and we run the model in Python. 
@@ -79,7 +79,7 @@ Great! You have successfully run a simple linear regression model! Let's look at
 ```{r}
 summary(stop_lm)
 ```
-
+![R lm output](rlmoutput.png)
 ![R lm output](/assets/images/blogimages/figs-mm-dd/file.png)
 
 ```{python}
@@ -87,6 +87,7 @@ summary(stop_lm)
 print(lm_model.intercept_)
 print(lm_model.coef_)
 ```
+![python lm output](pythonlmoutput.png)
 ![python lm output](/assets/images/blogimages/figs-mm-dd/file.png)
 
 Notice that another difference between R and Python is that with R, you can get a full summary of the linear model whereas in the ```sklearn``` library, you can only get certain model parameters individually.
