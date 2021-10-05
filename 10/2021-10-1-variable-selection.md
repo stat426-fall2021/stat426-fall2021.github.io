@@ -43,6 +43,7 @@ stop.head()
 
 Next, we want to perform some exploratory data analysis (EDA) to better understand our data. In R, it is common to use ```ggplot``` or R-base plotting packages to create EDA graphs. In python, we can also create the same things using the ```matplotlib``` package. Let's compare the two languages.
 
+````md
 ```{r}
 stop_plot <- ggplot(data = stop, mapping = aes(x = Speed, y = Distance)) +
   geom_point() +
@@ -51,20 +52,30 @@ stop_plot <- ggplot(data = stop, mapping = aes(x = Speed, y = Distance)) +
   scale_x_continuous(limits = c(0, 40)) +
   scale_y_continuous(limits = c(0, 150))
 ```
+````
 
+![Scatterplot - R](/assets/images/blogimages/figs-mm-dd/file.png)
+
+
+````md
 ```{python}
 # create scatterplot of speed and distance variable
 plt.scatter(stop["Speed"], stop["Distance"])
 ```
+````
+
 ![Scatterplot - python](pythonscatter.png)
 ![Scatterplot - python](/assets/images/blogimages/figs-mm-dd/file.png)
 
-We see that speed and distance have a linear relationship. This encourages us to run a linear regression model since we see that these variables are linearly related. Now let us run a linear regression model. We run the model in R and we run the model in Python. 
+Because we see that speed and distance have a linear relationship, we know that using a linear regression model is appropriate for this dataset. Now let us create a linear regression model. We create the model in R and in Python. 
 
+````md
 ```{r}
 stop_lm <- lm(Distance ~ Speed, data = stop)
 ```
+````
 
+````md
 ```{python}
 # import sklearn package and linear_model library
 from sklearn import linear_model
@@ -77,27 +88,49 @@ y = stop["Distance"]
 lm_model = lm.LinearRegression(fit_intercept = True)
 lm_model.fit(x, y)
 ```
+````
 
-Notice the difference in syntax between R and Python. Also note that although the ```lm``` function in R is a built in function, we need to import the ```sklearn``` package and ```linear_model``` library in Python because Python does not have these statistical computing capabilities on its own. ```sklearn``` is one of the most useful machine learning libraries for Python and allows users to perform various machine learning and statistical modeling including classification, clustering, regression, and preprocessing. More about this package can be learned at https://scikit-learn.org/stable/.
+Notice the difference in syntax between R and Python. In R, we can create the model in a single line including the name of the data as well as the x and y variables. The ```lm``` function is built into R which makes creating a linear model simple and straightfoward. 
+
+In Python, however, it takes a few more lines to write. Because Python does not have these statistical computing capabilities on its own, we need to import various packages and libraries to create the model. ```sklearn``` is one of the most useful machine learning libraries for Python and allows users to perform machine learning and statistical modeling including classification, clustering, regression, and preprocessing. More about this package can be learned at https://scikit-learn.org/stable/. We import the ```sklearn``` package and the ```linear_model``` library in Python to run the regression model. With sklearn, we first need to create a linear regressiom model and then fit our x and y variables into that model separately. Hence the reason why ```lm.LinearRegression``` creates a linear regression model that we call ```lm``` and then our x and y variables are fit into that model using the ```.fit``` function.
 
 Great! You have successfully run a simple linear regression model! Let's look at the regression outputs.
 
+````md
 ```{r}
 summary(stop_lm)
 ```
+````
+
 ![R lm output](rlmoutput.png)
 ![R lm output](/assets/images/blogimages/figs-mm-dd/file.png)
 
+````md
 ```{python}
-# print model intercept and model coefficients
+# print model intercept, model coefficients, and R^2 score
 print(lm_model.intercept_)
 print(lm_model.coef_)
+print(lm_model.score(x,y))
 ```
+````
+
 ![python lm output](pythonlmoutput.png)
 ![python lm output](/assets/images/blogimages/figs-mm-dd/file.png)
 
-Notice that another difference between R and Python is that with R, you can get a full summary of the linear model whereas in the ```sklearn``` library, you can only get certain model parameters individually.
+Notice that another difference between R and Python is that in R, you can get a full summary of the linear model including variable intercepts, coefficients, p-values, and adjusted $R^2$ values. In Python while using the ```sklearn``` library, you can only extract model parameters individually.
+
+```statsmodels``` is another package where users can run linear regression models in Python. This package also provides a more comprehensive summary of regression modelling that is performed. More about this package can be learned at https://www.statsmodels.org/stable/index-html.
 
 
+At this point, you would then investigate whether this model you just created meets the linear model assumptions. However, I'll leave it up to you to determine those assumptions are met. However, here is a reminder of what those assumptions are as well as some methods you can use to see if the assumptions are met.
+1. X and Y variables are linearly related.
+2. Observations are independent of each other.
+3. Residuals are normally distributed.
+4. There is equal variance among the residuals.
+5. ??
 
-### Conclusion
+
+### Wrapping it all up
+If you checked the assumptions correctly, you would have found that this model did indeed meet the assumptions. We can now interpret these results.
+We see that the "speed" coefficient is 3.14. A correct interpretation of this coefficient is that for every one increase in mph of a vehicle, the distance at which the vehicle should stop also increases by 3.14 ft.
+
