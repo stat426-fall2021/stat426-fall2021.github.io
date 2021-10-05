@@ -12,38 +12,55 @@ tags:
 - Sequential Replacement
 ---
 
-## Introduction
-Linear regression models are one of the most basic and stastistical predictive modeling methods because of their simplicity and interpretability. They are extremely useful in quantifying how one variable can impact an outcome variable as well as how multiple variables may interact with one another. These models, however, are not without its own obstacles. One of the most common obstacles that statisticians encounter while fitting linear models is multicolinearity in which explanatory variables are linearly related thus unsatifying the assumption of variable independence and greatly affecting the final results of a linear model. This blog discusses variable selection models such as best subsets model, backward selection, and sequential which are remedial measures available to fit an effective and reliable linear model. We use an example dataset regarding body fat to illustrate these methods.
+## Let's Begin
+Linear regression models are one of the most basic and stastistical predictive modeling methods because of their simplicity and interpretability. They are extremely useful in quantifying how one variable can impact an outcome variable as well as how multiple variables may interact with one another. R is one of the most common coding languages to perform these types of statistical analyses. However, there are other languages that you can use to perform linear regression models. This article specifically discusses how to perform a simple linear regression model in Python for all you Python users out there! We use a simple dataset about vehicle speeds (mph) and stopping distances (ft) to illustrate this process.
+
+## Car Speeds and Stopping Distances
+The purpose of this analysis is to determine what distance is required to stop at a given vehicle speed. With this knowledge, public officials can determine speed limits and make better traffic control decisions.
+
+There are base R packages that will allow you to compute linear regression models, however, in Python, we need to import certain packages and libraries to perform these types of analyses. The main package that is used is ```sklearn```.
 
 First, let's import a few libraries and read in the data:
+
 ```
 import pandas as pd
-from sklearn import linear_model
 
-bodyfat = pd.read_csv("BodyFat.txt", sep = " ")
-bodyfat.head()
+stop = pd.read_csv("StoppingDistance.txt", sep = " ")
+stop.head()
 ```
+
 (Picture)
 
-Brozek is the outcome variable that measures the percentage of body fat found in the 252 men whose various health metrics are found in this dataset. Explanatory variables include the men's ages, weight (lbs),	height (in), and the circumference of the neck (cm), chest (cm), and abdomen (cm).
+Next, we want to perform some exploratory data analysis (EDA) to better understand our data. In R, it is common to use ```ggplot``` or R-base plotting packages to create EDA graphs. In python, we can also create the same things using the ```matplotlib``` package. Let's create a scatterplot.
 
-I will not include the detailed processes of EDA and the checking of linear model assumptions as part of this article, but after going through these processes, we find that there is high multicolinearity found in the model and the assumptions are not met. So what can we do? This is where variable selection models can help.
+```
+plt.scatter(stop["Speed"], stop["Distance"])
+```
 
-## Variable Selection Models
-Variable selection models help statisticians choose which variables of a dataset would help create the best linear model by recommending which variables to drop and which variables to keep. There are a variety of these methods each with its own benefits and setbacks. Here, we'll discuss three of the most common methods.
+(Picture)
 
-### 1. Best subsets
-The best subsets variable selection method includes each variable in the linear model one at a time and measures if the accuracy of the model improves or not. If the accuracy of the model improves, then the variable is kept in the model. If the accuracy worsens, the variable is discarded.
+We see that speed and distance have a linear relationship. This encourages us to feel good about running a linear regression model to draw conclusions from this data. Next, let us run a linear regression model. We do this by using the ```sklearn``` package and its ```linear_model``` library.
 
-Code
+```
+from sklearn import linear_model
+
+x = stop[["Speed"]]
+y = stop["Distance"]
+
+lm_model = lm.LinearRegression(fit_intercept = True)
+lm_model.fit(x, y)
+```
 
 
-### 2. Backward selection
-Code
 
 
-### 3. Sequential replacement
-Code
+
+
+
+
+
+
+
 
 
 ### Conclusion
