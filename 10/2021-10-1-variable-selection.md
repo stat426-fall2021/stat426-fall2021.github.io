@@ -3,17 +3,18 @@ title: Variable Selection Models
 layout: blog
 author: emliu
 post-image: '/linearcars.png'
-description: Summary of commonly used variable selection models used in linear regression such as best subsets model, backward, and sequential replacement
+description: Comparison of a simple linear regression model performed in R and Python
 tags:
 - linear regression
 - sklearn
 - matplotlib
+- statsmodel
 ---
 
 ## Let's begin
 Linear regression models are one of the most basic and stastistical predictive modeling methods because of their simplicity and interpretability. They are extremely useful in quantifying how one variable can impact an outcome variable as well as how multiple variables may interact with one another. R is one of the most common coding languages to perform these types of statistical analyses. However, there are other languages that you can use to perform linear regression models. This article specifically discusses how to perform a simple linear regression model in Python compared to R for all you Python users out there! We use a simple dataset about vehicle speeds (mph) and stopping distances (ft) to illustrate this process. This article includes both R code and Python code to compare syntax and reinforce knowledge of how to perform linear regression models. Let's get started.
 
-## Car speeds and stopping Distances
+## Car speeds and stopping distances
 An important factor in determining appropriate speed limits is the amount of distance that is required to stop at a given speed. For example, in residential neighborhoods, it is important to be able to stop in a short distance to ensure pedestrain safety because people are commonly found on the streets. Therefore, the purpose of this analysis is to determine what distance is required to stop at a given vehicle speed. With this knowledge, public officials can determine area speed limits and make better traffic control decisions.
 
 Let's read in the data.
