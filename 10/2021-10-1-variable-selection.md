@@ -54,7 +54,7 @@ stop_plot <- ggplot(data = stop, mapping = aes(x = Speed, y = Distance)) +
 ```
 ````
 
-![Scatterplot - R](/assets/images/blogimages/figs-mm-dd/file.png)
+![Scatterplot - R](rscatter.png)
 
 
 ````md
@@ -121,16 +121,15 @@ Notice that another difference between R and Python is that in R, you can get a 
 
 ```statsmodels``` is another package where users can run linear regression models in Python. This package also provides a more comprehensive summary of regression modelling that is performed. More about this package can be learned at https://www.statsmodels.org/stable/index-html.
 
-
 At this point, you would then investigate whether this model you just created meets the linear model assumptions. However, I'll leave it up to you to determine those assumptions are met. However, here is a reminder of what those assumptions are as well as some methods you can use to see if the assumptions are met.
-1. X and Y variables are linearly related.
-2. Observations are independent of each other.
-3. Residuals are normally distributed.
-4. There is equal variance among the residuals.
-5. ??
+1. X and Y are linear: scatterplots between each explanatory variable and response variable
+2. Residuals are normally distributed and centered at zero: boxplot or histogram of model residuals
+3. Residuals have constant variance across all values of x: scatterplot of fitted values and the model's residuals
+4. Model describes all observations/no influential points: scatterplot of x and y variables, boxplot of residuals, q-q plot, Cook's distance calculations
 
+If you checked the assumptions correctly, you would have found that this model did indeed meet the assumptions. We can now interpret these results.
+We see that the "speed" coefficient is 3.14. A correct interpretation of this coefficient is that for every one increase in mph of a vehicle, the distance at which the vehicle should stop also increases by 3.14 ft. Because the p-value of the model is less than 0.05, we can conclude that this results is statistically significant.
 
 ### Wrapping it all up
-If you checked the assumptions correctly, you would have found that this model did indeed meet the assumptions. We can now interpret these results.
-We see that the "speed" coefficient is 3.14. A correct interpretation of this coefficient is that for every one increase in mph of a vehicle, the distance at which the vehicle should stop also increases by 3.14 ft.
+Even though R is the most common programming language to perform statistical analyses, these methods can be extended to other programming languages as along as the correct packages and libraries are used. Python uses the ```sklearn``` and ```matplotlib``` packages to perform EDA and fit models. As long as you know what resources are available to your coding language of choice, you do not have to feel limited with only knowing one programming language.
 
