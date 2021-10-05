@@ -2,7 +2,7 @@
 title: Variable Selection Models
 layout: blog
 author: emliu
-post-image:
+post-image: '/linearcars.png'
 description: Summary of commonly used variable selection models used in linear regression such as best subsets model, backward, and sequential replacement
 tags:
 - linear regression
