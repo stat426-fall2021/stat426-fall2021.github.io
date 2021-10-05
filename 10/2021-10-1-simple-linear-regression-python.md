@@ -2,7 +2,7 @@
 title: Simple Linear Regression - Python
 layout: post
 author: emliu
-post-image: '/linearcars.png'
+post-image: '/assets/images/blogimages/figs-10-01/linearcars.png'
 description: Comparison of a simple linear regression model performed in R and Python
 tags:
 - linear regression
@@ -39,8 +39,7 @@ stop.head()
 ```
 ````
 
-![Stop head - python](SpeedDist.png)
-![Stop head - python](/assets/images/blogimages/figs-mm-dd/file.png)
+![Stop head - python](/assets/images/blogimages/figs-10-01/SpeedDist.png)
 
 Next, we want to perform some exploratory data analysis (EDA) to better understand our data. In R, it is common to use ```ggplot``` or R-base plotting packages to create EDA graphs. In python, we can also create the same things using the ```matplotlib``` package. Let's compare the two languages.
 
@@ -56,7 +55,7 @@ stop_plot <- ggplot(data = stop, mapping = aes(x = Speed, y = Distance)) +
 ```
 ````
 
-![Scatterplot - R](rscatter.png)
+![Scatterplot - R](/assets/images/blogimages/figs-10-01/rscatter.png)
 
 
 ````md
@@ -66,8 +65,7 @@ plt.scatter(stop["Speed"], stop["Distance"])
 ```
 ````
 
-![Scatterplot - python](pythonscatter.png)
-![Scatterplot - python](/assets/images/blogimages/figs-mm-dd/file.png)
+![Scatterplot - python](/assets/images/blogimages/figs-10-01/pythonscatter.png)
 
 Notice that for both graphs, speed and distance have a linear relationship. Because these variables are linearly related, we know that using a linear regression model is appropriate for this dataset. Now let us create a linear regression model. We create the model in R and in Python. 
 
@@ -104,8 +102,7 @@ summary(stop_lm)
 ```
 ````
 
-![R lm output](rlmoutput.png)
-![R lm output](/assets/images/blogimages/figs-mm-dd/file.png)
+![R lm output](/assets/images/blogimages/figs-10-01/rlmoutput.png)
 
 ````md
 ```{python}
@@ -116,8 +113,7 @@ print(lm_model.score(x,y))
 ```
 ````
 
-![python lm output](pythonlmoutput.png)
-![python lm output](/assets/images/blogimages/figs-mm-dd/file.png)
+![python lm output](/assets/images/blogimages/figs-10-01/pythonlmoutput.png)
 
 Notice that another difference between R and Python is that in R, you can get a full summary of the linear model including variable intercepts, coefficients, p-values, and adjusted $R^2$ values. In Python while using the ```sklearn``` library, you can only extract model parameters individually.
 
