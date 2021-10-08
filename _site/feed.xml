@@ -1,4 +1,402 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-09-28T09:56:23-06:00</updated><id>/feed.xml</id><title type="html">Stat 426 - Fall 2021</title><subtitle>Class Blog and Projects</subtitle><entry><title type="html">reticulate</title><link href="/blog/reticulate" rel="alternate" type="text/html" title="reticulate" /><published>2021-09-27T00:00:00-06:00</published><updated>2021-09-27T00:00:00-06:00</updated><id>/blog/reticulate</id><content type="html" xml:base="/blog/reticulate">&lt;p&gt;In the data science field, the debate between R and Python rages on. Both languages claim to be superior to the other for data science. In my experience, both R and Python are good languages and each one has its strong-suits in certain areas. Recently, I came across reticulate, an R package leading the way in bringing R and Python together and allowing for data scientists to get the best out of both languages. Now, instead of having to choose between R and Python, you can have both!&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-10-08T14:37:44-06:00</updated><id>/feed.xml</id><title type="html">Stat 426 - Fall 2021</title><subtitle>Class Blog and Projects</subtitle><entry><title type="html">Selenium - Building Your First Internet Bot</title><link href="/blog/Selenium" rel="alternate" type="text/html" title="Selenium - Building Your First Internet Bot" /><published>2021-10-02T00:00:00-06:00</published><updated>2021-10-02T00:00:00-06:00</updated><id>/blog/Selenium</id><content type="html" xml:base="/blog/Selenium">&lt;p&gt;Webscraping in recent years has become a buzzword for technology and innovation. Modern companies often seek employees who are literate in current technological trends, and being well versed in webscraping can make you one of these well-qualified candidates. In Python specifically, there are many packages that  boast impressive webscraping capability. Of these, some of the most popular are packages such as Beautifulsoup and Selenium. In this tutorial, we outline the installation, implementation, and possible use cases of the latter of these two. Consider this your introduction to web automation and building web scraping robots.&lt;/p&gt;
+
+&lt;p&gt;Below is a list of links that will be referenced within the post (accumulated here for your convenience).&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://sites.google.com/chromium.org/driver/downloads?authuser=0&quot;&gt;Chrome Webdriver Download&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://fred.stlouisfed.org/series/GDP&quot;&gt;GDP Data&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.selenium.dev/documentation/&quot;&gt;Selenium Documentation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/assets/images/blogimages/figs-10-2/Selenium.ipynb&quot;&gt;Sample Code&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;Selenium is a Python packaged aimed at browser automation. For those familiar with BeautifulSoup, the gathering information through accessing the HTML of webpages will be very similar. However, Selenium and Beautiful soup access and use this information in slightly different ways. In BeautifulSoup, one often creates a string object that represents the entire HTML content of a webpage. This string is then used to create a BeautifulSoup object which can be parsed to gather information. Selenium, on the other hand, creates an independent instance of the webpage using a webdriver. It opens a separate browser window specifically to access the page, and in this instance can &lt;em&gt;interact&lt;/em&gt; with the HTML. This allows us to write scripts that can perform searches, click on links, download files, and much more.&lt;/p&gt;
+
+&lt;h1 id=&quot;installation&quot;&gt;Installation&lt;/h1&gt;
+
+&lt;p&gt;The first step in getting a working instance of Selenium is installing a webdriver. I chose to use the Chrome webdriver Chromium. This is a development version of Chrome that we can access remotely. From &lt;a href=&quot;https://sites.google.com/chromium.org/driver/downloads?authuser=0&quot;&gt;This Link&lt;/a&gt; you can download the Chrome webdriver. Once installed, move the ‘chromedriver’ file to a place where you can find it. We will need to reference this via filepath in our code. 
+Detailed instructions for installing a webdriver can be found &lt;a href=&quot;https://blog.testproject.io/2019/07/16/installing-selenium-webdriver-using-python-chrome/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;After the installation if the webdriver, use pip in the command line to install the Selenium package if you don’t already have access to it through a distribution like Anaconda.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;( pip3 install selenium )&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;After these two items are installed, we are ready to start coding our bot!&lt;/p&gt;
+
+&lt;h1 id=&quot;demonstration&quot;&gt;Demonstration&lt;/h1&gt;
+
+&lt;p&gt;To demonstrate what Selenium can do, I originally intended on making some sort of club penguin account that would walk around and say dumb things, but it turns out it’s pretty hard to code a robot to prove that it’s not a robot. So instead, I decided to actually try and do something useful and code a program that could scrape the Federal Reserve website for GDP Data.&lt;/p&gt;
+
+&lt;p&gt;The URL for the FED website is can be found &lt;a href=&quot;https://fred.stlouisfed.org/series/GDP&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The first thing we good need to do is import our desired packages into Python.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-10-2/import_packages.png&quot; alt=&quot;screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We import the webdriver attribute from Selenium to initialize our driver and open a browser window. We import the Keys attribute to send keys to input instances within the HTML page. We import Select to use for picking from dropdown menus, and we import time to pause our program to allow the web page to load.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-10-2/iinitialize_webdriver.png&quot; alt=&quot;screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We then initialize our PATH variable with file path that points to the driver we downloaded, and initialize our webdriver, specifying that we will be using Chrome. In the second cell featured above, the driver.get() function is what launches the browser. When we pass in a URL to this function and run it, a browser window will be opened that looks like the following:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-10-2/FED.png&quot; alt=&quot;screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Notice the bar at the top that says “Chrome is being controlled by automated test software.” - Chrome knows that we are using a robot to control it. This means you can run into issues when trying to access certain websites. If the site has blocked access for automated process, you may not be able to access it.&lt;/p&gt;
+
+&lt;p&gt;In the newly opened Chrome window, Right click on any element and click inspect.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-10-2/Inspect.png&quot; alt=&quot;screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-10-2/Inspected.png&quot; alt=&quot;screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This will allow you to access the HTML for the page in question. From clicking inspect on specific elements of the page, the HTML that composes that element will be highlighted on the right. From there, we can reference each HTML element in our Python script to begin automation.&lt;/p&gt;
+
+&lt;p&gt;The first task we will do is to change the dates for the data we want to download. Say we want to gather data for the first decade of the 21st century - we will change the start date to ‘2000-01-01’ and the end date to ‘2010-01-01’.&lt;/p&gt;
+
+&lt;p&gt;First, we need to find the HTML reference for the start date input bar. We do this by right clicking on the bar, and clicking inspect again. From there, we find the highlighted HTML code on the right that corresponds to the element we want to interact with. There are a couple ways of referencing this element. We can reference it by ID, by class, by x_path etc. While it’s generally considered best practice to reference elements by ID, I chose to do it by xpath (because some elements that I found had non-unique ID’s). From the picture below, we can see the process of finding and copying the xpath for the HTML element we want to interact with.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-10-2/Inspect_element.png&quot; alt=&quot;screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We then copy that xpath, and reference it using the driver.find_element_by_xpath function from Selenium. You can choose to save this as a variable, or apply functions straight to the reference itself. I chose to save the reference as a variable because I will be sending it multiple commands.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-10-2/Change_Start.png&quot; alt=&quot;screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;From the code above we can see the process of changing the start date:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Click on the input bar&lt;/li&gt;
+  &lt;li&gt;Clear the input bar of the default text&lt;/li&gt;
+  &lt;li&gt;Send the new text to the input bar&lt;/li&gt;
+  &lt;li&gt;Send a return key to confirm changes&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;This process is then repeated for the end date.&lt;/p&gt;
+
+&lt;p&gt;Using the same process as above to find the HTML element, we create a command to open the “Edit Graph” settings. This allows us to change how our data is organized before downloading.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-10-2/Edit_Graph.png&quot; alt=&quot;screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Once open, we find the element of the first drop down menu. We then use Selenium’s Select command to help us pick an option from the drop down box. We repeat this process, change a couple of settings, then finally close the Edit Graph window.&lt;/p&gt;
+
+&lt;p&gt;The final steps of our code consist of much of the same - we find the element we want to interact with in the HMTL, create a reference to that element in Python, then apply the interaction function we want in Selenium. With these steps we click the download button, and select the CSV option.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-10-2/Final_code.png&quot; alt=&quot;screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;And there we have it! We’ve created a robot that will open a webpage, transform the data found, and download it as a CSV all by itself. In looking through the code, you may notice a couple instances where “time.sleep()” is called. This just pauses the script during execution to allow the webpage to render fully. If the webpage isn’t fully rendered when you try to make a request, you may get an error from Selenium saying the element you are trying to access does not exist. This is not an issue if you run the code line by line, but in making repeatable scripts it may be necessary to manually incorporate some wait time for the page to load.&lt;/p&gt;
+
+&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
+
+&lt;p&gt;This blog post, though brief, should give you at least a small introduction into the automation possible with Selenium. The few functions featured in this demonstration barely scratch the surface of what is possible with web automation through Python. Looking at the above link for Selenium documentation, there are dozens of functions and methods that allow you to interact with web pages. Hopefully this post inspires you to go build a robot of your own - think of a fun project you want to automate and give it a shot!&lt;/p&gt;
+
+&lt;p&gt;The example code can be downloaded &lt;a href=&quot;/assets/images/blogimages/figs-10-2/Selenium.ipynb&quot;&gt;here&lt;/a&gt;. (You will need to change the file path to your driver).&lt;/p&gt;</content><author><name>Trevor Andrus</name></author><category term="Python" /><category term="Webscraping" /><category term="Automation" /><summary type="html">Webscraping in recent years has become a buzzword for technology and innovation. Modern companies often seek employees who are literate in current technological trends, and being well versed in webscraping can make you one of these well-qualified candidates. In Python specifically, there are many packages that boast impressive webscraping capability. Of these, some of the most popular are packages such as Beautifulsoup and Selenium. In this tutorial, we outline the installation, implementation, and possible use cases of the latter of these two. Consider this your introduction to web automation and building web scraping robots.</summary></entry><entry><title type="html">Simple Linear Regression - Python</title><link href="/blog/simple-linear-regression-python" rel="alternate" type="text/html" title="Simple Linear Regression - Python" /><published>2021-10-01T00:00:00-06:00</published><updated>2021-10-01T00:00:00-06:00</updated><id>/blog/simple-linear-regression-python</id><content type="html" xml:base="/blog/simple-linear-regression-python">&lt;h2 id=&quot;lets-begin&quot;&gt;Let’s begin&lt;/h2&gt;
+&lt;p&gt;Linear regression models are one of the most basic and stastistical predictive modeling methods because of their simplicity and interpretability. They are extremely useful in quantifying how one variable can impact an outcome variable as well as how multiple variables may interact with one another. R is one of the most common coding languages to perform these types of statistical analyses. However, there are other languages that you can use to perform linear regression models. This article specifically discusses how to perform a simple linear regression model in Python compared to R for all you Python users out there! We use a simple dataset about vehicle speeds (mph) and stopping distances (ft) to illustrate this process. This article includes both R code and Python code to compare syntax and reinforce knowledge of how to perform simple linear regression models. Let’s get started.&lt;/p&gt;
+
+&lt;h2 id=&quot;car-speeds-and-stopping-distances&quot;&gt;Car speeds and stopping distances&lt;/h2&gt;
+&lt;p&gt;An important factor in determining appropriate speed limits is the amount of distance that is required to stop at a given speed. For example, in residential neighborhoods, it is important to be able to stop in a short distance to ensure pedestrain safety because people are commonly found on the streets. Therefore, the purpose of this analysis is to determine what distance is required to stop at a given vehicle speed through simple linear regression. With this knowledge, public officials can determine area speed limits and make better traffic control decisions.&lt;/p&gt;
+
+&lt;p&gt;Let’s read in the data.&lt;/p&gt;
+
+&lt;p&gt;In R, this can be done with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;read.csv&lt;/code&gt; function.&lt;/p&gt;
+
+&lt;div class=&quot;language-md highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;```&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;{r}
+&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;stop &amp;lt;- read.csv(&quot;StoppingDistance.txt&quot;, sep = &quot; &quot;, header = TRUE, stringsAsFactors = FALSE)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;```&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;In Python however, it is common to use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pandas&lt;/code&gt; library in order to read in the data.  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pandas&lt;/code&gt; is commonly used for for data manipulation and analysis in Python. It allows users to manipulate data frames and structures easily and efficiently. More information about the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pandas&lt;/code&gt; library can be found at https://pandas.pydata.org/. Let’s import the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pandas&lt;/code&gt; library and read in the data set.&lt;/p&gt;
+
+&lt;div class=&quot;language-md highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;```&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;{python}
+&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;# import pandas library
+import pandas as pd
+
+# read in data set
+stop = pd.read_csv(&quot;StoppingDistance.txt&quot;, sep = &quot; &quot;)
+stop.head()&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;```&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-10-01/SpeedDist.png&quot; alt=&quot;Stop head - python&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Next, we want to perform some exploratory data analysis (EDA) to better understand our data. In R, it is common to use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ggplot&lt;/code&gt; or R-base plotting packages to create EDA graphs. In python, we can also create the same things using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;matplotlib&lt;/code&gt; package. Let’s compare the two languages.&lt;/p&gt;
+
+&lt;div class=&quot;language-md highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;```&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;{r}
+&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;stop_plot &amp;lt;- ggplot(data = stop, mapping = aes(x = Speed, y = Distance)) +
+  geom_point() +
+  theme_bw() +
+  theme(aspect.ratio = 1) +
+  scale_x_continuous(limits = c(0, 40)) +
+  scale_y_continuous(limits = c(0, 150))
+ stop_plot&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;```&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-10-01/rscatter.png&quot; alt=&quot;Scatterplot - R&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-md highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;```&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;{python}
+&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;# create scatterplot of speed and distance variable
+plt.scatter(stop[&quot;Speed&quot;], stop[&quot;Distance&quot;])&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;```&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-10-01/pythonscatter.png&quot; alt=&quot;Scatterplot - python&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Notice that for both graphs, speed and distance have a linear relationship. Because these variables are linearly related, we know that using a linear regression model is appropriate for this dataset. Now let us create a linear regression model. We create the model in R and in Python.&lt;/p&gt;
+
+&lt;div class=&quot;language-md highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;```&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;{r}
+&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;stop_lm &amp;lt;- lm(Distance ~ Speed, data = stop)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;```&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-md highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;```&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;{python}
+&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;# import sklearn package and linear_model library
+from sklearn import linear_model
+
+# save variables as x and y variables
+x = stop[[&quot;Speed&quot;]]
+y = stop[&quot;Distance&quot;]
+
+# fit linear regression model 
+lm_model = lm.LinearRegression(fit_intercept = True)
+lm_model.fit(x, y)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;```&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Notice the difference in syntax between R and Python. In R, we can create the model in a single line including the name of the data as well as the x and y variables. The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lm&lt;/code&gt; function is built into R which makes creating a linear model simple and straightfoward.&lt;/p&gt;
+
+&lt;p&gt;In Python, however, it takes a few more lines to write. Because Python does not have these statistical computing capabilities on its own, we need to import various packages and libraries to create the model. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sklearn&lt;/code&gt; is one of the most useful machine learning libraries for Python and allows users to perform machine learning and statistical modeling including classification, clustering, regression, and preprocessing. More about this package can be learned at https://scikit-learn.org/stable/. We import the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sklearn&lt;/code&gt; library and the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;linear_model&lt;/code&gt; function in Python to run the regression model. With sklearn, we first need to create a linear regressiom model and then fit our x and y variables into that model separately. Notice that the function &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lm.LinearRegression&lt;/code&gt; creates a linear regression model that we call &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lm&lt;/code&gt; and then our x and y variables are fit into that model using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.fit&lt;/code&gt; function.&lt;/p&gt;
+
+&lt;p&gt;Great! You have successfully created a simple linear regression model! Let’s look at the regression outputs.&lt;/p&gt;
+
+&lt;div class=&quot;language-md highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;```&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;{r}
+&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;summary(stop_lm)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;```&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-10-01/rlmoutput.png&quot; alt=&quot;R lm output&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-md highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;```&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;{python}
+&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;# print model intercept, model coefficients, and R^2 score
+print(lm_model.intercept_)
+print(lm_model.coef_)
+print(lm_model.score(x,y))&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;```&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-10-01/pythonlmoutput.png&quot; alt=&quot;python lm output&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Notice that another difference between R and Python is that in R, you can get a full summary of the linear model including variable intercepts, coefficients, p-values, and adjusted $R^2$ values. In Python while using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sklearn&lt;/code&gt; library, you can only extract model parameters individually.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;statsmodels&lt;/code&gt; is another package used for Python where users can run linear regression models. This package also provides a more comprehensive summary of regression modeling that is performed. More about this package can be learned at https://www.statsmodels.org/stable/index-html.&lt;/p&gt;
+
+&lt;p&gt;At this point, you would now need to investigate whether this model you just created meets the linear model assumptions. However, I’ll leave it up to you to determine those assumptions are met. However, here is a reminder of what those assumptions are as well as some methods you can use to see if the assumptions are met.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;X and Y are linear: You can use scatterplots to visualize the linearity between each explanatory variable and response variable.&lt;/li&gt;
+  &lt;li&gt;Residuals are normally distributed and centered at zero: You can use boxplots or histograms of model residuals to see if they are normally distributed.&lt;/li&gt;
+  &lt;li&gt;Residuals have constant variance across all values of x: Scatterplots of fitted values measured against the model’s residuals are great for this assumption.&lt;/li&gt;
+  &lt;li&gt;Model describes all observations/no influential points: Scatterplot of x and y variables, boxplot of residuals, normal probability plot of the residuals, or Cook’s distance calculations will work.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;If you checked the assumptions correctly, you would have found that this model did indeed meet the assumptions! We can now interpret these results.
+We see that the “speed” coefficient is 3.14. A correct interpretation of this coefficient is that for every one increase in mph of a vehicle, the distance at which the vehicle should stop also increases by 3.14 ft. Because the p-value of the model is less than 0.05, we can conclude that these result are statistically significant. These results can be useful for public officials so that they can determine area speed limits and make better traffic control decisions.&lt;/p&gt;
+
+&lt;h3 id=&quot;wrapping-it-all-up&quot;&gt;Wrapping it all up&lt;/h3&gt;
+&lt;p&gt;Even though R is the most common programming language to perform statistical analyses, these methods can be extended to other programming languages as long as the correct packages and libraries are used. Python uses the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sklearn&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;matplotlib&lt;/code&gt; libraries to perform EDA and fit models. As long as you know what resources are available for your coding language of choice, you do not have to feel limited with only knowing one programming language. For you Python users, you can rest easy knowing you can run meaningful statistical analyses in the the Python language.&lt;/p&gt;</content><author><name>Emily Liu</name><email>emliu0811@gmail.com</email></author><category term="linear regression" /><category term="sklearn" /><category term="matplotlib" /><category term="statsmodel" /><summary type="html">Let’s begin Linear regression models are one of the most basic and stastistical predictive modeling methods because of their simplicity and interpretability. They are extremely useful in quantifying how one variable can impact an outcome variable as well as how multiple variables may interact with one another. R is one of the most common coding languages to perform these types of statistical analyses. However, there are other languages that you can use to perform linear regression models. This article specifically discusses how to perform a simple linear regression model in Python compared to R for all you Python users out there! We use a simple dataset about vehicle speeds (mph) and stopping distances (ft) to illustrate this process. This article includes both R code and Python code to compare syntax and reinforce knowledge of how to perform simple linear regression models. Let’s get started.</summary></entry><entry><title type="html">Wrangling the Pandas (DataFrame)</title><link href="/blog/Pandas" rel="alternate" type="text/html" title="Wrangling the Pandas (DataFrame)" /><published>2021-09-29T00:00:00-06:00</published><updated>2021-09-29T00:00:00-06:00</updated><id>/blog/Pandas</id><content type="html" xml:base="/blog/Pandas">&lt;h1 id=&quot;introduction---why-was-pandas-created&quot;&gt;Introduction - Why was Pandas Created?&lt;/h1&gt;
+
+&lt;p&gt;Pandas was created in order to get “better performance” than excel around 2007 by Wes McKinney.&lt;/p&gt;
+
+&lt;p&gt;If you would like to learn more about the history of pandas, refer to this website:
+https://en.wikipedia.org/wiki/Pandas_(software)&lt;/p&gt;
+
+&lt;p&gt;If you are trying to work with large datasets and are having struggles grouping, merging, or finding information in an excel file then this post is for you! It will help you to be able to see examples of how each of these would be used, and even some tips of pitfalls to avoid! Those tips are there to help you save time from hitting errors that I have already had to struggle with.&lt;/p&gt;
+
+&lt;h1 id=&quot;how-to-install-pandas&quot;&gt;How to Install Pandas?&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Open up a new terminal window&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img width=&quot;566&quot; alt=&quot;Screen Shot 2021-09-22 at 11 24 43 AM&quot; src=&quot;https://user-images.githubusercontent.com/77635875/134392310-694ce656-3fea-4312-9180-e8a6fffeae7f.png&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Type in and run “pip install pandas”&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img width=&quot;569&quot; alt=&quot;Screen Shot 2021-09-22 at 11 25 15 AM&quot; src=&quot;https://user-images.githubusercontent.com/77635875/134392328-0c4a8299-d93b-4d89-bb11-2b9a15f83d17.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you want to install pandas through the anaconda distribution, refer to this website:
+https://docs.anaconda.com/anaconda/navigator/tutorials/pandas/&lt;/p&gt;
+
+&lt;h1 id=&quot;creating-a-pandas-dataframe&quot;&gt;Creating a pandas dataframe&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Now you can import pandas in your text editor of choice in python and save it as the common alias of pd&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Read in the data using the pd.read_csv() function&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img width=&quot;549&quot; alt=&quot;Screen Shot 2021-09-23 at 9 22 03 AM&quot; src=&quot;https://user-images.githubusercontent.com/77635875/134536159-90eef18b-ab36-41e1-92ad-80aaaccc9e61.png&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;tip&quot;&gt;TIP&lt;/h2&gt;
+
+&lt;p&gt;Don’t forget to have the dataset saved in the same directory as where your python file is located at. If it is not in the same location then it will give you an error saying that it does not recognize the .csv file name.&lt;/p&gt;
+
+&lt;p&gt;&lt;img width=&quot;446&quot; alt=&quot;Screen Shot 2021-09-23 at 9 20 50 AM&quot; src=&quot;https://user-images.githubusercontent.com/77635875/134535966-1123e000-b3f7-475c-84fe-4675e715d998.png&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;The type of the df object is now a pandas DataFrame which gives us a lot of data manipulation power.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img width=&quot;285&quot; alt=&quot;Screen Shot 2021-09-24 at 1 50 34 PM&quot; src=&quot;https://user-images.githubusercontent.com/77635875/134732213-58709475-6add-4825-be70-82654f43ee0f.png&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;At this point, you no longer need to explicitly reference the alias pd since we have already loaded the data using pandas. The data is now a pandas object which means we can now use the different features of pandas.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;You can use the set_index() function on a column in the dataset that is a unique value for the dataset. From there you can use the .loc with the square brackets in order to subset the dataset based on one of the new index values. Here I reference the Student_ID of 1 which returns the associated information with that index.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img width=&quot;653&quot; alt=&quot;Screen Shot 2021-09-23 at 9 23 20 AM&quot; src=&quot;https://user-images.githubusercontent.com/77635875/134536596-72c4b965-c99c-4849-8378-a93ad6d5d4a2.png&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;multi-level-indexing&quot;&gt;Multi-Level Indexing&lt;/h1&gt;
+
+&lt;p&gt;In order to understand multi-level indexing, you would first need to understand indexing at a single level. Now that we have run through a single level indexing example, we can move onto looking at multi-level indexing.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Read in the new data set that has a little bit more information. You can see that Student 1 is in several classes each with a different letter grade.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Once you are trying to index based on multiple levels, then the two column values that you want to become your indeces should give you a unique value when used together. Use .set_index() on Student_ID and Class in order to be able to find the unique grade for that combination of information.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img width=&quot;446&quot; alt=&quot;Screen Shot 2021-09-24 at 9 21 39 AM&quot; src=&quot;https://user-images.githubusercontent.com/77635875/134700243-468d20de-dc15-4a73-b278-63d2db0acdef.png&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Now when you sort the index you can see how the different levels of the index are set up with the Student_ID being “grouped” together with each of the classes that student is taking.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img width=&quot;281&quot; alt=&quot;Screen Shot 2021-09-24 at 9 28 53 AM&quot; src=&quot;https://user-images.githubusercontent.com/77635875/134701226-1f42ed15-a640-437e-b595-377626f2f3b9.png&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;tip-1&quot;&gt;TIP&lt;/h2&gt;
+
+&lt;p&gt;The order does matter when trying to subset the dataframe using the multiple indeces. If you have the order wrong you will get a KeyError saying that it doesn’t recognize the index that you are trying to use.&lt;/p&gt;
+
+&lt;p&gt;&lt;img width=&quot;568&quot; alt=&quot;Screen Shot 2021-09-24 at 9 30 15 AM&quot; src=&quot;https://user-images.githubusercontent.com/77635875/134701532-805fc3ce-f280-4bb1-8635-233023563294.png&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Since I created my multiple indeces based on the Student_ID first and then the class, I need to index in that order. And when I index in the correct order, I get the letter grade of A back.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img width=&quot;334&quot; alt=&quot;Screen Shot 2021-09-24 at 9 31 51 AM&quot; src=&quot;https://user-images.githubusercontent.com/77635875/134701756-7835997f-1e27-475c-8255-6d8398f77cdc.png&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;pandas-groupby&quot;&gt;Pandas Groupby&lt;/h1&gt;
+
+&lt;p&gt;You may have noticed if you have done SQL coding that multi level indexing is fairly similar to the groupby function. Here is an example of the groupby function so that you may be able to compare the outputs to each other.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Read in the numeric grade data set and then use .groupby() with the columns you are wanting to group in square brackets. Then you can include an aggregate function at the end, with this case being mean().&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img width=&quot;474&quot; alt=&quot;Screen Shot 2021-09-24 at 2 55 00 PM&quot; src=&quot;https://user-images.githubusercontent.com/77635875/134738758-24febc3c-6432-46f9-935b-eb43b574cd2d.png&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;tip-2&quot;&gt;TIP&lt;/h2&gt;
+
+&lt;p&gt;If you do not include an aggregate function like sum() or mean() at the end, it will simply output that you have a pandas groupby object that was created.&lt;/p&gt;
+
+&lt;p&gt;&lt;img width=&quot;570&quot; alt=&quot;Screen Shot 2021-09-24 at 2 53 26 PM&quot; src=&quot;https://user-images.githubusercontent.com/77635875/134738584-4dee46a8-aa03-4be3-8d9f-98dd58ceb994.png&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;From Step 1 you can see that it included the average of terms 1 and 2 for the term column which is meaningless for this example. You can then select which columns you would like to keep for the output right after the parentheses for the group by and before the aggregate function of choice.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img width=&quot;669&quot; alt=&quot;Screen Shot 2021-09-24 at 2 57 40 PM&quot; src=&quot;https://user-images.githubusercontent.com/77635875/134738958-38a7bcff-a8f2-4d34-9716-d61de1c42809.png&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;concatenating-files-vertically&quot;&gt;Concatenating Files Vertically&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;If you are needing to add another dataset vertically onto the original dataset (meaning that the columns will match up with the previous information), then you can use the pandas concat function.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img width=&quot;484&quot; alt=&quot;Screen Shot 2021-09-24 at 9 55 20 AM&quot; src=&quot;https://user-images.githubusercontent.com/77635875/134705063-6cffee9b-1683-435b-aae8-043995c2cc7a.png&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;This shows the new student information added to the previous dataset.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img width=&quot;190&quot; alt=&quot;Screen Shot 2021-09-24 at 9 56 11 AM&quot; src=&quot;https://user-images.githubusercontent.com/77635875/134705254-1dd407c5-0cf5-4103-b2a3-6823da625d21.png&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;tip-3&quot;&gt;TIP&lt;/h2&gt;
+&lt;p&gt;Make sure that before you concatenate the two files together, that you re-read in the files that you had set multiple indeces for. The reason behind re-reading the files in is because it will still concatenate the two files, but it won’t put the data where you were hoping it would go. The multiple indeces that were created for that dataset will go into the index column and then fill the index columns with NaN values.&lt;/p&gt;
+
+&lt;p&gt;&lt;img width=&quot;503&quot; alt=&quot;Screen Shot 2021-09-24 at 1 33 26 PM&quot; src=&quot;https://user-images.githubusercontent.com/77635875/134730441-05861eb5-635f-4315-b611-c32880442e33.png&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Once you read in both of the files again and concatenate them together you can then use the set_index() and the sort_index() functions in order to have the data (and in this case being new students) be sorted properly.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img width=&quot;163&quot; alt=&quot;Screen Shot 2021-09-24 at 1 43 55 PM&quot; src=&quot;https://user-images.githubusercontent.com/77635875/134731490-f616c371-300f-499e-aa9c-1c665aa603ba.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you would like another example of multi indeces, refer to data camp’s explanation
+https://www.datacamp.com/community/tutorials/pandas-multi-index&lt;/p&gt;
+
+&lt;h1 id=&quot;pandas-version-of-sqls-join-is-merge&quot;&gt;Pandas Version of SQL’s Join is “Merge”&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Here is a data set where there is a column in common to our previous dataset. This is an example where we would want to use pandas merge function which would allow us to combine the two data frames.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img width=&quot;453&quot; alt=&quot;Screen Shot 2021-09-24 at 2 05 05 PM&quot; src=&quot;https://user-images.githubusercontent.com/77635875/134733639-f9443aa5-8f5c-417b-83bf-1f76df847239.png&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Give the merge function the two names of the data frames as the left and right arguments, and specify the column in common for the “on” argument.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img width=&quot;342&quot; alt=&quot;Screen Shot 2021-09-24 at 2 06 23 PM&quot; src=&quot;https://user-images.githubusercontent.com/77635875/134733773-8dd0e91f-6cb8-4fcc-b53c-bebe37752a2c.png&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
+
+&lt;p&gt;We have now looked at how to index, multi-level index, group, concatenate, and merge datasets.
+Now you should have a few tools in your toolbelt that will help you to avoid stress and anxiety over working with datasets!
+Hopefully these tools were helpful to you in your pandas dataframe wrangling endeavors!&lt;/p&gt;
+
+&lt;h1 id=&quot;challenge&quot;&gt;Challenge&lt;/h1&gt;
+
+&lt;p&gt;I challenge you to comment on this post including a picture of your either successful or unsuccessful attempt to use one of these Pandas pro tips!
+You can also comment suggestions of other pandas tools that you think would be good to be included in this blog post.&lt;/p&gt;</content><author><name>skimball_22</name></author><category term="Beginner Pandas" /><category term="Multi Level Indexing" /><category term="Concatenate" /><category term="Merge" /><category term="Group by" /><summary type="html">Introduction - Why was Pandas Created?</summary></entry><entry><title type="html">Introduction to Time Series Analysis</title><link href="/blog/time-series" rel="alternate" type="text/html" title="Introduction to Time Series Analysis" /><published>2021-09-28T00:00:00-06:00</published><updated>2021-09-28T00:00:00-06:00</updated><id>/blog/time-series</id><content type="html" xml:base="/blog/time-series">&lt;h1 id=&quot;time-series-analysis&quot;&gt;Time-Series Analysis&lt;/h1&gt;
+&lt;p&gt;Time-Series analysis is a way of analyzing time-series data. The main characteristic of time-series data is that they are collected over time, usually at equal intervals. These data are frequently plotted with time on the x-axis and will track observations for every day, month, quarter, year, or other set unit of time. Some common examples of time-series data include measuring a country’s Gross Domestic Product, deaths by a certain illness, environmental or weather patterns, etc. There are limitations to using this type of data in linear regression because the goal of analyzing these data is usually to make inference about the future. Projecting a linear model into the future, however, is extrapolation and is often very unwieldy. That is why we use different kinds of statistical analysis tools for time-series data. In this post, we will not dive deeply into the modelling process of time-series data but we will identify things to look for in exploratory data analysis.&lt;/p&gt;
+
+&lt;h1 id=&quot;plotting&quot;&gt;Plotting&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-09-28/passengers.png&quot; alt=&quot;Air Passengers&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The plot above uses the R dataset AirPassengers. There are several aspects of this time-series data that we can identify before diving into modelling.&lt;/p&gt;
+
+&lt;h2 id=&quot;seasonality&quot;&gt;Seasonality&lt;/h2&gt;
+&lt;p&gt;Seasonality is a recurring pattern seen in the data. Seasonal patterns always repeat within units of years. This makes sense, as the patterns are associated with seasons. In the plot of monthly airline passengers above, there is clearly seasonality. The number of passengers peaks every summer as people fly to new destinations for summer vacations, but drops in the winter when the weather gets worse. It’s also worth noting that there is a slight peak around the liminal space between years, probably indicating an increase in travel for the holidays.&lt;/p&gt;
+
+&lt;h2 id=&quot;time-trends&quot;&gt;Time Trends&lt;/h2&gt;
+&lt;p&gt;The passenger data above also shows a time trend. A time trend is a pattern of overall change in the data as time increases. In the AirPassengers data, the time trend is positive. More people fly airplanes with time, likely due to improved technology, increased demand, and higher capability to meet that demand through technology. Time trends are very common in time-series data and can give us valuable insight into the nature of the data we are dealing with.&lt;/p&gt;
+
+&lt;h2 id=&quot;mean-reverting-data&quot;&gt;Mean Reverting Data&lt;/h2&gt;
+&lt;p&gt;Mean reverting data are data that surround a central mean, frequently jumping through the mean. This varies from time trend data in that the trend follows a horizontal line. The plot below shows an example of mean reverting data.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-09-28/accdeaths.png&quot; alt=&quot;Accidental Deaths&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The time series plot above shows the number of accidental deaths by month in the United States. As you can see, the mean falls just below nine thousand deaths, and the data follow this mean consistently across time. The presence of time trends or time-invariate means can help inform the approach we take in modelling the data.&lt;/p&gt;
+
+&lt;h1 id=&quot;autocorrelation&quot;&gt;Autocorrelation&lt;/h1&gt;
+&lt;p&gt;Autocorrelation is an important factor to consider in analyzing time-series data. Autocorrelation is the correlation of the same features in the same dataset at differing points in time, and it can invalidate ordinary least squares tests and standard errors. The easiest way to detect autocorrelation is to plot residuals against time and look for patterns. If the residuals are randomly distributed, not following any trends, then the data is likely free of autocorrelation. There are also more exhaustive ways of detecting autocorrelation, (for example, the Bruesch-Godfrey Test), if the plot of residuals is difficult to interpret.&lt;/p&gt;
+
+&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;Time-series data can often require difficult solutions for modeling (which will not be covered in this post), but it is important to recognize when we are dealing with time-series data and treat it accordingly.&lt;/p&gt;
+
+&lt;font size=&quot;8&quot;&gt; Header photo by &lt;a href=&quot;https://unsplash.com/@icons8?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;Icons8 Team&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com/s/photos/time-series?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;Unsplash&lt;/a&gt; &lt;/font&gt;</content><author><name>Josh Gladwell</name><email>joshegladwell@gmail.com</email></author><category term="Time-Series" /><category term="R" /><category term="Python" /><category term="Data Science" /><summary type="html">Time-Series Analysis Time-Series analysis is a way of analyzing time-series data. The main characteristic of time-series data is that they are collected over time, usually at equal intervals. These data are frequently plotted with time on the x-axis and will track observations for every day, month, quarter, year, or other set unit of time. Some common examples of time-series data include measuring a country’s Gross Domestic Product, deaths by a certain illness, environmental or weather patterns, etc. There are limitations to using this type of data in linear regression because the goal of analyzing these data is usually to make inference about the future. Projecting a linear model into the future, however, is extrapolation and is often very unwieldy. That is why we use different kinds of statistical analysis tools for time-series data. In this post, we will not dive deeply into the modelling process of time-series data but we will identify things to look for in exploratory data analysis.</summary></entry><entry><title type="html">reticulate - Merging R and Python</title><link href="/blog/reticulate" rel="alternate" type="text/html" title="reticulate - Merging R and Python" /><published>2021-09-27T00:00:00-06:00</published><updated>2021-09-27T00:00:00-06:00</updated><id>/blog/reticulate</id><content type="html" xml:base="/blog/reticulate">&lt;p&gt;In the data science field, the debate between R and Python rages on. Both languages claim to be superior to the other for data science. In my experience, both R and Python are good languages and each one has its strong-suits in certain areas. Recently, I came across reticulate, an R package leading the way in bringing R and Python together and allowing for data scientists to get the best out of both languages. Now, instead of having to choose between R and Python, you can have both!&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/3o7aCRloybJlXpNjSU/giphy.gif&quot; alt=&quot;El Dorado - Both&quot; /&gt;&lt;/p&gt;
 
@@ -153,40 +551,43 @@ Virtual environment 'Tatooine' removed.
 &lt;p&gt;reticulate also allows for seamless integration of Python into R Markdown (&lt;em&gt;.Rmd&lt;/em&gt;) files&lt;/p&gt;
 &lt;ol&gt;
   &lt;li&gt;Initialize an R chunk:
-    &lt;div class=&quot;language-md highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;p&quot;&gt;```&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;{r setup, include = FALSE}
-&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;  library(reticulate)&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;```&lt;/span&gt;
+    &lt;div class=&quot;language-md highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;```&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;{r setup, include = FALSE}
+&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;library(reticulate)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;```&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
-  &lt;li&gt;Create Python chunks by specifying &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;python&lt;/code&gt; at the top of the chunk instead of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;r&lt;/code&gt;. After this, you can code in Python like you would in any other IDE (Jupyter, Spyder, etc):
-  ```{python}
-  import numpy as np&lt;/li&gt;
+  &lt;li&gt;Create Python chunks by specifying &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;python&lt;/code&gt; at the top of the chunk instead of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;r&lt;/code&gt;. After this, you can code in Python like you would in any other IDE (Jupyter, Spyder, etc):&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;def perfect_sq(n):
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  import numpy as np
+  
+  def perfect_sq(n):
     sqrt_n = np.sqrt(n)
     if sqrt_n * sqrt_n == n:
-      print(n, ‘is a perfect square of’, int(sqrt_n))
+      print(n, 'is a perfect square of', int(sqrt_n))
     else:
-      return(False)&lt;/p&gt;
+      return(False)
 
-&lt;p&gt;perfect_sq(25)&lt;/p&gt;
-
-&lt;p&gt;Python 3.9.7 (/usr/local/bin/python)
-  Reticulate 1.22 REPL – A Python interpreter in R.
-  Enter ‘exit’ or ‘quit’ to exit the REPL and return to R.
-  25 is a perfect square of 5&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  _These Python chunks can be run the same way R chunks are run in R Markdown files_
-
-  3. The output message displaying the Python and reticulate version info will always be output unless suppressed
-  ````md
-  ```{r}
-  options(reticulate.repl.quiet = TRUE) # Could be added to the setup chunk in step 1
+  perfect_sq(25)
+  
+Python 3.9.7 (/usr/local/bin/python)
+Reticulate 1.22 REPL -- A Python interpreter in R.
+Enter 'exit' or 'quit' to exit the REPL and return to R.
+25 is a perfect square of 5
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-  ````md
-  ```{python}
-  import numpy as np
+&lt;p&gt;&lt;em&gt;These Python chunks can be run the same way R chunks are run in R Markdown files&lt;/em&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;The output message displaying the Python and reticulate version info will always be output unless suppressed
+    &lt;div class=&quot;language-md highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;```&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;{r}
+&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;options(reticulate.repl.quiet = TRUE) # Could be added to the setup chunk in step 1&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;```&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-md highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;p&quot;&gt;```&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;{python}
+&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;  import numpy as np
 
   def perfect_sq(n):
     sqrt_n = np.sqrt(n)
@@ -196,12 +597,13 @@ Virtual environment 'Tatooine' removed.
       return(False)
 
   perfect_sq(25)
-  ```
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  25 is a perfect square root of 5
+
+  25 is a perfect square root of 5&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;```&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;The reticulate package has many more functions that allow R and Python to communicate with each other. The following article explains these functions in much greater detail:&lt;/p&gt;
+
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://rstudio.github.io/reticulate/articles/calling_python.html&quot;&gt;Calling Python from R&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -210,7 +612,9 @@ Virtual environment 'Tatooine' removed.
 
 &lt;p&gt;The main aspect that I like about the reticulate package is that it’s allowed me to use RStudio as my IDE for both R and Python which is great because I am already familiar with RStudio. Although, I still have a lot to learn about the reticulate package. My personal goal is to continue to learn and practice with this package so that I can become well-versed in both R and Python.&lt;/p&gt;
 
-&lt;p&gt;Hopefully, this post has piqued you interest and served as a tutorial that helps you in getting up and running with the reticulate package yourself.&lt;/p&gt;
+&lt;p&gt;Hopefully, this tutorial has inspired you to use the reticulate package!&lt;/p&gt;
+
+&lt;p&gt;If you have additional insights and/or experiences about the reticulate package, please add them in the comments below!&lt;/p&gt;
 
 &lt;p&gt;Best of luck!&lt;/p&gt;</content><author><name>Matthew Morgan</name><email>matthewrmorgan17@gmail.com</email></author><category term="R" /><category term="Python" /><category term="Interface" /><category term="RStudio" /><summary type="html">In the data science field, the debate between R and Python rages on. Both languages claim to be superior to the other for data science. In my experience, both R and Python are good languages and each one has its strong-suits in certain areas. Recently, I came across reticulate, an R package leading the way in bringing R and Python together and allowing for data scientists to get the best out of both languages. Now, instead of having to choose between R and Python, you can have both!</summary></entry><entry><title type="html">Create a blog post title picture</title><link href="/blog/photo-blur" rel="alternate" type="text/html" title="Create a blog post title picture" /><published>2021-09-23T00:00:00-06:00</published><updated>2021-09-23T00:00:00-06:00</updated><id>/blog/photo-blur</id><content type="html" xml:base="/blog/photo-blur">&lt;h1 id=&quot;create-a-blog-post-title-picture&quot;&gt;Create a Blog Post Title Picture&lt;/h1&gt;
 
@@ -281,7 +685,7 @@ these instructions were created using PowerPoint for Mac.  On Windows, the idea 
   &lt;li&gt;Save the figure in your desired location&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-09-23/saving.png&quot; alt=&quot;save&quot; /&gt;&lt;/p&gt;</content><author><name>E. Shannon Tass</name><email>esnt@byu.edu</email></author><category term="photo effects" /><category term="powerpoint" /><category term="picture" /><category term="blog" /><summary type="html">Create a Blog Post Title Picture</summary></entry><entry><title type="html">Using SSH with GitHub</title><link href="/blog/ssh-and-github" rel="alternate" type="text/html" title="Using SSH with GitHub" /><published>2021-09-13T00:00:00-06:00</published><updated>2021-09-13T00:00:00-06:00</updated><id>/blog/ssh-and-github</id><content type="html" xml:base="/blog/ssh-and-github">&lt;p&gt;This post is adapted from the GitHub documentation page
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-09-23/saving.png&quot; alt=&quot;save&quot; /&gt;&lt;/p&gt;</content><author><name>Shannon Tass</name><email>esnt@byu.edu</email></author><category term="photo effects" /><category term="powerpoint" /><category term="picture" /><category term="blog" /><summary type="html">Create a Blog Post Title Picture</summary></entry><entry><title type="html">Using SSH with GitHub</title><link href="/blog/ssh-and-github" rel="alternate" type="text/html" title="Using SSH with GitHub" /><published>2021-09-13T00:00:00-06:00</published><updated>2021-09-13T00:00:00-06:00</updated><id>/blog/ssh-and-github</id><content type="html" xml:base="/blog/ssh-and-github">&lt;p&gt;This post is adapted from the GitHub documentation page
 &lt;a href=&quot;https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh&quot;&gt;Connecting to GitHub with SSH&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;You can use the SSH protocol by setting up SSH keys to connect with GitHub without
@@ -336,7 +740,7 @@ will show you the public key and you can copy it.&lt;/li&gt;
 &lt;h1 id=&quot;using-ssh-key&quot;&gt;Using SSH Key&lt;/h1&gt;
 &lt;p&gt;In GitHub, when cloning repositories, or setting up the remote repository, use SSH instead of HTTP:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-09-13/github-ssh.png&quot; alt=&quot;screenshot&quot; /&gt;&lt;/p&gt;</content><author><name>E. Shannon Tass</name><email>esnt@byu.edu</email></author><category term="ssh" /><category term="git" /><category term="github" /><summary type="html">This post is adapted from the GitHub documentation page Connecting to GitHub with SSH.</summary></entry><entry><title type="html">Sample Post</title><link href="/blog/sample-post" rel="alternate" type="text/html" title="Sample Post" /><published>2020-04-24T00:00:00-06:00</published><updated>2020-04-24T00:00:00-06:00</updated><id>/blog/sample-post</id><content type="html" xml:base="/blog/sample-post">&lt;p&gt;This post will show you how the content will look like in the post pages and how the headlines, quotes and quotes will be represented. Jekyll is mainly used to write simple markdown and after that it renders out a static pages, so you need to know the basics of writing markdown for that.
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-09-13/github-ssh.png&quot; alt=&quot;screenshot&quot; /&gt;&lt;/p&gt;</content><author><name>Shannon Tass</name><email>esnt@byu.edu</email></author><category term="ssh" /><category term="git" /><category term="github" /><summary type="html">This post is adapted from the GitHub documentation page Connecting to GitHub with SSH.</summary></entry><entry><title type="html">Sample Post</title><link href="/blog/sample-post" rel="alternate" type="text/html" title="Sample Post" /><published>2020-04-24T00:00:00-06:00</published><updated>2020-04-24T00:00:00-06:00</updated><id>/blog/sample-post</id><content type="html" xml:base="/blog/sample-post">&lt;p&gt;This post will show you how the content will look like in the post pages and how the headlines, quotes and quotes will be represented. Jekyll is mainly used to write simple markdown and after that it renders out a static pages, so you need to know the basics of writing markdown for that.
 For more information about writing markdown you can checkout the following markdown cheatsheets:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://guides.github.com/features/mastering-markdown/&quot;&gt;Mastering Markdown&lt;/a&gt;&lt;/li&gt;
