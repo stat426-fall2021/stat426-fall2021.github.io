@@ -2,7 +2,7 @@
 title: How to be a Data Viz Rockstar 
 layout: post
 author: amanwebb
-post-image: ![Title image](https://github.com/amanwebb/stat426-fall2021.github.io/blob/cfc5ab2120ed1d86fb5808d1d13e8c660294d01e/assets/images/blogimages/figs-10-09/Title%20Image.jpg)
+post-image: ![Title image]("https://github.com/amanwebb/stat426-fall2021.github.io/blob/cfc5ab2120ed1d86fb5808d1d13e8c660294d01e/assets/images/blogimages/figs-10-09/Title%20Image.jpg")
 description: A post that teaches all, beginners and professionals alike, how to be an expert in data visualization. It will teach you about charts and graphs. How to make them look pretty and presentable. 
 tags: 
   visualization
@@ -50,7 +50,7 @@ plt.plot([1,2,3],[1,2,3])
 plt.show()
 ```
 
-![Line Chart](https://github.com/amanwebb/stat426-fall2021.github.io/blob/cfc5ab2120ed1d86fb5808d1d13e8c660294d01e/assets/images/blogimages/figs-10-09/Graph%201.png)
+![Line Chart]("https://github.com/amanwebb/stat426-fall2021.github.io/blob/cfc5ab2120ed1d86fb5808d1d13e8c660294d01e/assets/images/blogimages/figs-10-09/Graph%201.png")
 
 
 You can easily add a title, labels, colors, legends, etc. You just use the alias followed by what you want to add. This is similar to all the charts and graphs, so we will just show this once. 
