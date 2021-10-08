@@ -2,7 +2,7 @@
 title: How to be a Data Viz Rockstar 
 layout: post
 author: amanwebb
-post-image: ![Title image]("https://github.com/amanwebb/stat426-fall2021.github.io/blob/cfc5ab2120ed1d86fb5808d1d13e8c660294d01e/assets/images/blogimages/figs-10-09/Title%20Image.jpg")
+post-image: "https://github.com/amanwebb/stat426-fall2021.github.io/raw/cfc5ab2120ed1d86fb5808d1d13e8c660294d01e/assets/images/blogimages/figs-10-09/Title%20Image.jpg"
 description: A post that teaches all, beginners and professionals alike, how to be an expert in data visualization. It will teach you about charts and graphs. How to make them look pretty and presentable. 
 tags: 
   visualization
