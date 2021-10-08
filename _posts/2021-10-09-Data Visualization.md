@@ -32,6 +32,7 @@ So, what are all the ways you can visualize your data? You can use: scatter plot
 
 ![Line Chart](https://github.com/amanwebb/stat426-fall2021.github.io/blob/cfc5ab2120ed1d86fb5808d1d13e8c660294d01e/assets/images/blogimages/figs-10-09/Lots%20of%20charts.png)
 
+
 Let's take a look at a few of these different charts, and the code used to produce them. To start, we should add the matplotlib library with the following code: 
 
 ```python
@@ -50,7 +51,7 @@ plt.plot([1,2,3],[1,2,3])
 plt.show()
 ```
 
-![Line Chart]("https://github.com/amanwebb/stat426-fall2021.github.io/blob/cfc5ab2120ed1d86fb5808d1d13e8c660294d01e/assets/images/blogimages/figs-10-09/Graph%201.png")
+![Line Chart](https://github.com/amanwebb/stat426-fall2021.github.io/raw/cfc5ab2120ed1d86fb5808d1d13e8c660294d01e/assets/images/blogimages/figs-10-09/Graph%201.png)
 
 
 You can easily add a title, labels, colors, legends, etc. You just use the alias followed by what you want to add. This is similar to all the charts and graphs, so we will just show this once. 
