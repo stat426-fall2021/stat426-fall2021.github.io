@@ -30,7 +30,7 @@ There are multiple ways to go about visualizing your data. One of the easiest wa
 
 So, what are all the ways you can visualize your data? You can use: scatter plots, line plots, histograms, and box plots, just to name a few. The type of visualization you use really depends on your data. Is your data quantitative? Qualitative? Categorical? Continuous? There are a few things to consider when deciding on the best graph to use. 
 
-![Line Chart](https://github.com/amanwebb/stat426-fall2021.github.io/blob/cfc5ab2120ed1d86fb5808d1d13e8c660294d01e/assets/images/blogimages/figs-10-09/Lots%20of%20charts.png)
+![Line Chart](https://github.com/amanwebb/stat426-fall2021.github.io/raw/cfc5ab2120ed1d86fb5808d1d13e8c660294d01e/assets/images/blogimages/figs-10-09/Lots%20of%20charts.png)
 
 Let's take a look at a few of these different charts, and the code used to produce them. To start, we should add the matplotlib library with the following code: 
 
@@ -50,7 +50,7 @@ plt.plot([1,2,3],[1,2,3])
 plt.show()
 ```
 
-![Line Chart](https://github.com/amanwebb/stat426-fall2021.github.io/blob/cfc5ab2120ed1d86fb5808d1d13e8c660294d01e/assets/images/blogimages/figs-10-09/Graph%201.png)
+![Line Chart](https://github.com/amanwebb/stat426-fall2021.github.io/raw/cfc5ab2120ed1d86fb5808d1d13e8c660294d01e/assets/images/blogimages/figs-10-09/Graph%201.png)
 
 
 You can easily add a title, labels, colors, legends, etc. You just use the alias followed by what you want to add. This is similar to all the charts and graphs, so we will just show this once. 
@@ -69,7 +69,7 @@ plt.legend()
 # show the plot
 plt.show()
 ```
-![Line Chart 2](https://github.com/amanwebb/stat426-fall2021.github.io/blob/cfc5ab2120ed1d86fb5808d1d13e8c660294d01e/assets/images/blogimages/figs-10-09/Graph%202.png)
+![Line Chart 2](https://github.com/amanwebb/stat426-fall2021.github.io/raw/cfc5ab2120ed1d86fb5808d1d13e8c660294d01e/assets/images/blogimages/figs-10-09/Graph%202.png)
 
 ## Scatter Plots
 
@@ -79,7 +79,7 @@ x = [5,7,8,7,2,17,2,9,4,11,12,9,6]
 y = [99,86,87,88,111,86,103,87,94,78,77,85,86]
 plt.scatter(x, y, marker='x');
 ```
-![Scatter Plot](https://github.com/amanwebb/stat426-fall2021.github.io/blob/cfc5ab2120ed1d86fb5808d1d13e8c660294d01e/assets/images/blogimages/figs-10-09/Graph%203.png)
+![Scatter Plot](https://github.com/amanwebb/stat426-fall2021.github.io/raw/cfc5ab2120ed1d86fb5808d1d13e8c660294d01e/assets/images/blogimages/figs-10-09/Graph%203.png)
 
 ## Histograms
 
@@ -95,7 +95,7 @@ plt.xlabel('variable X')
 plt.ylabel('count')
 plt.show()
 ```
-![Histogram](https://github.com/amanwebb/stat426-fall2021.github.io/blob/cfc5ab2120ed1d86fb5808d1d13e8c660294d01e/assets/images/blogimages/figs-10-09/Graph%204.png)
+![Histogram](https://github.com/amanwebb/stat426-fall2021.github.io/raw/cfc5ab2120ed1d86fb5808d1d13e8c660294d01e/assets/images/blogimages/figs-10-09/Graph%204.png)
 
 You can also add text to your visualization. Such text could include a description of what the chart is showing. It could be the mean or standard deviation. And this is all very simple and easy to do. It is just one line of code (text = ''). This will be easier to understand in the context of the code below. 
 ```python
@@ -114,7 +114,7 @@ plt.xlabel('variable X')
 plt.ylabel('count')
 plt.show()
 ```
-![Histogram 2](https://github.com/amanwebb/stat426-fall2021.github.io/blob/cfc5ab2120ed1d86fb5808d1d13e8c660294d01e/assets/images/blogimages/figs-10-09/Graph%205.png)
+![Histogram 2](https://github.com/amanwebb/stat426-fall2021.github.io/raw/cfc5ab2120ed1d86fb5808d1d13e8c660294d01e/assets/images/blogimages/figs-10-09/Graph%205.png)
 
 ## Box Plots
 
@@ -132,7 +132,7 @@ plt.title('Multiple Box Plot : Vertical Version')
 plt.show()
 ```
 
-![Boxplots](https://github.com/amanwebb/stat426-fall2021.github.io/blob/cfc5ab2120ed1d86fb5808d1d13e8c660294d01e/assets/images/blogimages/figs-10-09/Graph%206.png)
+![Boxplots](https://github.com/amanwebb/stat426-fall2021.github.io/raw/cfc5ab2120ed1d86fb5808d1d13e8c660294d01e/assets/images/blogimages/figs-10-09/Graph%206.png)
 
 ## Conclusion
 Data visualization is a key aspect of statistics and analytics. It is clear that the field is rich in potential applications. Data visualization can get very detailed and complicated, but it can also be simple and easy. We briefly went over the basics here, but you can always go out and learn more yourself. There are tons of things to learn, and the field of data visualization is constantly growing and expanding. 
