@@ -3,7 +3,7 @@ title: "Statistical Genocide: A Review of Cathy O'Neil's Weapons of Math Destruc
 layout: post
 author: joshegladwell
 post-image: "https://miro.medium.com/max/942/1*H0yCBVZmZ1i3LoA1tUyAQQ.png"
-description: A small-scale review of a large-scale book--Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy by Cathy O'Neil
+description: "A small-scale review of a large-scale book--Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy by Cathy O'Neil"
 tags:
 - Book Review
 - Data Science
