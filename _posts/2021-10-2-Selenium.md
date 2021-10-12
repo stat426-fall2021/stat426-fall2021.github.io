@@ -3,7 +3,7 @@ title: Selenium - Building Your First Internet Bot
 layout: post
 author: Trevor Andrus
 post-image: /assets/images/blogimages/figs-10-2/Title_Picture.png
-description: Short tutorial about setting up SSH keys for GitHub.
+description: Scrape and Interact with web pages using the Python package Selenium.
 tags:
 - Python
 - Webscraping
@@ -52,7 +52,7 @@ We import the webdriver attribute from Selenium to initialize our driver and ope
 
 
 
-![screenshot](/assets/images/blogimages/figs-10-2/iinitialize_webdriver.png)
+![screenshot](/assets/images/blogimages/figs-10-2/initialize_webdriver.png)
 
 We then initialize our PATH variable with file path that points to the driver we downloaded, and initialize our webdriver, specifying that we will be using Chrome. In the second cell featured above, the driver.get() function is what launches the browser. When we pass in a URL to this function and run it, a browser window will be opened that looks like the following:
 
