@@ -16,7 +16,7 @@ tags:
 
 So you want to be a data visualiztion rockstar? Well, you came to the right place! Here you will find out everyting you need to knwo about how to be a pro. 
 
-Here, you will learn about what data visualization is, how to create amazing charts and graphs, and what the best practices are. Essentially, you will learn everytnig you need to know to impress your boss and get a raise (don't quote me on that...)
+Here, you will learn about what data visualization is, how to create amazing charts and graphs, and what the best practices are. Essentially, you will learn everything you need to know to impress your boss and get a raise (don't quote me on that...)
 
 ---
 
