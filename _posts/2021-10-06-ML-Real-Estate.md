@@ -2,7 +2,7 @@
 title: How Machine Learning May Take Real Estate to 'The Next Level'
 layout: post
 author: Truman Jeppson
-post-image: ![city](/assets/images/blogimages/figs-10-06/cityscape.jpeg)
+post-image: /assets/images/blogimages/figs-10-06/cityscape.jpeg
 description: An overview of machine learning methods currently being used in the real estate industry and their possible roles in the future.
 tags:
 - Machine learning
