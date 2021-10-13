@@ -1,9 +1,9 @@
 ---
 layout: post
-title: SQLTITLE
+title: Using SQL in Different Programming Languages
 author: tunasaladx
-post-image: '/assets/images/blogimages/figs-10-12/blue_code.jpg'
-description: SQL is a method of organizing data, and can be used within many different programming languages to 
+post-image: '/assets/images/blogimages/figs-10-12/newTitlePic.jpg'
+description: SQL is a method of organizing data, and can be used within many different programming languages to further manipulate data frames and tables
 tags:
 - SQL
 - Data cleaning
