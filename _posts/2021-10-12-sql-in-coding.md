@@ -2,7 +2,7 @@
 layout: post
 title: Using SQL in Different Programming Languages
 author: tunasaladx
-post-image: '/assets/images/blogimages/figs-10-12/newTitlePic.jpg'
+post-image: /assets/images/blogimages/figs-10-12/newTitlePic.jpg
 description: Ways to perform SQL queries on data that's already been imported. 
 tags:
 - SQL
