@@ -1,4 +1,616 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-10-08T14:37:44-06:00</updated><id>/feed.xml</id><title type="html">Stat 426 - Fall 2021</title><subtitle>Class Blog and Projects</subtitle><entry><title type="html">Selenium - Building Your First Internet Bot</title><link href="/blog/Selenium" rel="alternate" type="text/html" title="Selenium - Building Your First Internet Bot" /><published>2021-10-02T00:00:00-06:00</published><updated>2021-10-02T00:00:00-06:00</updated><id>/blog/Selenium</id><content type="html" xml:base="/blog/Selenium">&lt;p&gt;Webscraping in recent years has become a buzzword for technology and innovation. Modern companies often seek employees who are literate in current technological trends, and being well versed in webscraping can make you one of these well-qualified candidates. In Python specifically, there are many packages that  boast impressive webscraping capability. Of these, some of the most popular are packages such as Beautifulsoup and Selenium. In this tutorial, we outline the installation, implementation, and possible use cases of the latter of these two. Consider this your introduction to web automation and building web scraping robots.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-10-13T13:26:43-06:00</updated><id>/feed.xml</id><title type="html">Stat 426 - Fall 2021</title><subtitle>Class Blog and Projects</subtitle><entry><title type="html">Expanding Your Tools as a Data Scientist: Learning Python After R</title><link href="/blog/R-to-Python" rel="alternate" type="text/html" title="Expanding Your Tools as a Data Scientist: Learning Python After R" /><published>2021-10-13T00:00:00-06:00</published><updated>2021-10-13T00:00:00-06:00</updated><id>/blog/R-to-Python</id><content type="html" xml:base="/blog/R-to-Python">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;In my data science education, I started with learning R to manipulate datasets and create visualizations. There are, however, many different coding languages that can be used to accomplish these tasks. Different companies and people have different preferences as far as coding languages, so it is important to be familiar with many different types of languages. Learning different types of languages can be difficult as it involves learning syntax, packages, and setups. 
+One of the most popular coding languages for data science is Python. Python is an object-oriented, high level programing language. The purpose of this post is to suggest some different tips for learning Python after R to make for a smoother transition.&lt;/p&gt;
+&lt;h2 id=&quot;data-types&quot;&gt;Data Types&lt;/h2&gt;
+&lt;p&gt;The first thing that one needs to understand when learning Python after R is the differences in the data types. Data types are important because they tell the computer how to interpret the value. It ensures that the data will be collected in the preferred format. When your data is reported as a certain datatype it will prevent you from using certain functions unless you change the data type. Due to that it is important to know the different data types, what you can do with them, and how to change them. Both R and Python use predefined datatypes. Python supports the following data types:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Numbers- Python stores numeric values. They can be stored in 4 different data types. 
+•	Integers- Whole numbers. Python’s integer is the same as R’s integer.
+•	Long- long integers that are represented in octa and hexadecimal. In R you have to use the bit64 packages to read hexadecimal values. 
+•	Complex- Complex numbers like i. They are the same in both R and Python.
+•	Float- Decimal values. Unlike in Python, R uses the numeric data type.&lt;/li&gt;
+  &lt;li&gt;Boolean- Stores true and false values. The difference between R and Python in this data type is that in R the Boolean values are store in all capital characters, TRUE and FALSE, and in Python the first character in capital and the rest are lower case, True and False. In R Boolean values can be stored in factor or character data types.&lt;/li&gt;
+  &lt;li&gt;Lists- They can be used to store strings, Boolean, integers, and etc. Lists are the same in R and Python.&lt;/li&gt;
+  &lt;li&gt;Strings- As mentioned above strings can be store in list. Strings themselves store character data. This would be the same as R’s character data type.&lt;/li&gt;
+  &lt;li&gt;Tuples- These do not exist in R but they would be like a R vector whose values would be immutable.&lt;/li&gt;
+  &lt;li&gt;Dictionary- Has a two-dimensional structure that has a key and value pair.
+    &lt;h2 id=&quot;packages&quot;&gt;Packages&lt;/h2&gt;
+    &lt;p&gt;Another helpful thing to know when transitioning from Python after learning R would be to know what packages help to preform data manipulation and machine learning. This allows you to use python like you would R. Some of the helpful packages are:&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Scikit Learn- This package allows you to preform machine learning algorithms. This package contains all the functions that you would need to build a model.&lt;/li&gt;
+  &lt;li&gt;Numpy- This allows you to preform numerical computing in python. With numpy you can preform things like linear algebra, statistics etc. In the documentation you can see the different functions that you can see and their options.&lt;/li&gt;
+  &lt;li&gt;Pandas- In R you can use libraries like dplyr to preform data manipulation. In Python you would use Pandas. Pandas allows you to make data frames and then manipulate them. You can tidy your data set and determine what data you want to use to do calculations and make visualizations.&lt;/li&gt;
+  &lt;li&gt;Matplotlib- I remember when I was first learning R the first thing we were taught was how to make plots using the library ggplot2. In Python you can use Matplotlib. There are also many other packages you can use to preform data visualization so you can experiment with different ones. Some different ones are plotly express and seaborn.
+    &lt;h2 id=&quot;why-would-you-learn-python&quot;&gt;Why Would You Learn Python?&lt;/h2&gt;
+    &lt;p&gt;With so many similarities one might wonder why it would be important to learn Python if they already know R. Some strengths of Python are:&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Scrapping Data- Python packages, like Beautiful Soup, make it much simpler to scrape data from the internet.&lt;/li&gt;
+  &lt;li&gt;Text processing- With different packages available in Python it is much easier to process text data. Python is an object-oriented langue that has a clean syntax that helps when working with text data. One such package is regex which allows you to work with regular expressions. 
+With these helpful tools available in Python, data collection, manipulation and visualization is aided. This is not to say that knowing R is not important, but that knowledge of both tools is helpful when pursuing a career in Data Science.
+    &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+    &lt;p&gt;In conclusion, there are many different programming languages that you can use in data science. Two such languages are Python and R. It can be difficult to learn different languages. If you’re like me and trying to learn Python as your second language after R there are some important things to know before starting. It is important to know how data types differ in the two languages and what packages you can use to fo the same things that you would do in R. In the sometimes frustrating process of learning a new language it is also important to remember the strengths of the programming language that will allow you to do things simpler or that you couldn’t do before.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name>Rosie Stewart</name><email>erstewart14@gmail.com</email></author><category term="R" /><category term="Python" /><category term="Packages" /><summary type="html">Introduction In my data science education, I started with learning R to manipulate datasets and create visualizations. There are, however, many different coding languages that can be used to accomplish these tasks. Different companies and people have different preferences as far as coding languages, so it is important to be familiar with many different types of languages. Learning different types of languages can be difficult as it involves learning syntax, packages, and setups. One of the most popular coding languages for data science is Python. Python is an object-oriented, high level programing language. The purpose of this post is to suggest some different tips for learning Python after R to make for a smoother transition. Data Types The first thing that one needs to understand when learning Python after R is the differences in the data types. Data types are important because they tell the computer how to interpret the value. It ensures that the data will be collected in the preferred format. When your data is reported as a certain datatype it will prevent you from using certain functions unless you change the data type. Due to that it is important to know the different data types, what you can do with them, and how to change them. Both R and Python use predefined datatypes. Python supports the following data types: Numbers- Python stores numeric values. They can be stored in 4 different data types. • Integers- Whole numbers. Python’s integer is the same as R’s integer. • Long- long integers that are represented in octa and hexadecimal. In R you have to use the bit64 packages to read hexadecimal values. • Complex- Complex numbers like i. They are the same in both R and Python. • Float- Decimal values. Unlike in Python, R uses the numeric data type. Boolean- Stores true and false values. The difference between R and Python in this data type is that in R the Boolean values are store in all capital characters, TRUE and FALSE, and in Python the first character in capital and the rest are lower case, True and False. In R Boolean values can be stored in factor or character data types. Lists- They can be used to store strings, Boolean, integers, and etc. Lists are the same in R and Python. Strings- As mentioned above strings can be store in list. Strings themselves store character data. This would be the same as R’s character data type. Tuples- These do not exist in R but they would be like a R vector whose values would be immutable. Dictionary- Has a two-dimensional structure that has a key and value pair. Packages Another helpful thing to know when transitioning from Python after learning R would be to know what packages help to preform data manipulation and machine learning. This allows you to use python like you would R. Some of the helpful packages are: Scikit Learn- This package allows you to preform machine learning algorithms. This package contains all the functions that you would need to build a model. Numpy- This allows you to preform numerical computing in python. With numpy you can preform things like linear algebra, statistics etc. In the documentation you can see the different functions that you can see and their options. Pandas- In R you can use libraries like dplyr to preform data manipulation. In Python you would use Pandas. Pandas allows you to make data frames and then manipulate them. You can tidy your data set and determine what data you want to use to do calculations and make visualizations. Matplotlib- I remember when I was first learning R the first thing we were taught was how to make plots using the library ggplot2. In Python you can use Matplotlib. There are also many other packages you can use to preform data visualization so you can experiment with different ones. Some different ones are plotly express and seaborn. Why Would You Learn Python? With so many similarities one might wonder why it would be important to learn Python if they already know R. Some strengths of Python are: Scrapping Data- Python packages, like Beautiful Soup, make it much simpler to scrape data from the internet. Text processing- With different packages available in Python it is much easier to process text data. Python is an object-oriented langue that has a clean syntax that helps when working with text data. One such package is regex which allows you to work with regular expressions. With these helpful tools available in Python, data collection, manipulation and visualization is aided. This is not to say that knowing R is not important, but that knowledge of both tools is helpful when pursuing a career in Data Science. Conclusion In conclusion, there are many different programming languages that you can use in data science. Two such languages are Python and R. It can be difficult to learn different languages. If you’re like me and trying to learn Python as your second language after R there are some important things to know before starting. It is important to know how data types differ in the two languages and what packages you can use to fo the same things that you would do in R. In the sometimes frustrating process of learning a new language it is also important to remember the strengths of the programming language that will allow you to do things simpler or that you couldn’t do before.</summary></entry><entry><title type="html">Using SQL in Different Programming Languages</title><link href="/blog/sql-in-coding" rel="alternate" type="text/html" title="Using SQL in Different Programming Languages" /><published>2021-10-12T00:00:00-06:00</published><updated>2021-10-12T00:00:00-06:00</updated><id>/blog/sql-in-coding</id><content type="html" xml:base="/blog/sql-in-coding">&lt;p&gt;SQL, short for Structured Query Language, is a programming language used for database management. 
+It’s language was standardized around the time the first personal computers were being released, and
+since then it’s continued to be used for managing most large datasets. While many people are familiar with
+using SQL to query data warehouses, there are ways to take advantage of its language in other programming
+applications.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-10-12/mysql.jpeg&quot; alt=&quot;MySQL&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;using-sql-through-a-database&quot;&gt;Using SQL through a database&lt;/h2&gt;
+
+&lt;p&gt;When someone uses SQL, they’re usually using it to query a database. Most database management engines, such
+as MySQL, PostgreSQL, SQLite, Oracle, and Microsoft Access each use SQL to perform their queries. APIs
+for databases also often use SQL. Although some specifics may vary from program to program, the overall
+language tends to be very standardized. For example, the following query will return the petal length
+of every setosa in the “iris” dataset:&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Petal_Length&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;iris&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Species&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;setosa&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If you’re pulling data directly from a data warehouse, you can typically use queries like this to format 
+and filter the data so you only download what you need. However, sometimes you are obtaining the data
+from another source, such as a csv file. Most of these files will need some sort of data cleaning, and 
+while the language you’re using likely has methods for this cleaning built in, the queries provided by
+SQL might seem like a desirable alternative. Thankfully, most programming languages have some way to
+perform SQL queries on data that’s already been imported.&lt;/p&gt;
+
+&lt;h2 id=&quot;sql-in-python-pandasql&quot;&gt;SQL in Python: pandasql&lt;/h2&gt;
+
+&lt;p&gt;In Python, the &lt;a href=&quot;https://pypi.org/project/pandasql/&quot;&gt;pandasql&lt;/a&gt; package lets you query pandas dataframes
+as if they were in your data warehouse, and will return another pandas dataframe. The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sqldf&lt;/code&gt; method
+in the package requires two arguments. The first argument is a string containing the query you want to
+submit, while the second indicates whether the dataframe you want to query is in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;locals()&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;globals()&lt;/code&gt;.
+Running the method will perform that query, returning a dataframe.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pandasql&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sqldf&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;setosaPetals&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sqldf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;SELECT Petal_Length FROM iris WHERE Species = setosa&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;globals&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;If you’re doing several queries in one program, it may be tedious to include &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;locals()&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;globals()&lt;/code&gt; in
+every instance. In that case, you can define a function to include it for you:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pandasql&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sqldf&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;pysqldf&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;q&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sqldf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;q&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;globals&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;setosaPetals&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pysqldf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;SELECT Petal_Length FROM iris WHERE Species = setosa&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;sql-in-r-sqldf&quot;&gt;SQL in R: sqldf&lt;/h2&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://www.rdocumentation.org/packages/sqldf/&quot;&gt;sqldf&lt;/a&gt; package in R is very similar to the pandasql 
+package in Python. Because R doesn’t use methods and doesn’t typically distinguish between 
+local and global variables, sqldf takes less code than pandasql. Otherwise, they are essentially the
+same; simply input a string query, and it will be run on the specified data frame so long as it’s been
+defined in your local environment.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-splus&quot;&gt;library(sqldf)
+setosaPetals &amp;lt;- sqldf(&quot;SELECT Petal_Length FROM iris WHERE Species = setosa&quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;sql-in-sas-proc-sql&quot;&gt;SQL in SAS: PROC SQL&lt;/h2&gt;
+
+&lt;p&gt;Another programming language you may wish to use SQL in is SAS. SAS is set up quite differently than
+most other programming languages, since it’s already very focused on manipulating tables. In fact, a
+method of manipulating tables using SQL is built in to SAS!&lt;/p&gt;
+
+&lt;p&gt;The 
+&lt;a href=&quot;https://documentation.sas.com/doc/en/pgmsascdc/9.4_3.5/sqlproc/n1lhnlzhrmrqggn1rz570u89oq2m.htm&quot;&gt;PROC SQL&lt;/a&gt;
+step works similarly to other &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;proc&lt;/code&gt; steps, but with a few differences. Most notably, you need to end your 
+step with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;quit;&lt;/code&gt; instead of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;run;&lt;/code&gt;. Otherwise, simply input your query as a single statement to send the
+result to your output:&lt;/p&gt;
+
+&lt;div class=&quot;language-sas highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;PROC&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;SQL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Petal_Length&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;iris&lt;/span&gt; 
+  &lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Species&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;setosa&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;QUIT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If you’d rather send the query results to another table, simply start the query with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;create table&lt;/code&gt;
+followed by the name of the new table:&lt;/p&gt;
+
+&lt;div class=&quot;language-sas highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;PROC&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;SQL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;CREATE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;setosaPetals&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Petal_Length&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;iris&lt;/span&gt; 
+  &lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Species&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;setosa&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;QUIT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;SQL queries are a versatile tool for manipulating data from data warehouses, but that’s not their only
+usage. Even if you already have data loaded into your environment, you can often perform queries on that
+data. While other tools exist that can reshape the data into what you need, SQL is a simple and 
+consistent tool that can be used in many different programs.&lt;/p&gt;</content><author><name>Andrew Pope</name><email>tunasaladx@gmail.com</email></author><category term="SQL" /><category term="Data cleaning" /><category term="Programming languages" /><summary type="html">SQL, short for Structured Query Language, is a programming language used for database management. It’s language was standardized around the time the first personal computers were being released, and since then it’s continued to be used for managing most large datasets. While many people are familiar with using SQL to query data warehouses, there are ways to take advantage of its language in other programming applications.</summary></entry><entry><title type="html">Practical Examples of Using Git and GitHub</title><link href="/blog/UsingGit" rel="alternate" type="text/html" title="Practical Examples of Using Git and GitHub" /><published>2021-10-11T00:00:00-06:00</published><updated>2021-10-11T00:00:00-06:00</updated><id>/blog/UsingGit</id><content type="html" xml:base="/blog/UsingGit">&lt;p&gt;When I first learned about the version control system Git and its corresponding
+web based repository GitHub, I struggled to understand the purpose behind them.
+It was not clear to me why I should be using them or how they could be beneficial.
+I assume that many of you had a similar experience when these tools were first introduced to you.
+It is on this assumption that I have based the topic of this post. Over the past year
+I have used Git and GitHub consistently in two scenarios that have not only helped me
+learn how to use these tools effectively, but I believe will also shed some light on
+the advantages and sometimes necessity of them.&lt;/p&gt;
+
+&lt;h2 id=&quot;example-1-modular-development-of-personal-projects&quot;&gt;Example 1: Modular Development of Personal Projects&lt;/h2&gt;
+&lt;p&gt;I named this post &lt;em&gt;Practical Examples of Using Git and GitHub&lt;/em&gt; but I must admit this
+first example is not so much practical as it is a way that has helped me practice using
+Git and GitHub. That being said, it has been such a beneficial experience for me as I’ve
+been learning how to use these tools that I strongly recommend it to any of you who want
+to improve your skills or increase your familiarity with them. Since learning about Git
+and GitHub, I have used both of these resources to &lt;strong&gt;track my progress on many coding
+projects in which I am the only contributor.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;So what does that actually mean? It means I’ve simply initialized the directories these programs
+are stored in as git repositories and then staged and committed the changes I made to them at
+frequent intervals, much like I would frequently save a Microsoft Word document to my disk
+as I added to and edited an essay. Frequent staging and committing of files and pushing and
+pulling of changes really helped me to become comfortable with working with Git from the
+command line and syncing my local repositories with remote ones on GitHub. Not only that,
+doing this created a log of commits that I could revert back to if I ever wanted to return
+to a working version of my code in the event I introduced bugs or ineffecient algorithms
+that I wanted to start over from.&lt;/p&gt;
+
+&lt;p&gt;A good example of this was when I was enrolled in CS 236 here at BYU. For those who don’t know, the
+majority of work done in 236 is on 5 projects that sequentially build off of one another to
+eventually create one large working program. I used Git and GitHub to track my progress on this
+program throughout the semester.&lt;/p&gt;
+
+&lt;p&gt;Specifically, I initialized the directory that this program was stored in as a git repository and
+synced it with a remote repository on GitHub. Then, when I began each of the 5 projects throughout
+the semester, I created a new branch to develop that part of the code on. As I made progress on a
+given project, I frequently staged and committed changes to that working branch and pushed those
+changes to the remote repository. Once my code for that project was officially passed off by a TA,
+I would submit a pull request and merge that project’s branch into main. The main branch would then
+be up to date and ready to be branched off from at the start of the next project (see below the
+repository and commit log).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-10-11/personal-repo.png&quot; alt=&quot;CS236 Repo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-10-11/personal-log.png&quot; alt=&quot;CS236 Log&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Using Git and GitHub to track my progress on these projects really helped me become familiar with
+common commands and development processes. The log of commits was also really advantageous to have.
+Occassionally, I would make a change to the code, only to realize a day or two later that I
+had made a mistake by doing so. Thanks to the log of commits, I could go back and see what code I had
+before when the project was still working.&lt;/p&gt;
+
+&lt;p&gt;For anyone that is new to Git or GitHub, I strongly recommend developing your personal and class projects
+using these tools. Not only will it improve your skills with them, but you’ll build yourself a nice
+portfolio of projects over time.&lt;/p&gt;
+
+&lt;h2 id=&quot;example-2-collaboration-with-co-workers&quot;&gt;Example 2: Collaboration with Co-workers&lt;/h2&gt;
+&lt;p&gt;This second example is more illustrative of a practical or real-world case where these tools would be used.
+In January 2021 I began working with two other students as a research assistant here at BYU to develop
+an R package for performing rare-event meta-analysis. In order to efficiently accomplish this task in which
+we often &lt;strong&gt;collaborated asynchronously&lt;/strong&gt;, using Git and GitHub was essential.&lt;/p&gt;
+
+&lt;p&gt;An R package, as you might imagine, has a lot that goes into it (&lt;a href=&quot;https://r-pkgs.org/&quot;&gt;R Packages&lt;/a&gt;). In addition
+to developing the source code, we also had to include necessary dependencies, create various forms of documentation,
+and obtain licenses. Not only that, but the method that would ultimately be implemented by this package was
+originally written in C, so there was a lot that needed to be done to allow this code to interact with the package.
+Without a version control system, working on a project like this would require all of us to be present in a common
+location with a single device to make and save changes on. However, using Git and GitHub allowed us to work
+asynchronously on our own devices at a much more efficient pace.&lt;/p&gt;
+
+&lt;p&gt;Specifically, we created a repository on GitHub to store this project. We then all cloned this repository to
+our local devices and, by frequently pushing and pulling changes, we ensured the repositories on our devices
+matched the one on GitHub. We created branches for each of the various tasks we had to accomplish and communicated
+clearly who was responsible for the various subtasks on each branch. For example, we had a branch for refactoring
+the C code to C++. We had a branch for writing the R source code and another branch for writing generic functions
+in R. We also had a branch for documentation purposes. On each of these branches we would frequently stage, commit,
+and push changes we made so the others could pull those changes to their own devices. When everything we hoped to
+accomplish on a given branch was complete, we would submit a pull request. After each member of our team had reviewed
+the changes on this branch and approved them, the branch would be merged into main and then deleted (see below the
+repository and commit log).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-10-11/collab-repo.png&quot; alt=&quot;Rpackage Repo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-10-11/collab-log.png&quot; alt=&quot;Rpackage Log&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The process described above is typical of many software engineering and/or data science projects, and hopefully it
+illustrates why these version control tools are so necessary.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;In a world that is increasingly embracing (or at least tolerating) remote and asynchronous work, the ability to use
+version control systems like Git and GitHub is essential. By familiarizing yourself with these tools as you work on
+your own projects, you will prepare yourself to be a valuable contributor to future projects with your co-workers.&lt;/p&gt;</content><author><name>Ben Kinard</name><email>benjaminjameskinard@gmail.com</email></author><category term="Git" /><category term="GitHub" /><category term="Collaboration" /><summary type="html">When I first learned about the version control system Git and its corresponding web based repository GitHub, I struggled to understand the purpose behind them. It was not clear to me why I should be using them or how they could be beneficial. I assume that many of you had a similar experience when these tools were first introduced to you. It is on this assumption that I have based the topic of this post. Over the past year I have used Git and GitHub consistently in two scenarios that have not only helped me learn how to use these tools effectively, but I believe will also shed some light on the advantages and sometimes necessity of them.</summary></entry><entry><title type="html">How to be a Data Viz Rockstar</title><link href="/blog/Data-Visualization" rel="alternate" type="text/html" title="How to be a Data Viz Rockstar" /><published>2021-10-09T00:00:00-06:00</published><updated>2021-10-09T00:00:00-06:00</updated><id>/blog/Data%20Visualization</id><content type="html" xml:base="/blog/Data-Visualization">&lt;h1 id=&quot;how-to-be-a-data-viz-rockstar&quot;&gt;How to be a Data Viz Rockstar&lt;/h1&gt;
+
+&lt;p&gt;So you want to be a data visualiztion rockstar? Well, you came to the right place! Here you will find out everyting you need to knwo about how to be a pro.&lt;/p&gt;
+
+&lt;p&gt;Here, you will learn about what data visualization is, how to create amazing charts and graphs, and what the best practices are. Essentially, you will learn everything you need to know to impress your boss and get a raise (don’t quote me on that…)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;so-what-the-heck-is-data-visualization&quot;&gt;So what the heck is data visualization?!?&lt;/h2&gt;
+
+&lt;p&gt;Data visualization is extremely critical to a data scientist’s job. Essentially, it is a way to make your analyses clearer and easier to understand. It is very beneficial for non-statisticians, for it helps them see what you see in the data. As the old adage states: A picture is worth a thousand words. A person with little to no knowledge in statistics or data analysis will not necessarily be able to understand your code, tests, or analyses; however, they might be able to understand a picture or a chart. Data visualization is important to be able to present your final results in a clear, concise, and compelling manner to your often non-technical audience.&lt;/p&gt;
+
+&lt;p&gt;There are multiple ways to go about visualizing your data. One of the easiest ways is to use a popular Python library called Matplotlib. This library package allows you to easily and creatively show your data in a fun and presentable way.&lt;/p&gt;
+
+&lt;h2 id=&quot;plots-charts-and-graphs&quot;&gt;Plots, Charts, and Graphs&lt;/h2&gt;
+
+&lt;p&gt;So, what are all the ways you can visualize your data? You can use: scatter plots, line plots, histograms, and box plots, just to name a few. The type of visualization you use really depends on your data. Is your data quantitative? Qualitative? Categorical? Continuous? There are a few things to consider when deciding on the best graph to use.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/amanwebb/stat426-fall2021.github.io/raw/cfc5ab2120ed1d86fb5808d1d13e8c660294d01e/assets/images/blogimages/figs-10-09/Lots%20of%20charts.png&quot; alt=&quot;Line Chart&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Let’s take a look at a few of these different charts, and the code used to produce them. To start, we should add the matplotlib library with the following code:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;matplotlib.pyplot&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You can add this at the top of your code. We are importing it using the alias ‘plt’. We will call this library later by using the alias.&lt;/p&gt;
+
+&lt;h2 id=&quot;line-chart&quot;&gt;Line Chart&lt;/h2&gt;
+
+&lt;p&gt;First, we will start with something simple - line charts. We will just put random numbers in as our data points. Below you will find the syntax you need. It should be noted that you only have to import the library once. I will show it again, that way you can see how it looks all together.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;matplotlib&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pyplot&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/amanwebb/stat426-fall2021.github.io/raw/cfc5ab2120ed1d86fb5808d1d13e8c660294d01e/assets/images/blogimages/figs-10-09/Graph%201.png&quot; alt=&quot;Line Chart&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can easily add a title, labels, colors, legends, etc. You just use the alias followed by what you want to add. This is similar to all the charts and graphs, so we will just show this once.&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# lines
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;label&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'Line 1'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;color&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'g'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;label&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'Line 2'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;color&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'blue'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;label&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'Line 3'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;color&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'#ff0000'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# labels
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xlabel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'X axis'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ylabel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Y axis'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;       
+&lt;span class=&quot;c1&quot;&gt;# title
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Title'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;       
+&lt;span class=&quot;c1&quot;&gt;# legend
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;legend&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;       
+&lt;span class=&quot;c1&quot;&gt;# show the plot
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;https://github.com/amanwebb/stat426-fall2021.github.io/raw/cfc5ab2120ed1d86fb5808d1d13e8c660294d01e/assets/images/blogimages/figs-10-09/Graph%202.png&quot; alt=&quot;Line Chart 2&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;scatter-plots&quot;&gt;Scatter Plots&lt;/h2&gt;
+
+&lt;p&gt;Next, let’s work with scatter plots. Scatter plots are a great way to show relationships between multiple variables, typically numeric variables. These plots are a wonderful way to see patterns in the data. You can assign the variables to color, size, shape. All of which help you see the relationships between the variables.&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;17&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;11&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;99&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;86&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;87&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;88&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;111&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;86&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;103&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;87&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;94&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;78&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;77&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;85&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;86&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;scatter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;marker&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'x'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;https://github.com/amanwebb/stat426-fall2021.github.io/raw/cfc5ab2120ed1d86fb5808d1d13e8c660294d01e/assets/images/blogimages/figs-10-09/Graph%203.png&quot; alt=&quot;Scatter Plot&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;histograms&quot;&gt;Histograms&lt;/h2&gt;
+
+&lt;p&gt;Histograms are very useful for viewing the distribution of data points. Each bar represents the frequency of smaples for each category. We can identify what type of distribution is being followed, and perform the correct tests and analyses.&lt;/p&gt;
+
+&lt;p&gt;As you can probably see, the plots follow very similar code. The syntax is essentially the same, just with a few minor tweaks. The main difference is at the beginning when you pick what type of graph you want - plt.(insert type of graph).&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;myList&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hist&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;myList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Dummy Data to Demonstrate Histograms'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xlabel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'variable X'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ylabel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'count'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;https://github.com/amanwebb/stat426-fall2021.github.io/raw/cfc5ab2120ed1d86fb5808d1d13e8c660294d01e/assets/images/blogimages/figs-10-09/Graph%204.png&quot; alt=&quot;Histogram&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can also add text to your visualization. Such text could include a description of what the chart is showing. It could be the mean or standard deviation. And this is all very simple and easy to do. It is just one line of code (text = ‘’). This will be easier to understand in the context of the code below.&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;myList&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hist&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;myList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'This is an example of text'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'you can add.'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# plt.text(horizontal position, vertical position, text)
+# vertical and horizontal positions are percents on decimal form from 0 to 1
+# vertical=0 starts at the far left; higher numbers push the text right
+# horizontal=0 starts at the bottom; higher  numbers push the text up 
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fontsize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gcf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;transFigure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Dummy Data to Demonstrate Histograms'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xlabel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'variable X'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ylabel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'count'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;https://github.com/amanwebb/stat426-fall2021.github.io/raw/cfc5ab2120ed1d86fb5808d1d13e8c660294d01e/assets/images/blogimages/figs-10-09/Graph%205.png&quot; alt=&quot;Histogram 2&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;box-plots&quot;&gt;Box Plots&lt;/h2&gt;
+
+&lt;p&gt;Box plots are great for getting more information about the variables than you can get from histograms. More information such as standard deviation, median, mean, and outliers. Box plots are a fantastic way of seeing the statistics within your data. The bottom and top of the solid-lined box are always the first and third quartiles (i.e 25% and 75% of the data), and the band inside the box is always the second quartile (the median). The whiskers (i.e the dashed lines with the bars on the end) extend from the box to show the range of the data.&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# This first section just helps us create some random data
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;seed&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;562201&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;all_data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;normal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;labels&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'x1'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'x2'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'x3'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;#MultipleBoxplot
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;boxplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;all_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vert&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;patch_artist&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;labels&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;labels&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ylabel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'observed value'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Multiple Box Plot : Vertical Version'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/amanwebb/stat426-fall2021.github.io/raw/cfc5ab2120ed1d86fb5808d1d13e8c660294d01e/assets/images/blogimages/figs-10-09/Graph%206.png&quot; alt=&quot;Boxplots&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Data visualization is a key aspect of statistics and analytics. It is clear that the field is rich in potential applications. Data visualization can get very detailed and complicated, but it can also be simple and easy. We briefly went over the basics here, but you can always go out and learn more yourself. There are tons of things to learn, and the field of data visualization is constantly growing and expanding.&lt;/p&gt;
+
+&lt;p&gt;Some key things to remember are:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;You have to import matplotlib.pyplot&lt;/li&gt;
+  &lt;li&gt;The type of chart you want to use is specified in the beginning of the code&lt;/li&gt;
+  &lt;li&gt;Titles and labels are very important in data visualization&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Now go out there and create some amazing graphics and visualizations! Don’t forget to come back and share what you have done or comment things you have learned.&lt;/p&gt;</content><author><name>Austin Webb</name><email>austin_webb@byu.edu</email></author><category term="visualization" /><category term="python" /><category term="matplotlib" /><category term="graphs" /><summary type="html">How to be a Data Viz Rockstar</summary></entry><entry><title type="html">For When You’ve Gotten Serious about Board Games</title><link href="/blog/ELO" rel="alternate" type="text/html" title="For When You’ve Gotten Serious about Board Games" /><published>2021-10-08T00:00:00-06:00</published><updated>2021-10-08T00:00:00-06:00</updated><id>/blog/ELO</id><content type="html" xml:base="/blog/ELO">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;It’s a Sunday Evening, and you’re sitting around your dining room table with all of your family. Your dad has just won another board game and he’s rubbing it in your face like he normally does. Some silly banter goes on amongst your siblings and eventually you all start fighting about who is the best in your family. Obviously your dad joins in and he has to add that he just won tonight’s game &lt;strong&gt;again&lt;/strong&gt; and he brags that he always wins. Well lucky for you that you just read a blog post detailing how one board game fanatic just implemented a rating system that even international chess federations use to compare player skill levels. And guess who has the guts to follow through and implement a similar one herself? That’s right! You do! So get reading and see how you can turn the tables on your family and show them empirically who is the most skilled board game player.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Warning: Implementing the following rating system may be toxic. Side effects may include: strained relationships with sore losers, lack of self-esteem, youtube rabbit-holes dedicated to learning the minute strategies of your board game, and much much more.&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;getting-started&quot;&gt;Getting Started&lt;/h2&gt;
+
+&lt;p&gt;Back at the beginning of the summer a conversation like the one detailed above took place amongst my group of friends. Having had a bit of experience with APIs and Pandas Dataframes, I thought I could create something simple enough yet valuable enough to see who was really the most skilled and how our skill grew over time. We were playing &lt;a href=&quot;https://www.catan.com/&quot;&gt;Settlers of Catan&lt;/a&gt;, a popular board game where usually 4 players take turns placing settlements and growing their empire on the island of Catan. First person to reach 10 Victory Points (VPs) wins. Simple enough and yet the strategy is endless.&lt;/p&gt;
+
+&lt;p&gt;At first I was mostly just interested in trying to predict who was going to win a game, and so I kept various statistics on games we played and the outcomes. Eventually I thought to put it into a google sheet to keep track of them in a cleaner way. Over time, my friends abused the google sheet saying that my win percentage was the highest and using that to collaborate against me in the game. At this point I thought to myself, there has to be a better way of knowing who is the best player. After doing some research online, a popular online version of the game was using something called an &lt;a href=&quot;https://en.wikipedia.org/wiki/Elo_rating_system&quot;&gt;ELO rating system&lt;/a&gt;. To put it simply, the algorithm takes two players ratings, and figures our who is expected to win, and then makes calculations based on what the actual outcome is, similar to a residual. The larger the difference, the more extreme the rating change. The model is fun enough to spend a whole blog post for another class discussing, but ultimately I decided to try implementing it amongst my friends. What ensued was many hours of reading documentation and following tutorials on my own. This guide is designed to help you implement something simple, quick and impressive so that you can show off to family members, classmates, and even recruiters. All in all the project took me about 15 hours of work, but I’ve condensed a lot of the work I had to do, so if you follow this tutorial you should be able to get something up in about 3 hours, which is relatively quick for how impressive this is. The final project can be found here, at &lt;a href=&quot;http://adamlenning.com&quot;&gt;adamlenning.com&lt;/a&gt; (so that I can brag to all of you).&lt;/p&gt;
+
+&lt;p&gt;The basic outline for how this project is structured is split into 3 parts:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Reading data from Google Sheets&lt;/li&gt;
+  &lt;li&gt;Performing calculations in Pandas&lt;/li&gt;
+  &lt;li&gt;Uploading the results to an AWS-hosted website&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;reading-data-from-google-sheets&quot;&gt;Reading Data from Google Sheets&lt;/h2&gt;
+
+&lt;p&gt;The Google sheet I used for this project can be found &lt;a href=&quot;https://docs.google.com/spreadsheets/d/1MG7jhiarGpRunEILVbkEfD3mLRUBpIMI4au7cMID_EM/edit?usp=sharing&quot;&gt;here&lt;/a&gt;. The exact format isn’t relevant. The headings, and actual data can be whatever you would like, but what you do need is the name of the sheet located at the bottom of the page as well as the ID of the page found in the url.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-10-08/sheet_info.png&quot; alt=&quot;screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I followed the &lt;a href=&quot;https://developers.google.com/sheets/api/quickstart/python&quot;&gt;python quickstart guide&lt;/a&gt;, and you’ll need to do the same for the prerequisites. The prerequisites are extremely important and you won’t be able to get data without properly completing those steps. The prerequisites give you the credentials you need to use the Google Sheets API and make the appropriate calls.&lt;/p&gt;
+
+&lt;p&gt;After you complete the prerequisites follow step 1. If you want a full list of the packages used in this project see the &lt;em&gt;requirements.txt&lt;/em&gt; file in the github repository for this project found at the end of the tutorial.&lt;/p&gt;
+
+&lt;p&gt;Now create a python file and lets get to work with some introductory lines of code, which will frame what we need for to make the api call. Make sure to substitute your range name with the name of your sheet, as well as the ID.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;__future__&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;print_function&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;os.path&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;googleapiclient.discovery&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;build&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;google_auth_oauthlib.flow&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;InstalledAppFlow&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;google.auth.transport.requests&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Request&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;google.oauth2.credentials&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Credentials&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# If modifying these scopes, delete the file token.json.
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SCOPES&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'https://www.googleapis.com/auth/spreadsheets.readonly'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# The ID and range of a sample spreadsheet.
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SAMPLE_SPREADSHEET_ID&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'1MG7jhiarGpRunEILVbkEfD3mLRUBpIMI4au7cMID_EM'&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;SAMPLE_RANGE_NAME&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'Games'&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;I had stored everything in a class to make some of the work easier, but honestly if you are doing a small project then it won’t matter too much. You can use what is inside this next function to pull what you need from your google sheet. The first couple if-statments are for authentication when you try running the script. If you have done the prerequisites correctly then when you run your program you it will open a browser tab asking you to allow access to google sheets. It may say that it is from an untrusted source, but unless you don’t trust yourself then you can proceed.&lt;/p&gt;
+
+&lt;p&gt;This function creates the service variable which is basically your connection to your google sheet. Then you are going to call a get function and execute it which performs the API call and fetches your data in raw json format. We then get the values from the json data and then read them into a Pandas DataFrame. Now you’re all ready for the next step.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;get_games&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;creds&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;# The file token.json stores the user's access and refresh tokens, and is
+&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;# created automatically when the authorization flow completes for the first
+&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;# time.
+&lt;/span&gt;    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;exists&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'token.json'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;creds&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Credentials&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;from_authorized_user_file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'token.json'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SCOPES&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;# If there are no (valid) credentials available, let the user log in.
+&lt;/span&gt;    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;creds&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;creds&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;valid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;creds&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;creds&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;expired&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;creds&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;refresh_token&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;creds&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;refresh&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;flow&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;InstalledAppFlow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;from_client_secrets_file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+                &lt;span class=&quot;s&quot;&gt;'credentials.json'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SCOPES&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;creds&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;flow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;run_local_server&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;port&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;# Save the credentials for the next run
+&lt;/span&gt;        &lt;span class=&quot;k&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'token.json'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'w'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;token&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;token&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;creds&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;to_json&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
+            
+    &lt;span class=&quot;n&quot;&gt;service&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'sheets'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'v4'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;credentials&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;creds&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;n&quot;&gt;sheet&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;service&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;spreadsheets&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sheet&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;spreadsheetId&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SAMPLE_SPREADSHEET_ID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                                &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SAMPLE_RANGE_NAME&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;execute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;values&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'values'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[])&lt;/span&gt;
+    
+    &lt;span class=&quot;n&quot;&gt;df&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;DataFrame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;columns&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;performing-calculations-in-pandas&quot;&gt;Performing calculations in Pandas&lt;/h2&gt;
+
+&lt;p&gt;There won’t be much code cited in this part since you should be familiar with Pandas enough to do what you want with this data. As I mentioned earlier I implemented an ELO system and gave players ELO scores that reflects more accurately their relative skill to the player pool that we have. Generally groupby is going to be your friend in this section. Your individual stats that you are measuring are going to be the best indicator of what you want to present. Since I was gathering Victory Points for my Catan games, I grouped by player and then found the mean and standard deviation of everyones Victory Points.&lt;/p&gt;
+
+&lt;p&gt;When you’re all done wrangling your data and gathering whatever insights you want out of it, we need to write your DataFrame to an html file. Most people are unfamiliar with this function of Pandas so here is some boilerplate code. The function player_info() just returns our DataFrame, the important part is the to_html method it calls on the DataFrame. This will create an html table of our DataFrame. We can then open a new file called “index.html” which we want to write (“w”) to and then write our html table to it after adding a little bootstrap css.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# Creates HTML File from player_info
+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;create_player_table&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+
+    &lt;span class=&quot;n&quot;&gt;html&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;player_info&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;to_html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;classes&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;table&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;table-striped&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+
+    &lt;span class=&quot;c1&quot;&gt;# write html to file
+&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;text_file&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;index.html&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;w&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;text_file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&amp;lt;link rel=&quot;stylesheet&quot; href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css&quot; integrity=&quot;sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T&quot; crossorigin=&quot;anonymous&quot;&amp;gt;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;text_file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;text_file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;By now if you run this program you should have an html file created in your local directory where you can see your pandas DataFrame of your data. Already that’s some really cool stuff! If done correctly, your index.html file should look something like this if created correctly.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-10-08/player_rankings.png&quot; alt=&quot;screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;upload-to-aws&quot;&gt;Upload to AWS&lt;/h2&gt;
+
+&lt;p&gt;Before we can programmatically upload our file to AWS and have it create a static website for us we need to do a few things and follow a simple tutorial. Make sure that you have an AWS account. The free tier is perfectly fine and an account is easy to create. When you have an account then follow the tutorial &lt;a href=&quot;https://docs.aws.amazon.com/AmazonS3/latest/userguide/HostingWebsiteOnS3Setup.html&quot;&gt;here&lt;/a&gt;. When you get to step 5, we already have the index.html file we want to upload so use ours instead. Step 6 isn’t super important so you can skip that one if you really want. After Step 7 you will be able to see your index.html file at a url that you can give anyone! Now that’s amazing! The bottom of Step 7 provides instructions for creating a custom domain name such as the one I deployed my website to: &lt;a href=&quot;http://adamlenning.com&quot;&gt;adamlenning.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Now that we have uploaded an initial version of our index.html file we can continue to manually upload that file everytime we run our python script and generate a new index.html file. Alternatively we can do that programmatically which is way more fun and saves you about 1 minute of work, something programmers always tout.&lt;/p&gt;
+
+&lt;p&gt;First we need to set up the AWS CLI so that we can access AWS from our command lines. Tutorial for getting that installed and set up can be found &lt;a href=&quot;https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html&quot;&gt;here&lt;/a&gt;. Make sure to configure your cli (tutorial found on the left side of the page).&lt;/p&gt;
+
+&lt;p&gt;Once we have that set up we can very simply upload an html file.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;logging&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;boto3&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;boto3.session&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;botocore.exceptions&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ClientError&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;upload_s3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+
+    &lt;span class=&quot;n&quot;&gt;session&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;boto3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;session&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Session&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;profile_name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'default'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;s3_client&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;session&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;client&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'s3'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;try&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;s3_client&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;upload_file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Filename&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Bucket&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;adamlenning.com&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Key&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;ExtraArgs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'ContentType'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;text/html&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;except&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ClientError&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;logging&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The important things to note are what profile_name you are using. This is the profile name you configured when you configured your cli. The other important part is the Bucket which tells the connection which bucket to upload it to. Put the name of the bucket your created during the tutorial in there. Once you have done that you can now call this function and pass the html file into it and it will automatically upload your index.html file to s3 which will continuosly host it on the website you found! Now that is some cool stuff!&lt;/p&gt;
+
+&lt;p&gt;This tutorial may have seemed long and there were many other tutorials to follow along the way, but at the end of the day (or days) that it takes you to accomplish this, you’ll have a very nifty board game tracker where you only have to add data to the google sheet and then run the script and you’ll see your new game stats immediately! Such a rewarding experience is really worth the effort!&lt;/p&gt;
+
+&lt;p&gt;Link to GitHub: &lt;a href=&quot;https://github.com/AdamLenning/sheets-catan&quot;&gt;https://github.com/AdamLenning/sheets-catan&lt;/a&gt;&lt;/p&gt;</content><author><name>Adam Lenning</name><email>adam.lenning.14@gmail.com</email></author><category term="Pandas" /><category term="AWS" /><category term="API" /><category term="Google Sheets" /><category term="Group by" /><summary type="html">Introduction</summary></entry><entry><title type="html">How Machine Learning May Take Real Estate to ‘The Next Level’</title><link href="/blog/ML-Real-Estate" rel="alternate" type="text/html" title="How Machine Learning May Take Real Estate to ‘The Next Level’" /><published>2021-10-06T00:00:00-06:00</published><updated>2021-10-06T00:00:00-06:00</updated><id>/blog/ML-Real-Estate</id><content type="html" xml:base="/blog/ML-Real-Estate">&lt;h3 id=&quot;introduction&quot;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;Machine learning (ML) has come somewhat recently into the field of investments and real estate as a tool that buyers and sellers can use to evaluate and predict prices, volatility, and a number of other factors. While most experts recognize the usefulness of such technology, it is not yet fully understood what all can be done with machine learning and what its effect will be on the real estate market in the future.&lt;/p&gt;
+
+&lt;p&gt;This post is meant as an overview of how machine learning is currently being used in the real estate market, and assess how it will influence the market in the future. I will look at the following three topics:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Variables used for property valuation.&lt;/li&gt;
+  &lt;li&gt;Favorite methods and models in the field currently.&lt;/li&gt;
+  &lt;li&gt;The future of the real estate industry with ML/AI&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;housing-market-influences&quot;&gt;Housing Market Influences&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-10-06/housing_influences.jpeg&quot; alt=&quot;influences&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;One of the key potential uses for artificial intelligence and machine learning in the real estate industry is the valuation of properties. &lt;strong&gt;Property valuation&lt;/strong&gt; is the practice of assessing a property’s potential value. Valuation can be performed by looking at a number of variables and determining how much profit can be gained from a property within a given timeframe. It is often used by real estate organizations and individuals as part of an investment decision-making process. As the use of ML is still relatively new in the field of real estate, there remains the question of which factors ought to be taken into account when building an ML model for property valuation. In this section, I will look at different variables that have been used for such valuation and what researchers have found are important factors to consider.&lt;/p&gt;
+&lt;h5 id=&quot;micro-variables&quot;&gt;Micro-variables&lt;/h5&gt;
+&lt;p&gt;Ado et al. (2020) reported that, of the studies they surveyed, the majority of ML models for property valuation had been performed using &lt;strong&gt;micro-variables&lt;/strong&gt;, or local and small-scale factors that influence property value. Such variables may include:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;availability of real estate within a given area&lt;/li&gt;
+  &lt;li&gt;location of a property&lt;/li&gt;
+  &lt;li&gt;prices within a certain radius of the property in question&lt;/li&gt;
+  &lt;li&gt;number of rooms&lt;/li&gt;
+  &lt;li&gt;square ft., -etc.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Of the 26 different studies surveyed in the article by Ado et al., the study performed by Morano et al. (2015) resulted in the highest R² score, indicating the prediction model with the least error. However, besides this specific study, the other studies examining only micro-variables did not perform as well as other criteria, with only 23% of the studies reaching an R² score of over 90%. Morano et al. also point out that although their model was well fit, their sample size was relatively small, and that further research would be necessary for greater understanding of the market. &lt;em&gt;These findings suggest that more factors than just micro-variables may be necessary to produce a consistently accurate ML model for valuation.&lt;/em&gt;&lt;/p&gt;
+&lt;h5 id=&quot;macro-variables&quot;&gt;Macro-variables&lt;/h5&gt;
+&lt;p&gt;Other variables to take into account for real estate valuation are macro-variables. &lt;strong&gt;Macro-variables&lt;/strong&gt; are large scale events or influences that affect the economy or housing market as a whole. These may include:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;GDP&lt;/li&gt;
+  &lt;li&gt;National/international laws&lt;/li&gt;
+  &lt;li&gt;Global events,etc.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Renigier-Bilozor and Wiśniewski (2013), Constantinescu (2019), and others each performed macro-variable-focused studies, finding prediction models that were mostly accurate, yet either failed to account for different time frames or were not applicable to different countries and regions. (Constantinescu found that while GDP and credit were a good measure of real estate prices for the most part, there were times in which they did not account for all trends in the real estate market. This failure was most obvious in the 2005 recession, as the global average housing market spiked while the GDP did not.) This suggests that macro-variables alone cannot be relied upon to accurately make predictions all the time either.  &lt;em&gt;Thus we see that, like models focused only on micro-variables, those models that only took macro-variables into account also failed to follow the market accurately all the time.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;It may therefore stand to reason that an accurate prediction model must take both the macro and micro into consideration in order to reliably predict property values in any given location. Kabaivanov and Markovska (2021) suggest three key factors to take into account when analyzing the housing market:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;global influences (or macro-variables)&lt;/li&gt;
+  &lt;li&gt;local factors&lt;/li&gt;
+  &lt;li&gt;individual property characteristics&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Ado et al. (2020) conclude their study with a similar claim, stating that a &lt;em&gt;blend of macro and micro variables is necessary for accurate analysis.&lt;/em&gt; These positions are upheld even by those studies which focused exclusively on either macro or micro variables. Renigier-Bilozor and Wiśniewski (2013), Constantinescu (2019), and Morano et al. (2015) each concluded their studies expressing the need for both large and small scale data to take into account.&lt;/p&gt;
+
+&lt;p&gt;Further research may focus on which variables of the two categories are consistently most important. It may also be concluded that there is no one set of variables best suited for every property, and that different variables ought to be considered for different locations, or when using various ML modeling techniques. Whatever the case, much progress has been, and will yet be made towards greater and more reliable property valuation in the coming years. In the following section, I will discuss some of the more popular methods of modeling that have been used in the real estate industry to date.&lt;/p&gt;
+
+&lt;h3 id=&quot;ml-algorithm-methods&quot;&gt;ML Algorithm Methods&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-10-06/ML.png&quot; alt=&quot;ML&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As there is still much being done to improve machine learning methods and practices in nearly every field, there is little doubt that techniques and ideas will continue developing in the future. There is much to take into account while attempting to analyze the housing market. However, there are some methods that have been suggested that may help individual home investors and professional real-estate organizations alike.&lt;/p&gt;
+
+&lt;h5 id=&quot;time-series-models&quot;&gt;Time-series Models&lt;/h5&gt;
+&lt;p&gt;One method experts often use to track data that depends on the date or time is a &lt;strong&gt;“time-series model”&lt;/strong&gt;. These can be used to account for shared characteristics between similar time frames (same month of different years, same day of different weeks, etc.). Yu et al. (2020) suggest one such model for price forecasting, using a quadratic smoothing model, (helpful with non-linear trends), that periodically updates its estimation of ongoing trends so as to remain current in price prediction. Constantinescu (2019) also found that using a time varying matrix of coefficients for different variables involved in the housing market increased forecasting accuracy above other methods he used. The use of time-series models such as these is fairly common in property value forecasting, although Graczyk et al. (2010) found in their study that any model using additive regression, (a nonparametric method used in time-series as well as other models), helped reduce prediction error. They also concluded that no one type of model reliably outdid all others every time. It can therefore simply be stated that time-series models are often preferred for property value forecasting.&lt;/p&gt;
+
+&lt;h5 id=&quot;artificial-neural-networks&quot;&gt;Artificial Neural Networks&lt;/h5&gt;
+&lt;p&gt;Another method that is popular amongst experts in machine learning is the use of neural networks. &lt;strong&gt;Artificial neural networks&lt;/strong&gt; (ANN) are not prediction models like time-series models. Rather, they are data processing methods used in ML inspired by the process of animal brains. Neurons in the ANN interact with one another and adapt with the input of new data. The ANN then comes up with some designated output, which may be a value or even a prediction model, like the time-series. ANNs are used in property valuation because they can respond to ongoing data, and create robust models.&lt;/p&gt;
+
+&lt;p&gt;Su et al. (2021) found that neural networks are the most popular ML method used for property valuation. Thus, we can see that neural networks play a prevalent role in modern real estate valuation. They are the preferred ML computing system of the majority of researchers in the field, and will likely remain so for some time.&lt;/p&gt;
+
+&lt;p&gt;In this section I have highlighted the more popular methods used for property valuation. There are certainly other methods and models used. Spatial clustering models, sentiment analysis, and ensemble learning using genetic algorithms have also been used by experts. &lt;em&gt;However, the majority of studies I have researched testify to the usefulness and accuracy of time-series models and ANN data processing.&lt;/em&gt; These methods will almost assuredly continue to be relevant in the future as the use of machine learning in real estate is further developed.&lt;/p&gt;
+
+&lt;h3 id=&quot;future-of-mlai-in-real-estate&quot;&gt;Future of ML/AI in Real Estate&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-10-06/future.jpeg&quot; alt=&quot;future&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Finally, we look towards the future of artificial intelligence in the real estate industry.&lt;/p&gt;
+
+&lt;p&gt;According to Souza et al. (2021), the real estate industry is in the early stages of embracing the innovations of artificial intelligence and ML. Souza et al. state that real estate organizations will need to make radical changes to their structure and work model in order to adapt to the new technology. They point to tech companies such as Apple, with its focus on developing hardware and software that caters to customer demands, as the business model that real estate groups should strive for. Rather than simply expanding geographically to find property options, real estate organizations should learn to use AI/ML to more accurately cater to customer needs. &lt;em&gt;This will help these organizations expand their portfolio of property types, rather than having to focus on a single element of the real estate sector.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Su et al. (2021) point to fragmented data as being a common problem faced in the use of ML in real estate. Inaccurate or missing data is a problem in machine learning, because it teaches the algorithm poorly. Su et al. therefore propose &lt;strong&gt;building information modeling&lt;/strong&gt; (BIM) as a solution to the gaps in data. BIM is a growing data sharing technology that allows different professionals in the field of construction to share data. Through it, engineers, architects, designers, operators and others can share information easily and thus provide more accurate data. Using this approach to data collection should allow ML algorithms to more accurately and effectively make property valuation predictions.&lt;/p&gt;
+
+&lt;p&gt;They suggest that these changes are a part of the real estate industry’s evolution towards the trend of Industry 4.0. &lt;strong&gt;Industry 4.0&lt;/strong&gt; refers to the “fourth great industrial revolution” that many claim is happening today, moving industry towards automation and smart machines. Starr et al. (2021) and Jamil et. al. (2020) also insist on the real estate industry’s emergence into “Real Estate 4.0”, stating that &lt;em&gt;changes occurring in the field will push the industry to adapt with increasing speed, and allow for more environmentally friendly construction.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;While various sources focus on different changes to be made by real estate organizations, these changes are not necessarily mutually exclusive. A company may restructure its work model in order to respond to a customer’s needs while also incorporating BIM technology in order to improve the effectiveness of ML property valuation methods. While the exact nature of the changes to be seen in the real estate industry are uncertain, there is surely a need for the development of AI and ML processes.&lt;/p&gt;
+
+&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;In conclusion, there are a number of uses for artificial intelligence and machine learning in the real estate industry. With the use of such technology being so new in the real estate industry, there is still much to be learned about which practices are most effective. Here are my biggest take-aways:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A blend of macro and micro-variables need to be taken into account for property valuation.&lt;/li&gt;
+  &lt;li&gt;Time-series models and artificial neural networks are current favorites for modeling and ML methods.&lt;/li&gt;
+  &lt;li&gt;The future of the industry most likely includes automation, greater information networks, and greater efficiency.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The potential uses for machine learning in the real estate industry are numerous and revolutionary to the field. While there is still much to be learned, the progress made so far is encouraging, and has already sparked major change. Whatever the future of the real estate industry will be, it will doubtlessly include machine learning systems and techniques.&lt;/p&gt;</content><author><name>Truman Jeppson</name></author><category term="Machine learning" /><category term="Real estate" /><category term="Variable selection" /><summary type="html">Introduction Machine learning (ML) has come somewhat recently into the field of investments and real estate as a tool that buyers and sellers can use to evaluate and predict prices, volatility, and a number of other factors. While most experts recognize the usefulness of such technology, it is not yet fully understood what all can be done with machine learning and what its effect will be on the real estate market in the future. This post is meant as an overview of how machine learning is currently being used in the real estate market, and assess how it will influence the market in the future. I will look at the following three topics: Variables used for property valuation. Favorite methods and models in the field currently. The future of the real estate industry with ML/AI Housing Market Influences One of the key potential uses for artificial intelligence and machine learning in the real estate industry is the valuation of properties. Property valuation is the practice of assessing a property’s potential value. Valuation can be performed by looking at a number of variables and determining how much profit can be gained from a property within a given timeframe. It is often used by real estate organizations and individuals as part of an investment decision-making process. As the use of ML is still relatively new in the field of real estate, there remains the question of which factors ought to be taken into account when building an ML model for property valuation. In this section, I will look at different variables that have been used for such valuation and what researchers have found are important factors to consider. Micro-variables Ado et al. (2020) reported that, of the studies they surveyed, the majority of ML models for property valuation had been performed using micro-variables, or local and small-scale factors that influence property value. Such variables may include: availability of real estate within a given area location of a property prices within a certain radius of the property in question number of rooms square ft., -etc. Of the 26 different studies surveyed in the article by Ado et al., the study performed by Morano et al. (2015) resulted in the highest R² score, indicating the prediction model with the least error. However, besides this specific study, the other studies examining only micro-variables did not perform as well as other criteria, with only 23% of the studies reaching an R² score of over 90%. Morano et al. also point out that although their model was well fit, their sample size was relatively small, and that further research would be necessary for greater understanding of the market. These findings suggest that more factors than just micro-variables may be necessary to produce a consistently accurate ML model for valuation. Macro-variables Other variables to take into account for real estate valuation are macro-variables. Macro-variables are large scale events or influences that affect the economy or housing market as a whole. These may include: GDP National/international laws Global events,etc. Renigier-Bilozor and Wiśniewski (2013), Constantinescu (2019), and others each performed macro-variable-focused studies, finding prediction models that were mostly accurate, yet either failed to account for different time frames or were not applicable to different countries and regions. (Constantinescu found that while GDP and credit were a good measure of real estate prices for the most part, there were times in which they did not account for all trends in the real estate market. This failure was most obvious in the 2005 recession, as the global average housing market spiked while the GDP did not.) This suggests that macro-variables alone cannot be relied upon to accurately make predictions all the time either. Thus we see that, like models focused only on micro-variables, those models that only took macro-variables into account also failed to follow the market accurately all the time. It may therefore stand to reason that an accurate prediction model must take both the macro and micro into consideration in order to reliably predict property values in any given location. Kabaivanov and Markovska (2021) suggest three key factors to take into account when analyzing the housing market: global influences (or macro-variables) local factors individual property characteristics Ado et al. (2020) conclude their study with a similar claim, stating that a blend of macro and micro variables is necessary for accurate analysis. These positions are upheld even by those studies which focused exclusively on either macro or micro variables. Renigier-Bilozor and Wiśniewski (2013), Constantinescu (2019), and Morano et al. (2015) each concluded their studies expressing the need for both large and small scale data to take into account. Further research may focus on which variables of the two categories are consistently most important. It may also be concluded that there is no one set of variables best suited for every property, and that different variables ought to be considered for different locations, or when using various ML modeling techniques. Whatever the case, much progress has been, and will yet be made towards greater and more reliable property valuation in the coming years. In the following section, I will discuss some of the more popular methods of modeling that have been used in the real estate industry to date. ML Algorithm Methods As there is still much being done to improve machine learning methods and practices in nearly every field, there is little doubt that techniques and ideas will continue developing in the future. There is much to take into account while attempting to analyze the housing market. However, there are some methods that have been suggested that may help individual home investors and professional real-estate organizations alike. Time-series Models One method experts often use to track data that depends on the date or time is a “time-series model”. These can be used to account for shared characteristics between similar time frames (same month of different years, same day of different weeks, etc.). Yu et al. (2020) suggest one such model for price forecasting, using a quadratic smoothing model, (helpful with non-linear trends), that periodically updates its estimation of ongoing trends so as to remain current in price prediction. Constantinescu (2019) also found that using a time varying matrix of coefficients for different variables involved in the housing market increased forecasting accuracy above other methods he used. The use of time-series models such as these is fairly common in property value forecasting, although Graczyk et al. (2010) found in their study that any model using additive regression, (a nonparametric method used in time-series as well as other models), helped reduce prediction error. They also concluded that no one type of model reliably outdid all others every time. It can therefore simply be stated that time-series models are often preferred for property value forecasting. Artificial Neural Networks Another method that is popular amongst experts in machine learning is the use of neural networks. Artificial neural networks (ANN) are not prediction models like time-series models. Rather, they are data processing methods used in ML inspired by the process of animal brains. Neurons in the ANN interact with one another and adapt with the input of new data. The ANN then comes up with some designated output, which may be a value or even a prediction model, like the time-series. ANNs are used in property valuation because they can respond to ongoing data, and create robust models. Su et al. (2021) found that neural networks are the most popular ML method used for property valuation. Thus, we can see that neural networks play a prevalent role in modern real estate valuation. They are the preferred ML computing system of the majority of researchers in the field, and will likely remain so for some time. In this section I have highlighted the more popular methods used for property valuation. There are certainly other methods and models used. Spatial clustering models, sentiment analysis, and ensemble learning using genetic algorithms have also been used by experts. However, the majority of studies I have researched testify to the usefulness and accuracy of time-series models and ANN data processing. These methods will almost assuredly continue to be relevant in the future as the use of machine learning in real estate is further developed. Future of ML/AI in Real Estate Finally, we look towards the future of artificial intelligence in the real estate industry. According to Souza et al. (2021), the real estate industry is in the early stages of embracing the innovations of artificial intelligence and ML. Souza et al. state that real estate organizations will need to make radical changes to their structure and work model in order to adapt to the new technology. They point to tech companies such as Apple, with its focus on developing hardware and software that caters to customer demands, as the business model that real estate groups should strive for. Rather than simply expanding geographically to find property options, real estate organizations should learn to use AI/ML to more accurately cater to customer needs. This will help these organizations expand their portfolio of property types, rather than having to focus on a single element of the real estate sector. Su et al. (2021) point to fragmented data as being a common problem faced in the use of ML in real estate. Inaccurate or missing data is a problem in machine learning, because it teaches the algorithm poorly. Su et al. therefore propose building information modeling (BIM) as a solution to the gaps in data. BIM is a growing data sharing technology that allows different professionals in the field of construction to share data. Through it, engineers, architects, designers, operators and others can share information easily and thus provide more accurate data. Using this approach to data collection should allow ML algorithms to more accurately and effectively make property valuation predictions. They suggest that these changes are a part of the real estate industry’s evolution towards the trend of Industry 4.0. Industry 4.0 refers to the “fourth great industrial revolution” that many claim is happening today, moving industry towards automation and smart machines. Starr et al. (2021) and Jamil et. al. (2020) also insist on the real estate industry’s emergence into “Real Estate 4.0”, stating that changes occurring in the field will push the industry to adapt with increasing speed, and allow for more environmentally friendly construction. While various sources focus on different changes to be made by real estate organizations, these changes are not necessarily mutually exclusive. A company may restructure its work model in order to respond to a customer’s needs while also incorporating BIM technology in order to improve the effectiveness of ML property valuation methods. While the exact nature of the changes to be seen in the real estate industry are uncertain, there is surely a need for the development of AI and ML processes. Conclusion In conclusion, there are a number of uses for artificial intelligence and machine learning in the real estate industry. With the use of such technology being so new in the real estate industry, there is still much to be learned about which practices are most effective. Here are my biggest take-aways: A blend of macro and micro-variables need to be taken into account for property valuation. Time-series models and artificial neural networks are current favorites for modeling and ML methods. The future of the industry most likely includes automation, greater information networks, and greater efficiency. The potential uses for machine learning in the real estate industry are numerous and revolutionary to the field. While there is still much to be learned, the progress made so far is encouraging, and has already sparked major change. Whatever the future of the real estate industry will be, it will doubtlessly include machine learning systems and techniques.</summary></entry><entry><title type="html">Tidy Your Data, Tidy your life</title><link href="/blog/tidy-data" rel="alternate" type="text/html" title="Tidy Your Data, Tidy your life" /><published>2021-10-04T00:00:00-06:00</published><updated>2021-10-04T00:00:00-06:00</updated><id>/blog/tidy-data</id><content type="html" xml:base="/blog/tidy-data">&lt;h2 id=&quot;tidy-datasets-are-all-alike-but-every-messy-dataset-is-messy-in-its-own-way--hadley-wickham&quot;&gt;“Tidy datasets are all alike, but every messy dataset is messy in its own way.” – Hadley Wickham&lt;/h2&gt;
+
+&lt;h3 id=&quot;the-set-up&quot;&gt;The Set Up&lt;/h3&gt;
+
+&lt;p&gt;Have you ever walked into a messy room and been told to get to work? Where do you start? How do you complete the task quickly and effectively? The task is more often than not undesirable and overwhelming. Working with messy data is a bit like working with a messy room. The end goal is to find the desired result as quickly and effectively as possible (and with the smallest headache possible).&lt;/p&gt;
+
+&lt;p&gt;Data is collected constantly. Every click of the mouse, every purchase at the store – it’s all data that can be used and analyzed. So why is the data format so important? As a general answer, messy is hard to work with. It’s kind of like working with a messy room – it’s hard to know where to start and even harder to accomplish the task at hand. But that’s overly generalizing it. Let’s get to the details of why it’s so important.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-why&quot;&gt;The Why&lt;/h3&gt;
+
+&lt;p&gt;The reality is that the majority of the data sets we will encounter will be untidy. Untidy data happens because not everyone is familiar with tidy data and doesn’t apply its principles, or because data is often organized to benefit something other than analysis such as data entry. Tidying data is a small yet effective set of tools that apply to a wide range of un-tidy datasets. These few principles will greatly benefit the overall goal of collecting data – being able to interpret it and utilize it for the future.&lt;/p&gt;
+
+&lt;p&gt;When data is tidy, less time is spent manipulating the data, freeing up more time to spend on the heart of the issue – analyzing the data. The two main advantages of tidy data are first, it is a consistent way of storing data. It creates a uniformity to your data that makes manipulation and other processes much easier during analysis, modeling and creating graphics. This can also make it easier to automate processes and analysis for recurring multiple datasets. It will also help others be more able to help when necessary or take over an analysis if the data is in an easy-to-use format. Second, especially when using R, using variables in columns utilizes R’s vector capabilities to maximize functionality when analyzing the data. There are mutating and summarizing functions that are easily used when the data is tidy, but that you are unable to use when the data is in the proper format.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-what&quot;&gt;The What&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-10-04/tidy.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Tidy data has three rules:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Each variable has its own column.&lt;/li&gt;
+  &lt;li&gt;Each observation has its own row.&lt;/li&gt;
+  &lt;li&gt;Each value has its own cell.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;examples&quot;&gt;Examples&lt;/h3&gt;
+
+&lt;p&gt;That’s it. Those three simple steps are the entirety of tidy data. We could stop there, now that we know what it is, but maybe we should learn how to create it. The first step is to figure out what the variables and observations are in the data. In the example below, the variables are the country, year, and rate (respectively), and the observations are the individual responses to each variable. Sometimes, as in the example below, you will be able to make this distinction, but other times you will need to consult with those who entered in or generated the data. The second step is to resolve 2 problems that may occur:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;One variable might be spread across multiple columns.&lt;/li&gt;
+  &lt;li&gt;One observation might be scattered across multiple rows.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-10-04/example1.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In the above example, year was broken up into century and year. Now, these are two columns that may not ordinarily need to be broken up, they can usually be in the same column, but the principle applies to all datasets – if there is more than one variable in a column, they need to be separated. In the below example, we can see that data for the same country and year is spread across multiple rows. As you can see, the solution here was to create a new column for one of the variables, thus reducing the number of rows in the dataset.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-10-04/example2.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Other problems with the data may include lack of column names, incorrect data types, or other mishaps. Once these problems are recognized and cleaned up, the data is now tidy and ready to use!&lt;/p&gt;
+
+&lt;h3 id=&quot;resources&quot;&gt;Resources&lt;/h3&gt;
+
+&lt;p&gt;It can be hard to learn this skill, but it is one that will benefit you gratefully. Thankfully, as more data becomes available, there is a greater push to create tidy data and hold on to some sort of uniformity. In learning how to create tidy data, this is great news as it means there are many resources available to help in data cleaning. A great resource in R is the tidyverse library, which was created for the intent of cleaning up datasets. Hadley Wickham is the creator of the Tidyverse library and has written has written &lt;a href=&quot;https://vita.had.co.nz/papers/tidy-data.html&quot;&gt;articles&lt;/a&gt; and a book (&lt;a href=&quot;https://r4ds.had.co.nz/tidy-data.html&quot;&gt;available free online&lt;/a&gt;) that go over the basic functionality as well as more in-depth examples for using tidyverse to tidy data. There are also &lt;a href=&quot;https://www.r-bloggers.com/2017/11/tidyverse-cheat-sheet-for-beginners/&quot;&gt;cheat sheets&lt;/a&gt;, &lt;a href=&quot;https://garrettgman.github.io/tidying/&quot;&gt;example problems, and step by step instructions for tidying data&lt;/a&gt;, leaving no more excuses for messy data (just as moms never take excuses for messy rooms).&lt;/p&gt;
+
+&lt;p&gt;What have you found that has been most effective in creating tidy data or helping you learn to create tidy data?&lt;/p&gt;</content><author><name>Melissa Messervy</name><email>meliss.messervy21@gmail.com</email></author><category term="Tidyverse" /><category term="Clean Data" /><category term="Tidy Data" /><category term="Messy Data" /><summary type="html">“Tidy datasets are all alike, but every messy dataset is messy in its own way.” – Hadley Wickham</summary></entry><entry><title type="html">Selenium - Building Your First Internet Bot</title><link href="/blog/Selenium" rel="alternate" type="text/html" title="Selenium - Building Your First Internet Bot" /><published>2021-10-02T00:00:00-06:00</published><updated>2021-10-02T00:00:00-06:00</updated><id>/blog/Selenium</id><content type="html" xml:base="/blog/Selenium">&lt;p&gt;Webscraping in recent years has become a buzzword for technology and innovation. Modern companies often seek employees who are literate in current technological trends, and being well versed in webscraping can make you one of these well-qualified candidates. In Python specifically, there are many packages that  boast impressive webscraping capability. Of these, some of the most popular are packages such as Beautifulsoup and Selenium. In this tutorial, we outline the installation, implementation, and possible use cases of the latter of these two. Consider this your introduction to web automation and building web scraping robots.&lt;/p&gt;
 
 &lt;p&gt;Below is a list of links that will be referenced within the post (accumulated here for your convenience).&lt;/p&gt;
 
@@ -38,7 +650,7 @@ Detailed instructions for installing a webdriver can be found &lt;a href=&quot;h
 
 &lt;p&gt;We import the webdriver attribute from Selenium to initialize our driver and open a browser window. We import the Keys attribute to send keys to input instances within the HTML page. We import Select to use for picking from dropdown menus, and we import time to pause our program to allow the web page to load.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-10-2/iinitialize_webdriver.png&quot; alt=&quot;screenshot&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-10-2/initialize_webdriver.png&quot; alt=&quot;screenshot&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;We then initialize our PATH variable with file path that points to the driver we downloaded, and initialize our webdriver, specifying that we will be using Chrome. In the second cell featured above, the driver.get() function is what launches the browser. When we pass in a URL to this function and run it, a browser window will be opened that looks like the following:&lt;/p&gt;
 
@@ -369,439 +981,4 @@ Hopefully these tools were helpful to you in your pandas dataframe wrangling end
 &lt;h1 id=&quot;challenge&quot;&gt;Challenge&lt;/h1&gt;
 
 &lt;p&gt;I challenge you to comment on this post including a picture of your either successful or unsuccessful attempt to use one of these Pandas pro tips!
-You can also comment suggestions of other pandas tools that you think would be good to be included in this blog post.&lt;/p&gt;</content><author><name>skimball_22</name></author><category term="Beginner Pandas" /><category term="Multi Level Indexing" /><category term="Concatenate" /><category term="Merge" /><category term="Group by" /><summary type="html">Introduction - Why was Pandas Created?</summary></entry><entry><title type="html">Introduction to Time Series Analysis</title><link href="/blog/time-series" rel="alternate" type="text/html" title="Introduction to Time Series Analysis" /><published>2021-09-28T00:00:00-06:00</published><updated>2021-09-28T00:00:00-06:00</updated><id>/blog/time-series</id><content type="html" xml:base="/blog/time-series">&lt;h1 id=&quot;time-series-analysis&quot;&gt;Time-Series Analysis&lt;/h1&gt;
-&lt;p&gt;Time-Series analysis is a way of analyzing time-series data. The main characteristic of time-series data is that they are collected over time, usually at equal intervals. These data are frequently plotted with time on the x-axis and will track observations for every day, month, quarter, year, or other set unit of time. Some common examples of time-series data include measuring a country’s Gross Domestic Product, deaths by a certain illness, environmental or weather patterns, etc. There are limitations to using this type of data in linear regression because the goal of analyzing these data is usually to make inference about the future. Projecting a linear model into the future, however, is extrapolation and is often very unwieldy. That is why we use different kinds of statistical analysis tools for time-series data. In this post, we will not dive deeply into the modelling process of time-series data but we will identify things to look for in exploratory data analysis.&lt;/p&gt;
-
-&lt;h1 id=&quot;plotting&quot;&gt;Plotting&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-09-28/passengers.png&quot; alt=&quot;Air Passengers&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The plot above uses the R dataset AirPassengers. There are several aspects of this time-series data that we can identify before diving into modelling.&lt;/p&gt;
-
-&lt;h2 id=&quot;seasonality&quot;&gt;Seasonality&lt;/h2&gt;
-&lt;p&gt;Seasonality is a recurring pattern seen in the data. Seasonal patterns always repeat within units of years. This makes sense, as the patterns are associated with seasons. In the plot of monthly airline passengers above, there is clearly seasonality. The number of passengers peaks every summer as people fly to new destinations for summer vacations, but drops in the winter when the weather gets worse. It’s also worth noting that there is a slight peak around the liminal space between years, probably indicating an increase in travel for the holidays.&lt;/p&gt;
-
-&lt;h2 id=&quot;time-trends&quot;&gt;Time Trends&lt;/h2&gt;
-&lt;p&gt;The passenger data above also shows a time trend. A time trend is a pattern of overall change in the data as time increases. In the AirPassengers data, the time trend is positive. More people fly airplanes with time, likely due to improved technology, increased demand, and higher capability to meet that demand through technology. Time trends are very common in time-series data and can give us valuable insight into the nature of the data we are dealing with.&lt;/p&gt;
-
-&lt;h2 id=&quot;mean-reverting-data&quot;&gt;Mean Reverting Data&lt;/h2&gt;
-&lt;p&gt;Mean reverting data are data that surround a central mean, frequently jumping through the mean. This varies from time trend data in that the trend follows a horizontal line. The plot below shows an example of mean reverting data.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-09-28/accdeaths.png&quot; alt=&quot;Accidental Deaths&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The time series plot above shows the number of accidental deaths by month in the United States. As you can see, the mean falls just below nine thousand deaths, and the data follow this mean consistently across time. The presence of time trends or time-invariate means can help inform the approach we take in modelling the data.&lt;/p&gt;
-
-&lt;h1 id=&quot;autocorrelation&quot;&gt;Autocorrelation&lt;/h1&gt;
-&lt;p&gt;Autocorrelation is an important factor to consider in analyzing time-series data. Autocorrelation is the correlation of the same features in the same dataset at differing points in time, and it can invalidate ordinary least squares tests and standard errors. The easiest way to detect autocorrelation is to plot residuals against time and look for patterns. If the residuals are randomly distributed, not following any trends, then the data is likely free of autocorrelation. There are also more exhaustive ways of detecting autocorrelation, (for example, the Bruesch-Godfrey Test), if the plot of residuals is difficult to interpret.&lt;/p&gt;
-
-&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
-&lt;p&gt;Time-series data can often require difficult solutions for modeling (which will not be covered in this post), but it is important to recognize when we are dealing with time-series data and treat it accordingly.&lt;/p&gt;
-
-&lt;font size=&quot;8&quot;&gt; Header photo by &lt;a href=&quot;https://unsplash.com/@icons8?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;Icons8 Team&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com/s/photos/time-series?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;Unsplash&lt;/a&gt; &lt;/font&gt;</content><author><name>Josh Gladwell</name><email>joshegladwell@gmail.com</email></author><category term="Time-Series" /><category term="R" /><category term="Python" /><category term="Data Science" /><summary type="html">Time-Series Analysis Time-Series analysis is a way of analyzing time-series data. The main characteristic of time-series data is that they are collected over time, usually at equal intervals. These data are frequently plotted with time on the x-axis and will track observations for every day, month, quarter, year, or other set unit of time. Some common examples of time-series data include measuring a country’s Gross Domestic Product, deaths by a certain illness, environmental or weather patterns, etc. There are limitations to using this type of data in linear regression because the goal of analyzing these data is usually to make inference about the future. Projecting a linear model into the future, however, is extrapolation and is often very unwieldy. That is why we use different kinds of statistical analysis tools for time-series data. In this post, we will not dive deeply into the modelling process of time-series data but we will identify things to look for in exploratory data analysis.</summary></entry><entry><title type="html">reticulate - Merging R and Python</title><link href="/blog/reticulate" rel="alternate" type="text/html" title="reticulate - Merging R and Python" /><published>2021-09-27T00:00:00-06:00</published><updated>2021-09-27T00:00:00-06:00</updated><id>/blog/reticulate</id><content type="html" xml:base="/blog/reticulate">&lt;p&gt;In the data science field, the debate between R and Python rages on. Both languages claim to be superior to the other for data science. In my experience, both R and Python are good languages and each one has its strong-suits in certain areas. Recently, I came across reticulate, an R package leading the way in bringing R and Python together and allowing for data scientists to get the best out of both languages. Now, instead of having to choose between R and Python, you can have both!&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/3o7aCRloybJlXpNjSU/giphy.gif&quot; alt=&quot;El Dorado - Both&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;reticulateinstallation&quot;&gt;reticulate::installation&lt;/h2&gt;
-
-&lt;p&gt;To use the reticulate package, both &lt;a href=&quot;https://cran.r-project.org&quot;&gt;R&lt;/a&gt; and &lt;a href=&quot;https://www.python.org&quot;&gt;Python&lt;/a&gt; need to be installed on your machine.&lt;/p&gt;
-
-&lt;p&gt;Since reticulate is an R package, it is installed using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;install.packages('reticulate')&lt;/code&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;reticulatefinding_python_interpreters&quot;&gt;reticulate::finding_python_interpreters&lt;/h2&gt;
-
-&lt;p&gt;One aspect of this package that can get a little bit complicated is specifying which Python interpreter you want the reticulate package to use. Python can be installed from various places, some of which are:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.python.org&quot;&gt;Python Website&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.anaconda.com&quot;&gt;Anaconda&lt;/a&gt; / &lt;a href=&quot;https://docs.conda.io/en/latest/miniconda.html&quot;&gt;Miniconda&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://brew.sh&quot;&gt;Homebrew (MacOS only)&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Additionally, Python virtual environments have their own executable files (&lt;em&gt;.exe&lt;/em&gt;) so each virtual environment is another Python interpreter.&lt;/p&gt;
-
-&lt;p&gt;All in all, it’s quite possible you could have multiple Python interpreters installed in multiple places on your computer.&lt;/p&gt;
-
-&lt;p&gt;The simplest solution that I have found is using &lt;a href=&quot;https://www.rstudio.com&quot;&gt;RStudio&lt;/a&gt;. In the newest version of RStudio (1.4.1717), it is able to detect all the Python interpreters on your machine and allows you to choose which one to use.&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Tools&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Global Options&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;Click on &lt;strong&gt;Python&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://support.rstudio.com/hc/article_attachments/1500011460282/Screen_Shot_2021-04-21_at_3.33.02_PM.png&quot; alt=&quot;RStudio Global Options&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Then &lt;strong&gt;Select…&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://support.rstudio.com/hc/article_attachments/1500011460302/Screen_Shot_2021-04-21_at_3.34.00_PM.png&quot; alt=&quot;Select Python Interpreter&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;After selecting a Python interpreter, click &lt;strong&gt;Select&lt;/strong&gt; then &lt;strong&gt;Apply&lt;/strong&gt;. &lt;em&gt;This will restart your R session.&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;After this, you should be all good to go. To check which Python interpreter reticulate is using you can run the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;py_config()&lt;/code&gt; function. The output of which should look similar to something like this:&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; py_config()
-python:         /usr/local/bin/python
-libpython:      /usr/local/opt/python@3.9/Frameworks/Python.framework/Versions/3.9/lib/python3.9/config-3.9-darwin/libpython3.9.dylib
-pythonhome:     /usr/local/Cellar/python@3.9/3.9.7/Frameworks/Python.framework/Versions/3.9:/usr/local/Cellar/python@3.9/3.9.7/Frameworks/Python.framework/Versions/3.9
-version:        3.9.7 (default, Sep  3 2021, 12:37:55)  [Clang 12.0.5 (clang-1205.0.22.9)]
-numpy:          /usr/local/lib/python3.9/site-packages/numpy
-numpy_version:  1.21.2
-
-NOTE: Python version was forced by use_python function
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;If issues with selecting the right Python interpreter persist, these articles offer more details and troubleshooting:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://rstudio.github.io/reticulate/articles/versions.html&quot;&gt;Python Version Configuration&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://support.rstudio.com/hc/en-us/articles/1500007929061-Using-Python-with-the-RStudio-IDE&quot;&gt;Using Python with the RStudio IDE&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;reticulatevirtual_environments&quot;&gt;reticulate::virtual_environments&lt;/h2&gt;
-
-&lt;p&gt;One especially great feature of the reticulate package is that it permits the user to create and manage Python virtual environments. A Python virtual environment creates a folder with a separate Python interpreter. Virtual environments are great for managing Python packages and their dependencies. Sometimes, a Python package requires an older version of a package to be installed and instead of having to re-install an older version of the dependent package that could possibly mess up other packages, a virtual environment allows for the older version of the dependent package to be installed in a separate location and be kept separate.&lt;/p&gt;
-
-&lt;p&gt;If you’re familiar with R, I like to think that virtual environments are to Python what projects are to R.&lt;/p&gt;
-
-&lt;p&gt;To create a Python virtual environment with reticulate, there’s the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;virtualenv_create()&lt;/code&gt; function. For example, if I wanted to create a Python virtual environment &lt;em&gt;Tatooine&lt;/em&gt;, I would run the following:&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; virtualenv_create('Tatooine')
-Using Python: /usr/local/Cellar/python@3.9/3.9.7/Frameworks/Python.framework/Versions/3.9/bin/python3.9
-Creating virtual environment 'Tatooine' ... Done!
-Installing packages: 'pip', 'wheel', 'setuptools', 'numpy'
-Requirement already satisfied: pip in /Users/matthewmorgan/.virtualenvs/Tatooine/lib/python3.9/site-packages (21.2.4)
-Collecting wheel
-  Using cached wheel-0.37.0-py2.py3-none-any.whl (35 kB)
-Requirement already satisfied: setuptools in /Users/matthewmorgan/.virtualenvs/Tatooine/lib/python3.9/site-packages (57.4.0)
-Collecting setuptools
-  Downloading setuptools-58.0.4-py3-none-any.whl (816 kB)
-Collecting numpy
-  Using cached numpy-1.21.2-cp39-cp39-macosx_10_9_x86_64.whl (17.0 MB)
-Installing collected packages: wheel, setuptools, numpy
-  Attempting uninstall: setuptools
-    Found existing installation: setuptools 57.4.0
-    Uninstalling setuptools-57.4.0:
-      Successfully uninstalled setuptools-57.4.0
-Successfully installed numpy-1.21.2 setuptools-58.0.4 wheel-0.37.0
-Virtual environment 'Tatooine' successfully created.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;When a virtual environments created with this function are located in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/.virtualenvs&lt;/code&gt; directory.&lt;/p&gt;
-
-&lt;p&gt;As you can see, when the Python virtual environment is created, it automatically installs the &lt;em&gt;pip&lt;/em&gt;, &lt;em&gt;wheel&lt;/em&gt;, &lt;em&gt;setuptools&lt;/em&gt;, and &lt;em&gt;numpy&lt;/em&gt; packages along with it.&lt;/p&gt;
-
-&lt;p&gt;This package also allows the user to specify which Python interpreter and which Python version should be used with the new virtual environment.&lt;/p&gt;
-
-&lt;p&gt;To install additional packages in the virtual environment, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;virtualenv_install()&lt;/code&gt; function can be used. Here, I installed the &lt;em&gt;pandas&lt;/em&gt; package in the &lt;em&gt;Tatooine&lt;/em&gt; virtual environment&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; virtualenv_install('Tatooine', 'pandas')
-Using virtual environment 'Tatooine' ...
-Collecting pandas
-  Downloading pandas-1.3.3-cp39-cp39-macosx_10_9_x86_64.whl (11.6 MB)
-Collecting python-dateutil&amp;gt;=2.7.3
-  Using cached python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
-Requirement already satisfied: numpy&amp;gt;=1.17.3 in /Users/matthewmorgan/.virtualenvs/Tatooine/lib/python3.9/site-packages (from pandas) (1.21.2)
-Collecting pytz&amp;gt;=2017.3
-  Using cached pytz-2021.1-py2.py3-none-any.whl (510 kB)
-Collecting six&amp;gt;=1.5
-  Using cached six-1.16.0-py2.py3-none-any.whl (11 kB)
-Installing collected packages: six, pytz, python-dateutil, pandas
-Successfully installed pandas-1.3.3 python-dateutil-2.8.2 pytz-2021.1 six-1.16.0
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;To list all the Python virtual environments on your machine, use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;virtualenv_list()&lt;/code&gt; function.&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; virtualenv_list()
-[1] &quot;r-reticulate&quot; &quot;SASPy&quot;        &quot;Tatooine&quot;    
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;To use a specific virtual environment, you can:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;use_virtualenv()&lt;/code&gt; function
-    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  use_virtualenv('Tatooine') # Telling reticulate to use the Tatooine virtual environment
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Select the Python interpreter from RStudio’s Global Options as shown previously&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;If you would like to remove a Python virtual environment, there’s the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;virtualenv_remove()&lt;/code&gt; function. Here, I remove the &lt;em&gt;Tatooine&lt;/em&gt; Python virtual environment:&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; virtualenv_remove('Tatooine')
-Remove virtual environment 'Tatooine'? [Y/n]: Y
-Virtual environment 'Tatooine' removed.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Now, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;virtualenv_list()&lt;/code&gt; returns the following:&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; virtualenv_list()
-[1] &quot;r-reticulate&quot; &quot;SASPy&quot;  
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Overall, the reticulate package is great for managing Python virtual environments all from R. More info on these functions can be found &lt;a href=&quot;https://rstudio.github.io/reticulate/reference/virtualenv-tools.html&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;reticulatepython_in_r&quot;&gt;reticulate::python_in_R&lt;/h2&gt;
-
-&lt;p&gt;With reticulate, Python scripts can easily be run in RStudio.&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;Open a &lt;em&gt;.py&lt;/em&gt; file&lt;/li&gt;
-  &lt;li&gt;Run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;reticulate::repl_python()&lt;/code&gt; in the &lt;strong&gt;Console&lt;/strong&gt; to start a Python session&lt;/li&gt;
-  &lt;li&gt;Execute the &lt;em&gt;.py&lt;/em&gt; file&lt;/li&gt;
-  &lt;li&gt;Run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;quit&lt;/code&gt; in the &lt;strong&gt;Console&lt;/strong&gt; to end the Python session&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;reticulate also allows for seamless integration of Python into R Markdown (&lt;em&gt;.Rmd&lt;/em&gt;) files&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;Initialize an R chunk:
-    &lt;div class=&quot;language-md highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;```&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;{r setup, include = FALSE}
-&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;library(reticulate)&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;```&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Create Python chunks by specifying &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;python&lt;/code&gt; at the top of the chunk instead of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;r&lt;/code&gt;. After this, you can code in Python like you would in any other IDE (Jupyter, Spyder, etc):&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  import numpy as np
-  
-  def perfect_sq(n):
-    sqrt_n = np.sqrt(n)
-    if sqrt_n * sqrt_n == n:
-      print(n, 'is a perfect square of', int(sqrt_n))
-    else:
-      return(False)
-
-  perfect_sq(25)
-  
-Python 3.9.7 (/usr/local/bin/python)
-Reticulate 1.22 REPL -- A Python interpreter in R.
-Enter 'exit' or 'quit' to exit the REPL and return to R.
-25 is a perfect square of 5
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;em&gt;These Python chunks can be run the same way R chunks are run in R Markdown files&lt;/em&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;The output message displaying the Python and reticulate version info will always be output unless suppressed
-    &lt;div class=&quot;language-md highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;```&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;{r}
-&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;options(reticulate.repl.quiet = TRUE) # Could be added to the setup chunk in step 1&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;```&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;language-md highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;p&quot;&gt;```&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;{python}
-&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;  import numpy as np
-
-  def perfect_sq(n):
-    sqrt_n = np.sqrt(n)
-    if sqrt_n * sqrt_n == n:
-      print(n, 'is a perfect square of', int(sqrt_n))
-    else:
-      return(False)
-
-  perfect_sq(25)
-
-  25 is a perfect square root of 5&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;```&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;The reticulate package has many more functions that allow R and Python to communicate with each other. The following article explains these functions in much greater detail:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://rstudio.github.io/reticulate/articles/calling_python.html&quot;&gt;Calling Python from R&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;reticulateconclusions&quot;&gt;reticulate::conclusions&lt;/h2&gt;
-
-&lt;p&gt;The main aspect that I like about the reticulate package is that it’s allowed me to use RStudio as my IDE for both R and Python which is great because I am already familiar with RStudio. Although, I still have a lot to learn about the reticulate package. My personal goal is to continue to learn and practice with this package so that I can become well-versed in both R and Python.&lt;/p&gt;
-
-&lt;p&gt;Hopefully, this tutorial has inspired you to use the reticulate package!&lt;/p&gt;
-
-&lt;p&gt;If you have additional insights and/or experiences about the reticulate package, please add them in the comments below!&lt;/p&gt;
-
-&lt;p&gt;Best of luck!&lt;/p&gt;</content><author><name>Matthew Morgan</name><email>matthewrmorgan17@gmail.com</email></author><category term="R" /><category term="Python" /><category term="Interface" /><category term="RStudio" /><summary type="html">In the data science field, the debate between R and Python rages on. Both languages claim to be superior to the other for data science. In my experience, both R and Python are good languages and each one has its strong-suits in certain areas. Recently, I came across reticulate, an R package leading the way in bringing R and Python together and allowing for data scientists to get the best out of both languages. Now, instead of having to choose between R and Python, you can have both!</summary></entry><entry><title type="html">Create a blog post title picture</title><link href="/blog/photo-blur" rel="alternate" type="text/html" title="Create a blog post title picture" /><published>2021-09-23T00:00:00-06:00</published><updated>2021-09-23T00:00:00-06:00</updated><id>/blog/photo-blur</id><content type="html" xml:base="/blog/photo-blur">&lt;h1 id=&quot;create-a-blog-post-title-picture&quot;&gt;Create a Blog Post Title Picture&lt;/h1&gt;
-
-&lt;p&gt;A cool way to make your blog title stand out, is to blur a picture and add the text of your blog title in bold letters, as in the example below.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-09-23/ss-blog2.png&quot; alt=&quot;example&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;There are many ways that this can be done, but this is the method that I used.&lt;/p&gt;
-
-&lt;p&gt;Note that
-these instructions were created using PowerPoint for Mac.  On Windows, the idea is the same, but the menus might be in slightly different places.  See &lt;a href=&quot;https://www.howtogeek.com/437476/how-to-blur-an-image-in-powerpoint/&quot;&gt;this post&lt;/a&gt; for Windows illustrations, at least for the photo blurring section.&lt;/p&gt;
-
-&lt;hr /&gt;
-&lt;h2 id=&quot;blurring-the-photo&quot;&gt;Blurring the Photo&lt;/h2&gt;
-
-&lt;h4 id=&quot;1&quot;&gt;1&lt;/h4&gt;
-&lt;p&gt;Open your photo in PowerPoint (Insert –&amp;gt; Picture –&amp;gt; Picture from file) or simply drag the file of the photo into a PowerPoint Page.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-09-23/open-pic.png&quot; alt=&quot;open&quot; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;2&quot;&gt;2&lt;/h4&gt;
-&lt;p&gt;Select the picture.  When the picture is selected a new top menu should appear named “Picture Format”.  Select that menu and then find the arrow next to “Artistic Effects”.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-09-23/menu.png&quot; alt=&quot;art&quot; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;3&quot;&gt;3&lt;/h4&gt;
-&lt;p&gt;Click the arrow next to “Artistic Effects” and choose the “Blur” option.  Your picture is now blurred, but the default effect is quite subtle.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-09-23/blur.png&quot; alt=&quot;blur&quot; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;4&quot;&gt;4&lt;/h4&gt;
-&lt;p&gt;To change the level of blurring, go back to “Artistic Effects” and select “Artistic Effects Options”.  This will open the “Format Picture” pane on the right.  Select the “Effects” tab (the pentagon), then “Artistic Effects” and adjust the radius.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-09-23/sidebar-complete.png&quot; alt=&quot;sidebar&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The higher the radius, the more blurred the picture will be.  See the figure below with examples of radius 20, 50, and 85.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-09-23/blur-compare.png&quot; alt=&quot;blur-example&quot; /&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-&lt;h2 id=&quot;adding-text&quot;&gt;Adding Text&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Create a new text box&lt;/li&gt;
-  &lt;li&gt;Change text color to white&lt;/li&gt;
-  &lt;li&gt;Increase text size to 54&lt;/li&gt;
-  &lt;li&gt;Bold the text&lt;/li&gt;
-  &lt;li&gt;Add a subtle shadow&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;add-a-subtle-shadow-to-the-text&quot;&gt;Add a subtle shadow to the text&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;Double click on the text box to open the “Format Shape” menu on the right&lt;/li&gt;
-  &lt;li&gt;Select the “Text Options” tab and then select the “Text Effects” tab&lt;/li&gt;
-  &lt;li&gt;Expand the “Shadow” option and open the “Presets” dropdown menu.  Select the first option under “Outer”.&lt;/li&gt;
-  &lt;li&gt;Position the textbox in the center of the blurred photo.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-09-23/shadow.png&quot; alt=&quot;shadow&quot; /&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-&lt;h2 id=&quot;saving-the-picture&quot;&gt;Saving the picture&lt;/h2&gt;
-
-&lt;p&gt;To save your work as a .png file:&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;Select the blurred photo and the text box&lt;/li&gt;
-  &lt;li&gt;Right click and select “Save as Figure”&lt;/li&gt;
-  &lt;li&gt;Save the figure in your desired location&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-09-23/saving.png&quot; alt=&quot;save&quot; /&gt;&lt;/p&gt;</content><author><name>Shannon Tass</name><email>esnt@byu.edu</email></author><category term="photo effects" /><category term="powerpoint" /><category term="picture" /><category term="blog" /><summary type="html">Create a Blog Post Title Picture</summary></entry><entry><title type="html">Using SSH with GitHub</title><link href="/blog/ssh-and-github" rel="alternate" type="text/html" title="Using SSH with GitHub" /><published>2021-09-13T00:00:00-06:00</published><updated>2021-09-13T00:00:00-06:00</updated><id>/blog/ssh-and-github</id><content type="html" xml:base="/blog/ssh-and-github">&lt;p&gt;This post is adapted from the GitHub documentation page
-&lt;a href=&quot;https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh&quot;&gt;Connecting to GitHub with SSH&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;You can use the SSH protocol by setting up SSH keys to connect with GitHub without
-needing to supply your username and access token.  SSH stands for Secure Shell
-and it protocol for operating network services securely over an unsecured network.
-You can read more about SSH &lt;a href=&quot;https://en.wikipedia.org/wiki/Secure_Shell&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h1 id=&quot;check-for-existing-ssh-keys&quot;&gt;Check for existing SSH keys&lt;/h1&gt;
-&lt;ol&gt;
-  &lt;li&gt;Open the terminal (Mac) or Git Bash (Windows)&lt;/li&gt;
-  &lt;li&gt;Enter &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ls -la ~/.ssh&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Check the directory listing to see if you have a public SSH key, usually:&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;id_rsa.pub&lt;/li&gt;
-      &lt;li&gt;id_ecdsa.pub&lt;/li&gt;
-      &lt;li&gt;id_ed25519.pub&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;If you receive an error that ~/.ssh doesn’t exist, then you don’t have ssh keys&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h1 id=&quot;generating-new-ssh-keys&quot;&gt;Generating New SSH Keys&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;(If you already have SSH keys, skip to the next section.)&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Below are instructions for generating SSH keys.  When doing this, you have the choice of an algorithm to use (with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-t&lt;/code&gt; option) and the key size (with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-b&lt;/code&gt; option).  You can read more about SSH keys and the different algorithm/key size options &lt;a href=&quot;https://www.ssh.com/academy/ssh/keygen&quot;&gt;here&lt;/a&gt;.  The instructions below use the rsa algorithm with a 4096 bit key size.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Open the terminal (Mac) or Git Bash (Windows)&lt;/li&gt;
-  &lt;li&gt;In the terminal type&lt;br /&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ssh-keygen -t rsa -b 4096 -C &quot;your_github_email@email.com&quot;&lt;/code&gt; &lt;br /&gt;
-(be sure to use your actual GitHub email address)&lt;/li&gt;
-  &lt;li&gt;When you are prompted to “Enter a file in which to save the key”, just press enter to accept the default location&lt;/li&gt;
-  &lt;li&gt;Add a passphrase for extra security or press enter for no passphrase&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h1 id=&quot;adding-ssh-keys-to-your-github-account&quot;&gt;Adding SSH Keys to your GitHub Account&lt;/h1&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Copy the SSH public key to the clipboard.&lt;br /&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cat ~/.ssh/id_rsa.pub&lt;/code&gt;
-will show you the public key and you can copy it.&lt;/li&gt;
-  &lt;li&gt;Go to GitHub.  In the upper-right corner, click on your profile photo, then click &lt;strong&gt;Settings&lt;/strong&gt;.&lt;/li&gt;
-  &lt;li&gt;In the user settings sidebar, click &lt;em&gt;SSH and GPG keys&lt;/em&gt;&lt;/li&gt;
-  &lt;li&gt;Click &lt;strong&gt;New SSH key&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;In the “Title” field, add a label for your key.  For example “Personal MacBook Air”&lt;/li&gt;
-  &lt;li&gt;Paste your key into the “Key” field.&lt;/li&gt;
-  &lt;li&gt;Click &lt;strong&gt;Add SSH key&lt;/strong&gt;.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h1 id=&quot;using-ssh-key&quot;&gt;Using SSH Key&lt;/h1&gt;
-&lt;p&gt;In GitHub, when cloning repositories, or setting up the remote repository, use SSH instead of HTTP:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-09-13/github-ssh.png&quot; alt=&quot;screenshot&quot; /&gt;&lt;/p&gt;</content><author><name>Shannon Tass</name><email>esnt@byu.edu</email></author><category term="ssh" /><category term="git" /><category term="github" /><summary type="html">This post is adapted from the GitHub documentation page Connecting to GitHub with SSH.</summary></entry><entry><title type="html">Sample Post</title><link href="/blog/sample-post" rel="alternate" type="text/html" title="Sample Post" /><published>2020-04-24T00:00:00-06:00</published><updated>2020-04-24T00:00:00-06:00</updated><id>/blog/sample-post</id><content type="html" xml:base="/blog/sample-post">&lt;p&gt;This post will show you how the content will look like in the post pages and how the headlines, quotes and quotes will be represented. Jekyll is mainly used to write simple markdown and after that it renders out a static pages, so you need to know the basics of writing markdown for that.
-For more information about writing markdown you can checkout the following markdown cheatsheets:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://guides.github.com/features/mastering-markdown/&quot;&gt;Mastering Markdown&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.markdownguide.org/cheat-sheet/&quot;&gt;Markdown Guide&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.github.com/gfm/&quot;&gt;GitHub Flavored Markdown Spec&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h1 id=&quot;this-is-the-h1-text&quot;&gt;This is the h1 text&lt;/h1&gt;
-&lt;h2 id=&quot;this-is-the-h2-text&quot;&gt;This is the h2 text&lt;/h2&gt;
-&lt;h3 id=&quot;this-is-the-h3-text&quot;&gt;This is the h3 text&lt;/h3&gt;
-&lt;h4 id=&quot;this-is-the-h4-text&quot;&gt;This is the h4 text&lt;/h4&gt;
-&lt;h5 id=&quot;this-is-the-h5-text&quot;&gt;This is the h5 text&lt;/h5&gt;
-&lt;h6 id=&quot;this-is-the-h6-text&quot;&gt;This is the h6 text&lt;/h6&gt;
-
-&lt;p&gt;&lt;strong&gt;Bold Text in the post will look like:&lt;/strong&gt;&lt;br /&gt;
-&lt;strong&gt;This text is Bold&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Italic Text in the post will look like:&lt;/strong&gt;&lt;br /&gt;
-&lt;em&gt;This text is Italic&lt;/em&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Quotes on your post will look like this&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Codes on your post will look like this&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Link in the post will look like:&lt;/strong&gt;&lt;br /&gt;
-&lt;a href=&quot;#&quot;&gt;This is a link&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Bullet list in the post will look like:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Item 1&lt;/li&gt;
-  &lt;li&gt;Item 2&lt;/li&gt;
-  &lt;li&gt;Item 3&lt;/li&gt;
-  &lt;li&gt;Item 4&lt;/li&gt;
-  &lt;li&gt;Item 5&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Number list in the post will look like:&lt;/strong&gt;&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;Item 1&lt;/li&gt;
-  &lt;li&gt;Item 2&lt;/li&gt;
-  &lt;li&gt;Item 3&lt;/li&gt;
-  &lt;li&gt;Item 4&lt;/li&gt;
-  &lt;li&gt;Item 5&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;strong&gt;Images in the post will look like:&lt;/strong&gt;&lt;br /&gt;
-&lt;img src=&quot;/assets/images/canada.jpg&quot; alt=&quot;Test Image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Normal text in the post will look like&lt;/strong&gt;&lt;br /&gt;
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id finibus nisl. Etiam in hendrerit est. Nulla non erat ac lectus interdum lobortis. Vestibulum at mi ex. Mauris nisl mi, venenatis et feugiat nec, finibus porttitor velit. Suspendisse tincidunt lobortis leo, quis tristique tellus iaculis quis. Donec eleifend pulvinar gravida. Proin non lorem eros. Donec sit amet finibus ex, eget vestibulum nunc. Ut ut enim id purus porttitor tristique. Vivamus tincidunt eleifend hendrerit. Proin metus felis, ultrices vel dui in, porta dapibus dui. Sed sagittis ex vitae dui tristique dignissim. Cras vel leo ipsum.&lt;/p&gt;
-
-&lt;p&gt;Aenean ac neque et risus mattis accumsan. Sed ac tellus molestie, lacinia ante sit amet, convallis felis. Maecenas aliquet lectus nec euismod auctor. Donec finibus pellentesque tortor, ac efficitur metus suscipit non. Proin diam orci, blandit quis malesuada ac, efficitur a nisl. Mauris eleifend consequat blandit. Sed egestas quam et orci gravida, non euismod metus scelerisque. Curabitur venenatis pellentesque erat commodo pharetra. Fusce id ante nec ipsum fringilla auctor. In justo quam, feugiat placerat eleifend dapibus, luctus et quam. Fusce facilisis erat ut odio convallis viverra et id mauris. Sed vehicula tempus consectetur. Aliquam pharetra, purus non egestas tristique, tellus massa fringilla est, id sagittis tellus urna non mauris. Suspendisse fringilla, velit nec blandit facilisis, ligula ante imperdiet est, et placerat magna sem quis tortor.&lt;/p&gt;
-
-&lt;p&gt;Vestibulum vitae fermentum velit, rhoncus egestas orci. Nulla at purus ut orci posuere vulputate. In eget leo diam. In congue in diam nec elementum. Suspendisse fringilla ante nulla, eu tristique orci ultrices eget. Aenean non lorem tellus. Vestibulum tempor metus sit amet tellus feugiat, sit amet consequat lacus ultricies.&lt;/p&gt;
-
-&lt;p&gt;Donec imperdiet, lectus eget congue cursus, dolor enim finibus risus, ut molestie lorem tellus non tortor. Donec quam nibh, molestie in dapibus et, efficitur non tortor. Morbi orci tellus, mollis vel mi vitae, auctor lobortis erat. Ut gravida velit eget ligula lacinia, id rhoncus tellus gravida. Maecenas laoreet rutrum consequat. Suspendisse sed nibh dui. Curabitur dictum euismod mollis. Sed egestas libero libero, eu accumsan augue placerat non. Nunc id condimentum orci. Mauris vitae sollicitudin quam.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Giphy Gifs will look like:&lt;/strong&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;iframe src=&quot;https://giphy.com/embed/ZqlvCTNHpqrio&quot; width=&quot;480&quot; height=&quot;259&quot; frameborder=&quot;0&quot; class=&quot;giphy-embed&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;p&gt;&lt;a href=&quot;https://giphy.com/gifs/laughing-despicable-me-minions-ZqlvCTNHpqrio&quot;&gt;via GIPHY&lt;/a&gt;&lt;/p&gt;</content><author><name>The DevsLot</name><email>thedevslot@gmail.com</email></author><category term="sample" /><category term="post" /><category term="test" /><summary type="html">This post will show you how the content will look like in the post pages and how the headlines, quotes and quotes will be represented. Jekyll is mainly used to write simple markdown and after that it renders out a static pages, so you need to know the basics of writing markdown for that. For more information about writing markdown you can checkout the following markdown cheatsheets: Mastering Markdown Markdown Guide GitHub Flavored Markdown Spec This is the h1 text This is the h2 text This is the h3 text This is the h4 text This is the h5 text This is the h6 text Bold Text in the post will look like: This text is Bold Italic Text in the post will look like: This text is Italic Quotes on your post will look like this Codes on your post will look like this Link in the post will look like: This is a link Bullet list in the post will look like: Item 1 Item 2 Item 3 Item 4 Item 5 Number list in the post will look like: Item 1 Item 2 Item 3 Item 4 Item 5 Images in the post will look like: Normal text in the post will look like Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id finibus nisl. Etiam in hendrerit est. Nulla non erat ac lectus interdum lobortis. Vestibulum at mi ex. Mauris nisl mi, venenatis et feugiat nec, finibus porttitor velit. Suspendisse tincidunt lobortis leo, quis tristique tellus iaculis quis. Donec eleifend pulvinar gravida. Proin non lorem eros. Donec sit amet finibus ex, eget vestibulum nunc. Ut ut enim id purus porttitor tristique. Vivamus tincidunt eleifend hendrerit. Proin metus felis, ultrices vel dui in, porta dapibus dui. Sed sagittis ex vitae dui tristique dignissim. Cras vel leo ipsum. Aenean ac neque et risus mattis accumsan. Sed ac tellus molestie, lacinia ante sit amet, convallis felis. Maecenas aliquet lectus nec euismod auctor. Donec finibus pellentesque tortor, ac efficitur metus suscipit non. Proin diam orci, blandit quis malesuada ac, efficitur a nisl. Mauris eleifend consequat blandit. Sed egestas quam et orci gravida, non euismod metus scelerisque. Curabitur venenatis pellentesque erat commodo pharetra. Fusce id ante nec ipsum fringilla auctor. In justo quam, feugiat placerat eleifend dapibus, luctus et quam. Fusce facilisis erat ut odio convallis viverra et id mauris. Sed vehicula tempus consectetur. Aliquam pharetra, purus non egestas tristique, tellus massa fringilla est, id sagittis tellus urna non mauris. Suspendisse fringilla, velit nec blandit facilisis, ligula ante imperdiet est, et placerat magna sem quis tortor. Vestibulum vitae fermentum velit, rhoncus egestas orci. Nulla at purus ut orci posuere vulputate. In eget leo diam. In congue in diam nec elementum. Suspendisse fringilla ante nulla, eu tristique orci ultrices eget. Aenean non lorem tellus. Vestibulum tempor metus sit amet tellus feugiat, sit amet consequat lacus ultricies. Donec imperdiet, lectus eget congue cursus, dolor enim finibus risus, ut molestie lorem tellus non tortor. Donec quam nibh, molestie in dapibus et, efficitur non tortor. Morbi orci tellus, mollis vel mi vitae, auctor lobortis erat. Ut gravida velit eget ligula lacinia, id rhoncus tellus gravida. Maecenas laoreet rutrum consequat. Suspendisse sed nibh dui. Curabitur dictum euismod mollis. Sed egestas libero libero, eu accumsan augue placerat non. Nunc id condimentum orci. Mauris vitae sollicitudin quam. Giphy Gifs will look like: via GIPHY</summary></entry></feed>
+You can also comment suggestions of other pandas tools that you think would be good to be included in this blog post.&lt;/p&gt;</content><author><name>skimball_22</name></author><category term="Beginner Pandas" /><category term="Multi Level Indexing" /><category term="Concatenate" /><category term="Merge" /><category term="Group by" /><summary type="html">Introduction - Why was Pandas Created?</summary></entry></feed>
