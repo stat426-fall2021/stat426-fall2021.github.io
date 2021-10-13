@@ -1,6 +1,6 @@
 ---
 layout: post
-title: reticulate
+title: reticulate - Merging R and Python
 author: mrmorgan17
 post-image: '/assets/images/blogimages/figs-09-27/reticulate.jpeg'
 description: reticulate is an R package that interfaces with Python. The user can run Python code, create and manage virtual environments, and import modules all from R
@@ -36,10 +36,14 @@ The simplest solution that I have found is using [RStudio](https://www.rstudio.c
   * **Tools**
   * **Global Options**
   * Click on **Python**  
+
 ![RStudio Global Options](https://support.rstudio.com/hc/article_attachments/1500011460282/Screen_Shot_2021-04-21_at_3.33.02_PM.png)
+
   * Then **Select...**
+
 ![Select Python Interpreter](https://support.rstudio.com/hc/article_attachments/1500011460302/Screen_Shot_2021-04-21_at_3.34.00_PM.png)  
-  * After selecting a Python interpreter, click **Select** then **Apply**. *This will restart your R session.*
+
+* After selecting a Python interpreter, click **Select** then **Apply**. *This will restart your R session.*
 
 After this, you should be all good to go. To check which Python interpreter reticulate is using you can run the `py_config()` function. The output of which should look similar to something like this:
 
@@ -205,12 +209,15 @@ options(reticulate.repl.quiet = TRUE) # Could be added to the setup chunk in ste
   ````
 
 The reticulate package has many more functions that allow R and Python to communicate with each other. The following article explains these functions in much greater detail:
+
   * [Calling Python from R](https://rstudio.github.io/reticulate/articles/calling_python.html)
 
 ## reticulate::conclusions
 
 The main aspect that I like about the reticulate package is that it's allowed me to use RStudio as my IDE for both R and Python which is great because I am already familiar with RStudio. Although, I still have a lot to learn about the reticulate package. My personal goal is to continue to learn and practice with this package so that I can become well-versed in both R and Python.  
 
-Hopefully, this post has piqued you interest and served as a tutorial that helps you in getting up and running with the reticulate package yourself.
+Hopefully, this tutorial has inspired you to use the reticulate package!
+
+If you have additional insights and/or experiences about the reticulate package, please add them in the comments below!
 
 Best of luck!
