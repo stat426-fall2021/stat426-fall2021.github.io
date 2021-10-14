@@ -29,7 +29,7 @@ Amazon DeepRacer is a way to learn about and practice reinforcement learning by 
 
 Here's footage from BYU's 2019 DeepRacer event to give you an idea what it looks like.
 
-<iframe width="560" height="315" src="https://youtu.be/6yUcWqdQH5w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe> width="560" height="315" src="https://youtu.be/6yUcWqdQH5w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 https://youtu.be/6yUcWqdQH5w
 
