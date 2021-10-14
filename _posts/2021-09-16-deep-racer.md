@@ -30,6 +30,7 @@ Amazon DeepRacer is a way to learn about and practice reinforcement learning by 
 Here's footage from BYU's 2019 DeepRacer event to give you an idea what it looks like.
 
 [![BYU DeepRacer](https://img.youtube.com/vi/6yUcWqdQH5w/0.jpg)](https://youtu.be/6yUcWqdQH5w)
+
 https://youtu.be/6yUcWqdQH5w
 
 In machine learning terms, the racetrack is the *environment*. 
