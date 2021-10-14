@@ -29,9 +29,7 @@ Amazon DeepRacer is a way to learn about and practice reinforcement learning by 
 
 Here's footage from BYU's 2019 DeepRacer event to give you an idea what it looks like.
 
-<iframe> width="560" height="315" src="https://youtu.be/6yUcWqdQH5w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-https://youtu.be/6yUcWqdQH5w
+[![BYU DeepRacer](https://img.youtube.com/vi/6yUcWqdQH5w/0.jpg)](https://youtu.be/6yUcWqdQH5w)
 
 In machine learning terms, the racetrack is the *environment*. 
 
@@ -43,7 +41,7 @@ But you don't make the model. All you write is the reward function, and the mode
 
 You'll definitely want at least an hour of training, but eventually, your model may become overfit for the specific track you trained on. The ideal training parameters and time of the training are all part of the secret sauce that makes deepracing fun.
 
-![Simulation](https://github.com/izzy64/stat426-fall2021.github.io/blob/79069163427dc774ff39efaa3a24ee217359349a/assets/images/DRsimulation.png)
+![DR Simulation](https://github.com/izzy64/stat426-fall2021.github.io/blob/79069163427dc774ff39efaa3a24ee217359349a/assets/images/DRsimulation.png)
 
 ### Let's Race!
 
