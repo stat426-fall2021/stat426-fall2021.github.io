@@ -27,6 +27,10 @@ Well, computers have always been a lot better than humans at math, so what if we
 
 Amazon DeepRacer is a way to learn about and practice reinforcement learning by training a small racecar to drive around a track.  
 
+Here's footage from BYU's 2019 DeepRacer event to give you an idea what it looks like.
+
+https://youtu.be/6yUcWqdQH5w
+
 In machine learning terms, the racetrack is the *environment*. 
 
 The car is an *agent*. An agent is the entity that can take actions, with the consequences of those actions altering the environment, and hopefully 'teaching' the agent to make better decisions. For an Amazon DeepRacer vehicle, the actions it can take are to change the angle of its wheels, and change it's speed. 
