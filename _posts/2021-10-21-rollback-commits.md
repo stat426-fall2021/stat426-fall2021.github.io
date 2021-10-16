@@ -1,67 +1,60 @@
 ---
 title: Rolling Back Commits in Git
 layout: post
-author: the_devslot
+author: jace899
 post-image: "https://raw.githubusercontent.com/thedevslot/WhatATheme/master/assets/images/SamplePost.png?token=AHMQUEPC4IFADOF5VG4QVN26Z64GG"
 description: A sample post to show how the content will look and how will different
   headlines, quotes and codes will be represented.
 tags:
 - revert
-- post
-- test
+- git
+- rollback
+- commit
 ---
 
 As all data scientists know, coding can do weird things during routine processes. Whether it's an unexpected data type returning errors on a dataframe method or a regular expression returning an extra space, small changes to code can drastically change the outcome of any project. One of the processes that produces such odd outcomes at an unexpectedly high rate is moving code that functions on a local machine to a production-level application. While these errors can be largely prevented by merging branches with the main repository at least daily, sometimes small logic errors creep into production that can break downstream models or lead to data loss, both of which can be detrimental to business models. Happily, Git offers many options to quickly remove the offending lines of code until the error can be fixed, thus returning the code to its previously functioning state.
 
-![T](/assets\images\blogimages\figs-10-21\dont-touch-my-code.jpg)
+![Dont touch the code](/assets\images\blogimages\figs-10-21\dont-touch-my-code.jpg)
 
 ---
 
-# This is the h1 text
-## This is the h2 text
-### This is the h3 text
-#### This is the h4 text
-##### This is the h5 text
-###### This is the h6 text
+# Rolling Back Commits using Git
+For all of the following commands, the offending commit needs to be identified in order to remove it. Some help for debugging can be found in this article: [3 Awesome Git Commands](https://www.vinta.com.br/blog/2015/3-awesome-git-commands/).
+## Revert
+The revert command keeps with the idea behind Git that changes should be documented so that collaborators can understand why the code has been changed. In essence, `git revert` reverses the effects of unwanted commits (i.e. adds deleted lines and deletes added lines) through a series of new commits. These new commits ensure that the changes are documented so that other programmers (including future you) know why not to do what was just done. Using `git revert` in its base form is very simple. Just type the command `git revert` followed by the names of the offending commits. For example, suppose that we make the following git repository along with the commits shown.
 
-**Bold Text in the post will look like:**<br>
-**This text is Bold**
+![initial-stuff.jpg](/assets\images\blogimages\figs-10-21\initial-stuff.jpg)
 
-**Italic Text in the post will look like:**<br>
-*This text is Italic*
+As shown, new_file.txt contains 'Stat 426', with a newline after 'Stat'. Now we make an error in our code as shown below.
 
-> Quotes on your post will look like this
+![error](/assets\images\blogimages\figs-10-21\not-wanted.jpg)
 
-`Codes on your post will look like this`
+However, stating that Stat 426 is dumb is an undesirable addition to our code and is something we want to get rid of. We will use `git revert` will be used to change it back. We first use `git reflog` to find the commit names, which is fairly simple since our repository is so small. We know that 'commit 3' is the one we want to change, so we use the id associated with it to reverse the changes with `git revert`, as seen below.
 
-**Link in the post will look like:**<br>
-[This is a link](#)
+![revert-save-day](/assets\images\blogimages\figs-10-21\Revert-saves-day.jpg)
 
-**Bullet list in the post will look like:**
-* Item 1
-* Item 2
-* Item 3
-* Item 4
-* Item 5
+As shown above in the second usage of `git reflog`, there is an extra commit listed that states that we reverted the changes from commit 3 because the statement made about the class wasn't true. Now new_file.txt is restored to its previous state, without the false information inside of it.
 
-**Number list in the post will look like:**
-1. Item 1
-2. Item 2
-3. Item 3
-4. Item 4
-5. Item 5
+For more information about `git revert`, see the [git revert documentation](https://git-scm.com/docs/git-revert).
 
-**Images in the post will look like:**<br>
-![Test Image](/assets/images/canada.jpg)
+## Reset
 
-**Normal text in the post will look like**<br>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id finibus nisl. Etiam in hendrerit est. Nulla non erat ac lectus interdum lobortis. Vestibulum at mi ex. Mauris nisl mi, venenatis et feugiat nec, finibus porttitor velit. Suspendisse tincidunt lobortis leo, quis tristique tellus iaculis quis. Donec eleifend pulvinar gravida. Proin non lorem eros. Donec sit amet finibus ex, eget vestibulum nunc. Ut ut enim id purus porttitor tristique. Vivamus tincidunt eleifend hendrerit. Proin metus felis, ultrices vel dui in, porta dapibus dui. Sed sagittis ex vitae dui tristique dignissim. Cras vel leo ipsum.
+While `git revert` is sufficient when the changes made can be traced back to one bad commit, it's ability to work with many undesirable changes is limited by the coder's desire to input every single commit id until reaching the commit with the code they want. In contrast, `git reset` excels at such tasks.
 
-Aenean ac neque et risus mattis accumsan. Sed ac tellus molestie, lacinia ante sit amet, convallis felis. Maecenas aliquet lectus nec euismod auctor. Donec finibus pellentesque tortor, ac efficitur metus suscipit non. Proin diam orci, blandit quis malesuada ac, efficitur a nisl. Mauris eleifend consequat blandit. Sed egestas quam et orci gravida, non euismod metus scelerisque. Curabitur venenatis pellentesque erat commodo pharetra. Fusce id ante nec ipsum fringilla auctor. In justo quam, feugiat placerat eleifend dapibus, luctus et quam. Fusce facilisis erat ut odio convallis viverra et id mauris. Sed vehicula tempus consectetur. Aliquam pharetra, purus non egestas tristique, tellus massa fringilla est, id sagittis tellus urna non mauris. Suspendisse fringilla, velit nec blandit facilisis, ligula ante imperdiet est, et placerat magna sem quis tortor.
+## Restore
 
-Vestibulum vitae fermentum velit, rhoncus egestas orci. Nulla at purus ut orci posuere vulputate. In eget leo diam. In congue in diam nec elementum. Suspendisse fringilla ante nulla, eu tristique orci ultrices eget. Aenean non lorem tellus. Vestibulum tempor metus sit amet tellus feugiat, sit amet consequat lacus ultricies.
+While `git revert` and `git reset` work well to restore previous commits, it is often useful to restore previous commits only for certain files instead of rewriting each file the commit touched. This is easily achieved by using `git restore`. While the same function can be fulfilled using the checkout command, `git restore` tends to be less complicated since it is intended for restoring specific files instead of entire branches, which is why we use it here. However, since the command is still experimental and subject to change, checking the documentation often is highly recommended. [Click here to check the documentation](https://git-scm.com/docs/git-restore). In order to show how it works, consider an example with two files that contain good content. They have been commited as shown below.
 
-Donec imperdiet, lectus eget congue cursus, dolor enim finibus risus, ut molestie lorem tellus non tortor. Donec quam nibh, molestie in dapibus et, efficitur non tortor. Morbi orci tellus, mollis vel mi vitae, auctor lobortis erat. Ut gravida velit eget ligula lacinia, id rhoncus tellus gravida. Maecenas laoreet rutrum consequat. Suspendisse sed nibh dui. Curabitur dictum euismod mollis. Sed egestas libero libero, eu accumsan augue placerat non. Nunc id condimentum orci. Mauris vitae sollicitudin quam.
+![initial restore](/assets\images\blogimages\figs-10-21\restore-begin.jpg)
 
-**Giphy Gifs will look like:**<br>
-<iframe src="https://giphy.com/embed/ZqlvCTNHpqrio" width="480" height="259" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/laughing-despicable-me-minions-ZqlvCTNHpqrio">via GIPHY</a></p>
+However, after the first commit, some unwanted content is added. It is subsequently committed, and is now part of our code.
+
+![bad stuff](/assets\images\blogimages\figs-10-21\restore-bad.jpg)
+
+After the undesirable content is added, some desirable content is added and committed as well.
+
+![good stuff](/assets\images\blogimages\figs-10-21\restore-good.jpg)
+
+Now, if we reverted or restored to the first commit, we would lose the desired code in new_file2.txt and need to redo our work! While that would be trivial here, in larger scale cases, such a scenario would most likely mean at least hours of work would need to be redone. Therefore, we will restore only the file with undesirable content to the original commit and leave the other file alone. Using the reflog command to find the commit id, we can use `git restore` to get the original content of the file back.
+
+![final restore](/assets\images\blogimages\figs-10-21\restore-final.jpg)
