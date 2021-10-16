@@ -31,7 +31,7 @@ Before setting off to capture and understand the semantic change of your favorit
  - The necessity for large amounts of training data
  - Word embeddings can vary greatly given changes in model hyperparameters
  - Orthogonal Procrustes and other coordinate alignment methods introduce certain deficiencies such as not being able to introduce new words that arise at later times
- - Typical sate-pf-the-art word embeddings struggle with Polysemy (the coexistence of different senses within a single word)
+ - Typical sate-of-the-art word embeddings struggle with Polysemy (the coexistence of different senses within a single word)
  - Other statistical phenomena observed within the context of semantic change such as [the law of conformity and the law of innovation](https://aclanthology.org/P15-1010.pdf).
 
 ### Conclusion
