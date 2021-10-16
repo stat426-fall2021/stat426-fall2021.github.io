@@ -39,7 +39,7 @@ For more information about `git revert`, see the [git revert documentation](http
 
 ## Reset
 
-While `git revert` is sufficient when the changes made can be traced back to one bad commit, it's ability to work with many undesirable changes is limited by the coder's desire to input every single commit id until reaching the commit with the code they want. In contrast, `git reset` excels at such tasks.
+While `git revert` is sufficient when the changes made can be traced back to one bad commit, it's ability to work with many undesirable changes over multiple commits is limited by the coder's desire to input every single commit id until reaching the commit with the code they want. In contrast, `git reset` excels at such tasks. Instead of reverting changes from one commit, it resets the repository to specific commit, getting rid of the changes made after the desired commit.
 
 ## Restore
 
@@ -58,3 +58,7 @@ After the undesirable content is added, some desirable content is added and comm
 Now, if we reverted or restored to the first commit, we would lose the desired code in new_file2.txt and need to redo our work! While that would be trivial here, in larger scale cases, such a scenario would most likely mean at least hours of work would need to be redone. Therefore, we will restore only the file with undesirable content to the original commit and leave the other file alone. Using the reflog command to find the commit id, we can use `git restore` to get the original content of the file back.
 
 ![final restore](/assets\images\blogimages\figs-10-21\restore-final.jpg)
+
+As shown above, the file with undesirable content was changed back to way it was in the specified commit and our other file was left alone. However, the changes we made are still uncommitted, so be warned!
+
+# Conclusion
