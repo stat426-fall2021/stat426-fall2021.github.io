@@ -2,7 +2,7 @@
 title: Reinforcement Racing
 layout: post
 author: izzy64
-post-image: "https://github.com/izzy64/stat426-fall2021.github.io/blob/79069163427dc774ff39efaa3a24ee217359349a/assets/images/deepracer.jpeg"
+post-image: /assets/images/blogimages/deepracer.jpeg
 description: Learn about reinforcement learning on the racetrack
 tags:
 - reinforcement
@@ -30,7 +30,8 @@ Amazon DeepRacer is a way to learn about and practice reinforcement learning by 
 Here's footage from BYU's 2019 DeepRacer event to give you an idea what it looks like.
 
 [![BYU DeepRacer](https://img.youtube.com/vi/6yUcWqdQH5w/0.jpg)](https://youtu.be/6yUcWqdQH5w)
-https://youtu.be/6yUcWqdQH5w
+
+[2019 DeepRacer Event](https://youtu.be/6yUcWqdQH5w)
 
 In machine learning terms, the racetrack is the *environment*. 
 
@@ -42,21 +43,21 @@ But you don't make the model. All you write is the reward function, and the mode
 
 You'll definitely want at least an hour of training, but eventually, your model may become overfit for the specific track you trained on. The ideal training parameters and time of the training are all part of the secret sauce that makes deepracing fun.
 
-![DR Simulation](https://github.com/izzy64/stat426-fall2021.github.io/blob/79069163427dc774ff39efaa3a24ee217359349a/assets/images/DRsimulation.png)
+![DR Simulation](/assets/images/blogimages/DRsimulation.png)
 
 ### Let's Race!
 
 I challenge you to beat my model (though I doubt it will be very hard). Luckilly, reward functions are written in Python, and aren't complicated to get started with! 
 
 I've created a link where our class can pit our models against each other:
-https://console.aws.amazon.com/deepracer/home#raceToken/g_Jv-1ZVQrynlcB1GgLPpg
+[Enter the Race!](https://console.aws.amazon.com/deepracer/home#raceToken/g_Jv-1ZVQrynlcB1GgLPpg)
 
 You'll need to sign up for an AWS account, which would normally require your credit or debit card, but as a student, you can sign up for an AWS educate account and have one year of free-tier computing for free:
-https://www.awseducate.com/registration#APP_TYPE
+[AWS Educate](https://www.awseducate.com/registration#APP_TYPE)
 
 If, like me, you've already timed out of your educate account, don't worry, Amazon offers ten hours of model training/evaluation for free in a generic account (but you do need to supply card details). As always, when working in the cloud, pay attention to costs, know where the free-tier cutoffs are, and keep your login credentials private!
 
 Once you have an account, the free training I've linked below provides everything you need to get started. It's honestly a little addicting watching your little bot scoot around the virtual track while doing training simulations.
-https://www.aws.training/Details/eLearning?id=32143
+[Quick Start Guide](https://www.aws.training/Details/eLearning?id=32143)
 
 Happy racing!
