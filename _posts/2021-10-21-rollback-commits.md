@@ -39,7 +39,23 @@ For more information about `git revert`, see the [git revert documentation](http
 
 ## Reset
 
-While `git revert` is sufficient when the changes made can be traced back to one bad commit, it's ability to work with many undesirable changes over multiple commits is limited by the coder's desire to input every single commit id until reaching the commit with the code they want. In contrast, `git reset` excels at such tasks. Instead of reverting changes from one commit, it resets the repository to specific commit, getting rid of the changes made after the desired commit.
+While `git revert` is sufficient when the changes made can be traced back to one bad commit, it's ability to work with many undesirable changes over multiple commits is limited by the coder's desire to input every single commit id until reaching the commit with the code they want. In contrast, `git reset` excels at such tasks. Instead of reverting changes from one commit, it resets the repository to specific commit, getting rid of the changes made after the desired commit. For example, consider a repository with a file called 'new_file.txt', as shown below.
+
+![good-reset](/assets\images\blogimages\figs-10-21\good-reset.jpg)
+
+The file 'new_file.txt' now holds desirable code and is committed. However, further material is added and committed as shown below.
+
+![bad-reset](/assets\images\blogimages\figs-10-21\reset-bad.jpg)
+
+While everything may look correct above, upon further inspection there is a mistake. We accidentally overwrote the file and didn't realize it! Now the code is incomplete and incorrect, as shown below.
+
+![realize-reset](/assets\images\blogimages\figs-10-21\reset-realize.jpg)
+
+This kind of situation is where `git reset` is useful. Because the code following the change is incorrect by more than one commit, it is important to reset our commits to the functioning code in the first commit.
+
+![fix-reset](/assets\images\blogimages\figs-10-21\reset-fix.jpg)
+
+As shown above, the correct code from a previous commit replaced the faulty code, which was the desired effect. For more information about `git reset`, [Click here to check the documentation](https://git-scm.com/docs/git-reset)
 
 ## Restore
 
@@ -62,3 +78,5 @@ Now, if we reverted or restored to the first commit, we would lose the desired c
 As shown above, the file with undesirable content was changed back to way it was in the specified commit and our other file was left alone. However, the changes we made are still uncommitted, so be warned!
 
 # Conclusion
+
+Because coding is a large part of data science, every data scientist will make mistakes that will get committed. To think otherwise is naive at best. Therefore, it is important to know how to remove those errors. When those errors get committed to a repository, using  `git revert`, `git reset`, and `git restore` can be extremely useful in bringing faulty new code back to production-level old code.
