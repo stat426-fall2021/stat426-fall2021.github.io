@@ -2,7 +2,7 @@
 title: "Expanding Your Tools as a Data Scientist: Learning Python After R"
 layout: post
 author: erstewart14
-post-image: /assests/images/blogimages/figs-10-13/python_to_r.png
+post-image: /assets/images/blogimages/figs-10-13/python_to_r.png
 description: Here are some quick tips to streamline your experience in learning Python after R.
 tags:
 - R

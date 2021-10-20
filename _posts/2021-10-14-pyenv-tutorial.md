@@ -1,8 +1,8 @@
 ---
 title: "Sample Post"
-author: 18katesmit
 layout: post
-post-image: "https://files.realpython.com/media/Getting-Started-With-pyenv_Watermarked.7b1dd55b32a1.jpg""
+author: 18katesmit
+post-image: "https://files.realpython.com/media/Getting-Started-With-pyenv_Watermarked.7b1dd55b32a1.jpg"
 description: A Brief Intro to Multiple Python Versions with Pyenv
 tags:
 - python
