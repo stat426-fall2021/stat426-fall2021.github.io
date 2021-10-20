@@ -2,9 +2,8 @@
 title: Rolling Back Commits in Git
 layout: post
 author: jace899
-post-image: "https://raw.githubusercontent.com/thedevslot/WhatATheme/master/assets/images/SamplePost.png?token=AHMQUEPC4IFADOF5VG4QVN26Z64GG"
-description: A sample post to show how the content will look and how will different
-  headlines, quotes and codes will be represented.
+post-image: 'assets\images\blogimages\figs-10-21\title_image.png'
+description: An overview of different ways to roll back committed changes in Git.
 tags:
 - revert
 - git
@@ -55,7 +54,9 @@ This kind of situation is where `git reset` is useful. Because the additional co
 
 ![fix-reset](/assets\images\blogimages\figs-10-21\reset-fix.jpg)
 
-As shown above, the correct code from a previous commit replaced the faulty code, which was the desired effect. However, using this format, there isn't an option to name the commit that records the reset. Notwithstanding, a commit will be made that records the change. For more information about `git reset`, [Click here to check the documentation for git reset](https://git-scm.com/docs/git-reset).
+As shown above, the correct code from a previous commit replaced the faulty code, which was the desired effect. However, using this format, there isn't an option to name the commit that records the reset. Notwithstanding, a commit will be made that records the change. 
+
+For more information about `git reset`, [click here to check the documentation for git reset](https://git-scm.com/docs/git-reset).
 
 ## Restore
 
@@ -81,4 +82,4 @@ As shown above, the file with undesirable content was changed back to way it was
 
 # Conclusion
 
-Because coding is a large part of data science, every data scientist will make mistakes that will get committed. To think otherwise is naive at best. Therefore, it is important to know how to remove those errors. When those errors get committed to a repository, using  `git revert`, `git reset`, and `git restore` can be extremely useful in bringing faulty new code back to production-level old code.
+Because coding is a large part of data science, every data scientist will make mistakes that will get committed. To think otherwise is naive at best. Therefore, it is important to know how to remove those errors. When those errors get committed to a repository, using  `git revert`, `git reset`, and `git restore` can be extremely useful in changing faulty new code back to production-level old code.
