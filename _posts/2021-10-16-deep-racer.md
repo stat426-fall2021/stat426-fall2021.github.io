@@ -2,7 +2,7 @@
 title: Reinforcement Racing
 layout: post
 author: izzy64
-post-image: /assets/images/blogimages/deepracer.jpeg
+post-image: /assets/images/blogimages/figs-10-16/deepracer.jpeg
 description: Learn about reinforcement learning on the racetrack
 tags:
 - reinforcement
@@ -43,7 +43,7 @@ But you don't make the model. All you write is the reward function, and the mode
 
 You'll definitely want at least an hour of training, but eventually, your model may become overfit for the specific track you trained on. The ideal training parameters and time of the training are all part of the secret sauce that makes deepracing fun.
 
-![DR Simulation](/assets/images/blogimages/DRsimulation.png)
+![DR Simulation](/assets/images/blogimages/figs-10-16/DRsimulation.png)
 
 ### Let's Race!
 
