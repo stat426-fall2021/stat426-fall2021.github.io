@@ -1,6 +1,18 @@
-# Observing Semantic Change with Word Embeddings
+---
+title: Observing Semantic Change with Word Embeddings
+layout: post
+author: Sonny George
+post-image: "https://live.staticflickr.com/65535/48342791722_544f7dc0a3_b.jpg"
+description: A post describing the basics of observing semantic change with word embeddings.
+tags:
+- word
+- embeddings
+- semantic
+- change
+- NLP
+---
 
-Sonny George--10/16/21
+# Observing Semantic Change with Word Embeddings
 
 Semantic change refers to how a word's meaning changes over time. Although semantic change is very complex, nuanced, and largely not well-suited to analytic manipulation, the availability of large, decade-spanning corpora of publications has allowed NLP researchers the opportunity to explore computational approaches to better observe it. In this post, I will provide a low-level introduction to using word embeddings as a conduit for observing semantic change.
 
