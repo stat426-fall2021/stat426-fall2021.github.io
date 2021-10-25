@@ -28,15 +28,15 @@
             <!--Link Section-->
             <div class="column has-text-white">
                 <h3>More Links</h3>
-                {% for sitepage in site.html_pages offset: 4 %}
-                {% unless sitepage.url == '/'  limit: 2 %}
-                <li>
-                    <a href="{{sitepage.url | absolute_url}}">{{sitepage.title}}</a>
-                </li>
-                {% endunless %}
-                {% endfor %}
+                
                 <li>
                     <a href="https://statistics.byu.edu" target="_blank" rel="noopener noreferrer">BYU Statistics Department</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/byustatistics/" target="_blank" rel="noopener noreferrer">BYU Statistics Instagram</a>
+                </li>
+                <li>
+                    <a href="https://www.byu.edu/" target="_blank" rel="noopener noreferrer">Brigham Young University</a>
                 </li>
             </div>
 
