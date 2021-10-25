@@ -1,9 +1,9 @@
 ---
-title: Tutorial: Text Generation Twitter Bot with Markov Chains
+title: Build a Markov Chain Text Generation Twitter Bot
 layout: post
 author: tscotn
 post-image: /assets/images/blogimages/figs-10-20/cover.jpeg
-description: A step-by-step demonstration for building a low-maintenance Python Twitter Bot that tweets only the best statistically-generated gibberish.
+description: A step-by-step tutorial for building a low-maintenance Python Twitter Bot that tweets only the best statistically-generated gibberish.
 tags:
 - Twitter
 - Python
@@ -11,6 +11,7 @@ tags:
 - Text Generation
 - Bot
 ---
+
 
 ## So you want to build a Twitter bot.
 
