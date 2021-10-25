@@ -1,7 +1,7 @@
 ---
 title: Automating a Python Script on a Mac
 layout: post
-author: rexxmoss
+author: rexmoss
 post-image: /assets/images/blogimages/figs-10-22/clock.jpeg
 description: How to take a python script and have it run automatically on a scheduled interval.
 tags:
