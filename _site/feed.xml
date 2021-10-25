@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-10-25T11:04:45-06:00</updated><id>/feed.xml</id><title type="html">Stat 426 - Fall 2021</title><subtitle>Class Blog and Projects</subtitle><entry><title type="html">Making Data Science Stick</title><link href="/blog/Learning-Data-Science" rel="alternate" type="text/html" title="Making Data Science Stick" /><published>2021-10-23T00:00:00-06:00</published><updated>2021-10-23T00:00:00-06:00</updated><id>/blog/Learning-Data-Science</id><content type="html" xml:base="/blog/Learning-Data-Science">&lt;p&gt;Learning data science is not always simple. Data science is composed by knowledge from different disciplines including math, statistics, and computer science. Because learning data science requires acquiring a great amount of knowledge, it would be useful to also learn a little bit about how we learn. If we learn how to more effectively acquire new knowledge, store it, and retrieve it when necessary, we will be able to keep up with advancing technologies and become more efficient data scientists.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-10-25T11:53:15-06:00</updated><id>/feed.xml</id><title type="html">Stat 426 - Fall 2021</title><subtitle>Class Blog and Projects</subtitle><entry><title type="html">Making Data Science Stick</title><link href="/blog/Learning-Data-Science" rel="alternate" type="text/html" title="Making Data Science Stick" /><published>2021-10-23T00:00:00-06:00</published><updated>2021-10-23T00:00:00-06:00</updated><id>/blog/Learning-Data-Science</id><content type="html" xml:base="/blog/Learning-Data-Science">&lt;p&gt;Learning data science is not always simple. Data science is composed by knowledge from different disciplines including math, statistics, and computer science. Because learning data science requires acquiring a great amount of knowledge, it would be useful to also learn a little bit about how we learn. If we learn how to more effectively acquire new knowledge, store it, and retrieve it when necessary, we will be able to keep up with advancing technologies and become more efficient data scientists.&lt;/p&gt;
 
 &lt;h2 id=&quot;principles-of-successful-learning&quot;&gt;Principles of Successful Learning&lt;/h2&gt;
 
@@ -202,7 +202,220 @@
 
 &lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
 
-&lt;p&gt;Because coding is a large part of data science, every data scientist will make mistakes that will get committed. To think otherwise is naive at best. Therefore, it is important to know how to remove those errors. When those errors get committed to a repository, using  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git revert&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git reset&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git restore&lt;/code&gt; can be extremely useful in changing faulty new code back to production-level old code.&lt;/p&gt;</content><author><name>Jace Ritchie</name><email>ritchie.jace@gmail.com</email></author><category term="revert" /><category term="git" /><category term="rollback" /><category term="commit" /><summary type="html">As all data scientists know, coding can do weird things during routine processes. Whether it’s an unexpected data type returning errors on a dataframe method or a regular expression returning an extra space, small changes to code can drastically change the outcome of any project. One of the processes that produces such odd outcomes at an unexpectedly high rate is moving code that functions on a local machine to a production-level application. While these errors can be largely prevented by updating branches with the main repository at least daily to ensure data quality, sometimes small logic errors creep into production that can break downstream models or lead to data loss, both of which can be detrimental to business models. Happily, Git offers many options to quickly remove the offending lines of code until the error can be fixed, thus returning the code to its previously functioning state.</summary></entry><entry><title type="html">How to Excel at Microsoft Excel with Python Library openpyxl</title><link href="/blog/excel-in-python" rel="alternate" type="text/html" title="How to Excel at Microsoft Excel with Python Library openpyxl" /><published>2021-10-19T00:00:00-06:00</published><updated>2021-10-19T00:00:00-06:00</updated><id>/blog/excel-in-python</id><content type="html" xml:base="/blog/excel-in-python">&lt;p&gt;For many in the world, Microsoft Excel is the most advanced tool in their toolbox of data analytics. And to be fair, it is an extremely powerful software. You can manipulate data in all sorts of ways, write functions and equations, create insightful graphics, and format data in a way that pleases the eye. However, many times as a data scientist, simply using Excel is not going to cut it. In today’s post, I want to go over some helpful functions that are introduced by using the library openpyxl, as well as some helpful ones found in pandas. We will cover reading in Excel files, writing to Excel files, as well as working in real time with an Excel file.
+&lt;p&gt;Because coding is a large part of data science, every data scientist will make mistakes that will get committed. To think otherwise is naive at best. Therefore, it is important to know how to remove those errors. When those errors get committed to a repository, using  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git revert&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git reset&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git restore&lt;/code&gt; can be extremely useful in changing faulty new code back to production-level old code.&lt;/p&gt;</content><author><name>Jace Ritchie</name><email>ritchie.jace@gmail.com</email></author><category term="revert" /><category term="git" /><category term="rollback" /><category term="commit" /><summary type="html">As all data scientists know, coding can do weird things during routine processes. Whether it’s an unexpected data type returning errors on a dataframe method or a regular expression returning an extra space, small changes to code can drastically change the outcome of any project. One of the processes that produces such odd outcomes at an unexpectedly high rate is moving code that functions on a local machine to a production-level application. While these errors can be largely prevented by updating branches with the main repository at least daily to ensure data quality, sometimes small logic errors creep into production that can break downstream models or lead to data loss, both of which can be detrimental to business models. Happily, Git offers many options to quickly remove the offending lines of code until the error can be fixed, thus returning the code to its previously functioning state.</summary></entry><entry><title type="html">Build a Markov Chain Text Generation Twitter Bot</title><link href="/blog/markov-twitter" rel="alternate" type="text/html" title="Build a Markov Chain Text Generation Twitter Bot" /><published>2021-10-20T00:00:00-06:00</published><updated>2021-10-20T00:00:00-06:00</updated><id>/blog/markov-twitter</id><content type="html" xml:base="/blog/markov-twitter">&lt;h2 id=&quot;so-you-want-to-build-a-twitter-bot&quot;&gt;So you want to build a Twitter bot.&lt;/h2&gt;
+
+&lt;p&gt;For whatever reason, you thought it might be fun to take the social out of social media and make a robot do it. You’re in good company; Twitter is full of bots ranging from artsy, to helpful, to downright problematic. I would encourage you to think deeply about the purpose of your bot and only move forward if you’re sure it’ll have a net benefit on society, or at least just breaks even.&lt;/p&gt;
+
+&lt;p&gt;With that out of the way, let’s get to it. Check out the bot I made with this tutorial to see what we’ll be building:&lt;/p&gt;
+
+&lt;h3 id=&quot;stat-426-twitter-bot&quot;&gt;&lt;a href=&quot;https://twitter.com/stat426bot&quot;&gt;STAT 426 Twitter Bot&lt;/a&gt;&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
+
+&lt;p&gt;Lucky for us, this is a task with clearly defined steps. There are lots of different kinds of Twitter bots you can make, and it can be a bit more complicated to build one that does anything more advanced than just tweeting, like replying to comments or otherwise interacting with users. Feel free to explore on your own and be creative, but this tutorial will only go over how to make a bot that tweets a generated phrase.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Please note that these are Mac-specific instructions, but with some googling, each step should be very similar to what you’ll need to do if you’re on a Windows or Linux machine.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;To reach our goal, we’ll have to go through the following steps:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Find a corpus from which to generate tweets.&lt;/li&gt;
+  &lt;li&gt;Generate tweets with Markovify.&lt;/li&gt;
+  &lt;li&gt;Set up a Twitter Developer Account.&lt;/li&gt;
+  &lt;li&gt;Write a script to tweet via the Twitter API.&lt;/li&gt;
+  &lt;li&gt;Put the script on a timer to tweet at specific intervals.&lt;/li&gt;
+  &lt;li&gt;Enjoy fame.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;build-a-corpus&quot;&gt;Build a Corpus&lt;/h2&gt;
+
+&lt;p&gt;A corpus is a source text. It can be a book, a website–anything with words. I’ve made Twitter bots using quotes from the host of TV’s Survivor Jeff Probst, a journalist from The Atlantic, and BYU Speeches, so there are plenty of options to choose from. For this example, we’ll be making a Data Science Blog bot and use the other articles on this website as the source corpus. First, I’ll need to stitch together all the blogs into one file. Because I have them all in the repo cloned onto my machine, I can use this very simple linux command from the Terminal on Mac:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;cat&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;md&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;corpus&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;md&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;em&gt;The cat function concatenates and outputs the content of provided files. *.md matches all Markdown files in the directory and the “&amp;gt;” operator writes that output into the file I name.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-10-20/corpus.png&quot; alt=&quot;Screenshot of corpus file&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This step can also be accomplished by copy-pasting your desired source text from articles, books, etc. into one file. With your corpus file built, we can use Python to generate sentences from this. We’ll use the Markovify package for this.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;generating-text-with-markov-chains&quot;&gt;Generating Text with Markov Chains&lt;/h2&gt;
+
+&lt;p&gt;Text generation can be done using a variety of methods ranging in difficulty and quality of output. We’ll stick with an easier method that utilizes &lt;a href=&quot;https://en.wikipedia.org/wiki/Markov_chain&quot;&gt;Markov Chains&lt;/a&gt;, but it should be noted that the quality of your generated text depends heavily on the quality of your corpus. Inane, incomprehensible sentences aren’t a sign of something going wrong, that’s kinda just the way these work.&lt;/p&gt;
+
+&lt;p&gt;There is a lot that you can read about Markov Chains, which are used in modeling applications ranging from animal populations to currency exchange rates. In short, a Markov Chain is a model made up of discrete ‘states’ which map to outcomes that occur at defined probabilities. It’s very similar to a finite state machine, with the difference of probability rather than input defined transitions. For example, a Markov Chain that models the weather might have a raining state, with a certain probability that it continues to rain, a probability that it starts snowing, a probability that it stops raining, etc. In the case of text generation, a Markov Chain creates a sentence word by word using the source corpus as a model. That model is comprised of each and every word in the corpus mapped to any number of outcomes as the word that could potentially follow the first, with the probability that the outcome occurs defined as the proportion of the times that word appears after the first word in the corpus. Whew. Maybe this diagram of the model based on a one-sentence corpus will help:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“the quick brown fox jumps over the lazy dog.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-10-20/pangram.png&quot; alt=&quot;Markov Chain visualization of the famous pangram.&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A sentence is generated by following the flowchart adding each word you pass to your sentence in the order you pass it. This sentence obviously doesn’t have many words from which to build a model, so generated sentences won’t be especially interesting or unique. With a few more sentences, however, the model begins to take a more concrete form. Here’s another Markov Chain that represents this quote about Breath of the Wild:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“This is the new world of Zelda. It is quite a vast world is it not? You can even reach those mountains in the distance, if you walk far enough. We could not create such a wide world like this in the past.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-10-20/botw.png&quot; alt=&quot;Breath of the Wild Markov Model.&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you want to do anything more complicated with Text Generation for your Twitter Bot, you might check out &lt;a href=&quot;https://openai.com&quot;&gt;OpenAI&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;To make these models from text in Python, we’ll use a package called &lt;a href=&quot;https://pypi.org/project/markovify&quot;&gt;Markovify&lt;/a&gt;. Go ahead and install the package. If you’re using pip, you can run the command&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;pip&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;markovify&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The first step when using this package is to build the model from your file. Read your corpus into python and instantiate a Text object from markovify:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;markovify&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/path/to/my/corpus.txt&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;text_model&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;markovify&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now generate a sentence of up to 280 characters (the Twitter character limit) using make_short_sentence(280).&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;generated_sentence&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;text_model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;make_short_sentence&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;280&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;One such sentence generated from the Zelda quote above might look like this:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;‘We could not create such a wide world like this in the distance, if you walk far enough.’&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Something that greatly affects the quality of your model is the ‘state_size’ parameter. This defines the number of words that are included in each state or word group from which the outcome word is predicted. Increasing this parameter will often improve the intelligibility of your sentences. The default state size is 2 words, and the syntax to change it is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;markovify.Text(corpus, state_size=3)&lt;/code&gt;. Just remember that the larger you set the state parameter, the closer your generated sentences will look to your corpus sentences. Set this lower if you don’t want repeated sentences. Markovify automatically rejects sentences that overlap too much with the corpus so as to not just regurgitate provided content, but after 10 attempt to find a unique sentence it will give up and use whatever it can.&lt;/p&gt;
+
+&lt;p&gt;I’ve built a Markov Chain model using the articles of all other authors on this blog. A few of my favorite sample sentences it generated include:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;‘Through a process of learning a new branch to develop that part of the model trains.’&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;‘In addition to all the time. It may say that it is a programming language that will allow you to easily and thus provide more accurate rating system, and then the class, I need to do calculations and make better traffic control decisions.’&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;‘After you complete the prerequisites correctly then when you run your program you it will automatically upload your index.html file at a given speed.’&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;For comparison, these are the kind of sentences I can generate when I set state_size to 1:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;‘This library called Matplotlib.’&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;‘First we want, when I am still in python.’&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Not only to learn to customer demands, as I’ve simply start by the turning angle?”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Pretty good, right? In fact, this entire article was generated by a bot trained on thousands of Text Generation blog posts! Just kidding, but that would be cool.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;applying-for-a-twitter-developer-account&quot;&gt;Applying for a Twitter Developer Account&lt;/h2&gt;
+
+&lt;p&gt;Now that we can generate tweets from our corpus, we need to set up a script to automate tweeting them out. To do this, we’ll need access to the Twitter API which allows for these type of operations. It is generally pretty easy to set up an account, but it may take a day or two to get approved.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-10-20/twitter.png&quot; alt=&quot;Twitter sign up prompt&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Navigate to twitter.com to set up a new account for your bot. The easiest way to do this is by selecting “Sign up with phone or email” and using the email option. If you don’t or can’t use your personal email to make this account (Twitter doesn’t allow multiple accounts on the same email), you can put a ‘+’ sign after your handle and before the ‘@’ sign to create a subaddress that Twitter will accept i.e. /myemail+twitterbot@gmail.com. You’ll have to add a bio, profile picture, etc. or skip these options for now.&lt;/p&gt;
+
+&lt;p&gt;Now that you have a Twitter account for your bot, we need to upgrade to a developer account at developer.twitter.com. This is free, but requires filling out a few forms to get approval from Twitter. It’s a fairly simple process that they use to screen out potentially dangerous bots (think Russian election bots).&lt;/p&gt;
+
+&lt;p&gt;At developer.twitter.com, click through Apply &amp;gt; Apply for a developer account &amp;gt; Hobbyist &amp;gt; Making a bot &amp;gt; Get started. It will then require you to add a phone number before proceeding, this number can be associated with multiple accounts. You’ll then need to answer questions asked in the form, and may need to resolve follow up emails.&lt;/p&gt;
+
+&lt;p&gt;Once you have developer access, navigate to your developer dashboard at developer.twitter.com. Click ‘create project’, and fill out the form in order to generate authentication keys for your bot. Eventually you’ll get to a ‘keys and tokens’ page. Save the API Key and API Key Secret for writing the script in the next step. Navigate to App Settings, where you’ll need to change App Permissions to ‘Read and Write’. Click on ‘Keys and Tokens’, and generate an Access Token and Secret. Save these with the other key and secret.&lt;/p&gt;
+
+&lt;p&gt;That was a lot, but these steps should keep your bot secure. Never share these keys publicly. If you ever need to regenerate the user keys, you’ll have to update them in your script.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;using-the-twitter-api&quot;&gt;Using the Twitter API&lt;/h2&gt;
+
+&lt;p&gt;Now that we have access to the Twitter API, we’re going to use a Python wrapper called Twython to access it easily. You’ll need to generate access tokens and other keys in order to authenticate your API access, this is how Twitter verifies that you have a developer account. Do NOT share these or post these keys anywhere.&lt;/p&gt;
+
+&lt;p&gt;In order to set up the wrapper, replace the appropriate field with your keys and tokens in the following code:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;twython&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Twython&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;APP_KEY&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'your key'&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;APP_SECRET&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'your secret'&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;ACCESS_TOKEN&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'your token'&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;ACCESS_SECRET&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'your secret'&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;twitter&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Twython&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;APP_KEY&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;APP_SECRET&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ACCESS_TOKEN&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ACCESS_SECRET&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now to tweet something, you’ll just have to call the update_status() method on your Twython object passing in the text to tweet as a status parameter.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;twitter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;update_status&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;status&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tweet&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;And that’s it! Combine this code with your text generating code to get a short script like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;twython&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Twython&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;markovify&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;APP_KEY&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;''&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;APP_SECRET&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;''&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;ACCESS_TOKEN&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;''&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;ACCESS_SECRET&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;''&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;twitter&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Twython&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;APP_KEY&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;APP_SECRET&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ACCESS_TOKEN&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ACCESS_SECRET&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;corpus.md&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;text_model&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;markovify&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;tweet&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;text_model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;make_short_sentence&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;280&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;twitter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;update_status&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;status&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tweet&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;And that’s it! Run the script now and check twitter to see if your tweet sent successfully.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;scheduling-your-tweets&quot;&gt;Scheduling your tweets&lt;/h2&gt;
+
+&lt;p&gt;The last thing we to do is to put our script on a timer. Crontab is an excellent tool for scheduling scripts to run at a certain time, the only caveat is that your computer will need to be awake at the time you specify, so choose a time when that is most likely to be true. I recommend reading more about it at &lt;a href=&quot;https://ole.michelsen.dk/blog/schedule-jobs-with-crontab-on-mac-osx/&quot;&gt;this website&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;We’ll access Crontab through the command line by running this command in your computer’s terminal:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;env EDITOR=nano crontab -e
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This opens up Crontab to be edited, using nano as the editor. In the editor, type this code, replacing the path with your script.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0 12 * * *  /path/to/script/markov_twitter.py&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;The numbers and asterisks before the path represent time intervals in cron syntax. This particular code means that the script will run at noon every day. If you’d like to edit the timing or change the frequency, check out &lt;a href=&quot;https://crontab.guru&quot;&gt;crontab guru&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;It may take some trial and error to get working correctly to ensure you have the correct filepath, and you’ll likely need to change the permissions on your script to allow crontab to run it by executing code like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;chmod u+rwx markov_twitter.py&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Note that you can also set up a raspberry pi to run cron jobs, if you’d rather not have to remember to wake your computer up at the right time each day.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;At this point, we’ve been through a lot together. We’ve built a corpus of text, used markov chains to generate sentences from it, connected to the Twitter API, tweeted using a python script, and put it all on a timer. Feel free to comment with any bot ideas or links to bots you make!&lt;/p&gt;</content><author><name>Scot Nielson</name><email>scotnielson616@gmail.com</email></author><category term="Twitter" /><category term="Python" /><category term="Markov Chains" /><category term="Text Generation" /><category term="Bot" /><summary type="html">So you want to build a Twitter bot.</summary></entry><entry><title type="html">How to Excel at Microsoft Excel with Python Library openpyxl</title><link href="/blog/excel-in-python" rel="alternate" type="text/html" title="How to Excel at Microsoft Excel with Python Library openpyxl" /><published>2021-10-19T00:00:00-06:00</published><updated>2021-10-19T00:00:00-06:00</updated><id>/blog/excel-in-python</id><content type="html" xml:base="/blog/excel-in-python">&lt;p&gt;For many in the world, Microsoft Excel is the most advanced tool in their toolbox of data analytics. And to be fair, it is an extremely powerful software. You can manipulate data in all sorts of ways, write functions and equations, create insightful graphics, and format data in a way that pleases the eye. However, many times as a data scientist, simply using Excel is not going to cut it. In today’s post, I want to go over some helpful functions that are introduced by using the library openpyxl, as well as some helpful ones found in pandas. We will cover reading in Excel files, writing to Excel files, as well as working in real time with an Excel file.
 To start, we are going to go over what is possible with simply using the pandas library. Reading in an Excel sheet is quite similar to reading in a .csv file. A unique difference is the ability to specify a sheet name for workbooks that have more than just one sheet. Using the below syntax, the Excel sheet is read in as a pandas DataFrame that can easily be used for feature engineering and further analysis.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-10-19/image1.png&quot; alt=&quot;open&quot; /&gt;&lt;/p&gt;
@@ -575,95 +788,4 @@ followed by the name of the new table:&lt;/p&gt;
 &lt;p&gt;SQL queries are a versatile tool for manipulating data from data warehouses, but that’s not their only
 usage. Even if you already have data loaded into your environment, you can often perform queries on that
 data. While other tools exist that can reshape the data into what you need, SQL is a simple and 
-consistent tool that can be used in many different programs.&lt;/p&gt;</content><author><name>Andrew Pope</name><email>tunasaladx@gmail.com</email></author><category term="SQL" /><category term="Data cleaning" /><category term="Programming languages" /><summary type="html">SQL, short for Structured Query Language, is a programming language used for database management. It’s language was standardized around the time the first personal computers were being released, and since then it’s continued to be used for managing most large datasets. While many people are familiar with using SQL to query data warehouses, there are ways to take advantage of its language in other programming applications.</summary></entry><entry><title type="html">Practical Examples of Using Git and GitHub</title><link href="/blog/UsingGit" rel="alternate" type="text/html" title="Practical Examples of Using Git and GitHub" /><published>2021-10-11T00:00:00-06:00</published><updated>2021-10-11T00:00:00-06:00</updated><id>/blog/UsingGit</id><content type="html" xml:base="/blog/UsingGit">&lt;p&gt;When I first learned about the version control system Git and its corresponding
-web based repository GitHub, I struggled to understand the purpose behind them.
-It was not clear to me why I should be using them or how they could be beneficial.
-I assume that many of you had a similar experience when these tools were first introduced to you.
-It is on this assumption that I have based the topic of this post. Over the past year
-I have used Git and GitHub consistently in two scenarios that have not only helped me
-learn how to use these tools effectively, but I believe will also shed some light on
-the advantages and sometimes necessity of them.&lt;/p&gt;
-
-&lt;h2 id=&quot;example-1-modular-development-of-personal-projects&quot;&gt;Example 1: Modular Development of Personal Projects&lt;/h2&gt;
-&lt;p&gt;I named this post &lt;em&gt;Practical Examples of Using Git and GitHub&lt;/em&gt; but I must admit this
-first example is not so much practical as it is a way that has helped me practice using
-Git and GitHub. That being said, it has been such a beneficial experience for me as I’ve
-been learning how to use these tools that I strongly recommend it to any of you who want
-to improve your skills or increase your familiarity with them. Since learning about Git
-and GitHub, I have used both of these resources to &lt;strong&gt;track my progress on many coding
-projects in which I am the only contributor.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;So what does that actually mean? It means I’ve simply initialized the directories these programs
-are stored in as git repositories and then staged and committed the changes I made to them at
-frequent intervals, much like I would frequently save a Microsoft Word document to my disk
-as I added to and edited an essay. Frequent staging and committing of files and pushing and
-pulling of changes really helped me to become comfortable with working with Git from the
-command line and syncing my local repositories with remote ones on GitHub. Not only that,
-doing this created a log of commits that I could revert back to if I ever wanted to return
-to a working version of my code in the event I introduced bugs or ineffecient algorithms
-that I wanted to start over from.&lt;/p&gt;
-
-&lt;p&gt;A good example of this was when I was enrolled in CS 236 here at BYU. For those who don’t know, the
-majority of work done in 236 is on 5 projects that sequentially build off of one another to
-eventually create one large working program. I used Git and GitHub to track my progress on this
-program throughout the semester.&lt;/p&gt;
-
-&lt;p&gt;Specifically, I initialized the directory that this program was stored in as a git repository and
-synced it with a remote repository on GitHub. Then, when I began each of the 5 projects throughout
-the semester, I created a new branch to develop that part of the code on. As I made progress on a
-given project, I frequently staged and committed changes to that working branch and pushed those
-changes to the remote repository. Once my code for that project was officially passed off by a TA,
-I would submit a pull request and merge that project’s branch into main. The main branch would then
-be up to date and ready to be branched off from at the start of the next project (see below the
-repository and commit log).&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-10-11/personal-repo.png&quot; alt=&quot;CS236 Repo&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-10-11/personal-log.png&quot; alt=&quot;CS236 Log&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Using Git and GitHub to track my progress on these projects really helped me become familiar with
-common commands and development processes. The log of commits was also really advantageous to have.
-Occassionally, I would make a change to the code, only to realize a day or two later that I
-had made a mistake by doing so. Thanks to the log of commits, I could go back and see what code I had
-before when the project was still working.&lt;/p&gt;
-
-&lt;p&gt;For anyone that is new to Git or GitHub, I strongly recommend developing your personal and class projects
-using these tools. Not only will it improve your skills with them, but you’ll build yourself a nice
-portfolio of projects over time.&lt;/p&gt;
-
-&lt;h2 id=&quot;example-2-collaboration-with-co-workers&quot;&gt;Example 2: Collaboration with Co-workers&lt;/h2&gt;
-&lt;p&gt;This second example is more illustrative of a practical or real-world case where these tools would be used.
-In January 2021 I began working with two other students as a research assistant here at BYU to develop
-an R package for performing rare-event meta-analysis. In order to efficiently accomplish this task in which
-we often &lt;strong&gt;collaborated asynchronously&lt;/strong&gt;, using Git and GitHub was essential.&lt;/p&gt;
-
-&lt;p&gt;An R package, as you might imagine, has a lot that goes into it (&lt;a href=&quot;https://r-pkgs.org/&quot;&gt;R Packages&lt;/a&gt;). In addition
-to developing the source code, we also had to include necessary dependencies, create various forms of documentation,
-and obtain licenses. Not only that, but the method that would ultimately be implemented by this package was
-originally written in C, so there was a lot that needed to be done to allow this code to interact with the package.
-Without a version control system, working on a project like this would require all of us to be present in a common
-location with a single device to make and save changes on. However, using Git and GitHub allowed us to work
-asynchronously on our own devices at a much more efficient pace.&lt;/p&gt;
-
-&lt;p&gt;Specifically, we created a repository on GitHub to store this project. We then all cloned this repository to
-our local devices and, by frequently pushing and pulling changes, we ensured the repositories on our devices
-matched the one on GitHub. We created branches for each of the various tasks we had to accomplish and communicated
-clearly who was responsible for the various subtasks on each branch. For example, we had a branch for refactoring
-the C code to C++. We had a branch for writing the R source code and another branch for writing generic functions
-in R. We also had a branch for documentation purposes. On each of these branches we would frequently stage, commit,
-and push changes we made so the others could pull those changes to their own devices. When everything we hoped to
-accomplish on a given branch was complete, we would submit a pull request. After each member of our team had reviewed
-the changes on this branch and approved them, the branch would be merged into main and then deleted (see below the
-repository and commit log).&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-10-11/collab-repo.png&quot; alt=&quot;Rpackage Repo&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-10-11/collab-log.png&quot; alt=&quot;Rpackage Log&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The process described above is typical of many software engineering and/or data science projects, and hopefully it
-illustrates why these version control tools are so necessary.&lt;/p&gt;
-
-&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;In a world that is increasingly embracing (or at least tolerating) remote and asynchronous work, the ability to use
-version control systems like Git and GitHub is essential. By familiarizing yourself with these tools as you work on
-your own projects, you will prepare yourself to be a valuable contributor to future projects with your co-workers.&lt;/p&gt;</content><author><name>Ben Kinard</name><email>benjaminjameskinard@gmail.com</email></author><category term="Git" /><category term="GitHub" /><category term="Collaboration" /><summary type="html">When I first learned about the version control system Git and its corresponding web based repository GitHub, I struggled to understand the purpose behind them. It was not clear to me why I should be using them or how they could be beneficial. I assume that many of you had a similar experience when these tools were first introduced to you. It is on this assumption that I have based the topic of this post. Over the past year I have used Git and GitHub consistently in two scenarios that have not only helped me learn how to use these tools effectively, but I believe will also shed some light on the advantages and sometimes necessity of them.</summary></entry></feed>
+consistent tool that can be used in many different programs.&lt;/p&gt;</content><author><name>Andrew Pope</name><email>tunasaladx@gmail.com</email></author><category term="SQL" /><category term="Data cleaning" /><category term="Programming languages" /><summary type="html">SQL, short for Structured Query Language, is a programming language used for database management. It’s language was standardized around the time the first personal computers were being released, and since then it’s continued to be used for managing most large datasets. While many people are familiar with using SQL to query data warehouses, there are ways to take advantage of its language in other programming applications.</summary></entry></feed>

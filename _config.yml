@@ -45,9 +45,9 @@ disqus-shortname:
 author-name: Stat 426 Class
 # URL for the Image of the Author
 author-image: /assets/images/logo.png
-author-image-alt: /assets/images/Stat426.png
+author-image-alt: /assets/images/david-clode-vb-3qEe3rg8-unsplash.jpg #/assets/images/Stat426.png
 # 60 Words About the Author
-author-about: Statistics 426 is a class taught in the Statistics Department at Brigham Young University.  In this class, we cover the data science pipeline including collecting and wrangling data, version control, analyzing, evaluating and interpreting machine learning models, and ethics and bias.  The class this semester is taught by Shannon Tass.
+author-about: Statistics 426 is a class taught in the Statistics Department at Brigham Young University.  In this class, we cover the data science pipeline including collecting and wrangling data, version control, analyzing, evaluating and interpreting machine learning models, and ethics and bias.  The class this semester is taught by Shannon Tass.  
 
 author-about-small:  Data science methods and applications
 author-url: https://github.com/stat426-fall2021
