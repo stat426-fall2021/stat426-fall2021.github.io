@@ -2,7 +2,7 @@
 title: Build a Markov Chain Text Generation Twitter Bot
 layout: post
 author: tscotn
-post-image: /assets/images/blogimages/figs-10-20/cover.jpeg
+post-image: /assets/images/blogimages/figs-10-20/cover.png
 description: A step-by-step tutorial for building a low-maintenance Python Twitter Bot that tweets only the best statistically-generated gibberish.
 tags:
 - Twitter
@@ -25,7 +25,7 @@ With that out of the way, let's get to it. Check out the bot I made with this tu
 
 ## Overview
 
-Lucky for us, this is a task with clearly defined steps. There are lots of different kinds of Twitter bots you can make, and it can be a bit more complicated to build one that does anything more advanced than just tweeting, like replying to comments or otherwise interacting with users. Feel free to explore on your own and be creative, but this tutorial will only go over how to make a bot that tweets a generated phrase. 
+Lucky for us, this is a task with clearly defined steps. There are lots of different kinds of Twitter bots you can make, and it can be a bit more complicated to build one that does anything more advanced than just tweeting, like replying to comments or otherwise interacting with users. Feel free to explore on your own and be creative, but this tutorial will only go over how to make a bot that tweets a generated phrase.
 
 *Please note that these are Mac-specific instructions, but with some googling, each step should be very similar to what you'll need to do if you're on a Windows or Linux machine.*
 
@@ -184,7 +184,7 @@ tweet = text_model.make_short_sentence(280)
 twitter.update_status(status=tweet)
 ```
 
-And that's it! Run the script now and check twitter to see if your tweet sent successfully. 
+And that's it! Run the script now and check twitter to see if your tweet sent successfully.
 
 ---
 
