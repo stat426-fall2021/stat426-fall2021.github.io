@@ -1,7 +1,7 @@
 ---
 title: Observing Semantic Change with Word Embeddings
 layout: post
-author: Sonny George
+author: sonnyg97
 post-image: "https://live.staticflickr.com/65535/48342791722_544f7dc0a3_b.jpg"
 description: A post describing the basics of observing semantic change with word embeddings.
 tags:
@@ -54,5 +54,3 @@ My personal opinion is that using word embeddings to provide the entire narrativ
 
 - [https://towardsdatascience.com/measuring-semantic-changes-using-temporal-word-embedding-6fc3f16cfdb4](https://towardsdatascience.com/measuring-semantic-changes-using-temporal-word-embedding-6fc3f16cfdb4)
 - [https://hal.archives-ouvertes.fr/hal-02048377/document](https://hal.archives-ouvertes.fr/hal-02048377/document)
-
-

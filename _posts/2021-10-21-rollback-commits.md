@@ -2,7 +2,7 @@
 title: Rolling Back Commits in Git
 layout: post
 author: jace899
-post-image: 'assets\images\blogimages\figs-10-21\title_image.png'
+post-image: /assets/images/blogimages/figs-10-21/title_image.png
 description: An overview of different ways to roll back committed changes in Git.
 tags:
 - revert
@@ -54,13 +54,13 @@ This kind of situation is where `git reset` is useful. Because the additional co
 
 ![fix-reset](/assets\images\blogimages\figs-10-21\reset-fix.jpg)
 
-As shown above, the correct code from a previous commit replaced the faulty code, which was the desired effect. However, using this format, there isn't an option to name the commit that records the reset. Notwithstanding, a commit will be made that records the change. 
+As shown above, the correct code from a previous commit replaced the faulty code, which was the desired effect. However, using this format, there isn't an option to name the commit that records the reset. Notwithstanding, a commit will be made that records the change.
 
 For more information about `git reset`, [click here to check the documentation for git reset](https://git-scm.com/docs/git-reset).
 
 ## Restore
 
-While `git revert` and `git reset` work well to restore previous commits, it is often useful to restore previous commits only for certain files instead of rewriting each file the commit touched. This is easily achieved by using `git restore`. While the same function can be fulfilled using `git checkout`, `git restore` tends to be less complicated since it is intended for restoring specific files instead of entire branches, which is why we use it here. However, since the command is still experimental and subject to change, checking the documentation often is highly recommended. [Click here to check the documentation for git restore](https://git-scm.com/docs/git-restore). 
+While `git revert` and `git reset` work well to restore previous commits, it is often useful to restore previous commits only for certain files instead of rewriting each file the commit touched. This is easily achieved by using `git restore`. While the same function can be fulfilled using `git checkout`, `git restore` tends to be less complicated since it is intended for restoring specific files instead of entire branches, which is why we use it here. However, since the command is still experimental and subject to change, checking the documentation often is highly recommended. [Click here to check the documentation for git restore](https://git-scm.com/docs/git-restore).
 
 In order to show how it works, consider an example with two files that contain good content. They have been commited as shown below.
 
