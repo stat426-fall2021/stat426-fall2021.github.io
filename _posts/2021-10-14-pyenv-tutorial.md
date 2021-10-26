@@ -35,7 +35,7 @@ Using the command `<pyenv versions>` will Show what versions of python you have 
 
 This example shows what this could look like in your computer.
 
-[pyenv example](/assets/images/blogimages/figs-10-14/pyen_versions.png)
+![pyenv example](/assets/images/blogimages/figs-10-14/pyen_versions.png)
 
 You can see that there are several versions of python installed but I am currently working off the system version. Additionally, I have created some virtual environments for specific projects. `< 3.9.6/envs/pyenv_practice >` being one of them. For a full tutorial on how to set different versions and virtual environments, use the sources at the the end of this blog post.
 
@@ -49,7 +49,7 @@ Typically, things like this can be hard to understand until it is put into pract
 * Show all file in the directory with `< ls -a >` and show that in  `<.python-version>` the version is `<3.9.1>`
 * Go up a level to show that global python is still set to the system and the practice folder is different.
 
-[Quick Example](/assets/images/blogimages/figs-10-14/Example.png)
+![Quick Example](/assets/images/blogimages/figs-10-14/Example.png)
 
 
 # Conclusions
