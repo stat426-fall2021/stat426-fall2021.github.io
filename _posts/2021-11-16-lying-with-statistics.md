@@ -2,7 +2,7 @@
 title: "Lies Damn Lies and Statistics: A Review of Darrell Huff's Book How to Lie With Statistics"
 layout: post
 author: smbjohnson
-post-image: ![Cover](/assets/image/blogimages/figs-11-16.Blog-Post-Cover-Image2.jpg)
+post-image: ![Cover](/assets/images/blogimages/figs-11-16/.Blog-Post-Cover-Image2.jpg)
 description: "In a world full of personal adjendas and even more data we take a look at Darrell Huff book *How To Lie With Statistics* to avoid common pitfalls of understanding statistics"
 tags:
 - Book Review
@@ -13,7 +13,7 @@ tags:
 - Darrell Huff
 ---
 
-![Book-Cover](/assets/image/blogimages/figs-11-16.Book-Cover-Image.jpg)
+![Book-Cover](/assets/images/blogimages/figs-11-16/.Book-Cover-Image.jpg)
 
 # Introduction
 
@@ -37,9 +37,9 @@ Often when statistics are reported they will only focus on one possible reason f
 
 The media is filled with graphs and cart trying to convey information in an intuitive and easy to digest way. However, some graphs do the exact opposite. They prey on those who take the figure at face value. One of the most common ways in which graphs take advantage of the unassuming consumer is to truncate the y axis of a graph. If we look at figure 1 below it appears as though horror movies make substantially more money that action movies. It is only when we take a closer look that we see there is a much smaller difference, see figure 2. In fact, there is only a 5% difference. This trick can also be applied by changing the x axis. Having unequal spaces between observations can cause havoc when it comes to graph interpretation. Special care must be taken when looking at graphs. It is important to look at the x and y axis while also taking into consideration the units the are being expressed on each. 
 
-![Trunc-fig](/assets/image/blogimages/figs-11-16.Movie-Plot-Truncated.png "Figure 1")
+![Trunc-fig](/assets/images/blogimages/figs-11-16/.Movie-Plot-Truncated.png "Figure 1")
 
-![Movie-fig](/assets/image/blogimages/figs-11-16.Movie-Plot.png "Figure 2")
+![Movie-fig](/assets/images/blogimages/figs-11-16/.Movie-Plot.png "Figure 2")
 
 # Correlation Doesn’t Mean Causation
 
@@ -56,4 +56,4 @@ In this post we only went over a couple of way in which statistics and graphs ca
 
 In the end when it comes to interpreting number and data it is important to slow down and think about what has led to this number that we are now seeing. When we do this, we can often avoid making rash decisions on number that don’t really mean anything. So the next time you see a staistic take a minute to really think about what it is saying and if there might be any ulterior motives.
 
-If you are looking for practice there is no better than a [reddit forum](https://www.reddit.com/r/badstats/).
+If you are looking for practice there is no better place than a [reddit forum](https://www.reddit.com/r/badstats/).
