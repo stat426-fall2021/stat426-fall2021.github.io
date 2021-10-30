@@ -49,6 +49,8 @@ In this post we only went over a couple of way in which statistics and graphs ca
 * Did someone change the subject?
 * Does it make sense?
 
-In the end when it comes to interpreting number and data it is important to slow down and think about what has led to this number that we are now seeing. When we do this, we can often avoid making rash decisions on number that don’t really mean anything.
+In the end when it comes to interpreting number and data it is important to slow down and think about what has led to this number that we are now seeing. When we do this, we can often avoid making rash decisions on number that don’t really mean anything. So the next time you see a staistic take a minute to really think about what it is saying and if there might be any ulterior motives.
+
+If you are looking for practice there is no better place to check then a reddit form.
 
 
