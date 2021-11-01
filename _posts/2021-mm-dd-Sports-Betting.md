@@ -1,0 +1,56 @@
+---
+title: 
+layout: post
+author: nland13
+post-image: /assets/images/blogimages/figs-10-30/sandler.png
+description: 
+tags:
+- 
+- 
+- Markov Chains
+- Text Generation
+- Bot
+---
+
+Okay, so you might be thinking that sports betting seems like a pretty frivoulous application of data science. Perhaps it conjures up images of an addicted degenerate like the one Adam Sandler plays in Uncut Gems and adding statistics to it just makes it nerdier. While I can't argue with the nerdy aspect, I do believe that sports betting, used properly, can actually be a uniquely suited place for a burgeoning data scientist to learn and hone their skills. In this article I describe why I think that is, explain how you can get started, give an example of an actual succesful bet powered by statistics, and list some of the best resources to learn more. 
+
+---
+
+## First off, what is sports betting?
+
+To begin, let's make sure we are all talking about the same thing. Sports betting is when you place a bet on the outcome of a sporting event. Oftentimes this can take the form of simply betting which team wins, but it can also be about the total amount of points scored in a game or even the color of the gatorade poured on the winning coach. Terms like the spread, the moneyline, over/under all have to do with sports betting.
+
+Sports analytics on the other hand is a related but distinct field. In sports analytics, instead of betting on outcomes of a sporting event, you use data and statistical methods to make better strategic decisions to help you or your team win. Think Jonah Hill in Moneyball using statistics to guide what their focus should be as a team. This is a very interesting field that has gained in popularity in recent years and had a large impact on the way many sports are played, but it is not the subject of this article.
+
+Maybe the best way to make clear the distinction is that in general, if you are participiating in the sporting event in some way (athlete, coach, etc.), you are likely to be using sports analytics, and if you are simply an observer of the event making predictions, you are likely to be engaged in sports betting. The one exception to this would be NBA refs, who are clearly more interested in sports betting. The analogy to the business world would be the distinction between running a business (sports analytics) and investing in businesses (sports betting).
+
+![jonah](/assets/images/blogimages/figs-10-30/jonah.png)
+
+## Why is sports betting a uniquely suited place to practice data science?
+
+Now that we have clearly defined what sports betting is and isn't, we can talk about why I think it makes such a great playground for aspiring data scientists:
+
+1. **For sports fans, it can be incredibly fun.** While for some having a deep understanding of the variables that affected a person's chance of survival on the Titanic is fascinating, for many others, it isn't. Sports betting is a great way for people to use their passion and excitement for sports to fuel their statistical learning. Actually applying the skills learned in the classroom is absolutely essential to truly learn concepts, but if you don't have exciting projects to work on, the chances that you will complete that crucial learning step on your own are very low. The sports betting world offers many projects that are naturally exciting and thus conducive to learning.
+
+2. **It forces you to have skin in the game.** Data science is about using statistics to make decisions. Too often as learners we complete the first step (use statistics) without completing the crucial second step (actually make decisions). Decoupling these two steps hinders our development because if we don't actually have something on the line with our conclusions, we will naturally lack the rigor and practicality that comes when we don't short-circuit our natural learning process of feeling the high of being correct and the sting of being wrong. Actually risking something based on your conclusions will force you to understand more deeply the logic of what you are really doing in a way that is very hard to replicate otherwise. Nassim Taleb says this best:
+
+> “Let us return to pathemata mathemata (learning through pain) and consider its reverse: learning through thrills and pleasure. People have two brains, one when there is skin in the game, one when there is none. Skin in the game can make boring things less boring. When you have skin in the game, dull things like checking the safety of the aircraft because you may be forced to be a passenger in it cease to be boring. If you are an investor in a company, doing ultra-boring things like reading the footnotes of a financial statement (where the real information is to be found) becomes, well, almost not boring.”
+
+3. **You get to actually do something about your findings.** In sports betting, when you have a conviction in an idea, it is very easy for you to implement it; you simply make a bet or a prediction. This is part of the reason why it can be so fun and why it is so unique. In other fields, especially as a student with limited resources, your opportunities to do something about your findings are limited. Even in sports analytics you can run all the analyses you want on going for it on fourth down, but ultimately the only thing you can do about it is pray Kalani agrees with you.
+
+4. **Gives you a chance to clearly communicate statistical ideas to non-statistical folk.** Communicating ideas clearly is always emphasized as one of the most important skills for a data scientist, but the problem is to practice it you have to have someone interested in hearing your explanations. I have never had so many non-statistics friends really interested in me explaining to them logistic regression until the topic was the game that night and the $10 dollar bill in their wallet.  
+
+5. **Tons of easily available information and constant opportunities for new projects.** Sports fans can be quite nerdy and so tons of data ready for analysis can be easily found online and there are new games all year round.
+
+## How do I get started?
+
+Like anything, sports betting can be intimidating at first. Nevertheless, it doesn't have to be complicated at all and below I will walk through 3 simple steps 
+
+## Where Can I go to learn more?
+
+## Conclusion
+
+
+*Disclaimer: Sports betting can of course be considered a form of gambling and can be addictive. Though it is important to note that in several places sports betting is considered similar to investing and can even raise outside capital to form sports betting investment funds. Nevertheless, considering the risks, it is totally possible to simply make "paper bets", where you make predictions but don't actually wager any money. You can still get the learning benefits the sports betting context provides even when only making paper bets.*
+
+ 
