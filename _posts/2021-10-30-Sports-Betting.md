@@ -11,9 +11,9 @@ tags:
 - Skill Development
 ---
 
-Okay, so you might be thinking that sports betting seems like a pretty frivolous application of data science. Perhaps it conjures up images of an addicted degenerate like the one Adam Sandler plays in *Uncut Gems* and adding statistics to it just makes it nerdier. While I can't argue with the nerdy aspect, I do believe that sports betting, when used properly, can actually be a uniquely suited place for a burgeoning data scientist to learn and hone their skills. In this article I describe why I think that is, explain how you can get started, give an example of an actual successful bet powered by statistics, and list some of the best resources to learn more. 
+Okay, so you might be thinking that sports betting seems like a pretty frivolous application of data science. Perhaps it conjures up images of an addicted degenerate like the one Adam Sandler plays in *Uncut Gems*, and adding statistics to it just makes it nerdier. While I can't argue with the nerdy aspect, I do believe that sports betting, when used properly, can actually be a uniquely suited place for a burgeoning data scientist to learn and hone their skills. In this article I describe why I think that is, explain how you can get started, give an example of an actual successful bet powered by statistics, and list some of the best resources to learn more. 
 
-![jonah](/assets/images/blogimages/figs-10-30/sandler.png)
+![sandler](/assets/images/blogimages/figs-10-30/sandler.png)
 
 ---
 
@@ -47,17 +47,17 @@ Now that we have clearly defined what sports betting is and isn't, we can talk a
 
 Like anything, sports betting can be intimidating at first. Nevertheless, it doesn't have to be complicated at all, and below I will walk through 3 simple steps to get you started using a simple project I worked on during the 2020 NBA playoffs.
 
-1. **Qualitatively define your investment thesis by finding a difference in opinion.** When competing in markets, you can't just be right; you have to be right where most others are wrong. For example, saying the Bucks are a great basketball team does nothing, but saying they are better than what most other people think they are could be the basis for a bet.
+**1\. Qualitatively define your investment thesis by finding a difference in opinion.** When competing in markets, you can't just be right; you have to be right where most others are wrong. For example, saying the Bucks are a great basketball team does nothing, but saying they are better than what most other people think they are could be the basis for a bet.
 
 In my example, I noticed that the odds for the player to score the first point in a game during the NBA playoffs seemed to be based off of the proportion of points each player scored for their team, but I believed that this was wrong and that the odds should actually be based off of the proportion of first points each player scored. I believed this because oftentimes teams will run set plays for certain players at the beginning of the game. My belief was based off a smaller sample size (only first points scored vs all points by starters), but I believed it would be more predictive regardless.
 
-2. **Calculate the expected value of a single bet based off of your unique probabilities.** If you have a difference in opinion, your implied probabilities will be different than those implied by the odds. This means you will likely see a bet with an expected value higher than 1x (getting more than 1 dollar back for every dollar you put in). 
+**2\. Calculate the expected value of a single bet based off of your unique probabilities.** If you have a difference in opinion, your implied probabilities will be different than those implied by the odds. This means you will likely see a bet with an expected value higher than 1x (getting more than 1 dollar back for every dollar you put in). 
 
 In my case, I found my unique probabilities by scraping data for who scored the first points and then calculating the expected values using the published payouts. Below are the results for a game with the Lakers. As you can see, betting on Danny Green to score the first point had an expected value greater than 1x.
 
 ![ev](/assets/images/blogimages/figs-10-30/ev.png)
 
-3. **Determine the variance of your bet**. Just because a bet has an expected value above 1x does not mean it is a good bet because you may not be able to make enough similar bets to ensure you end up winning money most of the time with that strategy. For example, if you were offered a .1% chance at winning $10B dollars if you pay $1M, you would have an expected value of earning 10x your money, but you would only actually win money .1% of the time. The other 99.9% of the time you would lose $1M. If you could do this bet a large number of times, it would be worth it, but doing it only once is probably too risky for most.
+**3\. Determine the variance of your bet**. Just because a bet has an expected value above 1x does not mean it is a good bet because you may not be able to make enough similar bets to ensure you end up winning money most of the time with that strategy. For example, if you were offered a .1% chance at winning $10B dollars if you pay $1M, you would have an expected value of earning 10x your money, but you would only actually win money .1% of the time. The other 99.9% of the time you would lose $1M. If you could do this bet a large number of times, it would be worth it, but doing it only once is probably too risky for most.
 
 Applying this concept to my bet, I ran a Monte Carlo simulation with my calculated probability, first with 24 games played and then with 100 games played. As you can see, in both cases my returns are ~36% (as expected based on the expected value), but in the 100-game case I end up winning money overall much more often (81%) than in the 24-game case (52%). Thus, I only decided to proceed after verifying that I would be able to make bets with similar probabilities in a relatively high number of games. This is especially important for a strategy such as this where you expect to lose more often than you win but win big and lose little.
 
@@ -93,7 +93,7 @@ If this type of thing is exciting to you, there are many resources you can find 
 
 Sports betting can be a fantastic way to train and test your data science skills. It offers real-world decision making, a variety of problem types, plenty of easily accessible data, and a whole lot of fun. In addition, the financialization of culture and the automatic market-making/smart-contract capabilities blockchain technology offers (both topics for another post) mean there will be an incredible amount of interesting opportunities in the future and ensure that the sports betting hobby will only get better. 
 
-Comment below if you have any interesting "investment theses" that could be worth looking into. It could be as simple as an idea for a collecting a new data type and thus having a proprietary predictor, applying a type of statistical model to a problem, or even just that the University of Utah will lose every football game for the rest of the season! 
+Comment below if you have any interesting "investment theses" that could be worth looking into. It could be as simple as an idea for a collecting a new data type and thus having a proprietary predictor, applying a type of statistical model to a bet, or even just that the University of Utah will lose every football game for the rest of the season! 
 
 <iframe src="https://giphy.com/embed/eHx5A2SWQtYRrG4WM2" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
