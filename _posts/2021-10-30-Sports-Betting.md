@@ -91,7 +91,7 @@ If this type of thing is exciting to you, there are many resources you can find 
 
 ## Conclusion
 
-Sports betting can be a fantastic way to train and test your data science skills. It offers real-world decision making, a variety of problem types, plenty of easily accessible data, and a whole lot of fun. In addition, the financialization of culture and the automatic market-making/smart-contract capabilities blockchain technology offers (both topics for another post) mean there will be an incredible amount of interesting opportunities in the future and ensure that the sports betting hobby will only get better. 
+Sports betting can be a fantastic way to train and test your data science skills. It offers real-world decision making, a variety of problem types, plenty of easily accessible data, and a whole lot of fun. In addition, the financialization of culture and the automatic market-making/smart-contract capabilities of blockchain technology (both topics for another post) mean there will be an incredible amount of interesting opportunities in the future and ensure that the sports betting hobby will only get better. 
 
 Comment below if you have any interesting "investment theses" that could be worth looking into. It could be as simple as an idea for a collecting a new data type and thus having a proprietary predictor, applying a type of statistical model to a bet, or even just that the University of Utah will lose every football game for the rest of the season! 
 
