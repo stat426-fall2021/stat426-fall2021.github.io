@@ -1,5 +1,5 @@
 ---
-title: "Sample Post"
+title: "What is Pyenv and Why You Should Use It"
 layout: post
 author: 18katesmit
 post-image: "https://files.realpython.com/media/Getting-Started-With-pyenv_Watermarked.7b1dd55b32a1.jpg"
@@ -11,11 +11,11 @@ tags:
 - versions
 ---
 
-When you install Python on your computer, you should constantly update your Python version as new ones come out. Unfortunately some libraries can become obsolete because they are not supported by the current version making code that once worked a major headache to update. Additionally, if you have ever tried to collaborate with other people in a project they could have different libraries and python versions making it so you have to spend lots of time updating and debugging something that should be a fix. Fortunately there is a tool that can help mitigate this so you always know what python version you're using and what libraries are being used in a project.
+When you install Python on your computer, you should constantly update your Python version as new ones come out. Unfortunately, some libraries can become obsolete because they are not supported by the current version making code that once worked a major headache to update. Additionally, if you have ever tried to collaborate with other people in a project, they could have different libraries and python versions making it so you have to spend lots of time updating and debugging something that should be a fix. Fortunately, there is a tool that can help mitigate this, so you always know what python version you're using and what libraries are being used in a project.
 
 # What is Pyenv?
 
-Pyenv is a tool to manage different python versions on your computer for each project. Essentially you can have Python 2.7.15, Python 3.6.8, ect ... what ever you need, all on your computer and create virtual environments in these versions to make your projects run smoothly. In short, pyenv lets you change the global Python version, install multiple Python versions, set project-specific Python versions, and  create and manage virtual python environments. Instructions to install pyenv on your computer can be found [here](https://github.com/pyenv/pyenv#installation).
+Pyenv is a tool to manage different python versions on your computer for each project. Essentially you can have Python 2.7.15, Python 3.6.8, ect ... what ever you need, all on your computer and create virtual environments in these versions to make your projects run smoothly. In short, pyenv lets you change the global Python version, install multiple Python versions, set project-specific Python versions, and create and manage virtual python environments. Instructions to install pyenv on your computer can be found [here](https://github.com/pyenv/pyenv#installation).
 
 
 # Pyenv Order
@@ -35,21 +35,21 @@ Using the command `<pyenv versions>` will Show what versions of python you have 
 
 This example shows what this could look like in your computer.
 
-[pyenv example](/assets/images/blogimages/figs-mm-dd/pyen_versions)
+![pyenv example](/assets/images/blogimages/figs-10-14/pyen_versions.png)
 
-You can see that there are several versions of python installed but I am currently working off the system version. Additionally I have created some virtual environments for specific projects. `< 3.9.6/envs/pyenv_practice >` being one of them. For a full tutorial on how to set different versions and virtual environments, use the sources at the the end of this blog post.
+You can see that there are several versions of python installed but I am currently working off the system version. Additionally, I have created some virtual environments for specific projects. `< 3.9.6/envs/pyenv_practice >` being one of them. For a full tutorial on how to set different versions and virtual environments, use the sources at the the end of this blog post.
 
 ## Example
 
-Typically things like this can be hard to understand until it is put into practice. Below I have done the following to demontrate how a local python version can be made fore a specific project:
+Typically, things like this can be hard to understand until it is put into practice. Below I have done the following to demonstrate how a local python version can be made for a specific project:
 
 * Set the local version to `<pyenv local 3.9.1>`
-* Show the versions and that my local has been set to `<3.9.1>` as denoted by the astrisk
+* Show the versions and that my local has been set to `<3.9.1>` as denoted by the asterisk
 * Create a `<practice.py script>`
 * Show all file in the directory with `< ls -a >` and show that in  `<.python-version>` the version is `<3.9.1>`
 * Go up a level to show that global python is still set to the system and the practice folder is different.
 
-[quick Example](/assets/images/blogimages/figs-mm-dd/Example)
+![Quick Example](/assets/images/blogimages/figs-10-14/Example.png)
 
 
 # Conclusions
@@ -61,3 +61,4 @@ Hopefully you can see how useful pyenv can be when working on different project!
 Sources :
   [Real Python](https://realpython.com/intro-to-pyenv/)
   [North Western](https://amaral.northwestern.edu/resources/guides/pyenv-tutorial#:~:text=Meet%20pyenv%3A%20a%20Simple%20Python,environments%20(%22virualenv's%22).)
+
