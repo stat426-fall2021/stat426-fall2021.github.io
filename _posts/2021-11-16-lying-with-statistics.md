@@ -37,6 +37,7 @@ Often when statistics are reported they will only focus on one possible reason f
 
 The media is filled with graphs and cart trying to convey information in an intuitive and easy to digest way. However, some graphs do the exact opposite. They prey on those who take the figure at face value. One of the most common ways in which graphs take advantage of the unassuming consumer is to truncate the y axis of a graph. If we look at figure 1 below it appears as though horror movies make substantially more money that action movies. It is only when we take a closer look that we see there is a much smaller difference, see figure 2. In fact, there is only a 5% difference. This trick can also be applied by changing the x axis. Having unequal spaces between observations can cause havoc when it comes to graph interpretation. Special care must be taken when looking at graphs. It is important to look at the x and y axis while also taking into consideration the units the are being expressed on each. 
 
+Solarized dark             |  Solarized Ocean
 :-------------------------:|:-------------------------:
 ![Trunc-fig](/assets/images/blogimages/figs-11-16/Movie-Plot-Truncated.png "Figure 1")  |  
 ![Movie-fig](/assets/images/blogimages/figs-11-16/Movie-Plot.png "Figure 2")
