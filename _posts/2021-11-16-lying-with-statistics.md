@@ -49,7 +49,7 @@ Perhaps the most well know deception in statistical reporting is inferring that 
 In this post we only went over a couple of way in which statistics and graphs can be misleading. However, Huff suggestion several questions that can help us identify many misleading numbers.
 
 * Who says so?
-* How does they know?
+* How do they know?
 * What’s missing?
 * Did someone change the subject?
 * Does it make sense?
