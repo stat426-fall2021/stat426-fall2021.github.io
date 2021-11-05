@@ -40,6 +40,7 @@ The media is filled with graphs and cart trying to convey information in an intu
 
 ![Trunc-fig](/assets/images/blogimages/figs-11-16/Movie-Plot-Truncated.png "Figure 1") ![Movie-fig](/assets/images/blogimages/figs-11-16/Movie-Plot.png "Figure 2")
 
+<img src="/assets/images/blogimages/figs-11-16/Movie-Plot-Truncated.png" width="200"/> <img src="/assets/images/blogimages/figs-11-16/Movie-Plot.png" width="300"/>
 
 # Correlation Doesn’t Mean Causation
 
