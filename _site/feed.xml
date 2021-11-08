@@ -1,77 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-11-08T15:06:51-08:00</updated><id>/feed.xml</id><title type="html">Stat 426 - Fall 2021</title><subtitle>Class Blog and Projects</subtitle><entry><title type="html"></title><link href="/blog/2021-10-26-Seaborn" rel="alternate" type="text/html" title="" /><published>2021-11-08T15:06:51-08:00</published><updated>2021-11-08T15:06:51-08:00</updated><id>/blog/2021-10-26-Seaborn</id><content type="html" xml:base="/blog/2021-10-26-Seaborn">&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
-
-&lt;p&gt;The Seaborn library is a Python package which creates data visualizations based on the matplotlib library. As a result, this blog post will assume that the reader has a basic understanding of the matplotlib library. The main draw to the Seaborn library is its ability to create more visually appealing data plots than the matplotlib. Additionally, Seaborn plots contain more attributes which allow plots to contain more characteristics than their matplotlib counterparts.&lt;/p&gt;
-
-&lt;p&gt;Throughout this blog post, we will go over a few different plots and the characteristics available through the Seaborn library. Of course this post will by no means be exhaustive. Thus, the reader is encouraged to delve further on their own for more information regarding the remarkable abilities of Seaborn plots. For those interested more examples can be found at https://seaborn.pydata.org/examples/index.html which displays a variety of various plots some of which the reader may be unaware exists.&lt;/p&gt;
-
-&lt;h1 id=&quot;setting-up&quot;&gt;Setting Up&lt;/h1&gt;
-
-&lt;p&gt;For this post I will be using the diamonds dataset which comes with the Seaborn library. There are a number of datasets which come with Seaborn which can be used for exploring Seaborn plots, one can Google the Seaborn datasets if the reader desires to explore the datasets. If one desires to use a Seaborn dataset they can load the data using the following code: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sns.load_dataset(&quot;dataset&quot;)&lt;/code&gt;, otherwise load in the data using other methods the reader is familiar with.&lt;/p&gt;
-
-&lt;p&gt;To the observant reader, one can deduce that the Python shortcut for Seaborn is sns, thus, loading the Seaborn library would be as follows:&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import seaborn as sns
-import matplotlib.pyplot as plt
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;It is usual to also include the matplotlib plot library when using seaborn since both libraries can be used together. In fact matplotlib is used for plot titles, legends, and other custom alterations to the plot.&lt;/p&gt;
-
-&lt;h1 id=&quot;creating-plots&quot;&gt;Creating Plots&lt;/h1&gt;
-
-&lt;p&gt;We will now go through the more common plots used in data science, although as has been stated before, there are many more plots available in the Seaborn library. All Seaborn plots follow a similar structure, although there are some unique attributes depending on the plot type. Thus, the basic format for Seaborn plots is as follows &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sns.plottype(data = dataset, x = variable, y = response, ...)&lt;/code&gt;. I will also post the code I used for the plots I created so that the format is made clearer and explain the new attributes associated with each plot.&lt;/p&gt;
-
-&lt;p&gt;As I go through each plot covered in this post, I encourage the reader to view each plot’s reference page for more information regarding each plot.&lt;/p&gt;
-
-&lt;h3 id=&quot;scatterplot&quot;&gt;Scatterplot&lt;/h3&gt;
-
-&lt;p&gt;To create a scatterplot the code is as follows:&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sns.scatterplot(data = diamonds, x = 'carat', y = 'price', hue = 'color', size = 'clarity', alpha = 0.5)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-10-26/scatterplot.png&quot; alt=&quot;scatter&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Hue allows to user to make each unique variable delcared a different color, so in the plot above each color represents a unique diamond color.
-Size is similar to the hue attribute as it allows the size of each dot to be different depending on the unique values of the variable provided.
-Alpha just adds a level of opacity so that data points hidden behind one another are more easily seen.&lt;/p&gt;
-
-&lt;h3 id=&quot;facetgrid&quot;&gt;FacetGrid&lt;/h3&gt;
-
-&lt;p&gt;The Facet Grid method of the Seaborn library allows two unique values of two variables to be compared to each other. Loading this type of plot can take a while depending on the number of unique variable values provided since there will be n x m plots, with n being the number of levels in variable 1 and m the number of levels in variable 2. The code I used to create the FacetGrid is as follows:&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;fg = sns.FacetGrid(diamonds, col = 'color', row = 'clarity')
-fg.map(sns.scatterplot, 'carat', 'price')
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-10-26/grid.png&quot; alt=&quot;grid&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Using this method the type of plot must be declared in the map function. As may be gathered from the code above the plot compares each level of color with each level of clarity, so there are a lot of plots. This kind of plot is best used for a low number of levels.&lt;/p&gt;
-
-&lt;h3 id=&quot;box-plot&quot;&gt;Box Plot&lt;/h3&gt;
-
-&lt;p&gt;The code for a box plot is as follows:&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;box = sns.boxplot(data = diamonds, x = 'color', y = 'price', hue = 'cut')
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-10-26/boxplot.png&quot; alt=&quot;boxplot&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Hue does the exact same thing as hue in the scatterplot.&lt;/p&gt;
-
-&lt;h3 id=&quot;histogram&quot;&gt;Histogram&lt;/h3&gt;
-
-&lt;p&gt;The code for a histogram is as follows:&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sns.histplot(diamonds, x=&quot;price&quot;, hue=&quot;cut&quot;, multiple=&quot;stack&quot;, edgecolor=&quot;.3&quot;, linewidth=.5, log_scale=True)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-10-26/hist.png&quot; alt=&quot;hist&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Multiple allows the user to decide what to do with multiple levels. By looking at the sns.histplot reference page, one can see the options available.
-Edgecolor changes the opacity of the bar outlines.
-Linewidth affects the outline width for each bar.
-log_scale affects the axes values so that they’re either set to the log scale or not.&lt;/p&gt;
-
-&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
-
-&lt;p&gt;Of course there are other attributes involved with the Seaborn plots such as changing the color palette of the plots, which can be explored at the reader’s leisure. Changing plot size, axis values, plot titles, etc., may be adjusted through matplotlib. Hopefully, this blog post has piqued interest in exploring more of Seaborn’s features and anything the reader is unsure of may be Googled or reference using the Seaborn reference page. To learn more about the Seaborn package, one may visit https://seaborn.pydata.org/index.html.&lt;/p&gt;</content><author><name></name></author><category term="" /></entry><entry><title type="html">Cancelling Noise in Data: Image Compression Tutorial</title><link href="/blog/svd-img-compression" rel="alternate" type="text/html" title="Cancelling Noise in Data: Image Compression Tutorial" /><published>2021-11-06T00:00:00-07:00</published><updated>2021-11-06T00:00:00-07:00</updated><id>/blog/svd-img-compression</id><content type="html" xml:base="/blog/svd-img-compression">&lt;p&gt;One common problem  in data science is that our data is noisy. A good data scientist
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-11-08T15:14:48-08:00</updated><id>/feed.xml</id><title type="html">Stat 426 - Fall 2021</title><subtitle>Class Blog and Projects</subtitle><entry><title type="html">Cancelling Noise in Data: Image Compression Tutorial</title><link href="/blog/svd-img-compression" rel="alternate" type="text/html" title="Cancelling Noise in Data: Image Compression Tutorial" /><published>2021-11-06T00:00:00-07:00</published><updated>2021-11-06T00:00:00-07:00</updated><id>/blog/svd-img-compression</id><content type="html" xml:base="/blog/svd-img-compression">&lt;p&gt;One common problem  in data science is that our data is noisy. A good data scientist
 is able to distinguish between that noise and signal in the data. One great way
 to “cancel noise” in data represented in matrix form is to use singular value decomposition
 from linear algebra.&lt;/p&gt;
@@ -850,7 +777,80 @@ p-values from these four type of tests lead to the conclusion that our null hypo
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 
-&lt;p&gt;The plotly library is almost limitless, and can generate almost any kind of chart or plot you can think of. This post is only an introduction into what plotly can do. Some of the other graphs that I think are worth looking into are line charts, pie charts, bubble charts, sankey diagrams, sunburst charts, and many more! There is great documentation beyond this post that you can find on plotly’s site that will help you develop your graphic skills. Post below in the comment section examples where you have successfully used plotly, and if possible, attach pictures or code to go with it. It would be especially interesting to see types of graphs that we were not able to cover in this blog post. Good luck!&lt;/p&gt;</content><author><name>Bethany Bassett</name><email>bethanysday@gmail.com</email></author><category term="Learning" /><category term="Python" /><category term="Data Visualization" /><summary type="html">Many disciplines, including statistics, finance, and business, use data visualization to convey information quickly and efficiently to their audience. As such, there are many libraries and packages that have been created to help people make all sorts of plots and graphs. Plotly is a data visualization library that you can use to create beautiful and interactive graphs and is supported in different programing languages such as Python, R, and Julia. It has become a popular library for data visualization because it is easy to implement code, makes visually appealing graphics, and the plots are user interactive. These plots are especially useful during exploratory data analysis, where you can create a graphic and then click around and look at individual points. It is also a great tool to share with your audience, who can interact with the graph themselves.</summary></entry><entry><title type="html">Check your Assumptions</title><link href="/blog/Linear-Assumptions" rel="alternate" type="text/html" title="Check your Assumptions" /><published>2021-10-25T00:00:00-07:00</published><updated>2021-10-25T00:00:00-07:00</updated><id>/blog/Linear-Assumptions</id><content type="html" xml:base="/blog/Linear-Assumptions">&lt;h3 id=&quot;if-you-torture-the-data-enough-nature-will-always-confess--ronald-coase&quot;&gt;“If you torture the data enough, nature will always confess.” – Ronald Coase&lt;/h3&gt;
+&lt;p&gt;The plotly library is almost limitless, and can generate almost any kind of chart or plot you can think of. This post is only an introduction into what plotly can do. Some of the other graphs that I think are worth looking into are line charts, pie charts, bubble charts, sankey diagrams, sunburst charts, and many more! There is great documentation beyond this post that you can find on plotly’s site that will help you develop your graphic skills. Post below in the comment section examples where you have successfully used plotly, and if possible, attach pictures or code to go with it. It would be especially interesting to see types of graphs that we were not able to cover in this blog post. Good luck!&lt;/p&gt;</content><author><name>Bethany Bassett</name><email>bethanysday@gmail.com</email></author><category term="Learning" /><category term="Python" /><category term="Data Visualization" /><summary type="html">Many disciplines, including statistics, finance, and business, use data visualization to convey information quickly and efficiently to their audience. As such, there are many libraries and packages that have been created to help people make all sorts of plots and graphs. Plotly is a data visualization library that you can use to create beautiful and interactive graphs and is supported in different programing languages such as Python, R, and Julia. It has become a popular library for data visualization because it is easy to implement code, makes visually appealing graphics, and the plots are user interactive. These plots are especially useful during exploratory data analysis, where you can create a graphic and then click around and look at individual points. It is also a great tool to share with your audience, who can interact with the graph themselves.</summary></entry><entry><title type="html">See More with Seaborn</title><link href="/blog/Seaborn" rel="alternate" type="text/html" title="See More with Seaborn" /><published>2021-10-26T00:00:00-07:00</published><updated>2021-10-26T00:00:00-07:00</updated><id>/blog/Seaborn</id><content type="html" xml:base="/blog/Seaborn">&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;The Seaborn library is a Python package which creates data visualizations based on the matplotlib library. As a result, this blog post will assume that the reader has a basic understanding of the matplotlib library. The main draw to the Seaborn library is its ability to create more visually appealing data plots than the matplotlib. Additionally, Seaborn plots contain more attributes which allow plots to contain more characteristics than their matplotlib counterparts.&lt;/p&gt;
+
+&lt;p&gt;Throughout this blog post, we will go over a few different plots and the characteristics available through the Seaborn library. Of course this post will by no means be exhaustive. Thus, the reader is encouraged to delve further on their own for more information regarding the remarkable abilities of Seaborn plots. For those interested more examples can be found at https://seaborn.pydata.org/examples/index.html which displays a variety of various plots some of which the reader may be unaware exists.&lt;/p&gt;
+
+&lt;h1 id=&quot;setting-up&quot;&gt;Setting Up&lt;/h1&gt;
+
+&lt;p&gt;For this post I will be using the diamonds dataset which comes with the Seaborn library. There are a number of datasets which come with Seaborn which can be used for exploring Seaborn plots, one can Google the Seaborn datasets if the reader desires to explore the datasets. If one desires to use a Seaborn dataset they can load the data using the following code: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sns.load_dataset(&quot;dataset&quot;)&lt;/code&gt;, otherwise load in the data using other methods the reader is familiar with.&lt;/p&gt;
+
+&lt;p&gt;To the observant reader, one can deduce that the Python shortcut for Seaborn is sns, thus, loading the Seaborn library would be as follows:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import seaborn as sns
+import matplotlib.pyplot as plt
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;It is usual to also include the matplotlib plot library when using seaborn since both libraries can be used together. In fact matplotlib is used for plot titles, legends, and other custom alterations to the plot.&lt;/p&gt;
+
+&lt;h1 id=&quot;creating-plots&quot;&gt;Creating Plots&lt;/h1&gt;
+
+&lt;p&gt;We will now go through the more common plots used in data science, although as has been stated before, there are many more plots available in the Seaborn library. All Seaborn plots follow a similar structure, although there are some unique attributes depending on the plot type. Thus, the basic format for Seaborn plots is as follows &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sns.plottype(data = dataset, x = variable, y = response, ...)&lt;/code&gt;. I will also post the code I used for the plots I created so that the format is made clearer and explain the new attributes associated with each plot.&lt;/p&gt;
+
+&lt;p&gt;As I go through each plot covered in this post, I encourage the reader to view each plot’s reference page for more information regarding each plot.&lt;/p&gt;
+
+&lt;h3 id=&quot;scatterplot&quot;&gt;Scatterplot&lt;/h3&gt;
+
+&lt;p&gt;To create a scatterplot the code is as follows:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sns.scatterplot(data = diamonds, x = 'carat', y = 'price', hue = 'color', size = 'clarity', alpha = 0.5)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-10-26/scatterplot.png&quot; alt=&quot;scatter&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Hue allows to user to make each unique variable delcared a different color, so in the plot above each color represents a unique diamond color.
+Size is similar to the hue attribute as it allows the size of each dot to be different depending on the unique values of the variable provided.
+Alpha just adds a level of opacity so that data points hidden behind one another are more easily seen.&lt;/p&gt;
+
+&lt;h3 id=&quot;facetgrid&quot;&gt;FacetGrid&lt;/h3&gt;
+
+&lt;p&gt;The Facet Grid method of the Seaborn library allows two unique values of two variables to be compared to each other. Loading this type of plot can take a while depending on the number of unique variable values provided since there will be n x m plots, with n being the number of levels in variable 1 and m the number of levels in variable 2. The code I used to create the FacetGrid is as follows:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;fg = sns.FacetGrid(diamonds, col = 'color', row = 'clarity')
+fg.map(sns.scatterplot, 'carat', 'price')
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-10-26/grid.png&quot; alt=&quot;grid&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Using this method the type of plot must be declared in the map function. As may be gathered from the code above the plot compares each level of color with each level of clarity, so there are a lot of plots. This kind of plot is best used for a low number of levels.&lt;/p&gt;
+
+&lt;h3 id=&quot;box-plot&quot;&gt;Box Plot&lt;/h3&gt;
+
+&lt;p&gt;The code for a box plot is as follows:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;box = sns.boxplot(data = diamonds, x = 'color', y = 'price', hue = 'cut')
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-10-26/boxplot.png&quot; alt=&quot;boxplot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Hue does the exact same thing as hue in the scatterplot.&lt;/p&gt;
+
+&lt;h3 id=&quot;histogram&quot;&gt;Histogram&lt;/h3&gt;
+
+&lt;p&gt;The code for a histogram is as follows:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sns.histplot(diamonds, x=&quot;price&quot;, hue=&quot;cut&quot;, multiple=&quot;stack&quot;, edgecolor=&quot;.3&quot;, linewidth=.5, log_scale=True)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-10-26/hist.png&quot; alt=&quot;hist&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Multiple allows the user to decide what to do with multiple levels. By looking at the sns.histplot reference page, one can see the options available.
+Edgecolor changes the opacity of the bar outlines.
+Linewidth affects the outline width for each bar.
+log_scale affects the axes values so that they’re either set to the log scale or not.&lt;/p&gt;
+
+&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
+
+&lt;p&gt;Of course there are other attributes involved with the Seaborn plots such as changing the color palette of the plots, which can be explored at the reader’s leisure. Changing plot size, axis values, plot titles, etc., may be adjusted through matplotlib. Hopefully, this blog post has piqued interest in exploring more of Seaborn’s features and anything the reader is unsure of may be Googled or reference using the Seaborn reference page. To learn more about the Seaborn package, one may visit https://seaborn.pydata.org/index.html.&lt;/p&gt;</content><author><name>Alexander Norris</name><email>alexandernorris333@gmail.com</email></author><category term="Seaborn" /><category term="Data Visualization" /><category term="Statistics Plots" /><summary type="html">Introduction The Seaborn library is a Python package which creates data visualizations based on the matplotlib library. As a result, this blog post will assume that the reader has a basic understanding of the matplotlib library. The main draw to the Seaborn library is its ability to create more visually appealing data plots than the matplotlib. Additionally, Seaborn plots contain more attributes which allow plots to contain more characteristics than their matplotlib counterparts. Throughout this blog post, we will go over a few different plots and the characteristics available through the Seaborn library. Of course this post will by no means be exhaustive. Thus, the reader is encouraged to delve further on their own for more information regarding the remarkable abilities of Seaborn plots. For those interested more examples can be found at https://seaborn.pydata.org/examples/index.html which displays a variety of various plots some of which the reader may be unaware exists. Setting Up For this post I will be using the diamonds dataset which comes with the Seaborn library. There are a number of datasets which come with Seaborn which can be used for exploring Seaborn plots, one can Google the Seaborn datasets if the reader desires to explore the datasets. If one desires to use a Seaborn dataset they can load the data using the following code: sns.load_dataset(&quot;dataset&quot;), otherwise load in the data using other methods the reader is familiar with. To the observant reader, one can deduce that the Python shortcut for Seaborn is sns, thus, loading the Seaborn library would be as follows: import seaborn as sns import matplotlib.pyplot as plt It is usual to also include the matplotlib plot library when using seaborn since both libraries can be used together. In fact matplotlib is used for plot titles, legends, and other custom alterations to the plot. Creating Plots We will now go through the more common plots used in data science, although as has been stated before, there are many more plots available in the Seaborn library. All Seaborn plots follow a similar structure, although there are some unique attributes depending on the plot type. Thus, the basic format for Seaborn plots is as follows sns.plottype(data = dataset, x = variable, y = response, ...). I will also post the code I used for the plots I created so that the format is made clearer and explain the new attributes associated with each plot. As I go through each plot covered in this post, I encourage the reader to view each plot’s reference page for more information regarding each plot. Scatterplot To create a scatterplot the code is as follows: sns.scatterplot(data = diamonds, x = 'carat', y = 'price', hue = 'color', size = 'clarity', alpha = 0.5) Hue allows to user to make each unique variable delcared a different color, so in the plot above each color represents a unique diamond color. Size is similar to the hue attribute as it allows the size of each dot to be different depending on the unique values of the variable provided. Alpha just adds a level of opacity so that data points hidden behind one another are more easily seen. FacetGrid The Facet Grid method of the Seaborn library allows two unique values of two variables to be compared to each other. Loading this type of plot can take a while depending on the number of unique variable values provided since there will be n x m plots, with n being the number of levels in variable 1 and m the number of levels in variable 2. The code I used to create the FacetGrid is as follows: fg = sns.FacetGrid(diamonds, col = 'color', row = 'clarity') fg.map(sns.scatterplot, 'carat', 'price') Using this method the type of plot must be declared in the map function. As may be gathered from the code above the plot compares each level of color with each level of clarity, so there are a lot of plots. This kind of plot is best used for a low number of levels. Box Plot The code for a box plot is as follows: box = sns.boxplot(data = diamonds, x = 'color', y = 'price', hue = 'cut') Hue does the exact same thing as hue in the scatterplot. Histogram The code for a histogram is as follows: sns.histplot(diamonds, x=&quot;price&quot;, hue=&quot;cut&quot;, multiple=&quot;stack&quot;, edgecolor=&quot;.3&quot;, linewidth=.5, log_scale=True) Multiple allows the user to decide what to do with multiple levels. By looking at the sns.histplot reference page, one can see the options available. Edgecolor changes the opacity of the bar outlines. Linewidth affects the outline width for each bar. log_scale affects the axes values so that they’re either set to the log scale or not. Conclusion Of course there are other attributes involved with the Seaborn plots such as changing the color palette of the plots, which can be explored at the reader’s leisure. Changing plot size, axis values, plot titles, etc., may be adjusted through matplotlib. Hopefully, this blog post has piqued interest in exploring more of Seaborn’s features and anything the reader is unsure of may be Googled or reference using the Seaborn reference page. To learn more about the Seaborn package, one may visit https://seaborn.pydata.org/index.html.</summary></entry><entry><title type="html">Check your Assumptions</title><link href="/blog/Linear-Assumptions" rel="alternate" type="text/html" title="Check your Assumptions" /><published>2021-10-25T00:00:00-07:00</published><updated>2021-10-25T00:00:00-07:00</updated><id>/blog/Linear-Assumptions</id><content type="html" xml:base="/blog/Linear-Assumptions">&lt;h3 id=&quot;if-you-torture-the-data-enough-nature-will-always-confess--ronald-coase&quot;&gt;“If you torture the data enough, nature will always confess.” – Ronald Coase&lt;/h3&gt;
 
 &lt;h2 id=&quot;the-set-up&quot;&gt;The Set Up&lt;/h2&gt;
 
