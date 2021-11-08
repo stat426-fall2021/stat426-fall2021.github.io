@@ -35,7 +35,7 @@ With that in mind, it's no wonder that Benjamin Obi Tayo, Ph.D. wrote on [KDnugg
 # Tutorial
 1. Open up a new notebook your favorite python editor. I like to use Jupyter notebooks, but Google Colab is also a great option if you
 don't have python downloaded on your computer.
-2. Download a PNG image to play with. I'll use this one:![dog](/assets/images/blogimages/figs-11-06/oscar-sutton-yihlaRCCvd4-unsplash.png =250x100)
+2. Download a PNG image to play with. I'll use this one:![dog](/assets/images/blogimages/figs-11-06/oscar-sutton-yihlaRCCvd4-unsplash.png)
 3. If you're using Jupyter, add the photo to the same directory as your notebook. If you're 
 using Colab, go to the left sidebar, and click the "Upload to session storage" button. You'll have to do this each time you
 close the notebook and come back to it later.
@@ -161,6 +161,7 @@ print("Original size: ", original_size)
 print("Reduced size is what percent of original size: ", relative_size)
 ```
 
+Congratulations! You have now compressed an image using singular value decomposition!
 
 
 ## Attributions
