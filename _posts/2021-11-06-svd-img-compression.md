@@ -2,8 +2,8 @@
 title: Cancelling Noise in Data: Image Compression Tutorial
 layout: post
 author: jessica-hamblin
-post-image: /assets/images/blogimages/figs-09-13/github-ssh-pic.png
-description: Short tutorial about setting up SSH keys for GitHub.
+post-image: /assets/images/blogimages/figs-11-06/jack-millard-9JeXImRHkl4-unsplash.jpg
+description: Tutorial for compressing images using singular value decomposition.
 tags:
 - image compression
 - reduction
@@ -35,7 +35,7 @@ With that in mind, it's no wonder that Benjamin Obi Tayo, Ph.D. wrote on [KDnugg
 # Tutorial
 1. Open up a new notebook your favorite python editor. I like to use Jupyter notebooks, but Google Colab is also a great option if you
 don't have python downloaded on your computer.
-2. Download a PNG image to play with. I'll use this one: ![dog](/assets/images/blogimages/figs-11-06/oscar-sutton-yihlaRCCvd4-unsplash.png)
+2. Download a PNG image to play with. I'll use this one:![dog](/assets/images/blogimages/figs-11-06/oscar-sutton-yihlaRCCvd4-unsplash.png=250x)
 3. If you're using Jupyter, add the photo to the same directory as your notebook. If you're 
 using Colab, go to the left sidebar, and click the "Upload to session storage" button. You'll have to do this each time you
 close the notebook and come back to it later.
@@ -163,67 +163,7 @@ print("Reduced size is what percent of original size: ", relative_size)
 
 
 
-
-
-
-
-
-
-
-
-
-
-This post is adapted from the GitHub documentation page
-[Connecting to GitHub with SSH](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh).
-
-You can use the SSH protocol by setting up SSH keys to connect with GitHub without
-needing to supply your username and access token.  SSH stands for Secure Shell
-and it protocol for operating network services securely over an unsecured network.
-You can read more about SSH [here](https://en.wikipedia.org/wiki/Secure_Shell).
-
-# Check for existing SSH keys
-1. Open the terminal (Mac) or Git Bash (Windows)
-2. Enter ```ls -la ~/.ssh```
-3. Check the directory listing to see if you have a public SSH key, usually:  
-
-   * id_rsa.pub
-   * id_ecdsa.pub
-   * id_ed25519.pub
-
-4. If you receive an error that ~/.ssh doesn't exist, then you don't have ssh keys
-
-# Generating New SSH Keys
-*(If you already have SSH keys, skip to the next section.)*
-
-Below are instructions for generating SSH keys.  When doing this, you have the choice of an algorithm to use (with the `-t` option) and the key size (with the `-b` option).  You can read more about SSH keys and the different algorithm/key size options [here](https://www.ssh.com/academy/ssh/keygen).  The instructions below use the rsa algorithm with a 4096 bit key size.
-
-
-1. Open the terminal (Mac) or Git Bash (Windows)
-2. In the terminal type  
-```ssh-keygen -t rsa -b 4096 -C "your_github_email@email.com"```   
-(be sure to use your actual GitHub email address)
-3. When you are prompted to "Enter a file in which to save the key", just press enter to accept the default location
-4.  Add a passphrase for extra security or press enter for no passphrase
-
-# Adding SSH Keys to your GitHub Account
-
-1. Copy the SSH public key to the clipboard.  
-```cat ~/.ssh/id_rsa.pub```
-will show you the public key and you can copy it.
-2. Go to GitHub.  In the upper-right corner, click on your profile photo, then click **Settings**.  
-3. In the user settings sidebar, click *SSH and GPG keys*
-4. Click **New SSH key**
-5. In the "Title" field, add a label for your key.  For example "Personal MacBook Air"
-6. Paste your key into the "Key" field.
-7. Click **Add SSH key**.
-
-# Using SSH Key
-In GitHub, when cloning repositories, or setting up the remote repository, use SSH instead of HTTP:
-
-![screenshot](/assets/images/blogimages/figs-09-13/github-ssh.png)
-
-
 ## Attributions
-Cover photo by <a href="https://unsplash.com/@cetteup?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">cetteup</a> on <a href="https://unsplash.com/s/photos/ear-plugs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>.
-This post is adapted from a lab from the Computational Linear Algebra class at 
+Cover photo by <a href="https://unsplash.com/@millarjb?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jack Millard</a> on <a href="https://unsplash.com/s/photos/magnifying-glass?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+This post is adapted from a lab from the Computational Linear Algebra class at Brigham Young University.
   
