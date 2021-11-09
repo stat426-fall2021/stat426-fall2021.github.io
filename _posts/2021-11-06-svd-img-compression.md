@@ -35,10 +35,11 @@ With that in mind, it's no wonder that Benjamin Obi Tayo, Ph.D. wrote on [KDnugg
 # Tutorial
 1. Open up a new notebook your favorite python editor. I like to use Jupyter notebooks, but Google Colab is also a great option if you
 don't have python downloaded on your computer.
-2. Download a PNG image to play with. I'll use this one:![dog](/assets/images/blogimages/figs-11-06/oscar-sutton-yihlaRCCvd4-unsplash.png)
+2. Download a PNG image to play with. I'll use this one:
+![dog](/assets/images/blogimages/figs-11-06/oscar-sutton-yihlaRCCvd4-unsplash.png)
 3. If you're using Jupyter, add the photo to the same directory as your notebook. If you're 
 using Colab, go to the left sidebar, and click the "Upload to session storage" button. You'll have to do this each time you
-close the notebook and come back to it later.
+close the notebook and come back to it later. This is where to go to add the image in Colab:
 ![upload-to_colab](/assets/images/blogimages/figs-11-06/colab_upload_img.PNG)
 4. In the first cell, add these imports:
 ```python
@@ -63,7 +64,8 @@ def show_color(array):
     # show the array as an image within the figure
     plt.imshow(array)
     return None
-
+```
+```python
 def show_gray(array):
     # set up the matplotlib figure
     plt.figure(figsize=(10,10))
@@ -95,7 +97,7 @@ In reality, `s_orig` is actually a 1-dimensional array instead of a matrix (2-di
 the `Sigma` matrix has 0's everywhere except the diagonal from the top left corner, so we only need one dimension to
 contain all the nonzero values, which are called "singular values." These are arranged from largest to smallest.
 
-10. Graph the singular values in `s_orig` against their index in the array. This will let us get a good idea how many
+10. Graph the singular values in `s_orig` (y-axis) against their index in the array (x-axis). This will let us get a good idea how many
 singular values we will need to make a good approximation of our image without losing too much quality.
 ```python
 plt.plot(s_orig)
@@ -117,8 +119,8 @@ def sigma(m,n,s):
 That creates a matrix of the correct size filled with 0's, and then goes along the diagonal and changes the 0 to the
 corresponding singular value from `s`.
 
-12. The second function takes in a 2D array `u`, a 1D array `s`, and a 2D array `v_t`, which correspond to the 3 outputs
-from calling `svd`. It multiplies them together to reconstruct a single matrix.
+12. The second function takes in a 2D array `u`, a 1D array `s`, and a 2D array `v_t`, which correspond to the 3 outputs 
+from calling `svd`. It multiplies them together using matrix multiplication to reconstruct a single matrix.
 ```python
 def reconstructed_array(u,s,v_t):
   sgm = sigma(len(u[0]),len(v_t),s)
@@ -165,7 +167,7 @@ Congratulations! You have now compressed an image using singular value decomposi
 
 
 ## Attributions
-
-Cover photo by <a href="https://unsplash.com/@millarjb?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jack Millard</a> on <a href="https://unsplash.com/s/photos/magnifying-glass?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-This post is adapted from a lab from the Computational Linear Algebra class at Brigham Young University.
+* Cover photo by <a href="https://unsplash.com/@millarjb?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jack Millard</a> on <a href="https://unsplash.com/s/photos/magnifying-glass?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+* Dog on the beach photo by <a href="https://unsplash.com/@o5ky?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Oscar Sutton</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+* This post is adapted from a lab from the Computational Linear Algebra class at Brigham Young University.
 
