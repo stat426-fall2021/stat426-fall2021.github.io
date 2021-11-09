@@ -2,8 +2,8 @@
 title: Mastering Data Science Through Sports Betting
 layout: post
 author: nland13
-post-image: /assets/images/blogimages/figs-10-30/chance.png
-description: Learn why sports betting is an amazing way to perfect your data science skills and get ideas on how to get started. 
+post-image: /assets/images/blogimages/figs-10-30/chance2.png
+description: Learn why sports betting is an amazing way to perfect your data science skills and get ideas on how to get started.
 tags:
 - Sports Betting
 - Sports Analytics
@@ -11,7 +11,7 @@ tags:
 - Skill Development
 ---
 
-Okay, so you might be thinking that sports betting seems like a pretty frivolous application of data science. Perhaps it conjures up images of an addicted degenerate like the one Adam Sandler plays in *Uncut Gems*, and adding statistics to it just makes it nerdier. While I can't argue with the nerdy aspect, I do believe that sports betting, when used properly, can actually be a uniquely suited place for a burgeoning data scientist to learn and hone their skills. In this article I describe why I think that is, explain how you can get started, give an example of an actual successful bet powered by statistics, and list some of the best resources to learn more. 
+Okay, so you might be thinking that sports betting seems like a pretty frivolous application of data science. Perhaps it conjures up images of an addicted degenerate like the one Adam Sandler plays in *Uncut Gems*, and adding statistics to it just makes it nerdier. While I can't argue with the nerdy aspect, I do believe that sports betting, when used properly, can actually be a uniquely suited place for a burgeoning data scientist to learn and hone their skills. In this article I describe why I think that is, explain how you can get started, give an example of an actual successful bet powered by statistics, and list some of the best resources to learn more.
 
 ![sandler](/assets/images/blogimages/figs-10-30/sandler.png)
 
@@ -51,7 +51,7 @@ Like anything, sports betting can be intimidating at first. Nevertheless, it doe
 
 In my example, I noticed that the odds for the player to score the first point in a game during the NBA playoffs seemed to be based off of the proportion of points each player scored for their team, but I believed that this was wrong and that the odds should actually be based off of the proportion of first points each player scored. I believed this because oftentimes teams will run set plays for certain players at the beginning of the game. My belief was based off a smaller sample size (only first points scored vs all points by starters), but I believed it would be more predictive regardless.
 
-**2\. Calculate the expected value of a single bet based off of your unique probabilities.** If you have a difference in opinion, your implied probabilities will be different than those implied by the odds. This means you will likely see a bet with an expected value higher than 1x (getting more than 1 dollar back for every dollar you put in). 
+**2\. Calculate the expected value of a single bet based off of your unique probabilities.** If you have a difference in opinion, your implied probabilities will be different than those implied by the odds. This means you will likely see a bet with an expected value higher than 1x (getting more than 1 dollar back for every dollar you put in).
 
 In my case, I found my unique probabilities by scraping data for who scored the first points and then calculating the expected values using the published payouts. Below are the results for a game with the Lakers. As you can see, betting on Danny Green to score the first point had an expected value greater than 1x.
 
@@ -86,17 +86,15 @@ for i in range(n):
 
 If this type of thing is exciting to you, there are many resources you can find online that are both entertaining and useful. Here are three that I have personally enjoyed:
 * [Podcast](https://podcasts.apple.com/us/podcast/bet-the-process/id1291010585) focused on data science in sports betting called *Bet the Process*. Hosted by the real-life protagonist of the book/movie *21*
-* [Interview](https://www.youtube.com/watch?v=FeOOpuDrZaQ) from DataCamp about the future of data science in sports betting and the unique innovations that are occurring in the space 
+* [Interview](https://www.youtube.com/watch?v=FeOOpuDrZaQ) from DataCamp about the future of data science in sports betting and the unique innovations that are occurring in the space
 * [Simple article](https://www.justintodata.com/improve-sports-betting-odds-guide-in-python/) detailing the practical steps for using python for sports betting
 
 ## Conclusion
 
-Sports betting can be a fantastic way to train and test your data science skills. It offers real-world decision making, a variety of problem types, plenty of easily accessible data, and a whole lot of fun. In addition, the financialization of culture and the automatic market-making/smart-contract capabilities of blockchain technology (both topics for another post) mean there will be an incredible amount of interesting opportunities in the future and ensure that the sports betting hobby will only get better. 
+Sports betting can be a fantastic way to train and test your data science skills. It offers real-world decision making, a variety of problem types, plenty of easily accessible data, and a whole lot of fun. In addition, the financialization of culture and the automatic market-making/smart-contract capabilities of blockchain technology (both topics for another post) mean there will be an incredible amount of interesting opportunities in the future and ensure that the sports betting hobby will only get better.
 
-Comment below if you have any interesting "investment theses" that could be worth looking into. It could be as simple as an idea for a collecting a new data type and thus having a proprietary predictor, applying a type of statistical model to a bet, or even just that the University of Utah will lose every football game for the rest of the season! 
+Comment below if you have any interesting "investment theses" that could be worth looking into. It could be as simple as an idea for a collecting a new data type and thus having a proprietary predictor, applying a type of statistical model to a bet, or even just that the University of Utah will lose every football game for the rest of the season!
 
 <iframe src="https://giphy.com/embed/eHx5A2SWQtYRrG4WM2" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
 *Disclaimer: Sports betting can of course be considered a form of gambling and can be addictive. Though it is important to note that in several places sports betting is considered similar to investing, and you can even raise outside capital to form sports betting investment funds (zero correlation to the market is attractive). Nevertheless, considering the risks, it is totally possible to simply make "paper bets", where you make predictions but don't actually wager any money. You can still get the learning benefits the sports betting context provides without ever actually betting anything.*
-
- 
