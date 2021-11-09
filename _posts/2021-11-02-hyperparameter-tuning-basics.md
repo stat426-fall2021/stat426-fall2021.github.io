@@ -1,3 +1,17 @@
+---
+title: A Quickstart to Hyperparameter Tuning
+layout: post
+author: cmason30
+post-image: /assets/images/blogimages/figs-11-02/51f0637c324a52f619c3984993341991.jpeg
+description: Learn how to get started with hyperparameter tuning in Scikit-Learn. 
+tags:
+- Model Tuning
+- Data Science
+- Skill Building
+- Python
+---
+
+
 # A Quickstart to Hyperparameter Tuning
 
 ## Contents
