@@ -39,7 +39,7 @@ don't have python downloaded on your computer.
 ![dog](/assets/images/blogimages/figs-11-06/oscar-sutton-yihlaRCCvd4-unsplash.png)
 3. If you're using Jupyter, add the photo to the same directory as your notebook. If you're 
 using Colab, go to the left sidebar, and click the "Upload to session storage" button. You'll have to do this each time you
-close the notebook and come back to it later.
+close the notebook and come back to it later. This is where to go to add the image in Colab:
 ![upload-to_colab](/assets/images/blogimages/figs-11-06/colab_upload_img.PNG)
 4. In the first cell, add these imports:
 ```python
