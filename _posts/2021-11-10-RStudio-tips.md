@@ -12,7 +12,7 @@ tags:
 - Custom
 - Efficient Coding
 ---
-RStudio is a widely used platform for coding. RStudio has a host of shortcuts and cool features that streamline the coding process. Here are 10 that have been a huge benefit to me. 
+RStudio is a widely used platform for coding. It has a host of shortcuts and cool features that streamline the coding process. Here are 10 that have been a huge benefit to me. 
 
 ## Access All Shortcuts
 
