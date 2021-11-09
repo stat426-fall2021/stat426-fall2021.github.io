@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-11-08T15:14:48-08:00</updated><id>/feed.xml</id><title type="html">Stat 426 - Fall 2021</title><subtitle>Class Blog and Projects</subtitle><entry><title type="html">Cancelling Noise in Data: Image Compression Tutorial</title><link href="/blog/svd-img-compression" rel="alternate" type="text/html" title="Cancelling Noise in Data: Image Compression Tutorial" /><published>2021-11-06T00:00:00-07:00</published><updated>2021-11-06T00:00:00-07:00</updated><id>/blog/svd-img-compression</id><content type="html" xml:base="/blog/svd-img-compression">&lt;p&gt;One common problem  in data science is that our data is noisy. A good data scientist
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-11-08T16:24:40-08:00</updated><id>/feed.xml</id><title type="html">Stat 426 - Fall 2021</title><subtitle>Class Blog and Projects</subtitle><entry><title type="html">Cancelling Noise in Data: Image Compression Tutorial</title><link href="/blog/svd-img-compression" rel="alternate" type="text/html" title="Cancelling Noise in Data: Image Compression Tutorial" /><published>2021-11-06T00:00:00-07:00</published><updated>2021-11-06T00:00:00-07:00</updated><id>/blog/svd-img-compression</id><content type="html" xml:base="/blog/svd-img-compression">&lt;p&gt;One common problem  in data science is that our data is noisy. A good data scientist
 is able to distinguish between that noise and signal in the data. One great way
 to “cancel noise” in data represented in matrix form is to use singular value decomposition
 from linear algebra.&lt;/p&gt;
@@ -22,8 +22,8 @@ linear algebra and how it will help you be a better data scientist, check out th
 &lt;ol&gt;
   &lt;li&gt;Open up a new notebook your favorite python editor. I like to use Jupyter notebooks, but Google Colab is also a great option if you
 don’t have python downloaded on your computer.&lt;/li&gt;
-  &lt;li&gt;Download a PNG image to play with. I’ll use this one: &lt;img src=&quot;/assets/images/blogimages/figs-11-06/oscar-sutton-yihlaRCCvd4-unsplash.png&quot; alt=&quot;dog&quot; /&gt;&lt;/li&gt;
-  &lt;li&gt;If you’re using Jupyter, add the photo to the same directory as your notebook. If you’re
+  &lt;li&gt;Download a PNG image to play with. I’ll use this one:&lt;img src=&quot;/assets/images/blogimages/figs-11-06/oscar-sutton-yihlaRCCvd4-unsplash.png&quot; alt=&quot;dog&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;If you’re using Jupyter, add the photo to the same directory as your notebook. If you’re 
 using Colab, go to the left sidebar, and click the “Upload to session storage” button. You’ll have to do this each time you
 close the notebook and come back to it later.
 &lt;img src=&quot;/assets/images/blogimages/figs-11-06/colab_upload_img.PNG&quot; alt=&quot;upload-to_colab&quot; /&gt;&lt;/li&gt;
@@ -144,66 +144,12 @@ print(“Original size: “, original_size)
 print(“Reduced size is what percent of original size: “, relative_size)
 ```&lt;/p&gt;
 
-&lt;p&gt;This post is adapted from the GitHub documentation page
-&lt;a href=&quot;https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh&quot;&gt;Connecting to GitHub with SSH&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;You can use the SSH protocol by setting up SSH keys to connect with GitHub without
-needing to supply your username and access token.  SSH stands for Secure Shell
-and it protocol for operating network services securely over an unsecured network.
-You can read more about SSH &lt;a href=&quot;https://en.wikipedia.org/wiki/Secure_Shell&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h1 id=&quot;check-for-existing-ssh-keys&quot;&gt;Check for existing SSH keys&lt;/h1&gt;
-&lt;ol&gt;
-  &lt;li&gt;Open the terminal (Mac) or Git Bash (Windows)&lt;/li&gt;
-  &lt;li&gt;Enter &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ls -la ~/.ssh&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Check the directory listing to see if you have a public SSH key, usually:&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;id_rsa.pub&lt;/li&gt;
-      &lt;li&gt;id_ecdsa.pub&lt;/li&gt;
-      &lt;li&gt;id_ed25519.pub&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;If you receive an error that ~/.ssh doesn’t exist, then you don’t have ssh keys&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h1 id=&quot;generating-new-ssh-keys&quot;&gt;Generating New SSH Keys&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;(If you already have SSH keys, skip to the next section.)&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Below are instructions for generating SSH keys.  When doing this, you have the choice of an algorithm to use (with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-t&lt;/code&gt; option) and the key size (with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-b&lt;/code&gt; option).  You can read more about SSH keys and the different algorithm/key size options &lt;a href=&quot;https://www.ssh.com/academy/ssh/keygen&quot;&gt;here&lt;/a&gt;.  The instructions below use the rsa algorithm with a 4096 bit key size.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Open the terminal (Mac) or Git Bash (Windows)&lt;/li&gt;
-  &lt;li&gt;In the terminal type&lt;br /&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ssh-keygen -t rsa -b 4096 -C &quot;your_github_email@email.com&quot;&lt;/code&gt; &lt;br /&gt;
-(be sure to use your actual GitHub email address)&lt;/li&gt;
-  &lt;li&gt;When you are prompted to “Enter a file in which to save the key”, just press enter to accept the default location&lt;/li&gt;
-  &lt;li&gt;Add a passphrase for extra security or press enter for no passphrase&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h1 id=&quot;adding-ssh-keys-to-your-github-account&quot;&gt;Adding SSH Keys to your GitHub Account&lt;/h1&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Copy the SSH public key to the clipboard.&lt;br /&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cat ~/.ssh/id_rsa.pub&lt;/code&gt;
-will show you the public key and you can copy it.&lt;/li&gt;
-  &lt;li&gt;Go to GitHub.  In the upper-right corner, click on your profile photo, then click &lt;strong&gt;Settings&lt;/strong&gt;.&lt;/li&gt;
-  &lt;li&gt;In the user settings sidebar, click &lt;em&gt;SSH and GPG keys&lt;/em&gt;&lt;/li&gt;
-  &lt;li&gt;Click &lt;strong&gt;New SSH key&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;In the “Title” field, add a label for your key.  For example “Personal MacBook Air”&lt;/li&gt;
-  &lt;li&gt;Paste your key into the “Key” field.&lt;/li&gt;
-  &lt;li&gt;Click &lt;strong&gt;Add SSH key&lt;/strong&gt;.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h1 id=&quot;using-ssh-key&quot;&gt;Using SSH Key&lt;/h1&gt;
-&lt;p&gt;In GitHub, when cloning repositories, or setting up the remote repository, use SSH instead of HTTP:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-09-13/github-ssh.png&quot; alt=&quot;screenshot&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Congratulations! You have now compressed an image using singular value decomposition!&lt;/p&gt;
 
 &lt;h2 id=&quot;attributions&quot;&gt;Attributions&lt;/h2&gt;
-&lt;p&gt;Cover photo by &lt;a href=&quot;https://unsplash.com/@cetteup?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;cetteup&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com/s/photos/ear-plugs?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;Unsplash&lt;/a&gt;.
-This post is adapted from a lab from the Computational Linear Algebra class at&lt;/p&gt;</content><author><name>Jessica Hamblin</name><email>hamblinjm@hotmail.com</email></author><category term="image compression" /><category term="reduction" /><category term="linear algebra" /><category term="svd" /><category term="noise" /><summary type="html">One common problem in data science is that our data is noisy. A good data scientist is able to distinguish between that noise and signal in the data. One great way to “cancel noise” in data represented in matrix form is to use singular value decomposition from linear algebra.</summary></entry><entry><title type="html">Let’s talk JSON Basics</title><link href="/blog/json" rel="alternate" type="text/html" title="Let’s talk JSON Basics" /><published>2021-11-04T00:00:00-07:00</published><updated>2021-11-04T00:00:00-07:00</updated><id>/blog/json</id><content type="html" xml:base="/blog/json">&lt;p&gt;The first time I heard the term JSON, I thought that it was someone emphasizing a name weird. I’m probably alone in this error, but hopefully this post can help someone avoid my blunder and avoid embarrasment when asking which Jason we were talking about. &lt;em&gt;[I really wish I could claim this was hyperbole.]&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Cover photo by &lt;a href=&quot;https://unsplash.com/@millarjb?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;Jack Millard&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com/s/photos/magnifying-glass?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;Unsplash&lt;/a&gt;
+This post is adapted from a lab from the Computational Linear Algebra class at Brigham Young University.&lt;/p&gt;</content><author><name>Jessica Hamblin</name><email>hamblinjm@hotmail.com</email></author><category term="image compression" /><category term="reduction" /><category term="linear algebra" /><category term="svd" /><category term="noise" /><summary type="html">One common problem in data science is that our data is noisy. A good data scientist is able to distinguish between that noise and signal in the data. One great way to “cancel noise” in data represented in matrix form is to use singular value decomposition from linear algebra.</summary></entry><entry><title type="html">Let’s talk JSON Basics</title><link href="/blog/json" rel="alternate" type="text/html" title="Let’s talk JSON Basics" /><published>2021-11-04T00:00:00-07:00</published><updated>2021-11-04T00:00:00-07:00</updated><id>/blog/json</id><content type="html" xml:base="/blog/json">&lt;p&gt;The first time I heard the term JSON, I thought that it was someone emphasizing a name weird. I’m probably alone in this error, but hopefully this post can help someone avoid my blunder and avoid embarrasment when asking which Jason we were talking about. &lt;em&gt;[I really wish I could claim this was hyperbole.]&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;Well, you have to make mistakes to learn. I now know that JSON actually means: JavaScript Object Notation…&lt;/p&gt;
 
