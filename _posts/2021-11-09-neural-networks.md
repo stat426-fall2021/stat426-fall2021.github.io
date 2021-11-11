@@ -52,7 +52,7 @@ from keras.models import Sequential
 from keras.layers import Dense
 ```
 
-We will not go through the cleanup and prepping of the data in this article but you can find the complete jupyter notebook with more detail [here]().
+We will not go through the cleanup and prepping of the data in this article but you can find the complete jupyter notebook with more detail [here](https://github.com/jpablohigueros/KerasIntro).
 
 ### Creating a neural network
 
