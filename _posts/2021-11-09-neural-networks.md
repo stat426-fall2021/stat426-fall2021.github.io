@@ -72,7 +72,7 @@ layer_input = Dense(units=512, activation='sigmoid', input_shape=(image_size,))
 # Add layer to model
 model.add(layer_input)
 ```
-The units are the number of neurons within the layer and choosing the number is outside the scope of this article. The activation function deternmines the output from the node
+The units are the number of neurons within the layer and choosing the number is outside the scope of this article. The activation function determines the output from the node
 based on the input. In this case we use the Sigmoid function because it takes in input between 0 and 1. The correct activation function depends much on the type of input of output in your data.
 
 ![activation](/assets/images/blogimages/figs-11-09/activation%20functions.png)
@@ -104,7 +104,7 @@ Before we compile it is important to understand two concepts that come into play
 
 #### Loss functions
 
-Loss functions are functions that predict error in the within the neural network. The output of this funtion is called gradient and it is use to adjust the weights of each node.
+Loss functions are functions that predict error in the within the neural network. The output of this function is called gradient and it is use to adjust the weights of each node.
 The following are different loss functions available within Keras but we will not go into the specifics of each function:
 
 - mean_squared_error
