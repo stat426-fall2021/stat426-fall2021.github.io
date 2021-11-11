@@ -2,7 +2,7 @@
 title: The heart of Deep Learning
 layout: post
 author: jpablo
-post-image: "https://user-images.githubusercontent.com/77635875/133832882-606db727-44cd-4202-9b30-5a44f69019be.jpg"
+post-image: /assets/images/blogimages/figs-11-09/file-20201210-18-elk4m.jpg
 description: Basics and example of a neural network.
 tags:
 - Keras
@@ -14,7 +14,7 @@ tags:
 
 ### Introduction - What is a neural network?
 
-[img]<img width="342" alt="Screen Shot 2021-09-24 at 2 06 23 PM" src="https://user-images.githubusercontent.com/77635875/134733773-8dd0e91f-6cb8-4fcc-b53c-bebe37752a2c.png">
+![nn](/assets/images/blogimages/figs-11-09/neural%20network.PNG)
 
 Neural networks are a form of machine learning composed of layers of nodes whose role is to learn patterns in the training data fed to it and match those patterns 
 to the label set for each item. The example we will run through is a data set which contains images of numbers 0 through 9 with their respective labels. Our goal
@@ -24,7 +24,7 @@ In simple words, a neural network has an input layer (we input each image), an o
 hidden layers in between through which each image runs. Weights are assigned to each node that represent the importance of that particular characteristic in the data
 in order to eventually determine the final prediction. The following is an example of how we might think of this process.
 
-[img]<img width="342" alt="Screen Shot 2021-09-24 at 2 06 23 PM" src="https://user-images.githubusercontent.com/77635875/134733773-8dd0e91f-6cb8-4fcc-b53c-bebe37752a2c.png">
+![example](/assets/images/blogimages/figs-11-09/example%20nodes.PNG)
 
 When we determine whether the image above is a six, we might perhaps look for certain characteristics. For example, we might be looking for a circle or an oval connected to
 a diagonal or curved line above it. A neural network works similarly in the sense that it looks for patterns that will help it determine whether it is looking at a six or
@@ -75,7 +75,7 @@ model.add(layer_input)
 The units are the number of neurons within the layer and choosing the number is outside the scope of this article. The activation function deternmines the output from the node
 based on the input. In this case we use the Sigmoid function because it takes in input between 0 and 1. The correct activation function depends much on the type of input of output in your data.
 
-[img]
+![activation](/assets/images/blogimages/figs-11-09/activation%20functions.png)
 
 - Identity (linear)
 - Binary (Non-negative input outputs 1 and negative input outputs 0)
@@ -98,7 +98,7 @@ model.add(layer_output)
 For the output layer, we choose 10 units because we are trying to determine which number (from 0 to 9) corresponds to each image. We can see a summary of what our model looks
 like before we compile it by running `model.summary()`.
 
-[img]
+![summary](/assets/images/blogimages/figs-11-09/modelsummary.PNG)
 
 Before we compile it is important to understand two concepts that come into play in the compilation process: Loss functions and Optimizers.
 
@@ -149,7 +149,7 @@ model.fit(x_train,
           verbose=True, 
           validation_split=.01)
 ```
-[img]
+![metrics](/assets/images/blogimages/figs-11-09/metrics.png)
 
 You can learn more about what each argument means [here](https://keras.io/api/models/model_training_apis/). However, an important argument to understand is the `validation_split`. This argument is the portion of your training data that will be used to validate your model (not the same as testing) at the end of each time the data
 goes through the model.
@@ -167,7 +167,7 @@ y_true = np.argmax(y_test, axis=-1)
 ```
 We can create a confusion matrix to visualize the accuracy of our model's predictions. This matrix contains the predicted value on the x axis and the true value on the y axis.
 
-[img]
+![matrix](/assets/images/blogimages/figs-11-09/confusion.png)
 
 Finally, Keras gives us the option to reuse an already trained model by saving it with `model.save('/model.ext')`.
 
