@@ -101,13 +101,13 @@ After the model has been tuned for best performance, you can create some plots t
 plot_model(tuned_gb)
 ```
 
-![Residuals](/assets/images/blogimages/figs-11-08/residuals.png)
+![Residuals](/assets/images/blogimages/figs-11-08/Residuals.png)
 
 ```
 plot_model(tuned_gb, plot = 'error')
 ```
 
-![Error](images/error.png)
+![Error](/assets/images/blogimages/figs-11-08/error.png)
 
 ```
 plot_model(tuned_gb, plot = 'feature')
