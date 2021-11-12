@@ -2,17 +2,17 @@
 title: Ace Your Data Science Interview
 layout: post
 author: ashtynfiala
-post-image:
-description:
+post-image: /assets/images/blogimages/figs-11-11/interview.jpg
+description: prepare for your next job interview by brushing up on some popular data science interview questions
 tags:
 -machine learning
 -job search
 -algorithms
--supervised learning
--unsupervised learning
 -interview questions
 ---
-Going into a data science related job interview, you can be sure that they will ask you questions about machine learning. We are going to go over some of the most common questions asked related to machine learning during data science job interviews, so you can be ready to catch your dream job. 
+Going into a data science related job interview, you can be sure that they will ask you questions about machine learning. We are going to go over some of the most common questions asked related to machine learning during data science job interviews so **you** can be ready to catch your dream job. 
+
+![you](/assets/images/blogimages/figs-11-11/you1.png)
 
 Machine learning uses artificial intelligence and computer science on data and algorithms to imitate human learning. It automates processes like model building and classifying that originally could only be done with human reasoning. Through machine learning, we can teach algorithms with data to identify patterns and make decisions. 
 
@@ -25,7 +25,9 @@ We are going to look over 5 popular machine learning interview questions and tal
 Supervised Learning- generally the model is trained with an input data set until it can correctly predict the output when given the same features it was trained on. 
 -	An example of this would be housing prices. A data set might include features relating to when the house was built, how big it is, how many bedrooms it has, and the sale price. The classification method we choose would then identify the patterns of house features compared to their sale prices. In the end, we would hope to come out with a model that could be given data about a house and give you an accurate prediction of its sale price.  
 Unsupervised Learning- using unlabeled datasets, these methods will attempt to identify the structure of the data and group it based on its similarities. 
--	An example of unsupervised learning would be inputting images of cities and rural landscapes and letting the machine identify features common to cityscapes and features common to rural landscapes, hopefully then allowing it to receive an image and categorize it correctly as city or rural. 
+-	An example of unsupervised learning would be inputting images of cities and rural landscapes and letting the machine identify features common to cityscapes and features common to rural landscapes, hopefully then allowing it to receive an image and categorize it correctly as city or rural.
+
+![ML](/assets/images/blogimages/figs-11-11/MLgraphic.jpeg)
 
 #### 2.	What is ‘Naïve’ about Naïve Bayes?
 Naïve bayes is an algorithm used for predictive modeling that falls under the supervised learning category. The part that is naïve is that it assumes that every input variable is independent. Wikipedia gives a good example related to the following: A naïve bayes algorithm could be used to classify emails as spam or not spam. Features might count occurrences of certain words and then the email would be classified as spam or not spam. The algorithm would calculate the probability of it being spam based off the assumption that the occurrence of one word is independent from the occurrence of any other word. 
@@ -41,5 +43,8 @@ Cons: More likely to be overfit, meaning a higher variance.
 #### 5.	How can we handle outlier values? 
 Some tools used to discover outlier values include box plot, z-score, and scatterplots. 
 To handle any outliers we find, we can drop those observations from the dataset, impute a different value (ex. the mean), or you could segment them and analyze what insights you might gain from those data points. 
+
+
+![cheer](/assets/images/blogimages/figs-11-11/cheer.png)
 
 These 5 questions don’t even begin to cover the scope of what interviewers might want to pry out of you during an interview, but it’s a good start to thinking about what you might want to freshen up on before heading into your next interview. Either way, be confident in what you do know and try to derive answers from that if a question trips you up. Preparation is key and practicing explaining these concepts to another person is one of the best ways to see how well you really know what you think you know. Best of luck!
