@@ -18,7 +18,7 @@ RStudio is a widely used platform for coding. It has a host of shortcuts and coo
 
 - *Alt + Shift + K*
 
-If you ever want a reminder on a particular shortcut, you can pull up a list of all shortcuts available in RStudio by pressing **Alt + Shift + K**
+If you ever want a reminder on a particular shortcut, you can pull up a list of all shortcuts available in RStudio by pressing **Alt + Shift + K**.
 
 ## Navigating Open files
 - *Ctrl + Tab*
@@ -67,7 +67,7 @@ can be rewritten as
 x %<>% select(V1)
 ```
 
-The operator \%\$\% allows you to pull a specific column from a data frame, which can be useful, especially when used as part of a sequence of piped functions. For example, the code:
+The operator %\$% allows you to pull a specific column from a data frame, which can be useful, especially when used as part of a sequence of piped functions. For example, the code:
 
 ```{r}
 x %$% V1
@@ -83,7 +83,7 @@ These next tricks are helpful for editing lines of code in your document. Holdin
 If you would like to make a quick copy of a line of code, just add shift to the mix (**Alt + Shift + Up/Down**) to copy the selected line(s) in the direction you specify.
 
 ## Snippets
-A really cool feature of RStudio is the ability to define custom shortcuts to generate code, called snippets. RStudio has several snippets predefined and ready to use. For example, if you type “mat” and press **Tab**, RStudio returns a template for the matrix function, and allows the user to quickly tab over to specify the contents of the matrix and specify the number of rows and columns. To see what snippets are available in RStudio, as well as to define your own snippets, go to Tools > Global Options > Code > Edit Snippets… I have saved several presets for repetitive tasks that I do often, such as generating a header for scripts and setting the working directory to the file’s location. This has saved me a ton of time. For more information on snippets visit https://support.rstudio.com/hc/en-us/articles/204463668-Code-Snippets?version=1.4.1717&mode=desktop.
+A really cool feature of RStudio is the ability to define custom shortcuts to generate code, called snippets. RStudio has several snippets predefined and ready to use. For example, if you type “mat” and press **Tab**, RStudio returns a template for the matrix function, and allows the user to quickly tab over to specify the contents of the matrix and specify the number of rows and columns. To see what snippets are available in RStudio, as well as to define your own snippets, go to Tools > Global Options > Code > Edit Snippets… I have saved several presets for repetitive tasks that I do often, such as generating a header for scripts and setting the working directory to the file’s location. This has saved me a ton of time. For more information on snippets visit [this website](https://support.rstudio.com/hc/en-us/articles/204463668-Code-Snippets?version=1.4.1717&mode=desktop).
 
 ## Jumping from script to console
 - *Ctrl + 1* / *Ctrl + Shift + 1*
@@ -109,7 +109,7 @@ The colors will differ based off of your selected theme
 
 ## Theme
 
-The default RStudio theme is very light. Users can select a different color scheme by going to Tools > Global Options > and appearance. If your aren't satisfied with any of them, you can create your own custom theme, and load it into RStudio (see https://rstudio.github.io/rstudio-extensions/rstudio-theme-creation.html for more details).
+The default RStudio theme is very light. Users can select a different color scheme by going to Tools > Global Options > and appearance. If your aren't satisfied with any of them, you can create your own custom theme, and load it into RStudio (see this [webpage](https://rstudio.github.io/rstudio-extensions/rstudio-theme-creation.html) for more details).
 
 ## Setting Working Directory
 
@@ -159,7 +159,7 @@ I often have been frustrated by the appearance of unwanted messages or warnings 
 
 Another frustration was that knitting required all the code in the document to compile before generating a report. This was especially frustrating as I neared the end of projects and needed to see how the document looked as I was making final adjustment changes. Adding the option **cache=TRUE** makes it so that any chunk that has already been compiled and has no adjustments does not have to be recompiled in order to generate a report. This option has saved me a lot of time and frustration.
 
-To see more available options for R Markdown code chunks, along with other useful features, see https://ethz.ch/content/dam/ethz/special-interest/math/statistics/sfs/Education/Advanced%20Studies%20in%20Applied%20Statistics/course-material-1921/Datenanalyse/rmarkdown-2.pdf.
+To see more available options for R Markdown code chunks, along with other useful features, check out [this pdf](https://ethz.ch/content/dam/ethz/special-interest/math/statistics/sfs/Education/Advanced%20Studies%20in%20Applied%20Statistics/course-material-1921/Datenanalyse/rmarkdown-2.pdf).
 
 ## Conclusion
 
