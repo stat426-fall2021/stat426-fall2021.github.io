@@ -100,6 +100,7 @@ After the model has been tuned for best performance, you can create some plots t
 ```
 plot_model(tuned_gb)
 ```
+
 ![Residuals](images/residuals.png)
 
 ```
@@ -120,6 +121,7 @@ Once you are satisfied with your tuned model and are ready to fit it and make pr
 ```
 validation_preds = predict_model(tuned_gb)
 ```
+
 ![Validation Performance](images/validation.png)
 
 After testing the model on the validation set, it is helpful to then fit the model using the training and validation sets since it will likely help the performance of the model improve on unseen data. Once again, there is a single function in PyCaret that will do all of this. The finalize_model function will refit the model using the training and validation sets and then it can be applied to additional unseen data.
