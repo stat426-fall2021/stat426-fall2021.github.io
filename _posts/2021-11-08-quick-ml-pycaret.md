@@ -58,7 +58,7 @@ from pycaret.regression import *
 reg1 = setup(data = boston, target = 'medv')
 ```
 
-![Model Input](images/input.png)
+![Model Input](/assets/images/blogimages/figs-11-08/input.png)
 
 Once finished, there will be a printout that specifies information about the data, such as the response variable, whether there is missing values, what preprocessing steps should be taken and so forth. Any information about the model to be fit can be found in this table. 
 
@@ -70,7 +70,7 @@ One of the best features of PyCaret in my opinion is the ability to fit a bunch 
 compare_modes(folds = 5)
 ```
 
-![Model Comparison](images/modelcomp.png)
+![Model Comparison](/assets/images/blogimages/figs-11-08/modelcomp.png)
 
 ## Create a model
 After comparing the baseline models, you can choose a model that fits the best so you can tune it. The gradient boosting regressor was the best for the Boston data for five of the six metrics, so I’ll create that one and work to tune the model. Printing out the model will provide the model that is originally created with the hyper parameters values. 
@@ -92,7 +92,7 @@ print(tuned_gb)
 GradientBoostingRegressor(alpha=0.9, ccp_alpha=0.0, criterion='friedman_mse', init=None, learning_rate=0.1, loss='ls', max_depth=4, max_features='log2', max_leaf_nodes=None, min_impurity_decrease=0.0005, min_impurity_split=None, min_samples_leaf=3, min_samples_split=5, min_weight_fraction_leaf=0.0, n_estimators=190, n_iter_no_change=None, presort='deprecated', random_state=2183, subsample=0.45, tol=0.0001, validation_fraction=0.1, verbose=0, warm_start=False)
 ```
 
-![Tuned Model](images/tuned.png)
+![Tuned Model](/assets/images/blogimages/figs-11-08/tuned.png)
 
 ## Model Plots
 After the model has been tuned for best performance, you can create some plots to easily visualize results. Some examples of plots are a residuals plot, a prediction error plot, and a feature importance plot. Examples of these plots for the Boston dataset and the gradient boosting regressor are shown below
@@ -101,7 +101,7 @@ After the model has been tuned for best performance, you can create some plots t
 plot_model(tuned_gb)
 ```
 
-![Residuals](images/residuals.png)
+![Residuals](/assets/images/blogimages/figs-11-08/residuals.png)
 
 ```
 plot_model(tuned_gb, plot = 'error')
@@ -113,7 +113,7 @@ plot_model(tuned_gb, plot = 'error')
 plot_model(tuned_gb, plot = 'feature')
 ```
 
-![Feature Importance](images/feature_import.png)
+![Feature Importance](/assets/images/blogimages/figs-11-08/feature_import.png)
 
 ## Predictions
 
@@ -122,7 +122,7 @@ Once you are satisfied with your tuned model and are ready to fit it and make pr
 validation_preds = predict_model(tuned_gb)
 ```
 
-![Validation Performance](images/validation.png)
+![Validation Performance](/assets/images/blogimages/figs-11-08/validation.png)
 
 After testing the model on the validation set, it is helpful to then fit the model using the training and validation sets since it will likely help the performance of the model improve on unseen data. Once again, there is a single function in PyCaret that will do all of this. The finalize_model function will refit the model using the training and validation sets and then it can be applied to additional unseen data.
 
