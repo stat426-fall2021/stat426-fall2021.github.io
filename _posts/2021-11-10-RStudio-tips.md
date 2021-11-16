@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Writing Code in RStudio - Helpful Tips and Tricks
+title: "Writing Code in RStudio - Helpful Tips and Tricks"
 author: germckay
-post-image: '/assets/images/blogimages/figs-11-10/RStudio.jpg'
+post-image: /assets/images/blogimages/figs-11-10/RStudio.jpg
 description: RStudio is a very useful IDE that comes with a host of features to provide an efficient coding environment.
 tags:
 - R
@@ -12,7 +12,7 @@ tags:
 - Custom
 - Efficient Coding
 ---
-RStudio is a widely used platform for coding. It has a host of shortcuts and cool features that streamline the coding process. Here are 10 that have been a huge benefit to me. 
+RStudio is a widely used platform for coding. It has a host of shortcuts and cool features that streamline the coding process. Here are 10 that have been a huge benefit to me.
 
 ## Access All Shortcuts
 
@@ -31,9 +31,9 @@ If you are like me, you probably have multiple files open at once in RStudio. In
 - *Alt + Ctrl + Click*
 - *Ctrl + Alt + Shift + M*
 
-Have you ever felt yourself wanting to edit similar parts of your code at once? RStudio has a few features that make this easy. The multiple cursor feature is one of my favorites. If you hold **Alt + Ctrl**, you can click and put multiple cursors in your code, which is very helpful if you need to cut/copy and paste multiple sections of code, or if you need to make small adjustments in several places. Holding **Alt + Ctrl + Up/Down** will add additional cursors directly above or below where the current cursor is. 
+Have you ever felt yourself wanting to edit similar parts of your code at once? RStudio has a few features that make this easy. The multiple cursor feature is one of my favorites. If you hold **Alt + Ctrl**, you can click and put multiple cursors in your code, which is very helpful if you need to cut/copy and paste multiple sections of code, or if you need to make small adjustments in several places. Holding **Alt + Ctrl + Up/Down** will add additional cursors directly above or below where the current cursor is.
 
-If you want to select all instances of a particular phrase or section of code within a script, select one instance, then hold **Ctrl + Alt + Shift + M.** All instances of that selection within the script will be selected, making it easy to make quick adjustments. 
+If you want to select all instances of a particular phrase or section of code within a script, select one instance, then hold **Ctrl + Alt + Shift + M.** All instances of that selection within the script will be selected, making it easy to make quick adjustments.
 
 ## Pipe Operators
 
@@ -57,12 +57,12 @@ x %>% filter(V1 %in% c("a","b")) %>% pull(V2) %>% mean()
 ````
 In RStudio, instead of having to manually type out the function, press **Ctrl + Shift + M** for an efficient way to insert the function.
 
-There are a couple of other pipe operators as part of the magrittr package that I think are interesting. The operator %<>% allows you to simultaneously pipe an object and save the updates to that object. For example: 
+There are a couple of other pipe operators as part of the magrittr package that I think are interesting. The operator %<>% allows you to simultaneously pipe an object and save the updates to that object. For example:
 ```{r}
 x <- data.frame(“V1” = c(1, 2, 3), “V2” = c(“a”, “b”, “c”))
 x <- x %>% select(V1)
 ```
-can be rewritten as 
+can be rewritten as
 ```{r}
 x %<>% select(V1)
 ```
@@ -78,7 +78,7 @@ will extract the vector c(1, 2, 3) from the data frame.
 - *Alt + Up/Down*
 - *Alt + Shift + Up/Down*
 
-These next tricks are helpful for editing lines of code in your document. Holding **Alt + Up/Down** allows you to move whichever line(s) your cursor is on Up or Down, respectively. It allows you to move code pretty effectively around your document. 
+These next tricks are helpful for editing lines of code in your document. Holding **Alt + Up/Down** allows you to move whichever line(s) your cursor is on Up or Down, respectively. It allows you to move code pretty effectively around your document.
 
 If you would like to make a quick copy of a line of code, just add shift to the mix (**Alt + Shift + Up/Down**) to copy the selected line(s) in the direction you specify.
 
@@ -113,7 +113,7 @@ The default RStudio theme is very light. Users can select a different color sche
 
 ## Setting Working Directory
 
-Sometimes it can be a pain to set the working directory, especially if you have to type out the entire file path. There is a nice function as part of the rstudioapi package that will set the working directory to the current file location: 
+Sometimes it can be a pain to set the working directory, especially if you have to type out the entire file path. There is a nice function as part of the rstudioapi package that will set the working directory to the current file location:
 
 ```{r}
 setwd(dirname(rstudioapi::getActiveWorkingContext()$path))
@@ -129,7 +129,7 @@ knitr::opts_knit$set(root.dir = 'your/file/path')
 ````
 Again, snippets work great here in allowing you to type the code quickly and effectively.
 
-## R Markdown 
+## R Markdown
 
 - *message*
 - *warning*
@@ -137,7 +137,7 @@ Again, snippets work great here in allowing you to type the code quickly and eff
 
 Many who read this article will undoubtedly be familiar with R Markdown files, which provides a nice way to format code and text for reports or presentations. I have been using R Markdowns for a few years now, and I keep discovering new features that I wish I had known from the beginning. Here are a few pointers that will make your experience more enjoyable. (As a quick comment, the knitr package must be installed in order to knit an R Markdown file)
 
-To quickly insert a new code chunk, press **Ctrl + Alt + i**. 
+To quickly insert a new code chunk, press **Ctrl + Alt + i**.
 
 At the beginning of each code chunk there is a heading contained in curly braces:
 ````md
@@ -166,5 +166,3 @@ To see more available options for R Markdown code chunks, along with other usefu
 This is by no means a comprehensive list of all the helpful features in RStudio, but these are several that I have found useful in my educational and career experience. I hope that they can be helpful to you as well. If you have any tips or tricks that you find useful, please comment them below!
 
 Happy coding!
-
-

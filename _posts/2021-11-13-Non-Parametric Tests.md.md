@@ -1,11 +1,11 @@
 ---
-title: Non-Parametric Tests: Statistically Efficient or Technically Cheating?
+title: "Non-Parametric Tests: Statistically Efficient or Technically Cheating?"
 layout: post
 author: ghman12345
 post-image:
 description: An overview of non-parametric tests, when they should be used, what forms they come in, and how to use them
 tags:
-- R 
+- R
 - Non-Parametric tests
 - Mann-Whitney U Test
 ---
@@ -43,7 +43,7 @@ The Kruskal-Wallis test, proposed by Kruskal and Wallis in 1952, is a nonparamet
 
 ## Example
 
-Enough talk, lets try to understand non-parametric tests through an actual example. Let's use an easy and clear dataset to demonstrate a particular type of non-parametric test, the Mann-Whitney U Test. We will compare the number of accidents caused by distracted driving and drinking and driving in Utah from 2010 to 2020,[^3] and we will be using R throughout the entire process, so you can do it yourself when this is all done. 
+Enough talk, lets try to understand non-parametric tests through an actual example. Let's use an easy and clear dataset to demonstrate a particular type of non-parametric test, the Mann-Whitney U Test. We will compare the number of accidents caused by distracted driving and drinking and driving in Utah from 2010 to 2020,[^3] and we will be using R throughout the entire process, so you can do it yourself when this is all done.
 [^3]:https://publicsafety.utah.gov/
 
 - ***EDA***
@@ -56,7 +56,7 @@ Utah_crash <-data.frame(Distracted, Alcohol, year)
 ```
 ![image](https://i.ibb.co/58bzRTj/EDA.jpg)
 
-As we can clearly see, distracted driving causes many more accidents. We probably don't even need any type of formal test to prove that here is a statistically significant difference, but, again, we are using an easy example to see how non-parametric tests work. 
+As we can clearly see, distracted driving causes many more accidents. We probably don't even need any type of formal test to prove that here is a statistically significant difference, but, again, we are using an easy example to see how non-parametric tests work.
 
 ```r
 hist(Utah_crash$Distracted, main = "Distracted Driving", xlab= "Number of Crashes")
@@ -79,10 +79,10 @@ Much like the t-test, this will provide a p-value to show if there is a statisti
 this value would show that there is a statistically significant difference (as expected).
 
 ## Conclusions
-Using non-parametric tests allows you to expand your statistical analysis skill set. 
-You can use them when parametric tests will not be as effective or just obsolete. 
-Sometimes it is best to use both and compare which test was more effective, then use the better one. As you can imagine, 
-non-parametric tests do not end with the two tests we talked about. Bootstraping and permuation tests are forms of 
-non-parametric tests that are also very effective under certain circumstances. 
+Using non-parametric tests allows you to expand your statistical analysis skill set.
+You can use them when parametric tests will not be as effective or just obsolete.
+Sometimes it is best to use both and compare which test was more effective, then use the better one. As you can imagine,
+non-parametric tests do not end with the two tests we talked about. Bootstraping and permuation tests are forms of
+non-parametric tests that are also very effective under certain circumstances.
 With this knowledge, we encourage you to use both parametric and non-parametric tests on a couple of datasets to see how
 they compare and how effective non-parametric tests can be in certain circumstances.
