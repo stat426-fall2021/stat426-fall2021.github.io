@@ -2,7 +2,7 @@
 title: "Non-Parametric Tests: Statistically Efficient or Technically Cheating?"
 layout: post
 author: ghman12345
-post-image:
+post-image: https://sphweb.bumc.bu.edu/otlt/mph-modules/bs/bs704_nonparametric/Nonparametric%20Wordle.png
 description: An overview of non-parametric tests, when they should be used, what forms they come in, and how to use them
 tags:
 - R
