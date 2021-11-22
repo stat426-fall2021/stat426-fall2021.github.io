@@ -3,11 +3,10 @@ title: "Lies Damn Lies and Statistics: A Review of Darrell Huff's Book How to Li
 layout: post
 author: smbjohnson
 post-image: '/assets/images/blogimages/figs-11-16/Blog-Post-Cover-Image2.jpg'
-description: "In a world full of personal agendas and even more data we take a look at Darrell Huff book *How To Lie With Statistics* to avoid common pitfalls of understanding statistics"
+description: "In a world full of personal agendas and even more data we take a look at Darrell Huff book How To Lie With Statistics to avoid common pitfalls of understanding statistics"
 tags:
 - Book Review
 - Data Science
-- Data Science Ethics
 - Statistics
 - Data Literacy
 - Darrell Huff
