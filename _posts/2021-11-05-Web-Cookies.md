@@ -10,6 +10,7 @@ tags:
 - Data Scientist
 ---
 
+## Introduction
 
 Web cookies have become an interesting phenomenon that has caused a variety of responses to the use of data used by everyday people.  Most don’t understand what they are or what they do but fear them because of the potential of privacy invasion.  Others say they are necessary for any user to have the optimal experience on any legitimate website that they may choose to visit.  And some few have decided to try and exploit them for their own benefit at the expense of others.  But what are cookies, and how can they be useful if used the right way in the hands of a data scientist?
 
@@ -20,7 +21,7 @@ Most of the time, these cookies are created to be anonymous.  They don’t have 
 
 While many types of cookies exist they can roughly be broken down into three categories:
 
-1. First party cookies 
+1. First party cookies
 2. Third party cookies
 3. Zombie cookies
 
@@ -34,7 +35,7 @@ Zombie cookies are interesting bits of data that are don’t really do anything.
 
 Why did all the concern pop up about web cookies?  Recently every website seemingly pushes you an angry pop up demanding that you accept their cookies.  Many domains began requiring the acceptance or at least notification of these pieces of data when web laws were created around data usage in Europe.  While not required everywhere, many domains began pushing them everywhere to cover themselves legally.  As such they gained a lot of attention very quickly.  Data protection and privacy are becoming more important as data is quickly becoming a commodity from which businesses can grow and become more successful at an accelerated pace.
 
-While this data is important, the concern users have that these snippets of data can be malevolent is real and limiting for businesses.  Can they be harmful?  On their own, the answer is no.  They are simple text files and contain nothing close to executable.  Nothing can be installed or changed on your personal computer through a cookie.  They truly are just data chunks to enhance your experience while surfing the web.  The danger comes from getting a virus on your computer which allows a hacker to gain control of your computer.  At this point if their goal is to get after the data stored in your cookies, they would be able to do it.  This could amount to, at worst, having your logins and passwords taken. 
+While this data is important, the concern users have that these snippets of data can be malevolent is real and limiting for businesses.  Can they be harmful?  On their own, the answer is no.  They are simple text files and contain nothing close to executable.  Nothing can be installed or changed on your personal computer through a cookie.  They truly are just data chunks to enhance your experience while surfing the web.  The danger comes from getting a virus on your computer which allows a hacker to gain control of your computer.  At this point if their goal is to get after the data stored in your cookies, they would be able to do it.  This could amount to, at worst, having your logins and passwords taken.
 
 This is an uncommon occurrence, however, and the likelihood of a hacker deciding to get into your cookies and explore if any of them are storing your personal information is low.  Once someone gains that much access to your computer, the odds are that they won’t be fishing around in your amazon shopping cart to figure out what Christmas presents you’re getting for your loved ones this year.
 

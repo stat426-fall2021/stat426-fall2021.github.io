@@ -1,9 +1,50 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-11-16T09:59:58-07:00</updated><id>/feed.xml</id><title type="html">Stat 426 - Fall 2021</title><subtitle>Class Blog and Projects</subtitle><entry><title type="html">Non-Parametric Tests: Statistically Efficient or Technically Cheating?</title><link href="/blog/Non-Parametric-Tests.md" rel="alternate" type="text/html" title="Non-Parametric Tests: Statistically Efficient or Technically Cheating?" /><published>2021-11-13T00:00:00-07:00</published><updated>2021-11-13T00:00:00-07:00</updated><id>/blog/Non-Parametric%20Tests.md</id><content type="html" xml:base="/blog/Non-Parametric-Tests.md">&lt;h1 id=&quot;non-parametric-tests-statistically-efficient-or-technically-cheating&quot;&gt;Non-Parametric Tests: Statistically Efficient or Technically Cheating?&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&quot;https://sphweb.bumc.bu.edu/otlt/mph-modules/bs/bs704_nonparametric/Nonparametric%20Wordle.png&quot; alt=&quot;This is an image&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-11-22T09:56:25-07:00</updated><id>/feed.xml</id><title type="html">Stat 426 - Fall 2021</title><subtitle>Class Blog and Projects</subtitle><entry><title type="html">Lies Damn Lies and Statistics: A Review of Darrell Huff’s Book How to Lie With Statistics</title><link href="/blog/lying-with-statistics" rel="alternate" type="text/html" title="Lies Damn Lies and Statistics: A Review of Darrell Huff’s Book How to Lie With Statistics" /><published>2021-11-16T00:00:00-07:00</published><updated>2021-11-16T00:00:00-07:00</updated><id>/blog/lying-with-statistics</id><content type="html" xml:base="/blog/lying-with-statistics">&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-16/Book-Cover-Image.jpg&quot; alt=&quot;Book-Cover&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;As data becomes more prevalent, the ability to correctly interpret that data becomes more crucial. This is particularly true when, either nefariously or out of ignorance, some individuals or organizations report data in a way that misrepresents what it says. In Darrell Huff’s book, &lt;em&gt;&lt;a href=&quot;https://www.amazon.com/How-Lie-Statistics-Darrell-Huff/dp/0393310728&quot;&gt;How to Lie with Statistics&lt;/a&gt;&lt;/em&gt;, Huff discusses nine common ways in which people misrepresent data through statistics and or graphs. This review covers five of the most common ways and how to best identify and react to these misrepresentations.&lt;/p&gt;
+
+&lt;h1 id=&quot;samples-with-built-in-bias&quot;&gt;Samples with Built-in Bias&lt;/h1&gt;
+
+&lt;p&gt;The first question Huff has us ask of a statistic is how the data was gathered that led to that statistic. Huff gives the example of a survey in which graduates from Yale University were asked what their current annual income was. This question has bias because people making more money may be more likely to report their salary, while those not making their desired income may not report or may over report their actually salary. Certain questions come with inherit bias. To make matters worse, the group being surveyed can carry similar bias. If we go to a university and ask how many people suffer from back pain, their answers will not be an accurate representation of the number of cases of back pain for a more general population. When collecting data we must consider whether the question or the group being surveyed introduces bias to the data.&lt;/p&gt;
+
+&lt;h1 id=&quot;unreported-figures&quot;&gt;Unreported figures&lt;/h1&gt;
+
+&lt;p&gt;Many reported figures lack important information that make the figure misleading. Two examples of this are not disclosing range of data or the survey sample size. An example of the problem of not showing the range of the data is if you are simply told the average summer sales representative makes $10,000 a summer without the information that one representative made $505,000 while the other ninety-nine all made $5,000 each, then you might misguidedly forego an guaranteed $9,000 internship. Similarly, not knowing the sample size behind a statistic can mislead. For example, if a test compares two cough medicines and one relieves coughs in five out of the ten people and the other relieves coughs in four out of five people, the 30% difference seems large until you know too few people were tested. When viewing data-based figure, it is important to recognize that unreported figures might change one’s conclusion.&lt;/p&gt;
+
+&lt;h1 id=&quot;comparing-apples-to-almost-apples&quot;&gt;Comparing Apples to Almost Apples&lt;/h1&gt;
+
+&lt;p&gt;Sometimes people report statistics comparing unlike groups as if they were more alike than they actually are. An example Huff uses in &lt;em&gt;How to Lie with Statistics&lt;/em&gt; is the reported death rates during the Spanish American war. The Navy recruiting station reported that only nine in every one thousand sailors died compared to sixteen in every one thousand civilians living in New York City. This presentation makes signing up for war with the Navy feel safe, until you consider that the New York City death rate included death due to old age, infant deaths, and those already suffering from aliments. With this additional information, the Navy doesn’t seem quite as safe as presented. We must be vigilant in ensuring that the groups being compared are actually alike.&lt;/p&gt;
+
+&lt;h1 id=&quot;graphs&quot;&gt;Graphs&lt;/h1&gt;
+
+&lt;p&gt;The media is filled with graphs and charts trying to convey information in an intuitive and easy to digest way. However, some of these easy to read graphs can be misleading. Such graphs prey on those who take the chart at face value. One of the most common ways in which graphs take advantage of the unassuming consumer is to truncate the y axis of a graph. If we look at the plot of the left, it appears as though horror movies make substantially more money that action movies. It is only when we take a closer look that we see there is a much smaller difference (see plot of the right). In fact, there is only a 5% difference between money made in each movie genre. People also apply this trick by changing the x axis. Having unequal spaces between observations can cause havoc when it comes to graph interpretation. Special care must be taken when looking at graphs, like looking at the x and y axis and considering the units being expressed on each.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-16/Movie-Plot-Truncated.png&quot; width=&quot;400&quot; /&gt; &lt;img src=&quot;/assets/images/blogimages/figs-11-16/Movie-Plot.png&quot; width=&quot;400&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;correlation-doesnt-mean-causation&quot;&gt;Correlation Doesn’t Mean Causation&lt;/h1&gt;
+
+&lt;p&gt;Perhaps the most common deception in statistical reporting is inferring that one outcome &lt;em&gt;caused&lt;/em&gt; the other when in fact there is only a &lt;em&gt;correlation&lt;/em&gt;. An exaggerated example of this type of thinking might be seen in ice cream sales and crime rates. Often as the sales of ice cream rise so do crime rates. Does that mean police should be sent out to impound all ice cream trucks? Obviously not. There might be other factors that cause both ice cream and crime to rise at the same time – like hot summer weather. Another example Huff touches on in his book is the correlation between students who drink and smoke and getting bad grades. One might assume that students get bad grades because they drink and smoke, but it is also probable that students who get bad grades are driven to smoking and drinking to cope with the stress. We are often too quick to draw a causal relationship between to variables without first putting in the work to create a test in which all variables can be controlled for in some way.&lt;/p&gt;
+
+&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;This post only covers a few ways in which statistics and graphs can be misleading. Huff suggests several questions to help identify many misleading numbers.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Who says so?&lt;/li&gt;
+  &lt;li&gt;How do they know?&lt;/li&gt;
+  &lt;li&gt;What’s missing?&lt;/li&gt;
+  &lt;li&gt;Did someone change the subject?&lt;/li&gt;
+  &lt;li&gt;Does it make sense?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;When it comes to interpreting numbers and data, it is important to slow down and think about what has led to this number that we are now seeing. When we do this, we can often avoid making rash decisions on numbers that don’t really mean anything or don’t mean what is being sugested. So the next time you see a staistic, take a minute to really think about what it is saying and if there might be any ulterior motives.&lt;/p&gt;
+
+&lt;p&gt;If you are looking for examples of the misleading use of statistics, there is no better place than a &lt;a href=&quot;https://www.reddit.com/r/badstats/&quot;&gt;reddit forum&lt;/a&gt;.&lt;/p&gt;</content><author><name>Sam Johnson</name><email>smbjohnson98@gmail.com</email></author><category term="Book Review" /><category term="Data Science" /><category term="Statistics" /><category term="Data Literacy" /><category term="Darrell Huff" /><summary type="html"></summary></entry><entry><title type="html">Non-Parametric Tests: Statistically Efficient or Technically Cheating?</title><link href="/blog/Non-Parametric-Tests" rel="alternate" type="text/html" title="Non-Parametric Tests: Statistically Efficient or Technically Cheating?" /><published>2021-11-13T00:00:00-07:00</published><updated>2021-11-13T00:00:00-07:00</updated><id>/blog/Non-Parametric%20Tests</id><content type="html" xml:base="/blog/Non-Parametric-Tests">&lt;h1 id=&quot;non-parametric-tests-statistically-efficient-or-technically-cheating&quot;&gt;Non-Parametric Tests: Statistically Efficient or Technically Cheating?&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.ibb.co/xLgsGZV/Frank-Wilcoxon.png&quot; alt=&quot;This is an image&quot; /&gt;&lt;/p&gt;
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;Tired of memorizing countless distributions and their formulas? Well you’re in luck, because through non-parametric tests, you can run all of same types of tests that you learned in your former statistics courses without worrying about distributions or parameters. Not only that, but, as it turns out, a lot of the data that we encounter in the real world is not normally distributed, which makes non-parametric tests that much more useful.&lt;/p&gt;
+&lt;p&gt;Tired of memorizing countless distributions and their parameters? Well, you’re in luck, because through non-parametric tests, you can run all of the same types of tests that you learned in your former statistics courses without worrying about distributions or parameters. Not only that, but, as it turns out, a lot of the data that we encounter in the real world is not normally distributed, which makes non-parametric tests that much more useful.&lt;/p&gt;
 &lt;h2 id=&quot;so-what-are-they&quot;&gt;So What Are They?&lt;/h2&gt;
-&lt;p&gt;In statistics, non-parametric tests are methods of statistical analysis that do not require a distribution to meet the required assumptions to be analyzed. For this reason, they are sometimes referred to as distribution-free tests. Nonparametric tests serve as an alternative to parametric tests such as t-test or ANOVA that can be employed only if the data satisfies certain specifc criterion and assumptions. Although using non-parametric tests results in losing power if the data is normally distributed, if the data is not normally distributed, using non-parametric tests will almost always be more powerful than using parametric tests.&lt;/p&gt;
+&lt;p&gt;In statistics, non-parametric tests are methods of statistical analysis that do not require a distribution to meet the required assumptions to be analyzed. For this reason, they are sometimes referred to as distribution-free tests. Nonparametric tests serve as an alternative to parametric tests such as a t-test or ANOVA which can only be employed if the data satisfies certain specific assumptions. Although using non-parametric tests results in losing power if the data is normally distributed, if the data is not normally distributed, using non-parametric tests will almost always be more powerful than using parametric tests.&lt;/p&gt;
 &lt;h2 id=&quot;specifically-when-to-use-them&quot;&gt;Specifically When to Use Them&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;&lt;em&gt;Data does not meet the assumptions about the population sample&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
@@ -12,13 +53,13 @@
 &lt;p&gt;Generally, the application of parametric tests requires various assumptions to be satisfied. Some of them include the data following a normal distribution and the population variance being homogeneous. However, many datasets are not like this. Sometimes, the dataset might be skewed.The skewness makes the parametric tests less powerful because the mean is no longer the best measure of central tendency because it is strongly affected by the extreme values. However, nonparametric tests work well with skewed distributions and distributions that are better represented by the median.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;&lt;em&gt;The population sample size is too small&lt;/em&gt;&lt;/strong&gt;
-The sample size is an important assumption in selecting the appropriate statistical method. If a sample size is reasonably large, the applicable parametric test can be used. However, if a sample size is too small, it is possible that you may not be able to validate the distribution of the data. Thus, the application of nonparametric tests is the only suitable option.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;&lt;em&gt;The analyzed data is ordinal or nominal&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;em&gt;The population sample size is too small&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The sample size is an important assumption in selecting the appropriate statistical method. If a sample size is reasonably large, the applicable parametric test can be used. However, if a sample size is too small, it is possible that you may not be able to validate the distribution of the data. Thus, the application of nonparametric tests is the only suitable option.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;em&gt;The analyzed data is ordinal or nominal&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Unlike parametric tests that can work only with continuous data, nonparametric tests can be applied to other data types such as ordinal or nominal data. For such types of variables, the nonparametric tests are the only appropriate solution.&lt;/p&gt;
@@ -56,7 +97,7 @@ year &amp;lt;- c(2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020)&lt;/li&
 &lt;p&gt;Utah_crash &amp;lt;-data.frame(Distracted, Alcohol, year)&lt;/p&gt;
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![image](https://i.ibb.co/58bzRTj/EDA.jpg)
 
-As we can clearly see, distracted driving causes many more accidents. We probably don't even need any type of formal test to prove that here is a statistically significant difference, but, again, we are using an easy example to see how non-parametric tests work.
+As we can clearly see, distracted driving causes many more accidents. We probably don't even need any type of formal test to prove that there is a statistically significant difference, but, again, we are using an easy example to see how non-parametric tests work.
 
 ```r
 hist(Utah_crash$Distracted, main = &quot;Distracted Driving&quot;, xlab= &quot;Number of Crashes&quot;)
@@ -65,7 +106,7 @@ hist(Utah_crash$Alcohol, main = &quot;Drinking and Driving&quot;, xlab= &quot;Nu
 
 &lt;p&gt;&lt;img src=&quot;https://i.ibb.co/LC5bX7Q/Histograms.jpg&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Our sample size is low with only eleven, and is not even normally distributed either. so we will go ahead and use the Mann-Whitney U test&lt;/p&gt;
+&lt;p&gt;Our sample size is low with only eleven and not normally distributed, so we will go ahead and use the Mann-Whitney U test&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;&lt;em&gt;Test&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
@@ -76,17 +117,17 @@ hist(Utah_crash$Alcohol, main = &quot;Drinking and Driving&quot;, xlab= &quot;Nu
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Much like the t-test, this will provide a p-value to show if there is a statistically significant difference. In this case, the p-value was &lt;br /&gt;
-&lt;img src=&quot;https://render.githubusercontent.com/render/math?math=2.8351422*10^{-6}&quot; /&gt;. If the alpha level was 0.05 (or even much lower than that)
+&lt;img src=&quot;https://render.githubusercontent.com/render/math?math=2.8351422*10^{-6}&quot; /&gt;. If the alpha level was 0.05 (or even much lower than that),
 this value would show that there is a statistically significant difference (as expected).&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusions&quot;&gt;Conclusions&lt;/h2&gt;
-&lt;p&gt;Using non-parametric tests allows you to expand your statistical analysis skill set.
+&lt;p&gt;Using non-parametric tests will expand your statistical analysis skill set.
 You can use them when parametric tests will not be as effective or just obsolete.
-Sometimes it is best to use both and compare which test was more effective, then use the better one. As you can imagine,
+Sometimes it is best to use both and compare which test is more effective, then use the better one. As you can imagine,
 non-parametric tests do not end with the two tests we talked about. Bootstraping and permuation tests are forms of
 non-parametric tests that are also very effective under certain circumstances.
 With this knowledge, we encourage you to use both parametric and non-parametric tests on a couple of datasets to see how
-they compare and how effective non-parametric tests can be in certain circumstances.&lt;/p&gt;</content><author><name>Jeong Heon You</name><email>nan</email></author><category term="R" /><category term="Non-Parametric tests" /><category term="Mann-Whitney U Test" /><summary type="html">Non-Parametric Tests: Statistically Efficient or Technically Cheating? Introduction Tired of memorizing countless distributions and their formulas? Well you’re in luck, because through non-parametric tests, you can run all of same types of tests that you learned in your former statistics courses without worrying about distributions or parameters. Not only that, but, as it turns out, a lot of the data that we encounter in the real world is not normally distributed, which makes non-parametric tests that much more useful. So What Are They? In statistics, non-parametric tests are methods of statistical analysis that do not require a distribution to meet the required assumptions to be analyzed. For this reason, they are sometimes referred to as distribution-free tests. Nonparametric tests serve as an alternative to parametric tests such as t-test or ANOVA that can be employed only if the data satisfies certain specifc criterion and assumptions. Although using non-parametric tests results in losing power if the data is normally distributed, if the data is not normally distributed, using non-parametric tests will almost always be more powerful than using parametric tests. Specifically When to Use Them Data does not meet the assumptions about the population sample</summary></entry><entry><title type="html">Python in Visual Studio Code</title><link href="/blog/vscode" rel="alternate" type="text/html" title="Python in Visual Studio Code" /><published>2021-11-12T00:00:00-07:00</published><updated>2021-11-12T00:00:00-07:00</updated><id>/blog/vscode</id><content type="html" xml:base="/blog/vscode">&lt;h1 id=&quot;ide&quot;&gt;IDE&lt;/h1&gt;
+they compare and how effective non-parametric tests can be in certain circumstances.&lt;/p&gt;</content><author><name>Jeong Heon You</name><email>nan</email></author><category term="R" /><category term="Non-Parametric tests" /><category term="Mann-Whitney U Test" /><category term="Utah Car Crashes" /><summary type="html">Non-Parametric Tests: Statistically Efficient or Technically Cheating? Introduction Tired of memorizing countless distributions and their parameters? Well, you’re in luck, because through non-parametric tests, you can run all of the same types of tests that you learned in your former statistics courses without worrying about distributions or parameters. Not only that, but, as it turns out, a lot of the data that we encounter in the real world is not normally distributed, which makes non-parametric tests that much more useful. So What Are They? In statistics, non-parametric tests are methods of statistical analysis that do not require a distribution to meet the required assumptions to be analyzed. For this reason, they are sometimes referred to as distribution-free tests. Nonparametric tests serve as an alternative to parametric tests such as a t-test or ANOVA which can only be employed if the data satisfies certain specific assumptions. Although using non-parametric tests results in losing power if the data is normally distributed, if the data is not normally distributed, using non-parametric tests will almost always be more powerful than using parametric tests. Specifically When to Use Them Data does not meet the assumptions about the population sample</summary></entry><entry><title type="html">Python in Visual Studio Code</title><link href="/blog/vscode" rel="alternate" type="text/html" title="Python in Visual Studio Code" /><published>2021-11-12T00:00:00-07:00</published><updated>2021-11-12T00:00:00-07:00</updated><id>/blog/vscode</id><content type="html" xml:base="/blog/vscode">&lt;h1 id=&quot;ide&quot;&gt;IDE&lt;/h1&gt;
 
 &lt;p&gt;In today’s world, coding has become an essential part of us. Apple’s CEO, Tim Cook, elaborated in the recent Silicon Slope Summit, “Teaching someone to code teaches them critical thinking skills … coding teaches you the art of the possible … you need to learn how to code even if you’re not going to be a coder.” Everyone needs to learn how to code!&lt;/p&gt;
 
@@ -692,100 +733,7 @@ print(check_metric(unseen_predictions.medv, unseen_predictions.Label, ‘R2’))
 
 &lt;p&gt;With such flexibility, PyCaret seems to be an option that can save a lot of time when fitting a model to data. I will likely look for opportunities to use this to simplify projects that I am working on personally. If you have ever used PyCaret before, feel free to comment about how you used it in your work.&lt;/p&gt;
 
-&lt;p&gt;PyCaret has extensive &lt;a href=&quot;https://pycaret.org/guide/&quot;&gt;documentation&lt;/a&gt; and &lt;a href=&quot;https://pycaret.readthedocs.io/en/latest/tutorials.html&quot;&gt;tutorials&lt;/a&gt; for various levels, so feel free to dive into their tutorials to get yourself started or to explore additional capabilities of PyCaret that weren’t discussed in this post.&lt;/p&gt;</content><author><name>David Teuscher</name><email>dteuscher.37.12@gmail.com</email></author><category term="PyCaret" /><category term="Machine Learning" /><category term="Model Comparison" /><category term="Model Fitting" /><summary type="html">Introduction</summary></entry><entry><title type="html">Dashboards in R Shiny</title><link href="/blog/Dashboards-In-Shiny" rel="alternate" type="text/html" title="Dashboards in R Shiny" /><published>2021-11-08T00:00:00-07:00</published><updated>2021-11-08T00:00:00-07:00</updated><id>/blog/Dashboards-In-Shiny</id><content type="html" xml:base="/blog/Dashboards-In-Shiny">&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
-
-&lt;p&gt;This post will provide an introduction into what an R shiny application is, why they are useful, and how to create a simple web application.&lt;/p&gt;
-
-&lt;h1 id=&quot;what-is-an-r-shiny-application&quot;&gt;What is an R Shiny Application?&lt;/h1&gt;
-
-&lt;p&gt;R Shiny is a framework that was created by Rstudio in order to convert programs written in R into a web application. Often we see people coming out with Shiny applications that are very diverse in their purposes. One of the most common types of applications we see have to deal with geospatial data, allowing users to see trends in data across different geographic areas. They often have feature sliders which allow users to set different features across the data in order to explore the data more in depth. A good example of this is an application that enables users to see crime rates with feature sliders that can show crime rates based on important characteristics such as average income in the area, percentage below the poverty level, and even features you might not initially deem important such as daily average temperature. The following image is an example of an application taken from the Rstudio gallery that tracks crime rates in different parts of the world.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://github.com/BryceFuller1/blogpost/blob/master/Screen%20Shot%202021-11-01%20at%202.43.31%20PM.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;why-are-they-useful&quot;&gt;Why are they useful?&lt;/h1&gt;
-&lt;p&gt;One of the biggest reasons why R Shiny applications are useful is that they allow users who are not proficient in R to explore and experiment with data in new and exciting ways that they would not be able to do on their own if they just had access to the raw data. Another reason these applications are useful is that R programmers who wish to publish these applications don’t actually need any web development experience. They simply need to learn the framework for Shiny and suddenly they are able to publish very interactive and useful applications for people who may not have any experience with R or even statistics for that matter.&lt;/p&gt;
-
-&lt;h1 id=&quot;how-to-make-a-simple-app&quot;&gt;How to Make A Simple App&lt;/h1&gt;
-
-&lt;p&gt;We will now learn how to make a simple app that functions as a calculator that can add two numbers with a calculate button. In Shiny there are two parts to every app. The first is the user interface side and the second is the server side of the application. In the user interface side we can define what the user of the app is able to see such as different input systems and how reactive the application is. We can make it to where the app constantly refreshes after the user enters a character if there is a text box, changes the value on a slider, or we can make it to where the user enters all the requested input and then presses a button to refresh the app with the new information when they are ready,&lt;/p&gt;
-
-&lt;h1 id=&quot;user-interface-side&quot;&gt;User Interface Side&lt;/h1&gt;
-&lt;p&gt;We first start with the user interface side where we create two input boxes along with a button that when clicked calculates the difference between the two numbers.&lt;/p&gt;
-
-&lt;div class=&quot;language-R highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ui&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pageWithSidebar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;headerPanel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Simple Action Button&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sidebarPanel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;numericInput&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;one&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;First Number:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;100000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;numericInput&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;two&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Second Number:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;100000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;br&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;actionButton&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;goButton&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Go!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Click the button to update the value displayed in the main panel.&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mainPanel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;verbatimTextOutput&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;result&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;We first define a user interface function that gives us a webpage starting with the pageWithSidebar function. Inside this is where we can customize the output however we like. We first give a header and then move on to the sidebarPanel. Here is where we have decided to place our input boxes and action button. Here we can add text for the user to see that tell the user what kind of input is desired. We can also set default values along with a range of possible values that the input boxes can accept. The values that are entered in can be referenced later on in the server side of the application. It is important to note that we are naming the two input boxes “one” and “two” respectively, along with “goButton” for the action button and “result” for the output we wish to display. These names are not displayed on the interface but are strictly behind the scenes. This is because we use these names to refer to these inputs in the server side of the Shiny application to do the actual calculations. We will now look over the server side of the application and walk through what is happening.&lt;/p&gt;
-
-&lt;h1 id=&quot;server-side&quot;&gt;Server Side&lt;/h1&gt;
-
-&lt;div class=&quot;language-R highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;server&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  
-  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ntext&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;eventReactive&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;goButton&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;one&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;two&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  
-  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;renderText&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ntext&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;In the first line we create a server function that can take two variables “input” and “output”. We then create a reactive expression called ntest that only runs once the calculate button is pressed by the user. It takes the input from the two input boxes and subtracts the second from the first. Notice how in this function we use the names “goButton”, “one”, and “two” which we created in the UI side. This is how the server side can communicate with the UI side. We then see that we are storing a value into output$result. We first call the function renderText and pass it the ntext function. This then gets the visual output from the ntext function and stores it into output$result. We then see back in the ui side of the application there is a main panel function which takes the result stored in output$result and outputs it for the user to see using a function called verbatimTextOutput(“result”).&lt;/p&gt;
-
-&lt;h1 id=&quot;final-output&quot;&gt;Final Output&lt;/h1&gt;
-
-&lt;p&gt;Putting it all together we get the following code which produces a functioning Shiny application:&lt;/p&gt;
-
-&lt;div class=&quot;language-R highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;library&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shiny&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ui&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pageWithSidebar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;headerPanel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Simple Action Button&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sidebarPanel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;numericInput&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;one&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;First Number:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;100000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;numericInput&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;two&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Second Number:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;100000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;br&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;actionButton&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;goButton&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Go!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Click the button to update the value displayed in the main panel.&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mainPanel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;verbatimTextOutput&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;result&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;server&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  
-  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ntext&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;eventReactive&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;goButton&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;one&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;two&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  
-  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;renderText&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ntext&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shinyApp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ui&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;server&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;The top of the code imports the shiny library which allows us to write Shiny applications. The last line of code calls the shinyApp function which takes the ui and server functions as input and actually runs the application. The following image is what the application looks like after the user has entered the input and clicked on the calculate button.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://github.com/BryceFuller1/blogpost/blob/master/Screen%20Shot%202021-11-08%20at%206.17.15%20PM.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
-
-&lt;p&gt;In conclusion we have learned what an R shiny application is, why they are useful, and how to create a simple application that we can use as a template to develop more complicated applications in the future. Another feature that is important to note is the ability to publish the application for free through Rstudio so that others can utilize the application. All that is required is an Rstudio account. As a final note I would like to invite you to create an application that interests you. There are many different ideas out there ranging from simple data visualization apps to complicated machine learning models, the decision is yours!&lt;/p&gt;</content><author><name>Bryce Fuller</name><email>brycefuller9@gmail.com</email></author><category term="R" /><category term="Shiny" /><category term="Web Applications" /><summary type="html">Introduction</summary></entry><entry><title type="html">Cancelling Noise in Data: Image Compression Tutorial</title><link href="/blog/svd-img-compression" rel="alternate" type="text/html" title="Cancelling Noise in Data: Image Compression Tutorial" /><published>2021-11-06T00:00:00-06:00</published><updated>2021-11-06T00:00:00-06:00</updated><id>/blog/svd-img-compression</id><content type="html" xml:base="/blog/svd-img-compression">&lt;p&gt;One common problem  in data science is that our data is noisy. A good data scientist
+&lt;p&gt;PyCaret has extensive &lt;a href=&quot;https://pycaret.org/guide/&quot;&gt;documentation&lt;/a&gt; and &lt;a href=&quot;https://pycaret.readthedocs.io/en/latest/tutorials.html&quot;&gt;tutorials&lt;/a&gt; for various levels, so feel free to dive into their tutorials to get yourself started or to explore additional capabilities of PyCaret that weren’t discussed in this post.&lt;/p&gt;</content><author><name>David Teuscher</name><email>dteuscher.37.12@gmail.com</email></author><category term="PyCaret" /><category term="Machine Learning" /><category term="Model Comparison" /><category term="Model Fitting" /><summary type="html">Introduction</summary></entry><entry><title type="html">Cancelling Noise in Data: Image Compression Tutorial</title><link href="/blog/svd-img-compression" rel="alternate" type="text/html" title="Cancelling Noise in Data: Image Compression Tutorial" /><published>2021-11-06T00:00:00-06:00</published><updated>2021-11-06T00:00:00-06:00</updated><id>/blog/svd-img-compression</id><content type="html" xml:base="/blog/svd-img-compression">&lt;p&gt;One common problem  in data science is that our data is noisy. A good data scientist
 is able to distinguish between that noise and signal in the data. One great way
 to “cancel noise” in data represented in matrix form is to use singular value decomposition
 from linear algebra.&lt;/p&gt;
@@ -938,7 +886,44 @@ print(“Reduced size is what percent of original size: “, relative_size)
   &lt;li&gt;Cover photo by &lt;a href=&quot;https://unsplash.com/@millarjb?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;Jack Millard&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com/s/photos/magnifying-glass?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;Unsplash&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Dog on the beach photo by &lt;a href=&quot;https://unsplash.com/@o5ky?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;Oscar Sutton&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com/?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;Unsplash&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;This post is adapted from a lab from the Computational Linear Algebra class at Brigham Young University.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Jessica Hamblin</name><email>hamblinjm@hotmail.com</email></author><category term="image compression" /><category term="reduction" /><category term="linear algebra" /><category term="svd" /><category term="noise" /><summary type="html">One common problem in data science is that our data is noisy. A good data scientist is able to distinguish between that noise and signal in the data. One great way to “cancel noise” in data represented in matrix form is to use singular value decomposition from linear algebra.</summary></entry><entry><title type="html">Let’s talk JSON Basics</title><link href="/blog/json" rel="alternate" type="text/html" title="Let’s talk JSON Basics" /><published>2021-11-04T00:00:00-06:00</published><updated>2021-11-04T00:00:00-06:00</updated><id>/blog/json</id><content type="html" xml:base="/blog/json">&lt;p&gt;The first time I heard the term JSON, I thought that it was someone emphasizing a name weird. I’m probably alone in this error, but hopefully this post can help someone avoid my blunder and avoid embarrasment when asking which Jason we were talking about. &lt;em&gt;[I really wish I could claim this was hyperbole.]&lt;/em&gt;&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>Jessica Hamblin</name><email>hamblinjm@hotmail.com</email></author><category term="image compression" /><category term="reduction" /><category term="linear algebra" /><category term="svd" /><category term="noise" /><summary type="html">One common problem in data science is that our data is noisy. A good data scientist is able to distinguish between that noise and signal in the data. One great way to “cancel noise” in data represented in matrix form is to use singular value decomposition from linear algebra.</summary></entry><entry><title type="html">What are Cookies?</title><link href="/blog/Web-Cookies" rel="alternate" type="text/html" title="What are Cookies?" /><published>2021-11-05T00:00:00-06:00</published><updated>2021-11-05T00:00:00-06:00</updated><id>/blog/Web-Cookies</id><content type="html" xml:base="/blog/Web-Cookies">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;Web cookies have become an interesting phenomenon that has caused a variety of responses to the use of data used by everyday people.  Most don’t understand what they are or what they do but fear them because of the potential of privacy invasion.  Others say they are necessary for any user to have the optimal experience on any legitimate website that they may choose to visit.  And some few have decided to try and exploit them for their own benefit at the expense of others.  But what are cookies, and how can they be useful if used the right way in the hands of a data scientist?&lt;/p&gt;
+
+&lt;h2 id=&quot;what-are-cookies&quot;&gt;What are cookies?&lt;/h2&gt;
+
+&lt;p&gt;Put simply, web cookies are small text files created by a website server.  They are stored on a person’s computer as a history of their browsing experience on a website.  Information tracked could include a user ID created by the website for your computer, cart history, number of visits to a specific page, etc.  This data is used to enhance a user’s experience when they return next time.  Their cart will be up to date with all items and customizations still showing, and overall website experience will be enhanced since the information stored in cookies can be used to infer what the user will want to view next.
+Most of the time, these cookies are created to be anonymous.  They don’t have any other intentions besides functionality that is solely intended on helping you navigate their website.&lt;/p&gt;
+
+&lt;p&gt;While many types of cookies exist they can roughly be broken down into three categories:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;First party cookies&lt;/li&gt;
+  &lt;li&gt;Third party cookies&lt;/li&gt;
+  &lt;li&gt;Zombie cookies&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Each is collected and used in a different way.  First party cookies are created by the host website itself.  These will include website usage data and tracking, along with anything else that the site has been programmed to track.&lt;/p&gt;
+
+&lt;p&gt;Third party cookies are created from ads or other embedded content on a given website.  These cookies are created by companies trying to catch your attention and serve to track your interactions with them, along with any navigations to the host website.&lt;/p&gt;
+
+&lt;p&gt;Zombie cookies are interesting bits of data that are don’t really do anything.  They get embedded deeply into the memory of your browser on your computer and are extremely difficult to get rid of.  While this type is not common, they are mostly used to ban users from a domain. By storing this cookie, the website can see that a user does not have permission to access the website and will block their connection.&lt;/p&gt;
+
+&lt;h2 id=&quot;extreme-cookie-hype&quot;&gt;Extreme Cookie Hype&lt;/h2&gt;
+
+&lt;p&gt;Why did all the concern pop up about web cookies?  Recently every website seemingly pushes you an angry pop up demanding that you accept their cookies.  Many domains began requiring the acceptance or at least notification of these pieces of data when web laws were created around data usage in Europe.  While not required everywhere, many domains began pushing them everywhere to cover themselves legally.  As such they gained a lot of attention very quickly.  Data protection and privacy are becoming more important as data is quickly becoming a commodity from which businesses can grow and become more successful at an accelerated pace.&lt;/p&gt;
+
+&lt;p&gt;While this data is important, the concern users have that these snippets of data can be malevolent is real and limiting for businesses.  Can they be harmful?  On their own, the answer is no.  They are simple text files and contain nothing close to executable.  Nothing can be installed or changed on your personal computer through a cookie.  They truly are just data chunks to enhance your experience while surfing the web.  The danger comes from getting a virus on your computer which allows a hacker to gain control of your computer.  At this point if their goal is to get after the data stored in your cookies, they would be able to do it.  This could amount to, at worst, having your logins and passwords taken.&lt;/p&gt;
+
+&lt;p&gt;This is an uncommon occurrence, however, and the likelihood of a hacker deciding to get into your cookies and explore if any of them are storing your personal information is low.  Once someone gains that much access to your computer, the odds are that they won’t be fishing around in your amazon shopping cart to figure out what Christmas presents you’re getting for your loved ones this year.&lt;/p&gt;
+
+&lt;h2 id=&quot;cookies-in-the-hands-of-data-scientists&quot;&gt;Cookies in the Hands of Data Scientists&lt;/h2&gt;
+
+&lt;p&gt;The true and awesome use of cookies comes when someone who knows how to use it is able to run analytics and history on the data created on the server.  Data scientist are able to use the information stored in these cookies for several purposes.  Anything from cursor clicks to searches can be used to predict what appeals to a user and can be used to improve the website interface and algorithms.  Over time these small pieces of information pile into machine learning algorithms that will, in turn, directly change the future experiences of others who may visit the website.&lt;/p&gt;
+
+&lt;p&gt;Data scientists are also directly able to track and predict what products will appeal to a customer, how to market and display products on a company’s website (and in what order they should appear), and even what products to advertise when viewing a specific item in more detail.  Amazon is a great example of how these algorithms work.  Often times you will find something that truly suits your needs by viewing the suggested products on the page of something that you are already looking at.&lt;/p&gt;
+
+&lt;p&gt;Surfing the web is fun and it’s incredibly convenient for a machine to try and predict what you will want to see.  It’s very convenient for us as users that many of these algorithms cut out the work of navigating to a specific page after hours of searching and clicking.  Using data is extremely important for the overall use of a website and the invention of browser cookies is an awesome for a server to track information without having to store it all on sight.  As long as you only visit sights that are reputable, the risk that they pose to you is almost 0, and the chance that analytics will somehow enhance your experience is high.&lt;/p&gt;</content><author><name>Tyler Pettit</name><email>tyler.pettit82@gmail.com</email></author><category term="Cookies" /><category term="Safety" /><category term="Data Scientist" /><summary type="html">Introduction</summary></entry><entry><title type="html">Let’s talk JSON Basics</title><link href="/blog/json" rel="alternate" type="text/html" title="Let’s talk JSON Basics" /><published>2021-11-04T00:00:00-06:00</published><updated>2021-11-04T00:00:00-06:00</updated><id>/blog/json</id><content type="html" xml:base="/blog/json">&lt;p&gt;The first time I heard the term JSON, I thought that it was someone emphasizing a name weird. I’m probably alone in this error, but hopefully this post can help someone avoid my blunder and avoid embarrasment when asking which Jason we were talking about. &lt;em&gt;[I really wish I could claim this was hyperbole.]&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;Well, you have to make mistakes to learn. I now know that JSON actually means: JavaScript Object Notation…&lt;/p&gt;
 
@@ -1006,230 +991,4 @@ For Python help: https://docs.python.org/3/library/json.html&lt;/p&gt;
 
 &lt;p&gt;Python JSON library&lt;/p&gt;
 
-&lt;p&gt;Thanks for reading!&lt;/p&gt;</content><author><name>Cal Barker</name><email>calbarker1@gmail.com</email></author><category term="JSON" /><category term="JavaScript" /><category term="Python" /><summary type="html">The first time I heard the term JSON, I thought that it was someone emphasizing a name weird. I’m probably alone in this error, but hopefully this post can help someone avoid my blunder and avoid embarrasment when asking which Jason we were talking about. [I really wish I could claim this was hyperbole.]</summary></entry><entry><title type="html">A Quickstart to Hyperparameter Tuning</title><link href="/blog/hyperparameter-tuning-basics" rel="alternate" type="text/html" title="A Quickstart to Hyperparameter Tuning" /><published>2021-11-02T00:00:00-06:00</published><updated>2021-11-02T00:00:00-06:00</updated><id>/blog/hyperparameter-tuning-basics</id><content type="html" xml:base="/blog/hyperparameter-tuning-basics">&lt;h1 id=&quot;a-quickstart-to-hyperparameter-tuning&quot;&gt;A Quickstart to Hyperparameter Tuning&lt;/h1&gt;
-
-&lt;h2 id=&quot;contents&quot;&gt;Contents&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Introduction to Hyperparameters&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Setting Up&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Grid Search&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Random Search&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Which Should I Use?&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Extra: Bayesian Optimization&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;In this blog, I hope to show you some of the basics to get started with hyperparameter tuning. 
-If you are a data scientist like me then you are probably wanting to use machine learning to solve all your problems. 
-If that’s the case, then learning to tune your model will be pretty important.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://i.redd.it/nc5ua4x8lfg31.png&quot; alt=&quot;img_meme1&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Once you have hyperparameter tuning down, then you are one step closer to getting a generalizeable model set up for your different needs. Let’s dive into it!&lt;/p&gt;
-
-&lt;h4 id=&quot;intro-to-hyperparameter-tuning&quot;&gt;Intro to Hyperparameter Tuning&lt;/h4&gt;
-
-&lt;p&gt;A hyperparameter is a parameter that is set by the user before the machine learning process begins. They are different
-from model parameters, which are tuned by a machine learning algorithm automatically.
-Hyperparameters come in many different forms including:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;K in KNN&lt;/li&gt;
-  &lt;li&gt;Alpha in LASSO regression&lt;/li&gt;
-  &lt;li&gt;The learning rate for a neural network&lt;/li&gt;
-  &lt;li&gt;And the &lt;a href=&quot;https://xgboost.readthedocs.io/en/latest/parameter.html&quot;&gt;wide variety of hyperparameters for XGBoost&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Essentially, the hyperparameters represent the “knobs,” “dials,” and “switches” that
-are moved around—as we feed an algorithm data—to produce the optimal model for the dataset.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://imgs.xkcd.com/comics/machine_learning.png&quot; alt=&quot;img_meme2&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;With that in mind, it can be overwhelming to memorize all the different hyperparameters of each model and 
-which values would help them function best on a dataset. Often, it is not clear how the hyperparameters
-will affect performance on a dataset and many hyperparameters interact with each other in a non-linear fashion. So beware:
-because trying to tune a model completely by hand can be an easy way to make yourself go crazy.&lt;/p&gt;
-
-&lt;p&gt;Fortunately, data scientists have found a few algorithmic approaches to automating the process of 
-hyperparameter tuning so that you don’t have to do it yourself. In this blog, we will discuss three different
-methods for tuning hyperparameters: grid search, random search, and briefly on bayesian optimization.&lt;/p&gt;
-
-&lt;h2 id=&quot;hyperparameter-tuning-with-scikit-learn&quot;&gt;Hyperparameter Tuning with Scikit-Learn&lt;/h2&gt;
-
-&lt;h4 id=&quot;setting-up-the-model-and-search-space&quot;&gt;Setting up the Model and Search Space&lt;/h4&gt;
-
-&lt;p&gt;We will use the Scikit-Learn API to set up our model and run our hyperparameter tuning.&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# importing Logistic Regressiona and dataset
-&lt;/span&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn.linear_model&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LogisticRegression&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn.datasets&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;make_blobs&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;# Get blob data
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;make_blobs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n_samples&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;25000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;centers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n_features&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cluster_std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;# Create model
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LogisticRegression&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Next, we want to set up the search space we will be using for our Logistic Regression hyperparameters.&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# Our chosen hyperparameters
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;params&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-          &lt;span class=&quot;c1&quot;&gt;# sample between different solvers
-&lt;/span&gt;          &lt;span class=&quot;s&quot;&gt;'solver'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'newton-cg'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'lbfgs'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'liblinear'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
-          &lt;span class=&quot;c1&quot;&gt;# Set our penalty as l2
-&lt;/span&gt;          &lt;span class=&quot;s&quot;&gt;'penalty'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'l2'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
-          &lt;span class=&quot;c1&quot;&gt;# Chose between a range of our regularization values
-&lt;/span&gt;          &lt;span class=&quot;s&quot;&gt;'C'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.01&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.001&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;There are more hyperparameters to choose from and they can be found and added from the &lt;a href=&quot;https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html&quot;&gt;logistic regression documentation.&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;With all of our hyperparameters set, we can run it through our grid search method.&lt;/p&gt;
-
-&lt;h4 id=&quot;grid-search&quot;&gt;Grid Search&lt;/h4&gt;
-
-&lt;p&gt;The grid search method is very similar to random search when it comes to hyperparameter tuning. 
-In a nutshell, grid search will build on every hyperparameter combination possible in the given search space.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Pros&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Exhaustive, it will find the best combination out of the given hyperparameter space&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Cons&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Computationally expensive, the exhaustive search can become too computationally expensive if 
-there are too many hyperparameter combinations to try out&lt;/li&gt;
-  &lt;li&gt;Overfitting, there is the possibility of overfitting to a specific space the search&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Let’s finish our code:&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn.model_selection&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GridSearchCV&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;# Set up our Grid search and ad our model to it
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;search&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GridSearchCV&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;estimator&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;param_grid&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;scoring&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'accuracy'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;# Find results
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;search&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sa&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Best Score: &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;best_score_&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sa&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Best Hyperparameters: &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;best_params_&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;It may take some time to run the model, but after it finished it will report the best score and 
-hyperparameter combinations. We can see it here:&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;Best&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Score&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.9872799999999999&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;Best&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Hyperparameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'C'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'penalty'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'l2'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'solver'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'liblinear'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Now you can go ahead and use those hyperparameters on the test set!&lt;/p&gt;
-
-&lt;p&gt;Next, we will do the same with a random forest model, but this time we will
-try out the random search method.&lt;/p&gt;
-
-&lt;h4 id=&quot;random-search&quot;&gt;Random Search&lt;/h4&gt;
-
-&lt;p&gt;The random search method is an alternative approach to hyperparameter tuning. It is pretty straightforward
-in that it chooses a random set of hyperparameters within the chosen search space.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Pros&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Exploratory, you can give randomized search a wide distribution of hyperparameters to choose from 
-to test out different search spaces.&lt;/li&gt;
-  &lt;li&gt;Less likely to overfit&lt;/li&gt;
-  &lt;li&gt;Not as computationally expensive as grid search&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Cons&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Lots more potential for variance due to its random nature&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Let’s dive into it:&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-&lt;span class=&quot;c1&quot;&gt;# Import our packages
-&lt;/span&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn.ensemble&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RandomForestClassifier&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn.model_selection&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RandomizedSearchCV&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;scipy.stats&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;uniform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;randint&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;# Set up the model
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rf&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RandomForestClassifier&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Instead of setting discrete distributions of hyperparameters like we did with the logistic regression model, 
-we can give continuous distributions for the randomized search method to explore:&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;rf_params&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;# Range of integers from 4 to 204
-&lt;/span&gt;    &lt;span class=&quot;s&quot;&gt;'n_estimators'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;randint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;'max_features'&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;auto&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;sqrt&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;log2&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;# Uniform distribution of values between 0.01 and 0.02
-&lt;/span&gt;    &lt;span class=&quot;s&quot;&gt;'min_samples_split'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;uniform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.01&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.199&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Again check out the &lt;a href=&quot;https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html&quot;&gt;docs&lt;/a&gt; on
-random forest hyperparameters to get an understanding of which ones you may want to use.&lt;/p&gt;
-
-&lt;p&gt;Laslty, we can implement them in our randomized search:&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;random_search&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RandomizedSearchCV&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rf_params&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n_iter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;scoring&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'accuracy'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;rf_result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;random_search&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sa&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Best Score: &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rf_result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;best_score_&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sa&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Best Hyperparameters: &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rf_result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;best_params_&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Note that the n_iter argument in RandomizedSearchCV can be set to run as many iterations of hyperparameter
-tuning as you want.&lt;/p&gt;
-
-&lt;p&gt;And our results as shown:&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;Best&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Score&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.776114081996435&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;Best&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Hyperparameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'max_features'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'sqrt'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'min_samples_split'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.02046703678839075&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'n_estimators'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;118&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;which-should-i-use&quot;&gt;Which Should I Use?&lt;/h4&gt;
-
-&lt;p&gt;Both grid search and random search have their benefits and drawbacks as we have seen. In a nutshell, random seearch is
-good for exploratory hyperparameter tuning over wider distributions and grid search is good for focusing on more narrow spaces.&lt;/p&gt;
-
-&lt;p&gt;Thus, if time and computational power wasn’t an issue then you could use both to optimize a model. That being said,
-let’s conclude and look at the last method: bayesian optimization.&lt;/p&gt;
-
-&lt;h4 id=&quot;extra-bayesian-optimization&quot;&gt;Extra: Bayesian Optimization&lt;/h4&gt;
-
-&lt;p&gt;On a final note, if any of you are interested in looking at the newest method of hyperparameter tuning, go check out bayesian optimization. 
-Put simply, bayesian optimizers learn from each iteration of cross-validation and hone in on the most promising hyperparameters. It can often find better
-hyperparameters in less iterations than grid search or random search. The packages &lt;a href=&quot;http://hyperopt.github.io/hyperopt/&quot;&gt;hyperopt&lt;/a&gt; and &lt;a href=&quot;https://optuna.org/&quot;&gt;optuna&lt;/a&gt; were made to implement this method in SKLearn. 
-It is a bit more complex, but if you are up for it, go check out the docs and try to see if you can get one to work!&lt;/p&gt;
-
-&lt;h4 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h4&gt;
-
-&lt;p&gt;As you have seen, hyperparameter tuning is very important if we want to have a working model that can effectively wrangle our data. 
-Grid search and random search help us wade through the messy assortment of hyperparameters and search spaces so that we don’t have to do it ourselves.
-Though we also see that data scientists are continuing to improve the methods with advanced approaches like bayesian optimization.&lt;/p&gt;
-
-&lt;p&gt;Thanks for reading and if you have questions, please leave them below!&lt;/p&gt;</content><author><name>Colin Mason</name><email>colinpetermason@gmail.com</email></author><category term="Model Tuning" /><category term="Data Science" /><category term="Skill Building" /><category term="Python" /><summary type="html">A Quickstart to Hyperparameter Tuning</summary></entry></feed>
+&lt;p&gt;Thanks for reading!&lt;/p&gt;</content><author><name>Cal Barker</name><email>calbarker1@gmail.com</email></author><category term="JSON" /><category term="JavaScript" /><category term="Python" /><summary type="html">The first time I heard the term JSON, I thought that it was someone emphasizing a name weird. I’m probably alone in this error, but hopefully this post can help someone avoid my blunder and avoid embarrasment when asking which Jason we were talking about. [I really wish I could claim this was hyperbole.]</summary></entry></feed>
