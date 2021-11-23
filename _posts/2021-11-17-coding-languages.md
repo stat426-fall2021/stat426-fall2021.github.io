@@ -2,7 +2,7 @@
 title: What Coding Language Should I Learn?
 layout: post
 author: nmaustill
-post-image: ![Post Image](/assets/images/blogimages/figs-11-17/post_image.jpeg)
+post-image: /assets/images/blogimages/figs-11-17/post_image.jpeg
 description: find out which coding languages are helpful to know and why
 tags:
 - Python
