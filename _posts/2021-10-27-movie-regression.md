@@ -26,6 +26,8 @@ There are a million datasets I could use to illustrate regression; the most comm
 
 ![Dataset](https://user-images.githubusercontent.com/81715243/139620118-91a8c0f0-a33c-4d44-833d-11be8b9e0b83.png)
 
+/assets/images/blogimages/figs-mm-dd/file.png
+
 Simple linear regression looks at the relationship between only 2 variables. In this case, we could examine how the score given to a film by Rotten Tomatoes is correlated with the score that I (Braden) have given to the same film. Before doing any sort of complex analysis to see if there is a statistically significant relationship, we can use the humble scatterplot to graphically examine the association. 
   
   ![scatter](https://user-images.githubusercontent.com/81715243/139620146-7c08f0bf-2976-4ac6-8fc2-e5c543bfda70.png)
