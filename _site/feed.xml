@@ -1,403 +1,994 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-09-28T09:56:23-06:00</updated><id>/feed.xml</id><title type="html">Stat 426 - Fall 2021</title><subtitle>Class Blog and Projects</subtitle><entry><title type="html">reticulate</title><link href="/blog/reticulate" rel="alternate" type="text/html" title="reticulate" /><published>2021-09-27T00:00:00-06:00</published><updated>2021-09-27T00:00:00-06:00</updated><id>/blog/reticulate</id><content type="html" xml:base="/blog/reticulate">&lt;p&gt;In the data science field, the debate between R and Python rages on. Both languages claim to be superior to the other for data science. In my experience, both R and Python are good languages and each one has its strong-suits in certain areas. Recently, I came across reticulate, an R package leading the way in bringing R and Python together and allowing for data scientists to get the best out of both languages. Now, instead of having to choose between R and Python, you can have both!&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-11-22T09:56:25-07:00</updated><id>/feed.xml</id><title type="html">Stat 426 - Fall 2021</title><subtitle>Class Blog and Projects</subtitle><entry><title type="html">Lies Damn Lies and Statistics: A Review of Darrell Huff’s Book How to Lie With Statistics</title><link href="/blog/lying-with-statistics" rel="alternate" type="text/html" title="Lies Damn Lies and Statistics: A Review of Darrell Huff’s Book How to Lie With Statistics" /><published>2021-11-16T00:00:00-07:00</published><updated>2021-11-16T00:00:00-07:00</updated><id>/blog/lying-with-statistics</id><content type="html" xml:base="/blog/lying-with-statistics">&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-16/Book-Cover-Image.jpg&quot; alt=&quot;Book-Cover&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/3o7aCRloybJlXpNjSU/giphy.gif&quot; alt=&quot;El Dorado - Both&quot; /&gt;&lt;/p&gt;
+&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
 
-&lt;h2 id=&quot;reticulateinstallation&quot;&gt;reticulate::installation&lt;/h2&gt;
+&lt;p&gt;As data becomes more prevalent, the ability to correctly interpret that data becomes more crucial. This is particularly true when, either nefariously or out of ignorance, some individuals or organizations report data in a way that misrepresents what it says. In Darrell Huff’s book, &lt;em&gt;&lt;a href=&quot;https://www.amazon.com/How-Lie-Statistics-Darrell-Huff/dp/0393310728&quot;&gt;How to Lie with Statistics&lt;/a&gt;&lt;/em&gt;, Huff discusses nine common ways in which people misrepresent data through statistics and or graphs. This review covers five of the most common ways and how to best identify and react to these misrepresentations.&lt;/p&gt;
 
-&lt;p&gt;To use the reticulate package, both &lt;a href=&quot;https://cran.r-project.org&quot;&gt;R&lt;/a&gt; and &lt;a href=&quot;https://www.python.org&quot;&gt;Python&lt;/a&gt; need to be installed on your machine.&lt;/p&gt;
+&lt;h1 id=&quot;samples-with-built-in-bias&quot;&gt;Samples with Built-in Bias&lt;/h1&gt;
 
-&lt;p&gt;Since reticulate is an R package, it is installed using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;install.packages('reticulate')&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The first question Huff has us ask of a statistic is how the data was gathered that led to that statistic. Huff gives the example of a survey in which graduates from Yale University were asked what their current annual income was. This question has bias because people making more money may be more likely to report their salary, while those not making their desired income may not report or may over report their actually salary. Certain questions come with inherit bias. To make matters worse, the group being surveyed can carry similar bias. If we go to a university and ask how many people suffer from back pain, their answers will not be an accurate representation of the number of cases of back pain for a more general population. When collecting data we must consider whether the question or the group being surveyed introduces bias to the data.&lt;/p&gt;
 
-&lt;h2 id=&quot;reticulatefinding_python_interpreters&quot;&gt;reticulate::finding_python_interpreters&lt;/h2&gt;
+&lt;h1 id=&quot;unreported-figures&quot;&gt;Unreported figures&lt;/h1&gt;
 
-&lt;p&gt;One aspect of this package that can get a little bit complicated is specifying which Python interpreter you want the reticulate package to use. Python can be installed from various places, some of which are:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.python.org&quot;&gt;Python Website&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.anaconda.com&quot;&gt;Anaconda&lt;/a&gt; / &lt;a href=&quot;https://docs.conda.io/en/latest/miniconda.html&quot;&gt;Miniconda&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://brew.sh&quot;&gt;Homebrew (MacOS only)&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Many reported figures lack important information that make the figure misleading. Two examples of this are not disclosing range of data or the survey sample size. An example of the problem of not showing the range of the data is if you are simply told the average summer sales representative makes $10,000 a summer without the information that one representative made $505,000 while the other ninety-nine all made $5,000 each, then you might misguidedly forego an guaranteed $9,000 internship. Similarly, not knowing the sample size behind a statistic can mislead. For example, if a test compares two cough medicines and one relieves coughs in five out of the ten people and the other relieves coughs in four out of five people, the 30% difference seems large until you know too few people were tested. When viewing data-based figure, it is important to recognize that unreported figures might change one’s conclusion.&lt;/p&gt;
 
-&lt;p&gt;Additionally, Python virtual environments have their own executable files (&lt;em&gt;.exe&lt;/em&gt;) so each virtual environment is another Python interpreter.&lt;/p&gt;
+&lt;h1 id=&quot;comparing-apples-to-almost-apples&quot;&gt;Comparing Apples to Almost Apples&lt;/h1&gt;
 
-&lt;p&gt;All in all, it’s quite possible you could have multiple Python interpreters installed in multiple places on your computer.&lt;/p&gt;
+&lt;p&gt;Sometimes people report statistics comparing unlike groups as if they were more alike than they actually are. An example Huff uses in &lt;em&gt;How to Lie with Statistics&lt;/em&gt; is the reported death rates during the Spanish American war. The Navy recruiting station reported that only nine in every one thousand sailors died compared to sixteen in every one thousand civilians living in New York City. This presentation makes signing up for war with the Navy feel safe, until you consider that the New York City death rate included death due to old age, infant deaths, and those already suffering from aliments. With this additional information, the Navy doesn’t seem quite as safe as presented. We must be vigilant in ensuring that the groups being compared are actually alike.&lt;/p&gt;
 
-&lt;p&gt;The simplest solution that I have found is using &lt;a href=&quot;https://www.rstudio.com&quot;&gt;RStudio&lt;/a&gt;. In the newest version of RStudio (1.4.1717), it is able to detect all the Python interpreters on your machine and allows you to choose which one to use.&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Tools&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Global Options&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;Click on &lt;strong&gt;Python&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h1 id=&quot;graphs&quot;&gt;Graphs&lt;/h1&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://support.rstudio.com/hc/article_attachments/1500011460282/Screen_Shot_2021-04-21_at_3.33.02_PM.png&quot; alt=&quot;RStudio Global Options&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;The media is filled with graphs and charts trying to convey information in an intuitive and easy to digest way. However, some of these easy to read graphs can be misleading. Such graphs prey on those who take the chart at face value. One of the most common ways in which graphs take advantage of the unassuming consumer is to truncate the y axis of a graph. If we look at the plot of the left, it appears as though horror movies make substantially more money that action movies. It is only when we take a closer look that we see there is a much smaller difference (see plot of the right). In fact, there is only a 5% difference between money made in each movie genre. People also apply this trick by changing the x axis. Having unequal spaces between observations can cause havoc when it comes to graph interpretation. Special care must be taken when looking at graphs, like looking at the x and y axis and considering the units being expressed on each.&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;Then &lt;strong&gt;Select…&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-16/Movie-Plot-Truncated.png&quot; width=&quot;400&quot; /&gt; &lt;img src=&quot;/assets/images/blogimages/figs-11-16/Movie-Plot.png&quot; width=&quot;400&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://support.rstudio.com/hc/article_attachments/1500011460302/Screen_Shot_2021-04-21_at_3.34.00_PM.png&quot; alt=&quot;Select Python Interpreter&quot; /&gt;&lt;/p&gt;
+&lt;h1 id=&quot;correlation-doesnt-mean-causation&quot;&gt;Correlation Doesn’t Mean Causation&lt;/h1&gt;
+
+&lt;p&gt;Perhaps the most common deception in statistical reporting is inferring that one outcome &lt;em&gt;caused&lt;/em&gt; the other when in fact there is only a &lt;em&gt;correlation&lt;/em&gt;. An exaggerated example of this type of thinking might be seen in ice cream sales and crime rates. Often as the sales of ice cream rise so do crime rates. Does that mean police should be sent out to impound all ice cream trucks? Obviously not. There might be other factors that cause both ice cream and crime to rise at the same time – like hot summer weather. Another example Huff touches on in his book is the correlation between students who drink and smoke and getting bad grades. One might assume that students get bad grades because they drink and smoke, but it is also probable that students who get bad grades are driven to smoking and drinking to cope with the stress. We are often too quick to draw a causal relationship between to variables without first putting in the work to create a test in which all variables can be controlled for in some way.&lt;/p&gt;
+
+&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;This post only covers a few ways in which statistics and graphs can be misleading. Huff suggests several questions to help identify many misleading numbers.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;After selecting a Python interpreter, click &lt;strong&gt;Select&lt;/strong&gt; then &lt;strong&gt;Apply&lt;/strong&gt;. &lt;em&gt;This will restart your R session.&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;Who says so?&lt;/li&gt;
+  &lt;li&gt;How do they know?&lt;/li&gt;
+  &lt;li&gt;What’s missing?&lt;/li&gt;
+  &lt;li&gt;Did someone change the subject?&lt;/li&gt;
+  &lt;li&gt;Does it make sense?&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;After this, you should be all good to go. To check which Python interpreter reticulate is using you can run the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;py_config()&lt;/code&gt; function. The output of which should look similar to something like this:&lt;/p&gt;
+&lt;p&gt;When it comes to interpreting numbers and data, it is important to slow down and think about what has led to this number that we are now seeing. When we do this, we can often avoid making rash decisions on numbers that don’t really mean anything or don’t mean what is being sugested. So the next time you see a staistic, take a minute to really think about what it is saying and if there might be any ulterior motives.&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; py_config()
-python:         /usr/local/bin/python
-libpython:      /usr/local/opt/python@3.9/Frameworks/Python.framework/Versions/3.9/lib/python3.9/config-3.9-darwin/libpython3.9.dylib
-pythonhome:     /usr/local/Cellar/python@3.9/3.9.7/Frameworks/Python.framework/Versions/3.9:/usr/local/Cellar/python@3.9/3.9.7/Frameworks/Python.framework/Versions/3.9
-version:        3.9.7 (default, Sep  3 2021, 12:37:55)  [Clang 12.0.5 (clang-1205.0.22.9)]
-numpy:          /usr/local/lib/python3.9/site-packages/numpy
-numpy_version:  1.21.2
-
-NOTE: Python version was forced by use_python function
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;If issues with selecting the right Python interpreter persist, these articles offer more details and troubleshooting:&lt;/p&gt;
+&lt;p&gt;If you are looking for examples of the misleading use of statistics, there is no better place than a &lt;a href=&quot;https://www.reddit.com/r/badstats/&quot;&gt;reddit forum&lt;/a&gt;.&lt;/p&gt;</content><author><name>Sam Johnson</name><email>smbjohnson98@gmail.com</email></author><category term="Book Review" /><category term="Data Science" /><category term="Statistics" /><category term="Data Literacy" /><category term="Darrell Huff" /><summary type="html"></summary></entry><entry><title type="html">Non-Parametric Tests: Statistically Efficient or Technically Cheating?</title><link href="/blog/Non-Parametric-Tests" rel="alternate" type="text/html" title="Non-Parametric Tests: Statistically Efficient or Technically Cheating?" /><published>2021-11-13T00:00:00-07:00</published><updated>2021-11-13T00:00:00-07:00</updated><id>/blog/Non-Parametric%20Tests</id><content type="html" xml:base="/blog/Non-Parametric-Tests">&lt;h1 id=&quot;non-parametric-tests-statistically-efficient-or-technically-cheating&quot;&gt;Non-Parametric Tests: Statistically Efficient or Technically Cheating?&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.ibb.co/xLgsGZV/Frank-Wilcoxon.png&quot; alt=&quot;This is an image&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Tired of memorizing countless distributions and their parameters? Well, you’re in luck, because through non-parametric tests, you can run all of the same types of tests that you learned in your former statistics courses without worrying about distributions or parameters. Not only that, but, as it turns out, a lot of the data that we encounter in the real world is not normally distributed, which makes non-parametric tests that much more useful.&lt;/p&gt;
+&lt;h2 id=&quot;so-what-are-they&quot;&gt;So What Are They?&lt;/h2&gt;
+&lt;p&gt;In statistics, non-parametric tests are methods of statistical analysis that do not require a distribution to meet the required assumptions to be analyzed. For this reason, they are sometimes referred to as distribution-free tests. Nonparametric tests serve as an alternative to parametric tests such as a t-test or ANOVA which can only be employed if the data satisfies certain specific assumptions. Although using non-parametric tests results in losing power if the data is normally distributed, if the data is not normally distributed, using non-parametric tests will almost always be more powerful than using parametric tests.&lt;/p&gt;
+&lt;h2 id=&quot;specifically-when-to-use-them&quot;&gt;Specifically When to Use Them&lt;/h2&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://rstudio.github.io/reticulate/articles/versions.html&quot;&gt;Python Version Configuration&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://support.rstudio.com/hc/en-us/articles/1500007929061-Using-Python-with-the-RStudio-IDE&quot;&gt;Using Python with the RStudio IDE&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;em&gt;Data does not meet the assumptions about the population sample&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;reticulatevirtual_environments&quot;&gt;reticulate::virtual_environments&lt;/h2&gt;
+&lt;p&gt;Generally, the application of parametric tests requires various assumptions to be satisfied. Some of them include the data following a normal distribution and the population variance being homogeneous. However, many datasets are not like this. Sometimes, the dataset might be skewed.The skewness makes the parametric tests less powerful because the mean is no longer the best measure of central tendency because it is strongly affected by the extreme values. However, nonparametric tests work well with skewed distributions and distributions that are better represented by the median.&lt;/p&gt;
 
-&lt;p&gt;One especially great feature of the reticulate package is that it permits the user to create and manage Python virtual environments. A Python virtual environment creates a folder with a separate Python interpreter. Virtual environments are great for managing Python packages and their dependencies. Sometimes, a Python package requires an older version of a package to be installed and instead of having to re-install an older version of the dependent package that could possibly mess up other packages, a virtual environment allows for the older version of the dependent package to be installed in a separate location and be kept separate.&lt;/p&gt;
-
-&lt;p&gt;If you’re familiar with R, I like to think that virtual environments are to Python what projects are to R.&lt;/p&gt;
-
-&lt;p&gt;To create a Python virtual environment with reticulate, there’s the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;virtualenv_create()&lt;/code&gt; function. For example, if I wanted to create a Python virtual environment &lt;em&gt;Tatooine&lt;/em&gt;, I would run the following:&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; virtualenv_create('Tatooine')
-Using Python: /usr/local/Cellar/python@3.9/3.9.7/Frameworks/Python.framework/Versions/3.9/bin/python3.9
-Creating virtual environment 'Tatooine' ... Done!
-Installing packages: 'pip', 'wheel', 'setuptools', 'numpy'
-Requirement already satisfied: pip in /Users/matthewmorgan/.virtualenvs/Tatooine/lib/python3.9/site-packages (21.2.4)
-Collecting wheel
-  Using cached wheel-0.37.0-py2.py3-none-any.whl (35 kB)
-Requirement already satisfied: setuptools in /Users/matthewmorgan/.virtualenvs/Tatooine/lib/python3.9/site-packages (57.4.0)
-Collecting setuptools
-  Downloading setuptools-58.0.4-py3-none-any.whl (816 kB)
-Collecting numpy
-  Using cached numpy-1.21.2-cp39-cp39-macosx_10_9_x86_64.whl (17.0 MB)
-Installing collected packages: wheel, setuptools, numpy
-  Attempting uninstall: setuptools
-    Found existing installation: setuptools 57.4.0
-    Uninstalling setuptools-57.4.0:
-      Successfully uninstalled setuptools-57.4.0
-Successfully installed numpy-1.21.2 setuptools-58.0.4 wheel-0.37.0
-Virtual environment 'Tatooine' successfully created.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;When a virtual environments created with this function are located in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/.virtualenvs&lt;/code&gt; directory.&lt;/p&gt;
-
-&lt;p&gt;As you can see, when the Python virtual environment is created, it automatically installs the &lt;em&gt;pip&lt;/em&gt;, &lt;em&gt;wheel&lt;/em&gt;, &lt;em&gt;setuptools&lt;/em&gt;, and &lt;em&gt;numpy&lt;/em&gt; packages along with it.&lt;/p&gt;
-
-&lt;p&gt;This package also allows the user to specify which Python interpreter and which Python version should be used with the new virtual environment.&lt;/p&gt;
-
-&lt;p&gt;To install additional packages in the virtual environment, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;virtualenv_install()&lt;/code&gt; function can be used. Here, I installed the &lt;em&gt;pandas&lt;/em&gt; package in the &lt;em&gt;Tatooine&lt;/em&gt; virtual environment&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; virtualenv_install('Tatooine', 'pandas')
-Using virtual environment 'Tatooine' ...
-Collecting pandas
-  Downloading pandas-1.3.3-cp39-cp39-macosx_10_9_x86_64.whl (11.6 MB)
-Collecting python-dateutil&amp;gt;=2.7.3
-  Using cached python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
-Requirement already satisfied: numpy&amp;gt;=1.17.3 in /Users/matthewmorgan/.virtualenvs/Tatooine/lib/python3.9/site-packages (from pandas) (1.21.2)
-Collecting pytz&amp;gt;=2017.3
-  Using cached pytz-2021.1-py2.py3-none-any.whl (510 kB)
-Collecting six&amp;gt;=1.5
-  Using cached six-1.16.0-py2.py3-none-any.whl (11 kB)
-Installing collected packages: six, pytz, python-dateutil, pandas
-Successfully installed pandas-1.3.3 python-dateutil-2.8.2 pytz-2021.1 six-1.16.0
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;To list all the Python virtual environments on your machine, use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;virtualenv_list()&lt;/code&gt; function.&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; virtualenv_list()
-[1] &quot;r-reticulate&quot; &quot;SASPy&quot;        &quot;Tatooine&quot;    
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;To use a specific virtual environment, you can:&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;Use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;use_virtualenv()&lt;/code&gt; function
-    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  use_virtualenv('Tatooine') # Telling reticulate to use the Tatooine virtual environment
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Select the Python interpreter from RStudio’s Global Options as shown previously&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;em&gt;The population sample size is too small&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;If you would like to remove a Python virtual environment, there’s the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;virtualenv_remove()&lt;/code&gt; function. Here, I remove the &lt;em&gt;Tatooine&lt;/em&gt; Python virtual environment:&lt;/p&gt;
+&lt;p&gt;The sample size is an important assumption in selecting the appropriate statistical method. If a sample size is reasonably large, the applicable parametric test can be used. However, if a sample size is too small, it is possible that you may not be able to validate the distribution of the data. Thus, the application of nonparametric tests is the only suitable option.&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; virtualenv_remove('Tatooine')
-Remove virtual environment 'Tatooine'? [Y/n]: Y
-Virtual environment 'Tatooine' removed.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Now, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;virtualenv_list()&lt;/code&gt; returns the following:&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; virtualenv_list()
-[1] &quot;r-reticulate&quot; &quot;SASPy&quot;  
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Overall, the reticulate package is great for managing Python virtual environments all from R. More info on these functions can be found &lt;a href=&quot;https://rstudio.github.io/reticulate/reference/virtualenv-tools.html&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;reticulatepython_in_r&quot;&gt;reticulate::python_in_R&lt;/h2&gt;
-
-&lt;p&gt;With reticulate, Python scripts can easily be run in RStudio.&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;Open a &lt;em&gt;.py&lt;/em&gt; file&lt;/li&gt;
-  &lt;li&gt;Run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;reticulate::repl_python()&lt;/code&gt; in the &lt;strong&gt;Console&lt;/strong&gt; to start a Python session&lt;/li&gt;
-  &lt;li&gt;Execute the &lt;em&gt;.py&lt;/em&gt; file&lt;/li&gt;
-  &lt;li&gt;Run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;quit&lt;/code&gt; in the &lt;strong&gt;Console&lt;/strong&gt; to end the Python session&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;reticulate also allows for seamless integration of Python into R Markdown (&lt;em&gt;.Rmd&lt;/em&gt;) files&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;Initialize an R chunk:
-    &lt;div class=&quot;language-md highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;p&quot;&gt;```&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;{r setup, include = FALSE}
-&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;  library(reticulate)&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;```&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Create Python chunks by specifying &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;python&lt;/code&gt; at the top of the chunk instead of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;r&lt;/code&gt;. After this, you can code in Python like you would in any other IDE (Jupyter, Spyder, etc):
-  ```{python}
-  import numpy as np&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;def perfect_sq(n):
-    sqrt_n = np.sqrt(n)
-    if sqrt_n * sqrt_n == n:
-      print(n, ‘is a perfect square of’, int(sqrt_n))
-    else:
-      return(False)&lt;/p&gt;
-
-&lt;p&gt;perfect_sq(25)&lt;/p&gt;
-
-&lt;p&gt;Python 3.9.7 (/usr/local/bin/python)
-  Reticulate 1.22 REPL – A Python interpreter in R.
-  Enter ‘exit’ or ‘quit’ to exit the REPL and return to R.
-  25 is a perfect square of 5&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  _These Python chunks can be run the same way R chunks are run in R Markdown files_
-
-  3. The output message displaying the Python and reticulate version info will always be output unless suppressed
-  ````md
-  ```{r}
-  options(reticulate.repl.quiet = TRUE) # Could be added to the setup chunk in step 1
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-  ````md
-  ```{python}
-  import numpy as np
-
-  def perfect_sq(n):
-    sqrt_n = np.sqrt(n)
-    if sqrt_n * sqrt_n == n:
-      print(n, 'is a perfect square of', int(sqrt_n))
-    else:
-      return(False)
-
-  perfect_sq(25)
-  ```
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  25 is a perfect square root of 5
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;The reticulate package has many more functions that allow R and Python to communicate with each other. The following article explains these functions in much greater detail:&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://rstudio.github.io/reticulate/articles/calling_python.html&quot;&gt;Calling Python from R&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;em&gt;The analyzed data is ordinal or nominal&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;reticulateconclusions&quot;&gt;reticulate::conclusions&lt;/h2&gt;
+&lt;p&gt;Unlike parametric tests that can work only with continuous data, nonparametric tests can be applied to other data types such as ordinal or nominal data. For such types of variables, the nonparametric tests are the only appropriate solution.&lt;/p&gt;
+&lt;h2 id=&quot;types-of-tests&quot;&gt;Types of Tests&lt;/h2&gt;
 
-&lt;p&gt;The main aspect that I like about the reticulate package is that it’s allowed me to use RStudio as my IDE for both R and Python which is great because I am already familiar with RStudio. Although, I still have a lot to learn about the reticulate package. My personal goal is to continue to learn and practice with this package so that I can become well-versed in both R and Python.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.corporatefinanceinstitute.com/assets/nonparametric-tests.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Hopefully, this post has piqued you interest and served as a tutorial that helps you in getting up and running with the reticulate package yourself.&lt;/p&gt;
-
-&lt;p&gt;Best of luck!&lt;/p&gt;</content><author><name>Matthew Morgan</name><email>matthewrmorgan17@gmail.com</email></author><category term="R" /><category term="Python" /><category term="Interface" /><category term="RStudio" /><summary type="html">In the data science field, the debate between R and Python rages on. Both languages claim to be superior to the other for data science. In my experience, both R and Python are good languages and each one has its strong-suits in certain areas. Recently, I came across reticulate, an R package leading the way in bringing R and Python together and allowing for data scientists to get the best out of both languages. Now, instead of having to choose between R and Python, you can have both!</summary></entry><entry><title type="html">Create a blog post title picture</title><link href="/blog/photo-blur" rel="alternate" type="text/html" title="Create a blog post title picture" /><published>2021-09-23T00:00:00-06:00</published><updated>2021-09-23T00:00:00-06:00</updated><id>/blog/photo-blur</id><content type="html" xml:base="/blog/photo-blur">&lt;h1 id=&quot;create-a-blog-post-title-picture&quot;&gt;Create a Blog Post Title Picture&lt;/h1&gt;
-
-&lt;p&gt;A cool way to make your blog title stand out, is to blur a picture and add the text of your blog title in bold letters, as in the example below.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-09-23/ss-blog2.png&quot; alt=&quot;example&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;There are many ways that this can be done, but this is the method that I used.&lt;/p&gt;
-
-&lt;p&gt;Note that
-these instructions were created using PowerPoint for Mac.  On Windows, the idea is the same, but the menus might be in slightly different places.  See &lt;a href=&quot;https://www.howtogeek.com/437476/how-to-blur-an-image-in-powerpoint/&quot;&gt;this post&lt;/a&gt; for Windows illustrations, at least for the photo blurring section.&lt;/p&gt;
-
-&lt;hr /&gt;
-&lt;h2 id=&quot;blurring-the-photo&quot;&gt;Blurring the Photo&lt;/h2&gt;
-
-&lt;h4 id=&quot;1&quot;&gt;1&lt;/h4&gt;
-&lt;p&gt;Open your photo in PowerPoint (Insert –&amp;gt; Picture –&amp;gt; Picture from file) or simply drag the file of the photo into a PowerPoint Page.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-09-23/open-pic.png&quot; alt=&quot;open&quot; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;2&quot;&gt;2&lt;/h4&gt;
-&lt;p&gt;Select the picture.  When the picture is selected a new top menu should appear named “Picture Format”.  Select that menu and then find the arrow next to “Artistic Effects”.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-09-23/menu.png&quot; alt=&quot;art&quot; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;3&quot;&gt;3&lt;/h4&gt;
-&lt;p&gt;Click the arrow next to “Artistic Effects” and choose the “Blur” option.  Your picture is now blurred, but the default effect is quite subtle.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-09-23/blur.png&quot; alt=&quot;blur&quot; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;4&quot;&gt;4&lt;/h4&gt;
-&lt;p&gt;To change the level of blurring, go back to “Artistic Effects” and select “Artistic Effects Options”.  This will open the “Format Picture” pane on the right.  Select the “Effects” tab (the pentagon), then “Artistic Effects” and adjust the radius.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-09-23/sidebar-complete.png&quot; alt=&quot;sidebar&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The higher the radius, the more blurred the picture will be.  See the figure below with examples of radius 20, 50, and 85.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-09-23/blur-compare.png&quot; alt=&quot;blur-example&quot; /&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-&lt;h2 id=&quot;adding-text&quot;&gt;Adding Text&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Create a new text box&lt;/li&gt;
-  &lt;li&gt;Change text color to white&lt;/li&gt;
-  &lt;li&gt;Increase text size to 54&lt;/li&gt;
-  &lt;li&gt;Bold the text&lt;/li&gt;
-  &lt;li&gt;Add a subtle shadow&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;add-a-subtle-shadow-to-the-text&quot;&gt;Add a subtle shadow to the text&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;Double click on the text box to open the “Format Shape” menu on the right&lt;/li&gt;
-  &lt;li&gt;Select the “Text Options” tab and then select the “Text Effects” tab&lt;/li&gt;
-  &lt;li&gt;Expand the “Shadow” option and open the “Presets” dropdown menu.  Select the first option under “Outer”.&lt;/li&gt;
-  &lt;li&gt;Position the textbox in the center of the blurred photo.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-09-23/shadow.png&quot; alt=&quot;shadow&quot; /&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-&lt;h2 id=&quot;saving-the-picture&quot;&gt;Saving the picture&lt;/h2&gt;
-
-&lt;p&gt;To save your work as a .png file:&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;Select the blurred photo and the text box&lt;/li&gt;
-  &lt;li&gt;Right click and select “Save as Figure”&lt;/li&gt;
-  &lt;li&gt;Save the figure in your desired location&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-09-23/saving.png&quot; alt=&quot;save&quot; /&gt;&lt;/p&gt;</content><author><name>E. Shannon Tass</name><email>esnt@byu.edu</email></author><category term="photo effects" /><category term="powerpoint" /><category term="picture" /><category term="blog" /><summary type="html">Create a Blog Post Title Picture</summary></entry><entry><title type="html">Using SSH with GitHub</title><link href="/blog/ssh-and-github" rel="alternate" type="text/html" title="Using SSH with GitHub" /><published>2021-09-13T00:00:00-06:00</published><updated>2021-09-13T00:00:00-06:00</updated><id>/blog/ssh-and-github</id><content type="html" xml:base="/blog/ssh-and-github">&lt;p&gt;This post is adapted from the GitHub documentation page
-&lt;a href=&quot;https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh&quot;&gt;Connecting to GitHub with SSH&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;You can use the SSH protocol by setting up SSH keys to connect with GitHub without
-needing to supply your username and access token.  SSH stands for Secure Shell
-and it protocol for operating network services securely over an unsecured network.
-You can read more about SSH &lt;a href=&quot;https://en.wikipedia.org/wiki/Secure_Shell&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h1 id=&quot;check-for-existing-ssh-keys&quot;&gt;Check for existing SSH keys&lt;/h1&gt;
-&lt;ol&gt;
-  &lt;li&gt;Open the terminal (Mac) or Git Bash (Windows)&lt;/li&gt;
-  &lt;li&gt;Enter &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ls -la ~/.ssh&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Check the directory listing to see if you have a public SSH key, usually:&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;id_rsa.pub&lt;/li&gt;
-      &lt;li&gt;id_ecdsa.pub&lt;/li&gt;
-      &lt;li&gt;id_ed25519.pub&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;If you receive an error that ~/.ssh doesn’t exist, then you don’t have ssh keys&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h1 id=&quot;generating-new-ssh-keys&quot;&gt;Generating New SSH Keys&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;(If you already have SSH keys, skip to the next section.)&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Below are instructions for generating SSH keys.  When doing this, you have the choice of an algorithm to use (with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-t&lt;/code&gt; option) and the key size (with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-b&lt;/code&gt; option).  You can read more about SSH keys and the different algorithm/key size options &lt;a href=&quot;https://www.ssh.com/academy/ssh/keygen&quot;&gt;here&lt;/a&gt;.  The instructions below use the rsa algorithm with a 4096 bit key size.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Open the terminal (Mac) or Git Bash (Windows)&lt;/li&gt;
-  &lt;li&gt;In the terminal type&lt;br /&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ssh-keygen -t rsa -b 4096 -C &quot;your_github_email@email.com&quot;&lt;/code&gt; &lt;br /&gt;
-(be sure to use your actual GitHub email address)&lt;/li&gt;
-  &lt;li&gt;When you are prompted to “Enter a file in which to save the key”, just press enter to accept the default location&lt;/li&gt;
-  &lt;li&gt;Add a passphrase for extra security or press enter for no passphrase&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h1 id=&quot;adding-ssh-keys-to-your-github-account&quot;&gt;Adding SSH Keys to your GitHub Account&lt;/h1&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Copy the SSH public key to the clipboard.&lt;br /&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cat ~/.ssh/id_rsa.pub&lt;/code&gt;
-will show you the public key and you can copy it.&lt;/li&gt;
-  &lt;li&gt;Go to GitHub.  In the upper-right corner, click on your profile photo, then click &lt;strong&gt;Settings&lt;/strong&gt;.&lt;/li&gt;
-  &lt;li&gt;In the user settings sidebar, click &lt;em&gt;SSH and GPG keys&lt;/em&gt;&lt;/li&gt;
-  &lt;li&gt;Click &lt;strong&gt;New SSH key&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;In the “Title” field, add a label for your key.  For example “Personal MacBook Air”&lt;/li&gt;
-  &lt;li&gt;Paste your key into the “Key” field.&lt;/li&gt;
-  &lt;li&gt;Click &lt;strong&gt;Add SSH key&lt;/strong&gt;.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h1 id=&quot;using-ssh-key&quot;&gt;Using SSH Key&lt;/h1&gt;
-&lt;p&gt;In GitHub, when cloning repositories, or setting up the remote repository, use SSH instead of HTTP:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-09-13/github-ssh.png&quot; alt=&quot;screenshot&quot; /&gt;&lt;/p&gt;</content><author><name>E. Shannon Tass</name><email>esnt@byu.edu</email></author><category term="ssh" /><category term="git" /><category term="github" /><summary type="html">This post is adapted from the GitHub documentation page Connecting to GitHub with SSH.</summary></entry><entry><title type="html">Sample Post</title><link href="/blog/sample-post" rel="alternate" type="text/html" title="Sample Post" /><published>2020-04-24T00:00:00-06:00</published><updated>2020-04-24T00:00:00-06:00</updated><id>/blog/sample-post</id><content type="html" xml:base="/blog/sample-post">&lt;p&gt;This post will show you how the content will look like in the post pages and how the headlines, quotes and quotes will be represented. Jekyll is mainly used to write simple markdown and after that it renders out a static pages, so you need to know the basics of writing markdown for that.
-For more information about writing markdown you can checkout the following markdown cheatsheets:&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://guides.github.com/features/mastering-markdown/&quot;&gt;Mastering Markdown&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.markdownguide.org/cheat-sheet/&quot;&gt;Markdown Guide&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.github.com/gfm/&quot;&gt;GitHub Flavored Markdown Spec&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;em&gt;Mann-Whitney U Test&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;hr /&gt;
+&lt;p&gt;The Mann-Whitney U Test is a non-parametric version of the independent samples t-test. The test primarily deals with two independent samples that contain ordinal data. Like the t-test, it is used to test whether two samples are likely to derive from the same population. Unlike its parametric brother, however, the Mann-Whitney U test bases its outcomes on rank, not raw numbers. This makes the test more robust, as it would not be affected by outliers as much as the t-test.[^1]
+[^1]: (https://sphweb.bumc.bu.edu/otlt/mph-modules/bs/bs704_nonparametric/bs704_nonparametric4.html)&lt;/p&gt;
 
-&lt;h1 id=&quot;this-is-the-h1-text&quot;&gt;This is the h1 text&lt;/h1&gt;
-&lt;h2 id=&quot;this-is-the-h2-text&quot;&gt;This is the h2 text&lt;/h2&gt;
-&lt;h3 id=&quot;this-is-the-h3-text&quot;&gt;This is the h3 text&lt;/h3&gt;
-&lt;h4 id=&quot;this-is-the-h4-text&quot;&gt;This is the h4 text&lt;/h4&gt;
-&lt;h5 id=&quot;this-is-the-h5-text&quot;&gt;This is the h5 text&lt;/h5&gt;
-&lt;h6 id=&quot;this-is-the-h6-text&quot;&gt;This is the h6 text&lt;/h6&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;em&gt;The Kruskal-Wallis Test&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;&lt;strong&gt;Bold Text in the post will look like:&lt;/strong&gt;&lt;br /&gt;
-&lt;strong&gt;This text is Bold&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The Kruskal-Wallis test, proposed by Kruskal and Wallis in 1952, is a nonparametric method for testing whether samples are originated from the same distribution. It works in a similar way to the Mann-Whitney U test, except it uses more than two groups. The null hypothesis of the Kruskal-Wallis test is that the mean ranks of the groups are the same, while the alternative hypothesis is that at least one of the mena ranks is different. It is the nonparametric equivalent one-way ANOVA, but unlike the one-way ANOVA, the nonparametric Kruskal-Wallis test does not assume a normal distribution of the underlying data.[^2]
+[^2]:https://sphweb.bumc.bu.edu/otlt/MPH-Modules/BS/R/R4_One-TwoSampleTests-ANOVA/R4_One-TwoSampleTests-ANOVA5.html&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Italic Text in the post will look like:&lt;/strong&gt;&lt;br /&gt;
-&lt;em&gt;This text is Italic&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&quot;example&quot;&gt;Example&lt;/h2&gt;
+
+&lt;p&gt;Enough talk, lets try to understand non-parametric tests through an actual example. Let’s use an easy and clear dataset to demonstrate a particular type of non-parametric test, the Mann-Whitney U Test. We will compare the number of accidents caused by distracted driving and drinking and driving in Utah from 2010 to 2020,[^3] and we will be using R throughout the entire process, so you can do it yourself when this is all done.
+[^3]:https://publicsafety.utah.gov/&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;em&gt;EDA&lt;/em&gt;&lt;/strong&gt;
+```r
+Distracted &amp;lt;- c(4267,4363,4667,5138,5581,5816,5831,5825,5772,5601,4801)
+Alcohol &amp;lt;- c(1633,1406,1572,1624,1700,1883,1925,1825,1915,1923,1971)
+year &amp;lt;- c(2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Utah_crash &amp;lt;-data.frame(Distracted, Alcohol, year)&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![image](https://i.ibb.co/58bzRTj/EDA.jpg)
+
+As we can clearly see, distracted driving causes many more accidents. We probably don't even need any type of formal test to prove that there is a statistically significant difference, but, again, we are using an easy example to see how non-parametric tests work.
+
+```r
+hist(Utah_crash$Distracted, main = &quot;Distracted Driving&quot;, xlab= &quot;Number of Crashes&quot;)
+hist(Utah_crash$Alcohol, main = &quot;Drinking and Driving&quot;, xlab= &quot;Number of Crashes&quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.ibb.co/LC5bX7Q/Histograms.jpg&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Our sample size is low with only eleven and not normally distributed, so we will go ahead and use the Mann-Whitney U test&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;em&gt;Test&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The code for running this test is as simple as running a t-test in R. Just input the datasets inside the function “Wilcox.test”&lt;/p&gt;
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;wilcox.test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Utah_crash&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Alcohol&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Utah_crash&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Distracted&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Much like the t-test, this will provide a p-value to show if there is a statistically significant difference. In this case, the p-value was &lt;br /&gt;
+&lt;img src=&quot;https://render.githubusercontent.com/render/math?math=2.8351422*10^{-6}&quot; /&gt;. If the alpha level was 0.05 (or even much lower than that),
+this value would show that there is a statistically significant difference (as expected).&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusions&quot;&gt;Conclusions&lt;/h2&gt;
+&lt;p&gt;Using non-parametric tests will expand your statistical analysis skill set.
+You can use them when parametric tests will not be as effective or just obsolete.
+Sometimes it is best to use both and compare which test is more effective, then use the better one. As you can imagine,
+non-parametric tests do not end with the two tests we talked about. Bootstraping and permuation tests are forms of
+non-parametric tests that are also very effective under certain circumstances.
+With this knowledge, we encourage you to use both parametric and non-parametric tests on a couple of datasets to see how
+they compare and how effective non-parametric tests can be in certain circumstances.&lt;/p&gt;</content><author><name>Jeong Heon You</name><email>nan</email></author><category term="R" /><category term="Non-Parametric tests" /><category term="Mann-Whitney U Test" /><category term="Utah Car Crashes" /><summary type="html">Non-Parametric Tests: Statistically Efficient or Technically Cheating? Introduction Tired of memorizing countless distributions and their parameters? Well, you’re in luck, because through non-parametric tests, you can run all of the same types of tests that you learned in your former statistics courses without worrying about distributions or parameters. Not only that, but, as it turns out, a lot of the data that we encounter in the real world is not normally distributed, which makes non-parametric tests that much more useful. So What Are They? In statistics, non-parametric tests are methods of statistical analysis that do not require a distribution to meet the required assumptions to be analyzed. For this reason, they are sometimes referred to as distribution-free tests. Nonparametric tests serve as an alternative to parametric tests such as a t-test or ANOVA which can only be employed if the data satisfies certain specific assumptions. Although using non-parametric tests results in losing power if the data is normally distributed, if the data is not normally distributed, using non-parametric tests will almost always be more powerful than using parametric tests. Specifically When to Use Them Data does not meet the assumptions about the population sample</summary></entry><entry><title type="html">Python in Visual Studio Code</title><link href="/blog/vscode" rel="alternate" type="text/html" title="Python in Visual Studio Code" /><published>2021-11-12T00:00:00-07:00</published><updated>2021-11-12T00:00:00-07:00</updated><id>/blog/vscode</id><content type="html" xml:base="/blog/vscode">&lt;h1 id=&quot;ide&quot;&gt;IDE&lt;/h1&gt;
+
+&lt;p&gt;In today’s world, coding has become an essential part of us. Apple’s CEO, Tim Cook, elaborated in the recent Silicon Slope Summit, “Teaching someone to code teaches them critical thinking skills … coding teaches you the art of the possible … you need to learn how to code even if you’re not going to be a coder.” Everyone needs to learn how to code!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-12/img1.jpg&quot; alt=&quot;screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As many would agree, the first step to start coding is to choose a language to code in. Once you decide a language to learn, you then get to choose an IDE, the Integrated Development Environment. Having an appropriate IDE can enhance your coding experience and help you become a better coder, in general. Examples of some of the famous IDEs are Xcode, Eclipse, Atom, Sublime Text, Komodo, PyCharm, and Microsoft Visual Studio. Each IDEs are usaully known for its effectiveness on a certain language. For example, Eclipse and Komodo is known for its use with Java, and PyCharm for Python. There are also IDEs that are used for general coding, with extensions to help with specific languages. These include Xcode, Atom, Sublime Text, and Microsoft Visual Studio. 
+In case of Microsoft Visual Studio, Microsoft has divided its IDE into two, Visual Studio and Visual Studio Code, to maximize its individual usage. Visual Studio is a “full-featured” and “convenient” development environment mainly for C# and ASP .NET, while Visual Studio Code is a cross-platform (Windows, MacOS, Linux) editor that utilizes extensions/plugins to work with many languages. 
+As someone who is very interested in Front-end Web app developing and user experience, I have been using Visual Studio Code for a while, and it is superb. Since Visual Studio Code utilizes plugins, it can also be used with Python and even with Jupyter Notebook files (.ipynb).&lt;/p&gt;
+
+&lt;p&gt;This post will briefly illustrate how to set up Microsoft Visual Studio Code to work with Python.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-12/img2.png&quot; alt=&quot;screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;visual-studio-code-vs&quot;&gt;Visual Studio Code vs.&lt;/h1&gt;
+&lt;p&gt;“Why would you use Visual Studio Code instead of other IDEs like Jupyter Notebook or PyCharm?”
+Well… I’m just familiar with Visual Studio Code (simply called as VS Code) with my use for web development. You could use any IDE of your choice, but VS Code’s UX is very user friendly. It can also do anything Jupyter Notebook can do, except the only bothersome would be that you would have to install more packages compared to Jupyter Notebook.&lt;/p&gt;
+
+&lt;h1 id=&quot;overview&quot;&gt;Overview&lt;/h1&gt;
+
+&lt;p&gt;Well, let’s first see an overview of what Visual Studio Code is capable of.&lt;/p&gt;
+
+&lt;p&gt;Theme
+I would joke with my co-workers saying, “You’re not a coder if it’s not on dark mode”. VS Code offers many pre-built themes that makes it look cool. This doesn’t change any functionality, but only the looks.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-12/img3.png&quot; alt=&quot;screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Terminal
+Typing Ctrl + Shift + ` opens up integrated terminal that you can reference to while you work on your project.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-12/img4.png&quot; alt=&quot;screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Explorer View
+The explorer view is phenomenal. It provides a tree-view of the directories. You can easily add another file to the working directory and keep track of it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-12/img5.png&quot; alt=&quot;screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;installation-and-set-up&quot;&gt;Installation and Set Up&lt;/h1&gt;
+&lt;p&gt;If you are interested, you can go to &lt;a href=&quot;https://code.visualstudio.com/download&quot;&gt;Microsoft Visual Studio Code&lt;/a&gt; to install VS Code. Once you have Visual Studio installed, you can install extensions by opening the extension tab (Ctrl + Shift + X). You will be able to see a list of extensoins you have installed, which should be none. The packages you need are as the following:
+(note: you wouldn’t need to download all of it, since it will automatically download dependencies, but I’ll leave it in case it doesn’t)
+    1. Python
+    2. Pylance
+    3. Jupyter
+    4. Jupyter Keymap
+    5. Jupyter Notebook Renderers
+Once you have all of these, then you’re all set! You may create or open a .ipynb file or .py file. In case of working with .py file, if you want to open a kernel, you can type #%% and run.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-12/img6.png&quot; alt=&quot;screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Note that you will have to install additional packages through the terminal. A safe way of saving packages and running python is through having a local environment, but for this blog’s purposes, we’ll just install to the public environment. Type in the following on the terminal (Ctrl + Shift + `).&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pip3 &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;numpy
+pip3 &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;pandas
+
+pip3 &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;sklearn
+&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Sklearn requires additional installs. You may follow the prompt given once you run sklearn-related components.&lt;/p&gt;
+
+&lt;p&gt;If you need to download anything, or update any existing packages, you can easily open terminal and do so.&lt;/p&gt;
+
+&lt;h1 id=&quot;github&quot;&gt;GitHub&lt;/h1&gt;
+&lt;p&gt;A good feature of VS Code is its effectiveness of source control through GitHub. It is good to practice and learn how to use git at the terminal, but once you get used to it, it gets a little bit bothersome to type in everything sometimes.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-12/img7.png&quot; alt=&quot;screenshot&quot; /&gt;
+&lt;img src=&quot;/assets/images/blogimages/figs-11-12/img8.png&quot; alt=&quot;screenshot&quot; /&gt;
+&lt;img src=&quot;/assets/images/blogimages/figs-11-12/img9.png&quot; alt=&quot;screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As you can see, the left pane provides a source control option, where you can type in your commit message and pull/push when needed. Also, the bottom pane indicates whether the repository you are currently working on has updates. You can also easily set up branches and work as a team with VS Code.&lt;/p&gt;
+
+&lt;p&gt;Sometimes, VS Code has many repositories and doesn’t save the last repositories you have worked on, not showing all of them. Then, you could go to the directory on your local machine in the terminal to re-instantiate the repository.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git init
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;Everyone has different preferences. The main purpose of this blog wasn’t to persuade you to use VS Code, but to try an IDE that best fits you. In my case, VS Code works best. For some, having different IDEs for different languages may work better.&lt;/p&gt;
+
+&lt;p&gt;If there are things I could improve on, please don’t hesitate to let me know! I’m all ears :)&lt;/p&gt;
+
+&lt;p&gt;-JH
+&lt;a href=&quot;https://www.linkedin.com/in/jacobjhunsaker/&quot;&gt;LinkedIn&lt;/a&gt; | &lt;a href=&quot;https://github.com/mimanjh&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;</content><author><name>Jacob Hunsaker</name><email>jacob.hunsaker96@gmail.com</email></author><category term="IDE" /><category term="python" /><category term="vs-code" /><summary type="html">IDE</summary></entry><entry><title type="html">Ace Your Data Science Interview</title><link href="/blog/Ace-The-Interview" rel="alternate" type="text/html" title="Ace Your Data Science Interview" /><published>2021-11-11T00:00:00-07:00</published><updated>2021-11-11T00:00:00-07:00</updated><id>/blog/Ace-The-Interview</id><content type="html" xml:base="/blog/Ace-The-Interview">&lt;p&gt;Going into a data science related job interview, you can be sure that they will ask you questions about machine learning. We are going to go over some of the most common questions asked related to machine learning during data science job interviews so &lt;strong&gt;you&lt;/strong&gt; can be ready to catch your dream job.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-11/you1.png&quot; alt=&quot;you&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Machine learning uses artificial intelligence and computer science on data and algorithms to imitate human learning. It automates processes like model building and classifying that originally could only be done with human reasoning. Through machine learning, we can teach algorithms with data to identify patterns and make decisions.&lt;/p&gt;
+
+&lt;p&gt;Machine learning is growingly popular because instead of hard coding to solve problems, we can give the computers the data and let them learn from it. Companies are then able to identity risks or areas for profit or even implement machine learning into the product they are creating. The point is, any business can benefit from machine learning.&lt;/p&gt;
+
+&lt;p&gt;We are going to look over 5 popular machine learning interview questions and talk about how to answer them.&lt;/p&gt;
+
+&lt;h2 id=&quot;1-what-are-different-types-of-machine-learning-algorithms&quot;&gt;1.	What are different types of machine learning algorithms?&lt;/h2&gt;
+
+&lt;p&gt;Supervised Learning- generally the model is trained with an input data set until it can correctly predict the output when given the same features it was trained on.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;An example of this would be housing prices. A data set might include features relating to when the house was built, how big it is, how many bedrooms it has, and the sale price. The classification method we choose would then identify the patterns of house features compared to their sale prices. In the end, we would hope to come out with a model that could be given data about a house and give you an accurate prediction of its sale price.&lt;br /&gt;
+Unsupervised Learning- using unlabeled datasets, these methods will attempt to identify the structure of the data and group it based on its similarities.&lt;/li&gt;
+  &lt;li&gt;An example of unsupervised learning would be inputting images of cities and rural landscapes and letting the machine identify features common to cityscapes and features common to rural landscapes, hopefully then allowing it to receive an image and categorize it correctly as city or rural.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-11/MLgraphic.jpeg&quot; alt=&quot;ML&quot; /&gt;
+&lt;a href=&quot;https://medium.com/@dkatzman_3920/supervised-vs-unsupervised-learning-and-use-cases-for-each-8b9cc3ebd301&quot;&gt;Supervised vs. Unsupervised Learning&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;2-what-is-naïve-about-naïve-bayes&quot;&gt;2.	What is ‘Naïve’ about Naïve Bayes?&lt;/h2&gt;
+&lt;p&gt;Naïve bayes is an algorithm used for predictive modeling that falls under the supervised learning category. The part that is naïve is that it assumes that every input variable is independent. Wikipedia gives a good example related to the following: A naïve bayes algorithm could be used to classify emails as spam or not spam. Features might count occurrences of certain words and then the email would be classified as spam or not spam. The algorithm would calculate the probability of it being spam based off the assumption that the occurrence of one word is independent from the occurrence of any other word.
+This algorithm is commonly used with text classification problems or with multi-class prediction.&lt;/p&gt;
+
+&lt;h2 id=&quot;3--how-much-data-should-you-allocate-for-your-training-validation-and-test-sets&quot;&gt;3.	 How much data should you allocate for your training, validation, and test sets?&lt;/h2&gt;
+&lt;p&gt;A good rule of thumb is 80% in the train dataset and 20% in the test. However, each problem varies so there isn’t an answer that is always correct. You want to optimize for low variance on your model performance statistic and well as low variance on your actual model parameters.&lt;/p&gt;
+
+&lt;h2 id=&quot;4-what-are-the-advantages-and-disadvantages-of-decision-trees&quot;&gt;4.	What are the advantages and disadvantages of decision trees?&lt;/h2&gt;
+&lt;p&gt;Pros: Decision trees are easy to interpret, robust to outliers, and have fewer parameters to tune
+Cons: More likely to be overfit, meaning a higher variance.&lt;/p&gt;
+
+&lt;h2 id=&quot;5-how-can-we-handle-outlier-values&quot;&gt;5.	How can we handle outlier values?&lt;/h2&gt;
+&lt;p&gt;Some tools used to discover outlier values include box plot, z-score, and scatterplots.
+To handle any outliers we find, we can drop those observations from the dataset, impute a different value (ex. the mean), or you could segment them and analyze what insights you might gain from those data points.&lt;/p&gt;
+
+&lt;h2 id=&quot;6-what-is-the-roc-curve-and-what-is-auc&quot;&gt;6.	What is the ROC Curve and what is AUC?&lt;/h2&gt;
+&lt;p&gt;ROC stands for receiver operating characteristics. The ROC curve is a graph that shows the tradeoff between the true positive rate and the false positive rate. The ROC curve displays how good your model is at distinguishing between classes. The AUC is the area under the ROC curve and will always be between 0 and 1. Siladittya Manna on medium says it well -&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Quotes on your post will look like this&lt;/p&gt;
+  &lt;p&gt;“AUC score is equal to the probability that a classifier will rank a randomly chosen positive instance higher than a randomly chosen negative one.”&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Codes on your post will look like this&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-11/ROC.png&quot; alt=&quot;ROC&quot; /&gt;
+&lt;a href=&quot;https://medium.com/@dkatzman_3920/supervised-vs-unsupervised-learning-and-use-cases-for-each-8b9cc3ebd301&quot;&gt;ROC Curve&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Link in the post will look like:&lt;/strong&gt;&lt;br /&gt;
-&lt;a href=&quot;#&quot;&gt;This is a link&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Just as a reminder, the true positive rate (TPR) is when a model correctly predicts a positive class. Think of a covid test: a 1.0 TPR means that every person with active Covid who took a Covid test would get a positive test result.
+The False positive rate (FPR) measures how often the model incorrectly classifies a negative as a positive. This would be like a Covid test coming back positive when the person does not actually have covid.
+The goal for any model is to correctly classify positives as positives and negatives as negatives, so a ROC curve with an AUC close to 1 is a good indicator that your model is performing well.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Bullet list in the post will look like:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-11/cheer.png&quot; alt=&quot;cheer&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;These 5 questions don’t even begin to cover the scope of what interviewers might want to pry out of you during an interview, but it’s a good start to thinking about what you might want to freshen up on before heading into your next interview. Either way, be confident in what you do know and try to derive answers from that if a question trips you up. Preparation is key and practicing explaining these concepts to another person is one of the best ways to see how well you really know what you think you know. Thanks for reading and best of luck!&lt;/p&gt;
+
+&lt;h3 id=&quot;sources&quot;&gt;Sources&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;p&gt;Below are the sources used for the interview questions and information used in the answers.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://pages.github.com/&quot;&gt;IBM Machine Learning&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://pages.github.com/&quot;&gt;Machine Learning Q&amp;amp;A (Elite Data Science)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://pages.github.com/&quot;&gt;Machine Learning Q&amp;amp;A (Interview Bit)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://pages.github.com/&quot;&gt;Machine Learning Algorithms&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://pages.github.com/&quot;&gt;Naive Bayes&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Image Links:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://unsplash.com/&quot;&gt;Stock Photos&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@dkatzman_3920/supervised-vs-unsupervised-learning-and-use-cases-for-each-8b9cc3ebd301&quot;&gt;ROC Curve&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@dkatzman_3920/supervised-vs-unsupervised-learning-and-use-cases-for-each-8b9cc3ebd301&quot;&gt;Supervised vs. Unsupervised Learning&lt;/a&gt;&lt;/p&gt;</content><author><name>Ashtyn Fiala</name><email>fialaae@gmailcom</email></author><category term="machine learning" /><category term="job search" /><category term="algorithms" /><category term="interview questions" /><summary type="html">Going into a data science related job interview, you can be sure that they will ask you questions about machine learning. We are going to go over some of the most common questions asked related to machine learning during data science job interviews so you can be ready to catch your dream job.</summary></entry><entry><title type="html">Writing Code in RStudio - Helpful Tips and Tricks</title><link href="/blog/RStudio-tips" rel="alternate" type="text/html" title="Writing Code in RStudio - Helpful Tips and Tricks" /><published>2021-11-10T00:00:00-07:00</published><updated>2021-11-10T00:00:00-07:00</updated><id>/blog/RStudio-tips</id><content type="html" xml:base="/blog/RStudio-tips">&lt;p&gt;RStudio is a widely used platform for coding. It has a host of shortcuts and cool features that streamline the coding process. Here are 10 that have been a huge benefit to me.&lt;/p&gt;
+
+&lt;h2 id=&quot;access-all-shortcuts&quot;&gt;Access All Shortcuts&lt;/h2&gt;
+
 &lt;ul&gt;
-  &lt;li&gt;Item 1&lt;/li&gt;
-  &lt;li&gt;Item 2&lt;/li&gt;
-  &lt;li&gt;Item 3&lt;/li&gt;
-  &lt;li&gt;Item 4&lt;/li&gt;
-  &lt;li&gt;Item 5&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Alt + Shift + K&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;strong&gt;Number list in the post will look like:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;If you ever want a reminder on a particular shortcut, you can pull up a list of all shortcuts available in RStudio by pressing &lt;strong&gt;Alt + Shift + K&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;navigating-open-files&quot;&gt;Navigating Open files&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;Ctrl + Tab&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Ctrl + Shift + Tab&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Ctrl + Shift + .&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you are like me, you probably have multiple files open at once in RStudio. Instead of having to drag your mouse and click on a file you want to pull up, you can instead skim over tabs by pressing &lt;strong&gt;Ctrl + Tab&lt;/strong&gt; (to go one tab to the right) or &lt;strong&gt;Ctrl + Shift + Tab&lt;/strong&gt; (to go one tab to the left). If you have a ton of tabs open, it may be simpler to press &lt;strong&gt;Ctrl + Shift + .&lt;/strong&gt; which allows you to search by name all of the files you have open.&lt;/p&gt;
+
+&lt;h2 id=&quot;multiple-cursors--selections&quot;&gt;Multiple Cursors / Selections&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;Alt + Ctrl + Click&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Ctrl + Alt + Shift + M&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Have you ever felt yourself wanting to edit similar parts of your code at once? RStudio has a few features that make this easy. The multiple cursor feature is one of my favorites. If you hold &lt;strong&gt;Alt + Ctrl&lt;/strong&gt;, you can click and put multiple cursors in your code, which is very helpful if you need to cut/copy and paste multiple sections of code, or if you need to make small adjustments in several places. Holding &lt;strong&gt;Alt + Ctrl + Up/Down&lt;/strong&gt; will add additional cursors directly above or below where the current cursor is.&lt;/p&gt;
+
+&lt;p&gt;If you want to select all instances of a particular phrase or section of code within a script, select one instance, then hold &lt;strong&gt;Ctrl + Alt + Shift + M.&lt;/strong&gt; All instances of that selection within the script will be selected, making it easy to make quick adjustments.&lt;/p&gt;
+
+&lt;h2 id=&quot;pipe-operators&quot;&gt;Pipe Operators&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;%&amp;gt;%&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;%&amp;lt;&amp;gt;%&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;%$%&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;As with many other languages, R has a piping function (available from the magrittr package) which allows for more streamlined and easy-to-follow code. For example, the code:&lt;/p&gt;
+
+&lt;div class=&quot;language-md highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;x &amp;lt;- data.frame(“V1” = c(1, 2, 3), “V2” = c(“a”, “b”, “c”))
+mean(pull(filter(x,V1 %in% c(&quot;a&quot;,&quot;b&quot;)),V2))
+&lt;span class=&quot;gh&quot;&gt;# 1.5&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Can be rewritten as the following using the pipe function:&lt;/p&gt;
+
+&lt;div class=&quot;language-md highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;x %&amp;gt;% filter(V1 %in% c(&quot;a&quot;,&quot;b&quot;)) %&amp;gt;% pull(V2) %&amp;gt;% mean()
+&lt;span class=&quot;gh&quot;&gt;# 1.5&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;In RStudio, instead of having to manually type out the function, press &lt;strong&gt;Ctrl + Shift + M&lt;/strong&gt; for an efficient way to insert the function.&lt;/p&gt;
+
+&lt;p&gt;There are a couple of other pipe operators as part of the magrittr package that I think are interesting. The operator %&amp;lt;&amp;gt;% allows you to simultaneously pipe an object and save the updates to that object. For example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-{r}&quot;&gt;x &amp;lt;- data.frame(“V1” = c(1, 2, 3), “V2” = c(“a”, “b”, “c”))
+x &amp;lt;- x %&amp;gt;% select(V1)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;can be rewritten as&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-{r}&quot;&gt;x %&amp;lt;&amp;gt;% select(V1)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The operator %$% allows you to pull a specific column from a data frame, which can be useful, especially when used as part of a sequence of piped functions. For example, the code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-{r}&quot;&gt;x %$% V1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;will extract the vector c(1, 2, 3) from the data frame.&lt;/p&gt;
+
+&lt;h2 id=&quot;quick-code-manipulations&quot;&gt;Quick Code Manipulations&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;Alt + Up/Down&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Alt + Shift + Up/Down&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These next tricks are helpful for editing lines of code in your document. Holding &lt;strong&gt;Alt + Up/Down&lt;/strong&gt; allows you to move whichever line(s) your cursor is on Up or Down, respectively. It allows you to move code pretty effectively around your document.&lt;/p&gt;
+
+&lt;p&gt;If you would like to make a quick copy of a line of code, just add shift to the mix (&lt;strong&gt;Alt + Shift + Up/Down&lt;/strong&gt;) to copy the selected line(s) in the direction you specify.&lt;/p&gt;
+
+&lt;h2 id=&quot;snippets&quot;&gt;Snippets&lt;/h2&gt;
+&lt;p&gt;A really cool feature of RStudio is the ability to define custom shortcuts to generate code, called snippets. RStudio has several snippets predefined and ready to use. For example, if you type “mat” and press &lt;strong&gt;Tab&lt;/strong&gt;, RStudio returns a template for the matrix function, and allows the user to quickly tab over to specify the contents of the matrix and specify the number of rows and columns. To see what snippets are available in RStudio, as well as to define your own snippets, go to Tools &amp;gt; Global Options &amp;gt; Code &amp;gt; Edit Snippets… I have saved several presets for repetitive tasks that I do often, such as generating a header for scripts and setting the working directory to the file’s location. This has saved me a ton of time. For more information on snippets visit &lt;a href=&quot;https://support.rstudio.com/hc/en-us/articles/204463668-Code-Snippets?version=1.4.1717&amp;amp;mode=desktop&quot;&gt;this website&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;jumping-from-script-to-console&quot;&gt;Jumping from script to console&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;Ctrl + 1&lt;/em&gt; / &lt;em&gt;Ctrl + Shift + 1&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Ctrl + 2&lt;/em&gt; / &lt;em&gt;Ctrl + Shift + 2&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There are several shortcuts that allow you to jump around to the different panes in RStudio. The keys &lt;strong&gt;1-9&lt;/strong&gt; and &lt;strong&gt;F1-F7&lt;/strong&gt; are each associated with a particular pane in RStudio (a complete list of associations can be found by holding &lt;strong&gt;Alt + Shift + K&lt;/strong&gt;). Holding &lt;strong&gt;Ctrl + {Pane #}&lt;/strong&gt; will bring the particular pane to the foreground along with the cursor. Holding &lt;strong&gt;Ctrl + Shift + {Pane #}&lt;/strong&gt; will maximize that pane so that it fills the window. I most often use these shortcuts to jump from the source pane to the console pane and back (&lt;strong&gt;Ctrl + 1/2&lt;/strong&gt;) or to maximize one of these panes (&lt;strong&gt;Ctrl + Shift + 1/2&lt;/strong&gt;).&lt;/p&gt;
+
+&lt;h2 id=&quot;comments&quot;&gt;Comments&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;Ctrl + Shift + C&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Colored Comments&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You probably know that adding a pound sign at the beginning of a line of code will comment it out. It can be a pain to manually add the sign to several lines that we want to comment out. Instead, we can select the lines of code that we want to comment out and press &lt;strong&gt;Ctrl + Shift + C&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Sometimes it can be helpful to have different colored comments in your code (for example, having a particular color for notes, alternate code, etc…). While RStudio does not directly support this capability, we can hack it by using the following additions to the pound sign:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-{r}&quot;&gt;#'[comment_here_in_color_1]
+#'*comment_here_in_color_2*
+#'@comment_here_in_color_3
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The colors will differ based off of your selected theme&lt;/p&gt;
+
+&lt;h2 id=&quot;theme&quot;&gt;Theme&lt;/h2&gt;
+
+&lt;p&gt;The default RStudio theme is very light. Users can select a different color scheme by going to Tools &amp;gt; Global Options &amp;gt; and appearance. If your aren’t satisfied with any of them, you can create your own custom theme, and load it into RStudio (see this &lt;a href=&quot;https://rstudio.github.io/rstudio-extensions/rstudio-theme-creation.html&quot;&gt;webpage&lt;/a&gt; for more details).&lt;/p&gt;
+
+&lt;h2 id=&quot;setting-working-directory&quot;&gt;Setting Working Directory&lt;/h2&gt;
+
+&lt;p&gt;Sometimes it can be a pain to set the working directory, especially if you have to type out the entire file path. There is a nice function as part of the rstudioapi package that will set the working directory to the current file location:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-{r}&quot;&gt;setwd(dirname(rstudioapi::getActiveWorkingContext()$path))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I have created my own snippet that will generate this line with a couple keystrokes. It saves a lot of time.&lt;/p&gt;
+
+&lt;p&gt;It is important to note that this code only works in RStudio, and for an RScript. If you are working within an R Markdown document, it is a little harder to set the working directory, but the following code will work:&lt;/p&gt;
+
+&lt;div class=&quot;language-md highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;```&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;{r}
+&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;knitr::opts_knit$set(root.dir = 'your/file/path')&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;```&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Again, snippets work great here in allowing you to type the code quickly and effectively.&lt;/p&gt;
+
+&lt;h2 id=&quot;r-markdown&quot;&gt;R Markdown&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;message&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;warning&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;cache&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Many who read this article will undoubtedly be familiar with R Markdown files, which provides a nice way to format code and text for reports or presentations. I have been using R Markdowns for a few years now, and I keep discovering new features that I wish I had known from the beginning. Here are a few pointers that will make your experience more enjoyable. (As a quick comment, the knitr package must be installed in order to knit an R Markdown file)&lt;/p&gt;
+
+&lt;p&gt;To quickly insert a new code chunk, press &lt;strong&gt;Ctrl + Alt + i&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;At the beginning of each code chunk there is a heading contained in curly braces:&lt;/p&gt;
+&lt;div class=&quot;language-md highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;```&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;{r chunk_name, additional_options...}
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;```&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Text immediately following the “r” is the chunk’s name, which, beyond idenitfying the portion of code, can be used to access the chunk quickly in the source pane in RStudio. Additional options that control specific display features of the chunk can be set following the name.&lt;/p&gt;
+
+&lt;p&gt;If you want to have all the same options specified for all chunks in the document, include the following line of code in the document:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-{r}&quot;&gt;knitr::opts_chunk$set(options_for_all_chunks)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The space within the parantheses is where the user can specify the options that apply to every chunk in the document.&lt;/p&gt;
+
+&lt;p&gt;I often have been frustrated by the appearance of unwanted messages or warnings that were generated by the code in the R Markdown. Specifying the options &lt;strong&gt;message=FALSE&lt;/strong&gt; and &lt;strong&gt;warning=FALSE&lt;/strong&gt; in the heading will remove this output from the knitted document.&lt;/p&gt;
+
+&lt;p&gt;Another frustration was that knitting required all the code in the document to compile before generating a report. This was especially frustrating as I neared the end of projects and needed to see how the document looked as I was making final adjustment changes. Adding the option &lt;strong&gt;cache=TRUE&lt;/strong&gt; makes it so that any chunk that has already been compiled and has no adjustments does not have to be recompiled in order to generate a report. This option has saved me a lot of time and frustration.&lt;/p&gt;
+
+&lt;p&gt;To see more available options for R Markdown code chunks, along with other useful features, check out &lt;a href=&quot;https://ethz.ch/content/dam/ethz/special-interest/math/statistics/sfs/Education/Advanced%20Studies%20in%20Applied%20Statistics/course-material-1921/Datenanalyse/rmarkdown-2.pdf&quot;&gt;this pdf&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;This is by no means a comprehensive list of all the helpful features in RStudio, but these are several that I have found useful in my educational and career experience. I hope that they can be helpful to you as well. If you have any tips or tricks that you find useful, please comment them below!&lt;/p&gt;
+
+&lt;p&gt;Happy coding!&lt;/p&gt;</content><author><name>McKay Gerratt</name><email>mckayger@gmail.com</email></author><category term="R" /><category term="Interface" /><category term="RStudio" /><category term="Shortcuts" /><category term="Custom" /><category term="Efficient Coding" /><summary type="html">RStudio is a widely used platform for coding. It has a host of shortcuts and cool features that streamline the coding process. Here are 10 that have been a huge benefit to me. Access All Shortcuts Alt + Shift + K If you ever want a reminder on a particular shortcut, you can pull up a list of all shortcuts available in RStudio by pressing Alt + Shift + K. Navigating Open files Ctrl + Tab Ctrl + Shift + Tab Ctrl + Shift + . If you are like me, you probably have multiple files open at once in RStudio. Instead of having to drag your mouse and click on a file you want to pull up, you can instead skim over tabs by pressing Ctrl + Tab (to go one tab to the right) or Ctrl + Shift + Tab (to go one tab to the left). If you have a ton of tabs open, it may be simpler to press Ctrl + Shift + . which allows you to search by name all of the files you have open. Multiple Cursors / Selections Alt + Ctrl + Click Ctrl + Alt + Shift + M Have you ever felt yourself wanting to edit similar parts of your code at once? RStudio has a few features that make this easy. The multiple cursor feature is one of my favorites. If you hold Alt + Ctrl, you can click and put multiple cursors in your code, which is very helpful if you need to cut/copy and paste multiple sections of code, or if you need to make small adjustments in several places. Holding Alt + Ctrl + Up/Down will add additional cursors directly above or below where the current cursor is. If you want to select all instances of a particular phrase or section of code within a script, select one instance, then hold Ctrl + Alt + Shift + M. All instances of that selection within the script will be selected, making it easy to make quick adjustments. Pipe Operators %&amp;gt;% %&amp;lt;&amp;gt;% %$% As with many other languages, R has a piping function (available from the magrittr package) which allows for more streamlined and easy-to-follow code. For example, the code: x &amp;lt;- data.frame(“V1” = c(1, 2, 3), “V2” = c(“a”, “b”, “c”)) mean(pull(filter(x,V1 %in% c(&quot;a&quot;,&quot;b&quot;)),V2)) # 1.5 Can be rewritten as the following using the pipe function: x %&amp;gt;% filter(V1 %in% c(&quot;a&quot;,&quot;b&quot;)) %&amp;gt;% pull(V2) %&amp;gt;% mean() # 1.5 In RStudio, instead of having to manually type out the function, press Ctrl + Shift + M for an efficient way to insert the function. There are a couple of other pipe operators as part of the magrittr package that I think are interesting. The operator %&amp;lt;&amp;gt;% allows you to simultaneously pipe an object and save the updates to that object. For example: x &amp;lt;- data.frame(“V1” = c(1, 2, 3), “V2” = c(“a”, “b”, “c”)) x &amp;lt;- x %&amp;gt;% select(V1) can be rewritten as x %&amp;lt;&amp;gt;% select(V1) The operator %$% allows you to pull a specific column from a data frame, which can be useful, especially when used as part of a sequence of piped functions. For example, the code: x %$% V1 will extract the vector c(1, 2, 3) from the data frame. Quick Code Manipulations Alt + Up/Down Alt + Shift + Up/Down These next tricks are helpful for editing lines of code in your document. Holding Alt + Up/Down allows you to move whichever line(s) your cursor is on Up or Down, respectively. It allows you to move code pretty effectively around your document. If you would like to make a quick copy of a line of code, just add shift to the mix (Alt + Shift + Up/Down) to copy the selected line(s) in the direction you specify. Snippets A really cool feature of RStudio is the ability to define custom shortcuts to generate code, called snippets. RStudio has several snippets predefined and ready to use. For example, if you type “mat” and press Tab, RStudio returns a template for the matrix function, and allows the user to quickly tab over to specify the contents of the matrix and specify the number of rows and columns. To see what snippets are available in RStudio, as well as to define your own snippets, go to Tools &amp;gt; Global Options &amp;gt; Code &amp;gt; Edit Snippets… I have saved several presets for repetitive tasks that I do often, such as generating a header for scripts and setting the working directory to the file’s location. This has saved me a ton of time. For more information on snippets visit this website. Jumping from script to console Ctrl + 1 / Ctrl + Shift + 1 Ctrl + 2 / Ctrl + Shift + 2 There are several shortcuts that allow you to jump around to the different panes in RStudio. The keys 1-9 and F1-F7 are each associated with a particular pane in RStudio (a complete list of associations can be found by holding Alt + Shift + K). Holding Ctrl + {Pane #} will bring the particular pane to the foreground along with the cursor. Holding Ctrl + Shift + {Pane #} will maximize that pane so that it fills the window. I most often use these shortcuts to jump from the source pane to the console pane and back (Ctrl + 1/2) or to maximize one of these panes (Ctrl + Shift + 1/2). Comments Ctrl + Shift + C Colored Comments You probably know that adding a pound sign at the beginning of a line of code will comment it out. It can be a pain to manually add the sign to several lines that we want to comment out. Instead, we can select the lines of code that we want to comment out and press Ctrl + Shift + C. Sometimes it can be helpful to have different colored comments in your code (for example, having a particular color for notes, alternate code, etc…). While RStudio does not directly support this capability, we can hack it by using the following additions to the pound sign: #'[comment_here_in_color_1] #'*comment_here_in_color_2* #'@comment_here_in_color_3 The colors will differ based off of your selected theme Theme The default RStudio theme is very light. Users can select a different color scheme by going to Tools &amp;gt; Global Options &amp;gt; and appearance. If your aren’t satisfied with any of them, you can create your own custom theme, and load it into RStudio (see this webpage for more details). Setting Working Directory Sometimes it can be a pain to set the working directory, especially if you have to type out the entire file path. There is a nice function as part of the rstudioapi package that will set the working directory to the current file location: setwd(dirname(rstudioapi::getActiveWorkingContext()$path)) I have created my own snippet that will generate this line with a couple keystrokes. It saves a lot of time. It is important to note that this code only works in RStudio, and for an RScript. If you are working within an R Markdown document, it is a little harder to set the working directory, but the following code will work: ```{r} knitr::opts_knit$set(root.dir = 'your/file/path') ``` Again, snippets work great here in allowing you to type the code quickly and effectively. R Markdown message warning cache Many who read this article will undoubtedly be familiar with R Markdown files, which provides a nice way to format code and text for reports or presentations. I have been using R Markdowns for a few years now, and I keep discovering new features that I wish I had known from the beginning. Here are a few pointers that will make your experience more enjoyable. (As a quick comment, the knitr package must be installed in order to knit an R Markdown file) To quickly insert a new code chunk, press Ctrl + Alt + i. At the beginning of each code chunk there is a heading contained in curly braces: ```{r chunk_name, additional_options...} ``` Text immediately following the “r” is the chunk’s name, which, beyond idenitfying the portion of code, can be used to access the chunk quickly in the source pane in RStudio. Additional options that control specific display features of the chunk can be set following the name. If you want to have all the same options specified for all chunks in the document, include the following line of code in the document: knitr::opts_chunk$set(options_for_all_chunks) The space within the parantheses is where the user can specify the options that apply to every chunk in the document. I often have been frustrated by the appearance of unwanted messages or warnings that were generated by the code in the R Markdown. Specifying the options message=FALSE and warning=FALSE in the heading will remove this output from the knitted document. Another frustration was that knitting required all the code in the document to compile before generating a report. This was especially frustrating as I neared the end of projects and needed to see how the document looked as I was making final adjustment changes. Adding the option cache=TRUE makes it so that any chunk that has already been compiled and has no adjustments does not have to be recompiled in order to generate a report. This option has saved me a lot of time and frustration. To see more available options for R Markdown code chunks, along with other useful features, check out this pdf. Conclusion This is by no means a comprehensive list of all the helpful features in RStudio, but these are several that I have found useful in my educational and career experience. I hope that they can be helpful to you as well. If you have any tips or tricks that you find useful, please comment them below! Happy coding!</summary></entry><entry><title type="html">The heart of Deep Learning</title><link href="/blog/neural-networks" rel="alternate" type="text/html" title="The heart of Deep Learning" /><published>2021-11-09T00:00:00-07:00</published><updated>2021-11-09T00:00:00-07:00</updated><id>/blog/neural-networks</id><content type="html" xml:base="/blog/neural-networks">&lt;h3 id=&quot;introduction---what-is-a-neural-network&quot;&gt;Introduction - What is a neural network?&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-09/neural%20network.PNG&quot; alt=&quot;nn&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Neural networks are a form of machine learning composed of layers of nodes whose role is to learn patterns in the training data fed to it and match those patterns 
+to the label set for each item. The example we will run through is a data set which contains images of numbers 0 through 9 with their respective labels. Our goal
+is to effectively determine which number corresponds to each image.&lt;/p&gt;
+
+&lt;p&gt;In simple words, a neural network has an input layer (we input each image), an output layer (the layer that outputs which number the image represents), and several
+hidden layers in between through which each image runs. Weights are assigned to each node that represent the importance of that particular characteristic in the data
+in order to eventually determine the final prediction. The following is an example of how we might think of this process.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-09/example%20nodes.PNG&quot; alt=&quot;example&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;When we determine whether the image above is a six, we might perhaps look for certain characteristics. For example, we might be looking for a circle or an oval connected to
+a diagonal or curved line above it. A neural network works similarly in the sense that it looks for patterns that will help it determine whether it is looking at a six or
+another number. Each layer and node will look at a different piece and, in the end, it will put all those pieces together. Now, let’s dive a little deeper.&lt;/p&gt;
+
+&lt;h3 id=&quot;install-keras&quot;&gt;Install Keras&lt;/h3&gt;
+
+&lt;p&gt;On your terminal window, run the following command:
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pip install keras&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;dependencies-for-this-example&quot;&gt;Dependencies for this example&lt;/h3&gt;
+
+&lt;p&gt;For our example, you will need to install the following libraries&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import numpy as np
+from random import randint
+import matplotlib.pyplot as plt
+from sklearn.metrics import confusion_matrix
+import itertools
+import os.path as path
+
+import keras
+from keras.datasets import mnist
+from keras.models import Sequential
+from keras.layers import Dense
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;We will not go through the cleanup and prepping of the data in this article but you can find the complete jupyter notebook with more detail &lt;a href=&quot;https://github.com/jpablohigueros/KerasIntro&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;creating-a-neural-network&quot;&gt;Creating a neural network&lt;/h3&gt;
+
+&lt;p&gt;Keras is equipped with different ways to build your model. However, the Sequential model is the simplest and for our basic example, it will suffice. We instantiate our
+model object with the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;model = Sequential()&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Next, we have to create layers. Some of the most common types of layers are:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Dense (Fully interconnected)&lt;/li&gt;
+  &lt;li&gt;Convolucionary (Image data)&lt;/li&gt;
+  &lt;li&gt;Recurrent (For time series)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In our prep work of the data, we have vectorized and normalized each image into an array of values between 0 and 1. Therefore, we will use Dense layers to analyze the data.
+We add a layer to our model like so:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# Define input layer
+layer_input = Dense(units=512, activation='sigmoid', input_shape=(image_size,))
+# Add layer to model
+model.add(layer_input)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;The units are the number of neurons within the layer and choosing the number is outside the scope of this article. The activation function determines the output from the node
+based on the input. In this case we use the Sigmoid function because it takes in input between 0 and 1. The correct activation function depends much on the type of input of output in your data.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-09/activation%20functions.png&quot; alt=&quot;activation&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Identity (linear)&lt;/li&gt;
+  &lt;li&gt;Binary (Non-negative input outputs 1 and negative input outputs 0)&lt;/li&gt;
+  &lt;li&gt;Sigmoid (Logistic; contains input from 0 to 1)&lt;/li&gt;
+  &lt;li&gt;TanH (Similar to sigmoid but from -1 to 1)&lt;/li&gt;
+  &lt;li&gt;ArcTan (Contains from -pi/2 to pi/2)&lt;/li&gt;
+  &lt;li&gt;ReLu (Negative input returns 0 and positive input is linear)&lt;/li&gt;
+  &lt;li&gt;Leaky ReLu (Negative input’s magnitude is reduced, positive input is linear)&lt;/li&gt;
+  &lt;li&gt;Softmax (To impart probabilities, returns probability distribution)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We now add an additional layer and finally our output layer.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# Define another layer
+new_layer = Dense(units=512, activation='sigmoid')
+model.add(new_layer)
+
+layer_output = Dense(units=10, activation='softmax', input_shape=(image_size,))
+model.add(layer_output)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;For the output layer, we choose 10 units because we are trying to determine which number (from 0 to 9) corresponds to each image. We can see a summary of what our model looks
+like before we compile it by running &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;model.summary()&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-09/modelsummary.PNG&quot; alt=&quot;summary&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Before we compile it is important to understand two concepts that come into play in the compilation process: Loss functions and Optimizers.&lt;/p&gt;
+
+&lt;h4 id=&quot;loss-functions&quot;&gt;Loss functions&lt;/h4&gt;
+
+&lt;p&gt;Loss functions are functions that predict error in the within the neural network. The output of this function is called gradient and it is use to adjust the weights of each node.
+The following are different loss functions available within Keras but we will not go into the specifics of each function:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;mean_squared_error&lt;/li&gt;
+  &lt;li&gt;mean_absolute_error&lt;/li&gt;
+  &lt;li&gt;mean_absolute_percentage_error&lt;/li&gt;
+  &lt;li&gt;mean_squared_logarithmic_error&lt;/li&gt;
+  &lt;li&gt;squared_hinge&lt;/li&gt;
+  &lt;li&gt;hinge&lt;/li&gt;
+  &lt;li&gt;categorical_hinge&lt;/li&gt;
+  &lt;li&gt;logcosh&lt;/li&gt;
+  &lt;li&gt;categorical_crossentropy&lt;/li&gt;
+  &lt;li&gt;sparse_categorical_crossentropy&lt;/li&gt;
+  &lt;li&gt;binary_crossentropy&lt;/li&gt;
+  &lt;li&gt;kullback_leibler_divergence&lt;/li&gt;
+  &lt;li&gt;poisson&lt;/li&gt;
+  &lt;li&gt;cosine_proximity&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;optimizers&quot;&gt;Optimizers&lt;/h4&gt;
+
+&lt;p&gt;Simply put, optimizers adjust features of the neural network to minimize losses. They use the gradients outputted by our loss functions. Some optimizers are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Gradient Descent&lt;/li&gt;
+  &lt;li&gt;Stochastic Gradient Descent&lt;/li&gt;
+  &lt;li&gt;Mini-Batch Gradient Descent&lt;/li&gt;
+  &lt;li&gt;Adam&lt;/li&gt;
+  &lt;li&gt;Momentum&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Now that we understand these concepts, we can go ahead and compile the model with:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;model.compile(loss='sparse_categorical_crossentropy',
+             optimizer='sgd',
+             metrics=['accuracy'])
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;The metrics argument lets us chose what we will see in the output as we fit our model. In this case, we want to know how accurate our model is. We fit our model by running:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# Fit the model to data and labels - also validate
+model.fit(x_train, 
+          y_train, 
+          batch_size=10, 
+          epochs=20, 
+          shuffle=True, 
+          verbose=True, 
+          validation_split=.01)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-09/metrics.png&quot; alt=&quot;metrics&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can learn more about what each argument means &lt;a href=&quot;https://keras.io/api/models/model_training_apis/&quot;&gt;here&lt;/a&gt;. However, an important argument to understand is the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;validation_split&lt;/code&gt;. This argument is the portion of your training data that will be used to validate your model (not the same as testing) at the end of each time the data
+goes through the model.&lt;/p&gt;
+
+&lt;h3 id=&quot;testing-our-model&quot;&gt;Testing our model&lt;/h3&gt;
+
+&lt;p&gt;We can make predictions with:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# Make prediction on test data
+predictions = model.predict(x=x_test, batch_size=10, verbose=0)
+
+# round to nearest int to get the most likely prediction
+rounded_preds = np.argmax(predictions, axis=-1)
+y_true = np.argmax(y_test, axis=-1)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;We can create a confusion matrix to visualize the accuracy of our model’s predictions. This matrix contains the predicted value on the x axis and the true value on the y axis.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-09/confusion.png&quot; alt=&quot;matrix&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Finally, Keras gives us the option to reuse an already trained model by saving it with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;model.save('/model.ext')&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
+
+&lt;p&gt;This is a very simple and basic example of how a neural network works. However, can you see some of the potential uses of neural netwokrs? Neural networks are the basis of
+facial recognition, hand-writting recognition among many others. It is the most basic way of deep learning and artificial intelligence. Because of this, it is important to
+learn and understand how they work.&lt;/p&gt;</content><author><name>Pablo Higueros</name><email>nan</email></author><category term="Keras" /><category term="Neural Network" /><category term="Deep Learning" /><category term="Layers" /><category term="Sequential" /><summary type="html">Introduction - What is a neural network?</summary></entry><entry><title type="html">Quick Machine Learning with PyCaret</title><link href="/blog/quick-ml-pycaret" rel="alternate" type="text/html" title="Quick Machine Learning with PyCaret" /><published>2021-11-08T00:00:00-07:00</published><updated>2021-11-08T00:00:00-07:00</updated><id>/blog/quick-ml-pycaret</id><content type="html" xml:base="/blog/quick-ml-pycaret">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;When fitting a model for data, it can be a tedious process to fit many different models as you try to figure out which model is best for the data that you have. It is time consuming to code up multiple models and as a result only a few number of models are compared when trying to fit the best model. &lt;a href=&quot;https://pycaret.org/&quot;&gt;PyCaret&lt;/a&gt; is an open source low-code machine learning library in Python, which can be used to quickly fit many models and reduce the time spent coding and comparing models.&lt;/p&gt;
+
+&lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
+
+&lt;p&gt;The first thing to do is to install PyCaret. It is highly recommended to use a virtual environment when installing PyCaret to avoid conflicts with other packages. A virtual environment can be created and activated with the following commands:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;conda create --name yourenvname python=3.8
+conda activate yourenvname
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Once you have created your virtual environment, PyCaret can be install by running the line below:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pip install pycaret
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;PyCaret should then be installed as part of your virtual environment. It is recommended to be used in a notebook environment, such as Jupyter Notebook, Google Colab, or Azure Notebooks for example, because of html and interactive widgets that it uses. If you have issues installing PyCaret, you can refer to installation instructions found &lt;a href=&quot;https://pycaret.readthedocs.io/en/latest/installation.html&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;load-data&quot;&gt;Load Data&lt;/h2&gt;
+&lt;p&gt;There are a number of built in datasets that can be used to show the abilities of PyCaret. The Boston housing dataset is available and it provides information about housing in the Boston MA area. The response variable for this dataset is the median value of owner occupied homes. There is a get_data function in PyCaret. The function takes the name of the dataset.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;from pycaret.datasets import get_data
+boston_full = get_data('boston')
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;A test set is created from the data to be tried on the model for prediction. PyCaret will automatically take the data given and split it into a training set and a validation set.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;boston = boston_full.sample(frac=0.9, random_state=786)
+boston_unseen = boston_full.drop(boston.index)
+boston.reset_index(drop=True, inplace=True)
+boston_unseen.reset_index(drop=True, inplace=True)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;set-up-model&quot;&gt;Set up model&lt;/h2&gt;
+
+&lt;p&gt;PyCaret can deal with regression or classification problems, as well as clustering, anomaly detection, and natural language processing. The Boston data set is a regression problem, so we import everything from pycaret.regression. It is easy to set up a model with PyCaret. The setup function is used to specify the model for your data, where you specify the dataset you are using and the target variable. There are other options available, but this is the minimum needed to set up the model. When setting up the model, a box will appear and show what variable type PyCaret is assuming from the dataset.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;from pycaret.regression import *
+reg1 = setup(data = boston, target = 'medv')
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-08/input.png&quot; alt=&quot;Model Input&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Once finished, there will be a printout that specifies information about the data, such as the response variable, whether there is missing values, what preprocessing steps should be taken and so forth. Any information about the model to be fit can be found in this table.&lt;/p&gt;
+
+&lt;h2 id=&quot;compare-baseline-models&quot;&gt;Compare baseline models&lt;/h2&gt;
+
+&lt;p&gt;One of the best features of PyCaret in my opinion is the ability to fit a bunch of baseline models initially to get an idea of which model is best. A number of models are fit and multiple metrics are fit to determine which baseline model is the best. These baseline models use the default values for tuning parameters. The folds argument specifies the number of folds for cross validation when comparing models.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;compare_modes(folds = 5)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-08/modelcomp.png&quot; alt=&quot;Model Comparison&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;create-a-model&quot;&gt;Create a model&lt;/h2&gt;
+&lt;p&gt;After comparing the baseline models, you can choose a model that fits the best so you can tune it. The gradient boosting regressor was the best for the Boston data for five of the six metrics, so I’ll create that one and work to tune the model. Printing out the model will provide the model that is originally created with the hyper parameters values.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gb = create_model('gbr')
+print(gb)
+
+GradientBoostingRegressor(alpha=0.9, ccp_alpha=0.0, criterion='friedman_mse', init=None, learning_rate=0.1, loss='ls', max_depth=3,max_features=None, max_leaf_nodes=None, min_impurity_decrease=0.0, min_impurity_split=None, min_samples_leaf=1, min_samples_split=2, min_weight_fraction_leaf=0.0, n_estimators=100, n_iter_no_change=None, presort='deprecated', random_state=2183, subsample=1.0, tol=0.0001, validation_fraction=0.1, verbose=0, warm_start=False)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;tune-a-model&quot;&gt;Tune a model&lt;/h2&gt;
+&lt;p&gt;The hyperparameters of a model can easily be tuned with the tune_model function, which only requires the model previously created. It then outputs the calculated metrics for 10 folds.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;tuned_gb = tune_model(gb)
+print(tuned_gb)
+
+GradientBoostingRegressor(alpha=0.9, ccp_alpha=0.0, criterion='friedman_mse', init=None, learning_rate=0.1, loss='ls', max_depth=4, max_features='log2', max_leaf_nodes=None, min_impurity_decrease=0.0005, min_impurity_split=None, min_samples_leaf=3, min_samples_split=5, min_weight_fraction_leaf=0.0, n_estimators=190, n_iter_no_change=None, presort='deprecated', random_state=2183, subsample=0.45, tol=0.0001, validation_fraction=0.1, verbose=0, warm_start=False)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-08/tuned.png&quot; alt=&quot;Tuned Model&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;model-plots&quot;&gt;Model Plots&lt;/h2&gt;
+&lt;p&gt;After the model has been tuned for best performance, you can create some plots to easily visualize results. Some examples of plots are a residuals plot, a prediction error plot, and a feature importance plot. Examples of these plots for the Boston dataset and the gradient boosting regressor are shown below&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;plot_model(tuned_gb)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-08/Residuals.png&quot; alt=&quot;Residuals&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;plot_model(tuned_gb, plot = 'error')
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-08/error.png&quot; alt=&quot;Error&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;plot_model(tuned_gb, plot = 'feature')
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-08/feature_import.png&quot; alt=&quot;Feature Importance&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;predictions&quot;&gt;Predictions&lt;/h2&gt;
+
+&lt;p&gt;Once you are satisfied with your tuned model and are ready to fit it and make predictions, you can use the predict_model function to make predictions for your validation set. This will use the validation set that was automatically created when setting up the model. In addition to giving the predictions for each observation, it calculates the six metrics for the validation set and returns those values as well.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;validation_preds = predict_model(tuned_gb)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-08/validation.png&quot; alt=&quot;Validation Performance&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;After testing the model on the validation set, it is helpful to then fit the model using the training and validation sets since it will likely help the performance of the model improve on unseen data. Once again, there is a single function in PyCaret that will do all of this. The finalize_model function will refit the model using the training and validation sets and then it can be applied to additional unseen data.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;final_gb = finalize_model(tuned_gb)
+print(final_gb)
+
+GradientBoostingRegressor(alpha=0.9, ccp_alpha=0.0, criterion='friedman_mse', init=None, learning_rate=0.1, loss='ls', max_depth=4, max_features='log2', max_leaf_nodes=None, min_impurity_decrease=0.0005, min_impurity_split=None min_samples_leaf=3, min_samples_split=5, min_weight_fraction_leaf=0.0, n_estimators=190, n_iter_no_change=None, presort='deprecated', random_state=2183, subsample=0.45, tol=0.0001, validation_fraction=0.1, verbose=0, warm_start=False)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Predictions are made using the same function as before, but you supply the predict_model function with the unseen data. The predict_model function returns a data frame of the unseen data with an extra column named Label, which includes the predicted value. The performance of these predictions can be checked with the check_metric function.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;from pycaret.utils import check_metric
+print(check_metric(unseen_predictions.medv, unseen_predictions.Label, 'RMSE'))
+print(check_metric(unseen_predictions.medv, unseen_predictions.Label, ‘R2’))
+
+2.9136
+0.8253
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;In just a few lines of code, we were able to compare a number of baseline models, tune a model, check the performance of the model on a validation set, refit the model with the training and validation set, and make predictions on the test set and produce good predictions. Although it is important to understand how these models work, it can be tedious to code out multiple models when comparing which model might be best for a certain dataset. PyCaret automates a lot of that process and provides additional flexibility as well. There are options to implement preprocessing, such as dealing with missing values, normalization, categorical variable encoding and so forth. There are options for ensemble methods in PyCaret as well.&lt;/p&gt;
+
+&lt;p&gt;With such flexibility, PyCaret seems to be an option that can save a lot of time when fitting a model to data. I will likely look for opportunities to use this to simplify projects that I am working on personally. If you have ever used PyCaret before, feel free to comment about how you used it in your work.&lt;/p&gt;
+
+&lt;p&gt;PyCaret has extensive &lt;a href=&quot;https://pycaret.org/guide/&quot;&gt;documentation&lt;/a&gt; and &lt;a href=&quot;https://pycaret.readthedocs.io/en/latest/tutorials.html&quot;&gt;tutorials&lt;/a&gt; for various levels, so feel free to dive into their tutorials to get yourself started or to explore additional capabilities of PyCaret that weren’t discussed in this post.&lt;/p&gt;</content><author><name>David Teuscher</name><email>dteuscher.37.12@gmail.com</email></author><category term="PyCaret" /><category term="Machine Learning" /><category term="Model Comparison" /><category term="Model Fitting" /><summary type="html">Introduction</summary></entry><entry><title type="html">Cancelling Noise in Data: Image Compression Tutorial</title><link href="/blog/svd-img-compression" rel="alternate" type="text/html" title="Cancelling Noise in Data: Image Compression Tutorial" /><published>2021-11-06T00:00:00-06:00</published><updated>2021-11-06T00:00:00-06:00</updated><id>/blog/svd-img-compression</id><content type="html" xml:base="/blog/svd-img-compression">&lt;p&gt;One common problem  in data science is that our data is noisy. A good data scientist
+is able to distinguish between that noise and signal in the data. One great way
+to “cancel noise” in data represented in matrix form is to use singular value decomposition
+from linear algebra.&lt;/p&gt;
+
+&lt;h1 id=&quot;linear-algebra&quot;&gt;Linear Algebra&lt;/h1&gt;
+&lt;p&gt;Let me explain some key concepts first.&lt;/p&gt;
+&lt;div class=&quot;tenor-gif-embed&quot; data-postid=&quot;8939664&quot; data-share-method=&quot;host&quot; data-aspect-ratio=&quot;1.86047&quot; data-width=&quot;100%&quot;&gt;&lt;a href=&quot;https://tenor.com/view/let-me-explain-sum-up-too-much-i-just-cant-princess-bride-gif-8939664&quot;&gt;Let Me Explain Sum Up GIF&lt;/a&gt;from &lt;a href=&quot;https://tenor.com/search/let+me+explain-gifs&quot;&gt;Let Me Explain GIFs&lt;/a&gt;&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot; async=&quot;&quot; src=&quot;https://tenor.com/embed.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;Singular value decomposition (SVD) is a method that breaks a matrix into three less-complicated
+matrices. One convenient feature of these three matrices is that the values inside them are
+sorted such that the most important attributes come at the beginning– that makes it easy to
+extract the features that hold the most predictive power. If you want to take a deeper dive into
+linear algebra and how it will help you be a better data scientist, check out this excellent blog post from
+&lt;a href=&quot;https://towardsdatascience.com/understanding-singular-value-decomposition-and-its-application-in-data-science-388a54be95d&quot;&gt;Toward Data Science&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;With that in mind, it’s no wonder that Benjamin Obi Tayo, Ph.D. wrote on &lt;a href=&quot;https://www.kdnuggets.com/2021/05/essential-linear-algebra-data-science-machine-learning.html&quot;&gt;KDnuggets&lt;/a&gt;:
+“Linear algebra is the most important math skill in machine learning.” Let’s take a look at an example of how to use SVD to reduce image sizes!&lt;/p&gt;
+
+&lt;h1 id=&quot;tutorial&quot;&gt;Tutorial&lt;/h1&gt;
 &lt;ol&gt;
-  &lt;li&gt;Item 1&lt;/li&gt;
-  &lt;li&gt;Item 2&lt;/li&gt;
-  &lt;li&gt;Item 3&lt;/li&gt;
-  &lt;li&gt;Item 4&lt;/li&gt;
-  &lt;li&gt;Item 5&lt;/li&gt;
+  &lt;li&gt;Open up a new notebook your favorite python editor. I like to use Jupyter notebooks, but Google Colab is also a great option if you
+don’t have python downloaded on your computer.&lt;/li&gt;
+  &lt;li&gt;Download a PNG image to play with. I’ll use this one:
+&lt;img src=&quot;/assets/images/blogimages/figs-11-06/oscar-sutton-yihlaRCCvd4-unsplash.png&quot; alt=&quot;dog&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;If you’re using Jupyter, add the photo to the same directory as your notebook. If you’re 
+using Colab, go to the left sidebar, and click the “Upload to session storage” button. You’ll have to do this each time you
+close the notebook and come back to it later. This is where to go to add the image in Colab:
+&lt;img src=&quot;/assets/images/blogimages/figs-11-06/colab_upload_img.PNG&quot; alt=&quot;upload-to_colab&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;In the first cell, add these imports:
+    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;numpy&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;skimage&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;skimage&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;io&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;matplotlib.pyplot&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Now we need to read in our image file as a python array. You can choose whether to keep it as a color (RGB) image
+or convert it to grayscale.
+    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;color_array&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;io&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;imread&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'dog.png'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;            
+&lt;span class=&quot;n&quot;&gt;gray_array&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;skimage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rgb2gray&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;color_array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Now that we have our images, let’s define some functions that will plot an array as an image to help us see what we have.
+    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;show_color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+ &lt;span class=&quot;c1&quot;&gt;# set up the matplotlib figure
+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;figure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;figsize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+ &lt;span class=&quot;c1&quot;&gt;# optional-add grid lines to figure
+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;grid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+ &lt;span class=&quot;c1&quot;&gt;# show the array as an image within the figure
+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;imshow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+ &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;show_gray&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+ &lt;span class=&quot;c1&quot;&gt;# set up the matplotlib figure
+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;figure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;figsize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+ &lt;span class=&quot;c1&quot;&gt;# optional-add grid lines to figure
+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;grid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+ &lt;span class=&quot;c1&quot;&gt;# show the array, but specify that the color map is gray with a min val of 0 (white) and max of 1 (black)
+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;imshow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cmap&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'gray'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vmin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vmax&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+ &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Test your functions by printing out either or both the color and grayscale images. For the rest of the tutorial,
+I will use the grayscale image.
+    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;show_color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;color_array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;show_gray&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gray_array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Now let’s calculate the number of values in this matrix by multiplying the number of rows by the number of columns.
+    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gray_array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;original_size&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;original_size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Now we can call the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;svd&lt;/code&gt; function to decompose &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gray_array&lt;/code&gt; into three matrices. Typically, these three matrices are
+called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;U&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Sigma&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;V^t&lt;/code&gt; so we will name them accordingly. If we wanted to, we could use these to reconstruct an
+approximation of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gray_array&lt;/code&gt;.
+    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;u_orig&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s_orig&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v_t_orig&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;linalg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;svd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gray_array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;In reality, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s_orig&lt;/code&gt; is actually a 1-dimensional array instead of a matrix (2-dimensional array). This is because
+the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Sigma&lt;/code&gt; matrix has 0’s everywhere except the diagonal from the top left corner, so we only need one dimension to
+contain all the nonzero values, which are called “singular values.” These are arranged from largest to smallest.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Graph the singular values in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s_orig&lt;/code&gt; (y-axis) against their index in the array (x-axis). This will let us get a good idea how many
+singular values we will need to make a good approximation of our image without losing too much quality.
+    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s_orig&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-06/plot.PNG&quot; alt=&quot;plot&quot; /&gt;
+Since the line drops to nearly 0 when x (index) is still very small, this means that we will be able to make a good
+approximation using just a few of the singular values.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;In order to reconstruct our reduced-size image matrix, we’re going to need to define a few functions.
+The first is a function that takes in two ints that represent the number of rows and columns as well as an array of
+singular values, and returns a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Sigma&lt;/code&gt; matrix.
+    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;sigma&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;E&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;zeros&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;E&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;E&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;That creates a matrix of the correct size filled with 0’s, and then goes along the diagonal and changes the 0 to the
+corresponding singular value from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s&lt;/code&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The second function takes in a 2D array &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;u&lt;/code&gt;, a 1D array &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s&lt;/code&gt;, and a 2D array &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v_t&lt;/code&gt;, which correspond to the 3 outputs 
+from calling &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;svd&lt;/code&gt;. It multiplies them together using matrix multiplication to reconstruct a single matrix.
+    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;reconstructed_array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;u&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v_t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;sgm&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sigma&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;u&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]),&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v_t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;usgm&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;matmul&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;u&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sgm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;usgmvt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;matmul&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;usgm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v_t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;usgmvt&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The third function brings everything together to produce a rank &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;k&lt;/code&gt; approximation of a matrix &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;A&lt;/code&gt;. That essentially
+translates to keeping a matrix with only the top &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;k&lt;/code&gt; singular values.
+    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;lower_rank&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;u&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v_t&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;linalg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;svd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;u_k&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;u&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[:,:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;v_t_k&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v_t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,:]&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;s_k&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reconstructed_array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;u_k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s_k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v_t_k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Now you can plug in different values of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;k&lt;/code&gt; into your function along with our original &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gray_array&lt;/code&gt; and you can
+decide what value of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;k&lt;/code&gt; you think is best. The smaller the value of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;k&lt;/code&gt;, the more compressed our final image will be,
+but be careful to not make it too fuzzy. The best value will vary for different pictures.
+    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;choose&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;gray_reduced&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lower_rank&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gray_array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;show_gray&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gray_reduced&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;As it is right now, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gray_reduced&lt;/code&gt; has the exact same dimensions as the original &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gray_array&lt;/code&gt; matrix. However, now
+we can call &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;svd&lt;/code&gt; on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gray_reduced&lt;/code&gt; and we can get rid of anything we don’t need. In reality, we only need the first &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;k&lt;/code&gt;
+only need the first &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;k&lt;/code&gt; columns of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;u&lt;/code&gt;, the first &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;k&lt;/code&gt; rows of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v_t&lt;/code&gt;, and the first &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;k&lt;/code&gt; values of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sigma&lt;/code&gt;. That will tell
+us how many values we really need to represent the image. We can use that to find the number of values we need.
+```python
+u_reduced,s_reduced,v_t_reduced = np.linalg.svd(gray_reduced)
+reduced_size = ((len(u_reduced[0]) * k) + (len(v_t_reduced) * k) + k)
+print(“Reduced size: “, reduced_size)&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;strong&gt;Images in the post will look like:&lt;/strong&gt;&lt;br /&gt;
-&lt;img src=&quot;/assets/images/canada.jpg&quot; alt=&quot;Test Image&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;relative_size= reduced_size/original_size
+print(“Original size: “, original_size)
+print(“Reduced size is what percent of original size: “, relative_size)
+```&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Normal text in the post will look like&lt;/strong&gt;&lt;br /&gt;
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id finibus nisl. Etiam in hendrerit est. Nulla non erat ac lectus interdum lobortis. Vestibulum at mi ex. Mauris nisl mi, venenatis et feugiat nec, finibus porttitor velit. Suspendisse tincidunt lobortis leo, quis tristique tellus iaculis quis. Donec eleifend pulvinar gravida. Proin non lorem eros. Donec sit amet finibus ex, eget vestibulum nunc. Ut ut enim id purus porttitor tristique. Vivamus tincidunt eleifend hendrerit. Proin metus felis, ultrices vel dui in, porta dapibus dui. Sed sagittis ex vitae dui tristique dignissim. Cras vel leo ipsum.&lt;/p&gt;
+&lt;p&gt;Congratulations! You have now compressed an image using singular value decomposition!&lt;/p&gt;
 
-&lt;p&gt;Aenean ac neque et risus mattis accumsan. Sed ac tellus molestie, lacinia ante sit amet, convallis felis. Maecenas aliquet lectus nec euismod auctor. Donec finibus pellentesque tortor, ac efficitur metus suscipit non. Proin diam orci, blandit quis malesuada ac, efficitur a nisl. Mauris eleifend consequat blandit. Sed egestas quam et orci gravida, non euismod metus scelerisque. Curabitur venenatis pellentesque erat commodo pharetra. Fusce id ante nec ipsum fringilla auctor. In justo quam, feugiat placerat eleifend dapibus, luctus et quam. Fusce facilisis erat ut odio convallis viverra et id mauris. Sed vehicula tempus consectetur. Aliquam pharetra, purus non egestas tristique, tellus massa fringilla est, id sagittis tellus urna non mauris. Suspendisse fringilla, velit nec blandit facilisis, ligula ante imperdiet est, et placerat magna sem quis tortor.&lt;/p&gt;
+&lt;h2 id=&quot;attributions&quot;&gt;Attributions&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Cover photo by &lt;a href=&quot;https://unsplash.com/@millarjb?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;Jack Millard&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com/s/photos/magnifying-glass?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;Unsplash&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Dog on the beach photo by &lt;a href=&quot;https://unsplash.com/@o5ky?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;Oscar Sutton&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com/?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;Unsplash&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;This post is adapted from a lab from the Computational Linear Algebra class at Brigham Young University.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Jessica Hamblin</name><email>hamblinjm@hotmail.com</email></author><category term="image compression" /><category term="reduction" /><category term="linear algebra" /><category term="svd" /><category term="noise" /><summary type="html">One common problem in data science is that our data is noisy. A good data scientist is able to distinguish between that noise and signal in the data. One great way to “cancel noise” in data represented in matrix form is to use singular value decomposition from linear algebra.</summary></entry><entry><title type="html">What are Cookies?</title><link href="/blog/Web-Cookies" rel="alternate" type="text/html" title="What are Cookies?" /><published>2021-11-05T00:00:00-06:00</published><updated>2021-11-05T00:00:00-06:00</updated><id>/blog/Web-Cookies</id><content type="html" xml:base="/blog/Web-Cookies">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 
-&lt;p&gt;Vestibulum vitae fermentum velit, rhoncus egestas orci. Nulla at purus ut orci posuere vulputate. In eget leo diam. In congue in diam nec elementum. Suspendisse fringilla ante nulla, eu tristique orci ultrices eget. Aenean non lorem tellus. Vestibulum tempor metus sit amet tellus feugiat, sit amet consequat lacus ultricies.&lt;/p&gt;
+&lt;p&gt;Web cookies have become an interesting phenomenon that has caused a variety of responses to the use of data used by everyday people.  Most don’t understand what they are or what they do but fear them because of the potential of privacy invasion.  Others say they are necessary for any user to have the optimal experience on any legitimate website that they may choose to visit.  And some few have decided to try and exploit them for their own benefit at the expense of others.  But what are cookies, and how can they be useful if used the right way in the hands of a data scientist?&lt;/p&gt;
 
-&lt;p&gt;Donec imperdiet, lectus eget congue cursus, dolor enim finibus risus, ut molestie lorem tellus non tortor. Donec quam nibh, molestie in dapibus et, efficitur non tortor. Morbi orci tellus, mollis vel mi vitae, auctor lobortis erat. Ut gravida velit eget ligula lacinia, id rhoncus tellus gravida. Maecenas laoreet rutrum consequat. Suspendisse sed nibh dui. Curabitur dictum euismod mollis. Sed egestas libero libero, eu accumsan augue placerat non. Nunc id condimentum orci. Mauris vitae sollicitudin quam.&lt;/p&gt;
+&lt;h2 id=&quot;what-are-cookies&quot;&gt;What are cookies?&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;Giphy Gifs will look like:&lt;/strong&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;iframe src=&quot;https://giphy.com/embed/ZqlvCTNHpqrio&quot; width=&quot;480&quot; height=&quot;259&quot; frameborder=&quot;0&quot; class=&quot;giphy-embed&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;p&gt;&lt;a href=&quot;https://giphy.com/gifs/laughing-despicable-me-minions-ZqlvCTNHpqrio&quot;&gt;via GIPHY&lt;/a&gt;&lt;/p&gt;</content><author><name>The DevsLot</name><email>thedevslot@gmail.com</email></author><category term="sample" /><category term="post" /><category term="test" /><summary type="html">This post will show you how the content will look like in the post pages and how the headlines, quotes and quotes will be represented. Jekyll is mainly used to write simple markdown and after that it renders out a static pages, so you need to know the basics of writing markdown for that. For more information about writing markdown you can checkout the following markdown cheatsheets: Mastering Markdown Markdown Guide GitHub Flavored Markdown Spec This is the h1 text This is the h2 text This is the h3 text This is the h4 text This is the h5 text This is the h6 text Bold Text in the post will look like: This text is Bold Italic Text in the post will look like: This text is Italic Quotes on your post will look like this Codes on your post will look like this Link in the post will look like: This is a link Bullet list in the post will look like: Item 1 Item 2 Item 3 Item 4 Item 5 Number list in the post will look like: Item 1 Item 2 Item 3 Item 4 Item 5 Images in the post will look like: Normal text in the post will look like Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id finibus nisl. Etiam in hendrerit est. Nulla non erat ac lectus interdum lobortis. Vestibulum at mi ex. Mauris nisl mi, venenatis et feugiat nec, finibus porttitor velit. Suspendisse tincidunt lobortis leo, quis tristique tellus iaculis quis. Donec eleifend pulvinar gravida. Proin non lorem eros. Donec sit amet finibus ex, eget vestibulum nunc. Ut ut enim id purus porttitor tristique. Vivamus tincidunt eleifend hendrerit. Proin metus felis, ultrices vel dui in, porta dapibus dui. Sed sagittis ex vitae dui tristique dignissim. Cras vel leo ipsum. Aenean ac neque et risus mattis accumsan. Sed ac tellus molestie, lacinia ante sit amet, convallis felis. Maecenas aliquet lectus nec euismod auctor. Donec finibus pellentesque tortor, ac efficitur metus suscipit non. Proin diam orci, blandit quis malesuada ac, efficitur a nisl. Mauris eleifend consequat blandit. Sed egestas quam et orci gravida, non euismod metus scelerisque. Curabitur venenatis pellentesque erat commodo pharetra. Fusce id ante nec ipsum fringilla auctor. In justo quam, feugiat placerat eleifend dapibus, luctus et quam. Fusce facilisis erat ut odio convallis viverra et id mauris. Sed vehicula tempus consectetur. Aliquam pharetra, purus non egestas tristique, tellus massa fringilla est, id sagittis tellus urna non mauris. Suspendisse fringilla, velit nec blandit facilisis, ligula ante imperdiet est, et placerat magna sem quis tortor. Vestibulum vitae fermentum velit, rhoncus egestas orci. Nulla at purus ut orci posuere vulputate. In eget leo diam. In congue in diam nec elementum. Suspendisse fringilla ante nulla, eu tristique orci ultrices eget. Aenean non lorem tellus. Vestibulum tempor metus sit amet tellus feugiat, sit amet consequat lacus ultricies. Donec imperdiet, lectus eget congue cursus, dolor enim finibus risus, ut molestie lorem tellus non tortor. Donec quam nibh, molestie in dapibus et, efficitur non tortor. Morbi orci tellus, mollis vel mi vitae, auctor lobortis erat. Ut gravida velit eget ligula lacinia, id rhoncus tellus gravida. Maecenas laoreet rutrum consequat. Suspendisse sed nibh dui. Curabitur dictum euismod mollis. Sed egestas libero libero, eu accumsan augue placerat non. Nunc id condimentum orci. Mauris vitae sollicitudin quam. Giphy Gifs will look like: via GIPHY</summary></entry></feed>
+&lt;p&gt;Put simply, web cookies are small text files created by a website server.  They are stored on a person’s computer as a history of their browsing experience on a website.  Information tracked could include a user ID created by the website for your computer, cart history, number of visits to a specific page, etc.  This data is used to enhance a user’s experience when they return next time.  Their cart will be up to date with all items and customizations still showing, and overall website experience will be enhanced since the information stored in cookies can be used to infer what the user will want to view next.
+Most of the time, these cookies are created to be anonymous.  They don’t have any other intentions besides functionality that is solely intended on helping you navigate their website.&lt;/p&gt;
+
+&lt;p&gt;While many types of cookies exist they can roughly be broken down into three categories:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;First party cookies&lt;/li&gt;
+  &lt;li&gt;Third party cookies&lt;/li&gt;
+  &lt;li&gt;Zombie cookies&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Each is collected and used in a different way.  First party cookies are created by the host website itself.  These will include website usage data and tracking, along with anything else that the site has been programmed to track.&lt;/p&gt;
+
+&lt;p&gt;Third party cookies are created from ads or other embedded content on a given website.  These cookies are created by companies trying to catch your attention and serve to track your interactions with them, along with any navigations to the host website.&lt;/p&gt;
+
+&lt;p&gt;Zombie cookies are interesting bits of data that are don’t really do anything.  They get embedded deeply into the memory of your browser on your computer and are extremely difficult to get rid of.  While this type is not common, they are mostly used to ban users from a domain. By storing this cookie, the website can see that a user does not have permission to access the website and will block their connection.&lt;/p&gt;
+
+&lt;h2 id=&quot;extreme-cookie-hype&quot;&gt;Extreme Cookie Hype&lt;/h2&gt;
+
+&lt;p&gt;Why did all the concern pop up about web cookies?  Recently every website seemingly pushes you an angry pop up demanding that you accept their cookies.  Many domains began requiring the acceptance or at least notification of these pieces of data when web laws were created around data usage in Europe.  While not required everywhere, many domains began pushing them everywhere to cover themselves legally.  As such they gained a lot of attention very quickly.  Data protection and privacy are becoming more important as data is quickly becoming a commodity from which businesses can grow and become more successful at an accelerated pace.&lt;/p&gt;
+
+&lt;p&gt;While this data is important, the concern users have that these snippets of data can be malevolent is real and limiting for businesses.  Can they be harmful?  On their own, the answer is no.  They are simple text files and contain nothing close to executable.  Nothing can be installed or changed on your personal computer through a cookie.  They truly are just data chunks to enhance your experience while surfing the web.  The danger comes from getting a virus on your computer which allows a hacker to gain control of your computer.  At this point if their goal is to get after the data stored in your cookies, they would be able to do it.  This could amount to, at worst, having your logins and passwords taken.&lt;/p&gt;
+
+&lt;p&gt;This is an uncommon occurrence, however, and the likelihood of a hacker deciding to get into your cookies and explore if any of them are storing your personal information is low.  Once someone gains that much access to your computer, the odds are that they won’t be fishing around in your amazon shopping cart to figure out what Christmas presents you’re getting for your loved ones this year.&lt;/p&gt;
+
+&lt;h2 id=&quot;cookies-in-the-hands-of-data-scientists&quot;&gt;Cookies in the Hands of Data Scientists&lt;/h2&gt;
+
+&lt;p&gt;The true and awesome use of cookies comes when someone who knows how to use it is able to run analytics and history on the data created on the server.  Data scientist are able to use the information stored in these cookies for several purposes.  Anything from cursor clicks to searches can be used to predict what appeals to a user and can be used to improve the website interface and algorithms.  Over time these small pieces of information pile into machine learning algorithms that will, in turn, directly change the future experiences of others who may visit the website.&lt;/p&gt;
+
+&lt;p&gt;Data scientists are also directly able to track and predict what products will appeal to a customer, how to market and display products on a company’s website (and in what order they should appear), and even what products to advertise when viewing a specific item in more detail.  Amazon is a great example of how these algorithms work.  Often times you will find something that truly suits your needs by viewing the suggested products on the page of something that you are already looking at.&lt;/p&gt;
+
+&lt;p&gt;Surfing the web is fun and it’s incredibly convenient for a machine to try and predict what you will want to see.  It’s very convenient for us as users that many of these algorithms cut out the work of navigating to a specific page after hours of searching and clicking.  Using data is extremely important for the overall use of a website and the invention of browser cookies is an awesome for a server to track information without having to store it all on sight.  As long as you only visit sights that are reputable, the risk that they pose to you is almost 0, and the chance that analytics will somehow enhance your experience is high.&lt;/p&gt;</content><author><name>Tyler Pettit</name><email>tyler.pettit82@gmail.com</email></author><category term="Cookies" /><category term="Safety" /><category term="Data Scientist" /><summary type="html">Introduction</summary></entry><entry><title type="html">Let’s talk JSON Basics</title><link href="/blog/json" rel="alternate" type="text/html" title="Let’s talk JSON Basics" /><published>2021-11-04T00:00:00-06:00</published><updated>2021-11-04T00:00:00-06:00</updated><id>/blog/json</id><content type="html" xml:base="/blog/json">&lt;p&gt;The first time I heard the term JSON, I thought that it was someone emphasizing a name weird. I’m probably alone in this error, but hopefully this post can help someone avoid my blunder and avoid embarrasment when asking which Jason we were talking about. &lt;em&gt;[I really wish I could claim this was hyperbole.]&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Well, you have to make mistakes to learn. I now know that JSON actually means: JavaScript Object Notation…&lt;/p&gt;
+
+&lt;p&gt;JSON is a format for storing and transporting data, created to
+be more readable for humans, as opposed to machine language or more complicated ways of data transport. Often JSON is referenced as being self-describing, and therefore easy to read. While inital experience with JSON might make you feel otherwise, experience and comparison to other methods quickly reveals JSON is quite nice. JSON itself is a more recent asset, credited to creators Douglas Crockford and Chip Morningstar in 2001. As the name denotes, JSON is derived from Javascript. However, luckily for all, JSON itself is language-independent, meaning that all programming languages can be adapted to parse JSON.&lt;/p&gt;
+
+&lt;p&gt;JSON contains data composed of attribute-value pairs and arrays,
+somewhat comparable to a Python dictionary. A key value is associated with an array of data, usually obtained by indexing.
+JSON is recognizable as each data item is contained in curly braces. Inside the curly braces, a key value is followed by a colon,
+with the values typically stored in brackets. JSON does not support comments, so any comments below exist for instruction purposes only. Also, some values have been arranged in differing ways to show how differing formats and spacing appears.
+Here is an example to show JSON in action:&lt;/p&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;first_array&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+	&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;stat 426&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+	&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;is an&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+	&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;amazing class&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;If you wanted to have more than one key based array, you would simply put a comma after the values of the previous array:&lt;/p&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;first_array&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+	&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;stat 426&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+	&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;is an&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+	&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;amazing class&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;     &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;comma&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;here&lt;/span&gt;
+ &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;second_array&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+	 &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Inside an array, you can have stand alone values or you could have nested data. Again, this is best shown in an example:&lt;/p&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;outside_array&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;inside_array&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+    &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;variable&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;hello!&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Here we have the data inside brackets. First we have the &lt;em&gt;outside_array&lt;/em&gt;, which contains the standalone &lt;em&gt;variable&lt;/em&gt; and a nested array &lt;em&gt;inside_array&lt;/em&gt;.
+Inside the &lt;em&gt;inside_array&lt;/em&gt;, we have key-value pairs.&lt;/p&gt;
+
+&lt;p&gt;Hopefully that gives a general idea behind the structure and potential that JSON holds. Let’s jump over to see how you would access the values inside. Actually obtaining the JSON is dependent on how it is stored and which language or method used to retrieve. For brevity’s sake we will focus on the general idea of obtaining values in the Javascript language. This idea translates nicely into other programming languages.&lt;/p&gt;
+
+&lt;p&gt;Looking at the last example, let’s call the whole item contained in the first pair of braces &lt;em&gt;Data&lt;/em&gt;.
+&lt;em&gt;Data&lt;/em&gt; is an object containing a singular &lt;em&gt;outside_array&lt;/em&gt;, and to get inside we would index &lt;em&gt;Data&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;To access values inside Data, we would use dot notation or bracket notation.
+Examples to access the &lt;em&gt;outside_array&lt;/em&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;Data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;outside_array&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;Data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;oustide_array&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;Data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;To access the inside_array, we will follow the same above methods:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;Data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;outside_array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;inside_array&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;Data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;outside_array&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;inside_array&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;Data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;outside_array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Again, this is the idea behind accessing data in JSON. You can get JSON from varied sources, including APIs and URLs. Accessing each is also dependent on your environment and programming language. Most however do follow this general idea of indexing to find the desired value.
+For Python help: https://docs.python.org/3/library/json.html&lt;/p&gt;
+
+&lt;p&gt;Python JSON library&lt;/p&gt;
+
+&lt;p&gt;Thanks for reading!&lt;/p&gt;</content><author><name>Cal Barker</name><email>calbarker1@gmail.com</email></author><category term="JSON" /><category term="JavaScript" /><category term="Python" /><summary type="html">The first time I heard the term JSON, I thought that it was someone emphasizing a name weird. I’m probably alone in this error, but hopefully this post can help someone avoid my blunder and avoid embarrasment when asking which Jason we were talking about. [I really wish I could claim this was hyperbole.]</summary></entry></feed>
