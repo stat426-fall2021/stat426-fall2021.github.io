@@ -1,4 +1,274 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-11-22T09:56:25-07:00</updated><id>/feed.xml</id><title type="html">Stat 426 - Fall 2021</title><subtitle>Class Blog and Projects</subtitle><entry><title type="html">Lies Damn Lies and Statistics: A Review of Darrell Huff’s Book How to Lie With Statistics</title><link href="/blog/lying-with-statistics" rel="alternate" type="text/html" title="Lies Damn Lies and Statistics: A Review of Darrell Huff’s Book How to Lie With Statistics" /><published>2021-11-16T00:00:00-07:00</published><updated>2021-11-16T00:00:00-07:00</updated><id>/blog/lying-with-statistics</id><content type="html" xml:base="/blog/lying-with-statistics">&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-16/Book-Cover-Image.jpg&quot; alt=&quot;Book-Cover&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-11-24T13:45:41-07:00</updated><id>/feed.xml</id><title type="html">Stat 426 - Fall 2021</title><subtitle>Class Blog and Projects</subtitle><entry><title type="html">Top 10 Skills a future Data Scientist should learn while their machine is also learning.</title><link href="/blog/top-10-skills" rel="alternate" type="text/html" title="Top 10 Skills a future Data Scientist should learn while their machine is also learning." /><published>2021-11-22T00:00:00-07:00</published><updated>2021-11-22T00:00:00-07:00</updated><id>/blog/top-10-skills</id><content type="html" xml:base="/blog/top-10-skills">&lt;h2 id=&quot;intro&quot;&gt;Intro:&lt;/h2&gt;
+
+&lt;p&gt;You are sitting in the chair at your desk, about to train a model so that you can use it to make predictions on your current data. However as soon as you run the code, you discover that it isn’t going to take as fast as you thought it was going to take. Instead of waiting 15 seconds, you will have to wait 5 minutes. The best thing to do to avoid this situation in the future is to upgrade your computer. However, not everyone has the time or the money to do so. Therefore the second best thing is to use this time while your machine is learning to learn how to become a better data scientist. As such, here are the Top 10 Skills a data scientist should know.&lt;/p&gt;
+
+&lt;h2 id=&quot;skill-1-being-curious&quot;&gt;Skill 1: Being Curious&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-22/skill1.jpg&quot; alt=&quot;Skill 1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The most important skill in being an effective data scientist isn’t actually about the field data science itself. It’s about the tendency to ask questions relentlessly. A successful data scientist isn’t someone who looks at data and doesn’t know what to say. Instead they are very curious to understand what the data is actually saying and also if it can answer questions that haven’t been asked in the first place. Therefore the most important skill in becoming a successful data scientist is being curious and always wondering about why it works the way that it works.&lt;/p&gt;
+
+&lt;h2 id=&quot;skill-2-understanding-statistics&quot;&gt;Skill 2: Understanding Statistics&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-22/skill2.png&quot; alt=&quot;Skill 2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;However, just being able to ask intellectual questions isn’t very helpful if you don’t understand how to find the answers. Therefore just like coding, another skill a data scientist should have is an understanding of probability and statistics and also the best way to apply what you have learned. Often times a simple understanding of statistics is not enough and effective data scientists have to have a solid understanding of statistics so that they are able to come up with a better model or algorithm that can describe the data more clearly&lt;/p&gt;
+
+&lt;h2 id=&quot;skill-3-communicating-with-your-machine&quot;&gt;Skill 3: Communicating with your machine&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-22/skill3.jpg&quot; alt=&quot;Skill 3&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can be one of the smartest mathematicians or understand the theory of probability really well, however if you don’t understand how to communicate with your machine and tell it what you want it to do, you aren’t going to get far in the data science world. This is because although you can come up with an impressive algorithm, if you aren’t able to write it in a language that a machine can understand you are then obviously unable to use thar algorithm. This is where knowledge of common data science languages such as Python, SQL or R is a necessity. Because machines aren’t able to make decisions on their own, we have to tell them what they need to do.&lt;/p&gt;
+
+&lt;h2 id=&quot;skill-4-manipulating-data&quot;&gt;Skill 4: Manipulating data.&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-22/skill4.png&quot; alt=&quot;Skill 4&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Another skill a data scientist should have is knowing how to prepare their data so that they are more easily able to draw conclusions from it. Majority of the data that data scientists receive isn’t very nice or  beautiful to look at. A lot of times the data is very unorganized and therefore in this current situation it is nearly impossible to draw conclusions and to discover and answer questions. Therefore an effective data scientist knows how to take any dataset and make it so that it is way easier to work with. Although this does not seem like that much of an important skill in data science, it is one of the most important skills because without it, the job of data scientist becomes much harder, nearly impossible.&lt;/p&gt;
+
+&lt;h2 id=&quot;skill-5-exploring-the-data&quot;&gt;Skill 5 Exploring the Data&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-22/skill5.png&quot; alt=&quot;Skill 5&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is also one of the most important skills that a data scientist should know. However it is also one of the hardest and most time consuming but also very rewarding in the end. This is because it takes a lot of patience and intelligence to draw conclusions from the data. An effective data scientist is someone who, when given tons of data, is then able to come to the company with an answer to questions that the company doesn’t even have. Therefore this skill goes hand in hand with the being curious skill because if you aren’t curious you will be unable to find concessions between the variables in the data.&lt;/p&gt;
+
+&lt;h2 id=&quot;skill-6-machine-learning&quot;&gt;Skill 6: Machine Learning&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-22/skill6.jpeg&quot; alt=&quot;Skill 6&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;For some reason there are many data scientists that don’t know much about machine learning. This is partly because it is somewhat of a new field and therefore not many people see the necessity of it. However machine learning techniques can put you ahead of the competition and make you very marketable. Therefore you should know techniques such as
+factorization machines, clustering, decision trees, deep learning, optimization, neural  networks and their frameworks such as spark and tensorflow.&lt;/p&gt;
+
+&lt;h2 id=&quot;skill-7-using-big-data&quot;&gt;Skill 7: Using big data&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-22/skill7.jpg&quot; alt=&quot;Skill 7&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Speaking of which, this leads us to another skill that data scientists should know which is the use of big data. This is because in the past decade the creation, capturing, copying, and consumption of data went up by a whopping 5000%. As such the data sets that are used today aren’t as simple as the datasets back then. Instead of a few tables with a few variables in each there are multiple tables with each table having multiple variables that somehow relate to each other. Therefore to develop insights from these types of data, data scientists should have a solid understanding of the most popular big data sets that are used.&lt;/p&gt;
+
+&lt;h2 id=&quot;skill-8-knowledge-of-business&quot;&gt;Skill 8: Knowledge of Business.&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-22/skill8.jpg&quot; alt=&quot;Skill 8&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The understanding of how business works is very essential in becoming a good data scientist. Because a data scientist who understands business then is able to understand the benefit that his/her finding has for the overall organization zigon of a whole. It is now not much about completing a task that was assigned but understanding the importance of the task and the role it has to the entire company.&lt;/p&gt;
+
+&lt;h2 id=&quot;skill-9-data-visualization&quot;&gt;Skill 9: Data Visualization&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-22/skill9.jpg&quot; alt=&quot;Skill 9&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Another important skill in becoming a data scientist is knowing how to present your data in a way that can help you describe to others your findings. This is when you have to figure out what way your data should be presented. Therefore you should have a solid understanding of different kinds of charts such as histograms, bar graphs, pie charts and also advanced charts such as waterfall charts. Also being able to plot functions on these charts is very useful. Not only does doing so make the next skill a lot easier, it also makes exploring your data easier as well.&lt;/p&gt;
+
+&lt;h2 id=&quot;skill-10-communicating-with-others&quot;&gt;Skill 10: Communicating with others&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-22/skill10.jpg&quot; alt=&quot;Skill 10&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Finally a very good skill that a data scientist should have is to be very effective in communication. Although you can find very valuable connections between variables if you aren’t able to communicate it to others in an effective way then it would be hard for others to understand your discoveries. That is why a data scientist should also work on his/her communication skills because it isn’t the machine that does the communication for them, it is them.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Now you see why the Data Science Career is a very rewarding but also very difficult career to have. This is because the best data scientists are people who are very good at math, statistics, developing models but also very good at implementing models and drawing conclusions based on what they were given. However if you are able to learn the majority of the above skills you will be way ahead of the competition. Therefore although you’re not prolly going to be paid to develop these skills they will still make you a better data scientist overall.&lt;/p&gt;
+
+&lt;h3 id=&quot;helpful-links&quot;&gt;Helpful Links&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Skill 3: &lt;a href=&quot;https://www.linkedin.com/learning/topics/python?accountId=2153100&amp;amp;u=2153100&amp;amp;success=true&amp;amp;authUUID=E%2BagPUnkQpCaU2Ws9EcJTA%3D%3D&quot;&gt;LinkedIn Python&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Skill 4: &lt;a href=&quot;https://www.datacamp.com/community/tutorials/web-scraping-using-python&quot;&gt;Web Scraping&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Skill 5: &lt;a href=&quot;https://www.listendata.com/2014/06/data-exploration-using-r.html&quot;&gt;Exploring the Data with R&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Skill 6: &lt;a href=&quot;https://www.mathworks.com/solutions/machine-learning/tutorials-examples.html?ef_id=CjwKCAiAv_KMBhAzEiwAs-rX1KcRG_OT51NYkQ0O7H4J7zE1rMJprL_OtC0pqfRPWafjpFTU2qHrMhoChsYQAvD_BwE:G:s&amp;amp;s_kwcid=AL!8664!3!521120568225!p!!g!!machine%20learning%20tutorial&amp;amp;s_eid=psn_57384016232&amp;amp;q=machine%20learning%20tutorial&amp;amp;gclid=CjwKCAiAv_KMBhAzEiwAs-rX1KcRG_OT51NYkQ0O7H4J7zE1rMJprL_OtC0pqfRPWafjpFTU2qHrMhoChsYQAvD_BwE&quot;&gt;Machine Learning with R&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Skill 7: &lt;a href=&quot;https://www.udemy.com/course/big-data-and-hadoop-essentials-free-tutorial/&quot;&gt;Hadoop Tutorial&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Skill 9: &lt;a href=&quot;https://flowingdata.com/category/tutorials/&quot;&gt;Data Visualization Tutorials&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Gavin Williams</name><email>gmw72718@gmail.com</email></author><category term="Big Data" /><category term="Data Science" /><category term="Top 10 Skills" /><category term="Machine Learning" /><summary type="html">Intro:</summary></entry><entry><title type="html">The Hidden Gems of ggplot2</title><link href="/blog/ggplot2" rel="alternate" type="text/html" title="The Hidden Gems of ggplot2" /><published>2021-11-22T00:00:00-07:00</published><updated>2021-11-22T00:00:00-07:00</updated><id>/blog/ggplot2</id><content type="html" xml:base="/blog/ggplot2">&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;Although much of the business world relies heavily on programs such as tableau to provide visualization on data analysis, there is a huge advantage to scripting languages such as R and Python to provide customizable plots and figures that clearly represent the data.This blog displays one of the cool uses for ggplot2, as well as helpful methods in bettering your visualization skills.&lt;/p&gt;
+
+&lt;p&gt;ggplot2 was created by Hadley Whickam based on the idea of the grammar of graphics. The R package utilizes a system of layering elements and plots to create a final product. There are three main components in every plot. The data, which is the data you want to run through ggplot to create some type of visualization. The aesthetics, which controls certain elements of how the plot looks. And lastly, the geometry, which determines what type of visualization you are going to create with the data.&lt;/p&gt;
+
+&lt;h2 id=&quot;mapping&quot;&gt;Mapping&lt;/h2&gt;
+
+&lt;h4 id=&quot;heat-maps&quot;&gt;Heat Maps&lt;/h4&gt;
+
+&lt;p&gt;Heat maps are useful in situations where you have data with coordinate points, and you would like to observe the spatial relationship between those points, for some other variable.
+geom_tile provides a clean and simple way to create such a heat map. note that your data must be structured in a long format before running it through the geom_tile plot. The fill argument determines which variable will be used to color the map.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ggplot(data, aes(x = longitude, y = latitude)) + geom_tile(aes(fill = variable))&lt;/code&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;geographical-maps&quot;&gt;Geographical Maps&lt;/h4&gt;
+
+&lt;p&gt;Taking a step further, you can also produce geographical maps of the observations if they are categorized by something like region, country, or state. To demonstrate this, we will be using a dataset that contains the Gross Domestic Product of each country in the year 2017.&lt;/p&gt;
+
+&lt;p&gt;The first step is to extract the coordinates of your locations using the map_data function, which is part of the maps package. To extract the coordinates of all countries, the input “world” is used. However, there are other options such as “state” which produces the coordinates for the United States. This code produces the latitude and longitude of each country, and then the code is joined to our original data. Using geom_polygon, we can then plot the map with the values filled in for each country.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;install.packages(maps)&lt;/code&gt;&lt;br /&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;library(maps)&lt;/code&gt;&lt;br /&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;map &amp;lt;- map_data(&quot;world&quot;)&lt;/code&gt;&lt;br /&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;data &amp;lt;- lef_join(map, data, by = &quot;region&quot;)&lt;/code&gt;&lt;br /&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;map_plot &amp;lt;- ggplot(map_data, aes(x = long, y = lat, group = group)) + geom_polygon(aes(fill = GDP), color = &quot;black&quot;)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-22/map.PNG&quot; alt=&quot;map&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;customization&quot;&gt;Customization&lt;/h2&gt;
+
+&lt;p&gt;Creating small changes in a plot can have a significant impact in the readability of the plot for your viewers. There are some important methods to make plots more pleasing to the eye and more concise in presenting the information. Using the above plot that we created, lets discuss some ways to customize the plot to our liking.&lt;/p&gt;
+
+&lt;h4 id=&quot;creating-subtitles&quot;&gt;creating subtitles&lt;/h4&gt;
+
+&lt;p&gt;Titles are commonly used in ggplot2, however subtitles can useful as well when more information needs to be provided. Subtitles are easy to include, and have a similar format to adding a title.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;map_plot &amp;lt;- map_plot + labs(title = &quot;World GDP&quot;, 
+        subtitle = &quot;GDP of each country in the year 2017 in billions of dollars&quot;)&lt;/code&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;changing-the-theme&quot;&gt;changing the theme&lt;/h4&gt;
+
+&lt;p&gt;One way to make a plot stand out is to change the theme from the default ggplot2 setting. ggplot2 has some useful default themes that can be utilized by using the line theme_ and the theme title.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;map_plot + theme_dark()&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-22/darkmap.PNG&quot; alt=&quot;darkmap&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Using the ggthemes package, other more customized themes can also be used. All that is required is to include the chosen theme as a function at the end of the plot.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;install.packages(&quot;ggthemes&quot;)&lt;/code&gt;&lt;br /&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;library(ggthemes)&lt;/code&gt;&lt;br /&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;map_plot + theme_fivethirtyeight()&lt;/code&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;changing-the-color-scheme&quot;&gt;changing the color scheme&lt;/h4&gt;
+
+&lt;p&gt;This line of code creates a new spectrum of colors to use in the plot instead of the default range, where these colors are chosen between the low and high specified. The name element also changes the legend title of the plot. Conveniently, this line can be added to the end of any ggplot to establish the change. By changing the colors of the plot, it is easier to see the variation in GDP between countries.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;map_plot + scale_fill_gradient(name = &quot;GDP&quot;, low = &quot;white&quot;, high = &quot;red&quot;)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-22/colormap.PNG&quot; alt=&quot;colormap&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;removing-elements&quot;&gt;Removing elements&lt;/h4&gt;
+
+&lt;p&gt;Often in data visualization, less really is more. To remove elements of a plot such as the axis titles and tick marks, simply use the element_blank function inside the theme of the plot. This can help the viewer to focus on the important information, and not on details that do not provide any value.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;map_plot + theme(axis.text.x = element_blank(),
+       axis.text.y = element_blank(),
+       axis.title.x = element_blank(),
+       axis.title.y = element_blank(),
+       axis.ticks = element_blank())&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-22/simplemap.PNG&quot; alt=&quot;simplemap&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;including-images&quot;&gt;Including Images&lt;/h4&gt;
+
+&lt;p&gt;Especially in business, it is common to include company logos or images in presentations. It is also possible to include images that overlap with your plot using the cowplot and magick packages, where x and y specify where the image should be placed, and scale indicates the size. The file path can be a url as shown below or to a local file.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;install.packages(&quot;cowplot&quot;)&lt;/code&gt;&lt;br /&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;library(cowplot)&lt;/code&gt;&lt;br /&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;install.packages(&quot;magick&quot;)&lt;/code&gt;&lt;br /&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;library(magick)&lt;/code&gt;&lt;br /&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ggdraw() + draw_plot(map_plot) + draw_image(&quot;https://ggplot2.tidyverse.org/logo.png&quot;, x = .3, y = .3, scale = .2)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-22/picmap.PNG&quot; alt=&quot;picmap&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;After you have created your plots, it is easy to save them as png files by executing the following code. The first function calls the plot that has most recently been modified, while the second saves it to your desired name.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;last_plot()&lt;/code&gt;&lt;br /&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ggsave(“map_plot.png”, width = 5, height = 5)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Ultimately there are endless possibilities for creating the plot that you want through ggplot2. The important thing is to always be learning new and unique ways that ggplot2 can increase your fluency and skill in data visualization.&lt;/p&gt;</content><author><name>Christina Rhees</name><email>christina.rhees@gmail.com</email></author><category term="data visualization" /><category term="post" /><category term="ggplot2" /><summary type="html">Introduction</summary></entry><entry><title type="html">What Coding Language Should I Learn?</title><link href="/blog/coding-languages" rel="alternate" type="text/html" title="What Coding Language Should I Learn?" /><published>2021-11-17T00:00:00-07:00</published><updated>2021-11-17T00:00:00-07:00</updated><id>/blog/coding-languages</id><content type="html" xml:base="/blog/coding-languages">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+
+&lt;p&gt;I want to be a data analyst, which coding language should I learn? What if I want to be a business analyst, does that make a difference? Can I just learn one language or do I need to be able to write code for multiple platforms? Based on my own experience applying for jobs, there are many different coding languages that people can learn, but not all are used on a regular basis. Here are some of those languages and platforms that might help you get a head start in the world of data.&lt;/p&gt;
+
+&lt;h2 id=&quot;is-there-one-language-to-rule-them-all&quot;&gt;Is there one language to rule them all?&lt;/h2&gt;
+
+&lt;p&gt;The short answer to all of these questions is start with Python. In my experience applying to jobs as well as viewing data and reading articles all over the internet, this seems to be the language that everyone wants to use. Python is extremely versatile due to the fact that it is open source and already has one of the largest databases of packages. If you can’t find a package that suits your needs, you can always create your own. Python is also one of the easiest coding languages to learn. Because of that it is the language of choice for many companies, which means you see it in a lot of job descriptions.&lt;/p&gt;
+
+&lt;p&gt;Using Python checks all the boxes as far as analyzing data goes. You can read in data from just about anywhere or from any format and convert it to whatever you’d like. You can clean it relatively simply. There are also packages that allow you to run and manipulate statistical models without doing it all from scratch. Then you can predict future values based on the data. Finally, there are also many packages dedicated to data visualization. This final point is key because you have to be able to show people what you have done in a way that is easily readable and readily available. Not every coding language out there has the number of features that Python does when it comes to creating charts and graphs. They range from simple line graphs and scatter plots to pie charts and even multi-dimensional graphs.&lt;/p&gt;
+
+&lt;p&gt;Another advantage to learning Python is that it can be used as the backbone for many websites and applications. This isn’t something that will interest everyone or even be of use to most people. However, if software engineering or building websites sounds appealing, I would look into this a little bit more. There are design spaces dedicated to building applications and websites using only Python code and it works quite well. In fact, bigger companies like Google, or Meta (once Facebook) use it in some applications like YouTube and Instagram on the backend because it is that powerful and easy to work with.&lt;/p&gt;
+
+&lt;p&gt;Example graphs:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-17/python_example_3.png&quot; alt=&quot;Basic Graph&quot; /&gt;   &lt;img src=&quot;/assets/images/blogimages/figs-11-17/python_example_1.jpg&quot; alt=&quot;3D Graph&quot; /&gt;    &lt;img src=&quot;/assets/images/blogimages/figs-11-17/python_example_2.jpg&quot; alt=&quot;Color Coded Graph&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;the-next-best-thing&quot;&gt;The next best thing&lt;/h2&gt;
+
+&lt;p&gt;Python is awesome but that doesn’t mean it is the only coding language out there worth looking at. R is the coding language that was built specifically for data analysts. R is the place to be for statistics and numbers. You can do a lot of the same stuff with Python, but R is the specialized language for statisticians and is therefore a little more intuitive for those in a statistics background. Larger datasets are also going to be more better suited for R, especially when using RStudio. R has a very large amount of packages (called libraries in R) which allow you to read, write, manipulate and visualize data with just a few keystrokes in many cases.&lt;/p&gt;
+
+&lt;p&gt;Even though R isn’t built for creating web applications like Python is, you can use R Shiny for building interactive databases that allow people to do some of the manipulating or graphing with a few clicks in their browser. This is a great option for when the needs of the client are always changing or they need a lot of different graphs more than once.&lt;/p&gt;
+
+&lt;p&gt;Here is an example of R code that adds numbers:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; x
+[1]  2 NA  3  1  4
+&amp;gt; sum(x)    # if any element is NA or NaN, result is NA or NaN
+[1] NA
+&amp;gt; sum(x, na.rm=TRUE)    # this way we can ignore NA and NaN values
+[1] 10
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;the-database-code&quot;&gt;The database code&lt;/h2&gt;
+
+&lt;p&gt;SQL is the structured query language. This language is built for a very specific purpose, which is communicating with, searching in and extracting data from databases. Many databases contain millions of rows of data which means it isn’t easy to sort through it all when you’re looking for something specific. That’s where SQL comes in handy. You can sort through all of that data to pull out just what you need for the project you’re working on. One of the other great things about this language is that you can call it inside other languages. For example, you can write Python code to read in and manipulate the data, but you find the correct data by writing your own SQL query. An example is below. There are a few more steps than this, but I am just trying to show you that it is possible to write it inside other languages.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import sqlite3
+import pandas as pd
+
+#This is the SQL code to select all rows from the factbook dataset
+query = &quot;SELECT * FROM factbook;&quot;
+sql_connect = sqlite3.connect('factbook.db')
+pd.read_sql_query(query,sql_connect)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;the-data-visualization-languages&quot;&gt;The data visualization languages&lt;/h2&gt;
+
+&lt;p&gt;Python and R do pretty well when it comes to data visualization and there are many ways you can show off your data through these two. However, there are some specialized platforms that allow you to get even more out of your graphs. In my experience there are two main platforms that stand out and are asked for often. These are Tableau and Power BI. With these platforms you can take data visualization to a whole new level. Tableau is built for the ease of use when you try and show off a dataset for a presentation. Power BI is a little more specialized because it allows other people to go in and pull the reports that you have written up for just one department or date range depending on the needs of that specific person.&lt;/p&gt;
+
+&lt;p&gt;According to what I have seen, these platforms aren’t always something that companies care to see that you have experience in, but for those that generally work with clients and need to show their work to others that don’t know the data side of things this is a popular way to go.&lt;/p&gt;
+
+&lt;p&gt;Example of what Tableau can do:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-17/tableau_example.png&quot; alt=&quot;Tableau&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Example of Power BI:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-17/powerbi_example.jpg&quot; alt=&quot;Power BI&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;the-one-you-didnt-expect&quot;&gt;The one you didn’t expect&lt;/h2&gt;
+
+&lt;p&gt;The final language I recommend you look into is Excel. I know what you’re thinking, “This isn’t a coding language. I can’t do any of the bigger picture stuff with Excel.”. In general, you would be right, but there are many cases where this is very important. Excel usually just displays data in columns and rows for you to be able to see it all in one place, but there is a background language in there called VBA (Visual Basic for Applications). This is where you can write code to manipulate the cells and data in the worksheets to be what you need. Using Excel isn’t something that would be used all the time, but many companies that store data in Excel spreadsheets would require you to know more advanced techniques in Excel.&lt;/p&gt;
+
+&lt;p&gt;VBA allows you to pull in data from databases using SQL as well as Microsoft Access, among others. Then you use VBA to write code that manipulates that data into something that everyone viewing the worksheet can utilize in their day to day work. You can write code to create graphs, fill in the blanks, sort and filter data based on user input, add on to the data based on user input and check that it’s valid, and so much more. The best part is that you can write this code and someone who knows nothing about Excel can go in, hit a button or start typing and everything you wrote in VBA starts up and allows them to do everything they need.&lt;/p&gt;
+
+&lt;p&gt;A lot about coding in Excel VBA isn’t about modeling data or even data visualization (although it could be), it’s about making sure everyone else that uses this same spreadsheet can input correct data and then press a button (or do nothing) and have everything get sorted, cleaned, manipulated, and even graphed exactly how they need it without ever having to learn to code themselves. This is the best suited for a business analyst because the end user would be within the company.&lt;/p&gt;
+
+&lt;p&gt;Here is an example of VBA where the user hits the button ‘Roll’ and the code runs in order to randomize the letters on the game board:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-17/excel_vba_example.jpg&quot; alt=&quot;Excel VBA&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;The list I have here isn’t a perfect list of coding languages that everyone should learn. Out there in the real world, there are many other languages and platforms that you could learn in order to help out a company in your role as an analyst. I have found that these ones often come up in job applications as popular choices for companies to work with. There isn’t just one language to rule them all because they all have their strengths. If you are just starting out, I would say start exploring Python because that is the most versatile and generally the easiest. If you are more advanced and have specific needs based on your interests or current job, look into something like Tableau for data visualization or Excel to help others handle their data needs. Regardless of where you are in your education though, more languages exist to help you accomplish the goals of your company or client so don’t stop at these 6, keep learning and find the one(s) that fit your needs the best.&lt;/p&gt;
+
+&lt;h3 id=&quot;learn-more&quot;&gt;Learn More&lt;/h3&gt;
+
+&lt;p&gt;Python: (https://www.python.org/doc/essays/blurb/)&lt;/p&gt;
+
+&lt;p&gt;R: (https://www.r-project.org/)&lt;/p&gt;
+
+&lt;p&gt;SQL: (https://www.w3schools.com/sql/sql_intro.asp)&lt;/p&gt;
+
+&lt;p&gt;Tableau: (https://www.tableau.com)&lt;/p&gt;
+
+&lt;p&gt;Power BI: (https://powerbi.microsoft.com/en-us/)&lt;/p&gt;
+
+&lt;p&gt;Excel VBA: (https://docs.microsoft.com/en-us/office/vba/library-reference/concepts/getting-started-with-vba-in-office)&lt;/p&gt;</content><author><name>Nicholas Austill</name><email>nmaustill@gmail.com</email></author><category term="Python" /><category term="Learn to code" /><category term="R" /><category term="Tableau" /><category term="Excel" /><summary type="html">Intro I want to be a data analyst, which coding language should I learn? What if I want to be a business analyst, does that make a difference? Can I just learn one language or do I need to be able to write code for multiple platforms? Based on my own experience applying for jobs, there are many different coding languages that people can learn, but not all are used on a regular basis. Here are some of those languages and platforms that might help you get a head start in the world of data. Is there one language to rule them all? The short answer to all of these questions is start with Python. In my experience applying to jobs as well as viewing data and reading articles all over the internet, this seems to be the language that everyone wants to use. Python is extremely versatile due to the fact that it is open source and already has one of the largest databases of packages. If you can’t find a package that suits your needs, you can always create your own. Python is also one of the easiest coding languages to learn. Because of that it is the language of choice for many companies, which means you see it in a lot of job descriptions. Using Python checks all the boxes as far as analyzing data goes. You can read in data from just about anywhere or from any format and convert it to whatever you’d like. You can clean it relatively simply. There are also packages that allow you to run and manipulate statistical models without doing it all from scratch. Then you can predict future values based on the data. Finally, there are also many packages dedicated to data visualization. This final point is key because you have to be able to show people what you have done in a way that is easily readable and readily available. Not every coding language out there has the number of features that Python does when it comes to creating charts and graphs. They range from simple line graphs and scatter plots to pie charts and even multi-dimensional graphs. Another advantage to learning Python is that it can be used as the backbone for many websites and applications. This isn’t something that will interest everyone or even be of use to most people. However, if software engineering or building websites sounds appealing, I would look into this a little bit more. There are design spaces dedicated to building applications and websites using only Python code and it works quite well. In fact, bigger companies like Google, or Meta (once Facebook) use it in some applications like YouTube and Instagram on the backend because it is that powerful and easy to work with. Example graphs: The next best thing Python is awesome but that doesn’t mean it is the only coding language out there worth looking at. R is the coding language that was built specifically for data analysts. R is the place to be for statistics and numbers. You can do a lot of the same stuff with Python, but R is the specialized language for statisticians and is therefore a little more intuitive for those in a statistics background. Larger datasets are also going to be more better suited for R, especially when using RStudio. R has a very large amount of packages (called libraries in R) which allow you to read, write, manipulate and visualize data with just a few keystrokes in many cases. Even though R isn’t built for creating web applications like Python is, you can use R Shiny for building interactive databases that allow people to do some of the manipulating or graphing with a few clicks in their browser. This is a great option for when the needs of the client are always changing or they need a lot of different graphs more than once. Here is an example of R code that adds numbers: &amp;gt; x [1] 2 NA 3 1 4 &amp;gt; sum(x) # if any element is NA or NaN, result is NA or NaN [1] NA &amp;gt; sum(x, na.rm=TRUE) # this way we can ignore NA and NaN values [1] 10 The database code SQL is the structured query language. This language is built for a very specific purpose, which is communicating with, searching in and extracting data from databases. Many databases contain millions of rows of data which means it isn’t easy to sort through it all when you’re looking for something specific. That’s where SQL comes in handy. You can sort through all of that data to pull out just what you need for the project you’re working on. One of the other great things about this language is that you can call it inside other languages. For example, you can write Python code to read in and manipulate the data, but you find the correct data by writing your own SQL query. An example is below. There are a few more steps than this, but I am just trying to show you that it is possible to write it inside other languages. import sqlite3 import pandas as pd #This is the SQL code to select all rows from the factbook dataset query = &quot;SELECT * FROM factbook;&quot; sql_connect = sqlite3.connect('factbook.db') pd.read_sql_query(query,sql_connect) The data visualization languages Python and R do pretty well when it comes to data visualization and there are many ways you can show off your data through these two. However, there are some specialized platforms that allow you to get even more out of your graphs. In my experience there are two main platforms that stand out and are asked for often. These are Tableau and Power BI. With these platforms you can take data visualization to a whole new level. Tableau is built for the ease of use when you try and show off a dataset for a presentation. Power BI is a little more specialized because it allows other people to go in and pull the reports that you have written up for just one department or date range depending on the needs of that specific person. According to what I have seen, these platforms aren’t always something that companies care to see that you have experience in, but for those that generally work with clients and need to show their work to others that don’t know the data side of things this is a popular way to go. Example of what Tableau can do: Example of Power BI: The one you didn’t expect The final language I recommend you look into is Excel. I know what you’re thinking, “This isn’t a coding language. I can’t do any of the bigger picture stuff with Excel.”. In general, you would be right, but there are many cases where this is very important. Excel usually just displays data in columns and rows for you to be able to see it all in one place, but there is a background language in there called VBA (Visual Basic for Applications). This is where you can write code to manipulate the cells and data in the worksheets to be what you need. Using Excel isn’t something that would be used all the time, but many companies that store data in Excel spreadsheets would require you to know more advanced techniques in Excel. VBA allows you to pull in data from databases using SQL as well as Microsoft Access, among others. Then you use VBA to write code that manipulates that data into something that everyone viewing the worksheet can utilize in their day to day work. You can write code to create graphs, fill in the blanks, sort and filter data based on user input, add on to the data based on user input and check that it’s valid, and so much more. The best part is that you can write this code and someone who knows nothing about Excel can go in, hit a button or start typing and everything you wrote in VBA starts up and allows them to do everything they need. A lot about coding in Excel VBA isn’t about modeling data or even data visualization (although it could be), it’s about making sure everyone else that uses this same spreadsheet can input correct data and then press a button (or do nothing) and have everything get sorted, cleaned, manipulated, and even graphed exactly how they need it without ever having to learn to code themselves. This is the best suited for a business analyst because the end user would be within the company. Here is an example of VBA where the user hits the button ‘Roll’ and the code runs in order to randomize the letters on the game board: Conclusion The list I have here isn’t a perfect list of coding languages that everyone should learn. Out there in the real world, there are many other languages and platforms that you could learn in order to help out a company in your role as an analyst. I have found that these ones often come up in job applications as popular choices for companies to work with. There isn’t just one language to rule them all because they all have their strengths. If you are just starting out, I would say start exploring Python because that is the most versatile and generally the easiest. If you are more advanced and have specific needs based on your interests or current job, look into something like Tableau for data visualization or Excel to help others handle their data needs. Regardless of where you are in your education though, more languages exist to help you accomplish the goals of your company or client so don’t stop at these 6, keep learning and find the one(s) that fit your needs the best. Learn More Python: (https://www.python.org/doc/essays/blurb/) R: (https://www.r-project.org/) SQL: (https://www.w3schools.com/sql/sql_intro.asp) Tableau: (https://www.tableau.com) Power BI: (https://powerbi.microsoft.com/en-us/) Excel VBA: (https://docs.microsoft.com/en-us/office/vba/library-reference/concepts/getting-started-with-vba-in-office)</summary></entry><entry><title type="html">Lies Damn Lies and Statistics: A Review of Darrell Huff’s Book How to Lie With Statistics</title><link href="/blog/lying-with-statistics" rel="alternate" type="text/html" title="Lies Damn Lies and Statistics: A Review of Darrell Huff’s Book How to Lie With Statistics" /><published>2021-11-16T00:00:00-07:00</published><updated>2021-11-16T00:00:00-07:00</updated><id>/blog/lying-with-statistics</id><content type="html" xml:base="/blog/lying-with-statistics">&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-16/Book-Cover-Image.jpg&quot; alt=&quot;Book-Cover&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
 
@@ -733,262 +1003,4 @@ print(check_metric(unseen_predictions.medv, unseen_predictions.Label, ‘R2’))
 
 &lt;p&gt;With such flexibility, PyCaret seems to be an option that can save a lot of time when fitting a model to data. I will likely look for opportunities to use this to simplify projects that I am working on personally. If you have ever used PyCaret before, feel free to comment about how you used it in your work.&lt;/p&gt;
 
-&lt;p&gt;PyCaret has extensive &lt;a href=&quot;https://pycaret.org/guide/&quot;&gt;documentation&lt;/a&gt; and &lt;a href=&quot;https://pycaret.readthedocs.io/en/latest/tutorials.html&quot;&gt;tutorials&lt;/a&gt; for various levels, so feel free to dive into their tutorials to get yourself started or to explore additional capabilities of PyCaret that weren’t discussed in this post.&lt;/p&gt;</content><author><name>David Teuscher</name><email>dteuscher.37.12@gmail.com</email></author><category term="PyCaret" /><category term="Machine Learning" /><category term="Model Comparison" /><category term="Model Fitting" /><summary type="html">Introduction</summary></entry><entry><title type="html">Cancelling Noise in Data: Image Compression Tutorial</title><link href="/blog/svd-img-compression" rel="alternate" type="text/html" title="Cancelling Noise in Data: Image Compression Tutorial" /><published>2021-11-06T00:00:00-06:00</published><updated>2021-11-06T00:00:00-06:00</updated><id>/blog/svd-img-compression</id><content type="html" xml:base="/blog/svd-img-compression">&lt;p&gt;One common problem  in data science is that our data is noisy. A good data scientist
-is able to distinguish between that noise and signal in the data. One great way
-to “cancel noise” in data represented in matrix form is to use singular value decomposition
-from linear algebra.&lt;/p&gt;
-
-&lt;h1 id=&quot;linear-algebra&quot;&gt;Linear Algebra&lt;/h1&gt;
-&lt;p&gt;Let me explain some key concepts first.&lt;/p&gt;
-&lt;div class=&quot;tenor-gif-embed&quot; data-postid=&quot;8939664&quot; data-share-method=&quot;host&quot; data-aspect-ratio=&quot;1.86047&quot; data-width=&quot;100%&quot;&gt;&lt;a href=&quot;https://tenor.com/view/let-me-explain-sum-up-too-much-i-just-cant-princess-bride-gif-8939664&quot;&gt;Let Me Explain Sum Up GIF&lt;/a&gt;from &lt;a href=&quot;https://tenor.com/search/let+me+explain-gifs&quot;&gt;Let Me Explain GIFs&lt;/a&gt;&lt;/div&gt;
-&lt;script type=&quot;text/javascript&quot; async=&quot;&quot; src=&quot;https://tenor.com/embed.js&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;Singular value decomposition (SVD) is a method that breaks a matrix into three less-complicated
-matrices. One convenient feature of these three matrices is that the values inside them are
-sorted such that the most important attributes come at the beginning– that makes it easy to
-extract the features that hold the most predictive power. If you want to take a deeper dive into
-linear algebra and how it will help you be a better data scientist, check out this excellent blog post from
-&lt;a href=&quot;https://towardsdatascience.com/understanding-singular-value-decomposition-and-its-application-in-data-science-388a54be95d&quot;&gt;Toward Data Science&lt;/a&gt;!&lt;/p&gt;
-
-&lt;p&gt;With that in mind, it’s no wonder that Benjamin Obi Tayo, Ph.D. wrote on &lt;a href=&quot;https://www.kdnuggets.com/2021/05/essential-linear-algebra-data-science-machine-learning.html&quot;&gt;KDnuggets&lt;/a&gt;:
-“Linear algebra is the most important math skill in machine learning.” Let’s take a look at an example of how to use SVD to reduce image sizes!&lt;/p&gt;
-
-&lt;h1 id=&quot;tutorial&quot;&gt;Tutorial&lt;/h1&gt;
-&lt;ol&gt;
-  &lt;li&gt;Open up a new notebook your favorite python editor. I like to use Jupyter notebooks, but Google Colab is also a great option if you
-don’t have python downloaded on your computer.&lt;/li&gt;
-  &lt;li&gt;Download a PNG image to play with. I’ll use this one:
-&lt;img src=&quot;/assets/images/blogimages/figs-11-06/oscar-sutton-yihlaRCCvd4-unsplash.png&quot; alt=&quot;dog&quot; /&gt;&lt;/li&gt;
-  &lt;li&gt;If you’re using Jupyter, add the photo to the same directory as your notebook. If you’re 
-using Colab, go to the left sidebar, and click the “Upload to session storage” button. You’ll have to do this each time you
-close the notebook and come back to it later. This is where to go to add the image in Colab:
-&lt;img src=&quot;/assets/images/blogimages/figs-11-06/colab_upload_img.PNG&quot; alt=&quot;upload-to_colab&quot; /&gt;&lt;/li&gt;
-  &lt;li&gt;In the first cell, add these imports:
-    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;numpy&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;skimage&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;skimage&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;io&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;matplotlib.pyplot&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Now we need to read in our image file as a python array. You can choose whether to keep it as a color (RGB) image
-or convert it to grayscale.
-    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;color_array&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;io&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;imread&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'dog.png'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;            
-&lt;span class=&quot;n&quot;&gt;gray_array&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;skimage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rgb2gray&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;color_array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Now that we have our images, let’s define some functions that will plot an array as an image to help us see what we have.
-    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;show_color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
- &lt;span class=&quot;c1&quot;&gt;# set up the matplotlib figure
-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;figure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;figsize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
- &lt;span class=&quot;c1&quot;&gt;# optional-add grid lines to figure
-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;grid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
- &lt;span class=&quot;c1&quot;&gt;# show the array as an image within the figure
-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;imshow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
- &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;show_gray&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
- &lt;span class=&quot;c1&quot;&gt;# set up the matplotlib figure
-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;figure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;figsize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
- &lt;span class=&quot;c1&quot;&gt;# optional-add grid lines to figure
-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;grid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
- &lt;span class=&quot;c1&quot;&gt;# show the array, but specify that the color map is gray with a min val of 0 (white) and max of 1 (black)
-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;imshow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cmap&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'gray'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vmin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vmax&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
- &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Test your functions by printing out either or both the color and grayscale images. For the rest of the tutorial,
-I will use the grayscale image.
-    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;show_color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;color_array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;show_gray&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gray_array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Now let’s calculate the number of values in this matrix by multiplying the number of rows by the number of columns.
-    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gray_array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;original_size&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;original_size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Now we can call the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;svd&lt;/code&gt; function to decompose &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gray_array&lt;/code&gt; into three matrices. Typically, these three matrices are
-called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;U&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Sigma&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;V^t&lt;/code&gt; so we will name them accordingly. If we wanted to, we could use these to reconstruct an
-approximation of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gray_array&lt;/code&gt;.
-    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;u_orig&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s_orig&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v_t_orig&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;linalg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;svd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gray_array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-    &lt;p&gt;In reality, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s_orig&lt;/code&gt; is actually a 1-dimensional array instead of a matrix (2-dimensional array). This is because
-the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Sigma&lt;/code&gt; matrix has 0’s everywhere except the diagonal from the top left corner, so we only need one dimension to
-contain all the nonzero values, which are called “singular values.” These are arranged from largest to smallest.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Graph the singular values in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s_orig&lt;/code&gt; (y-axis) against their index in the array (x-axis). This will let us get a good idea how many
-singular values we will need to make a good approximation of our image without losing too much quality.
-    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s_orig&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-    &lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-06/plot.PNG&quot; alt=&quot;plot&quot; /&gt;
-Since the line drops to nearly 0 when x (index) is still very small, this means that we will be able to make a good
-approximation using just a few of the singular values.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;In order to reconstruct our reduced-size image matrix, we’re going to need to define a few functions.
-The first is a function that takes in two ints that represent the number of rows and columns as well as an array of
-singular values, and returns a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Sigma&lt;/code&gt; matrix.
-    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;sigma&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;E&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;zeros&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;E&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;E&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-    &lt;p&gt;That creates a matrix of the correct size filled with 0’s, and then goes along the diagonal and changes the 0 to the
-corresponding singular value from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s&lt;/code&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;The second function takes in a 2D array &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;u&lt;/code&gt;, a 1D array &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;s&lt;/code&gt;, and a 2D array &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v_t&lt;/code&gt;, which correspond to the 3 outputs 
-from calling &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;svd&lt;/code&gt;. It multiplies them together using matrix multiplication to reconstruct a single matrix.
-    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;reconstructed_array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;u&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v_t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;sgm&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sigma&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;u&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]),&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v_t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;usgm&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;matmul&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;u&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sgm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;usgmvt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;matmul&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;usgm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v_t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;usgmvt&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;The third function brings everything together to produce a rank &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;k&lt;/code&gt; approximation of a matrix &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;A&lt;/code&gt;. That essentially
-translates to keeping a matrix with only the top &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;k&lt;/code&gt; singular values.
-    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;lower_rank&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;u&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v_t&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;linalg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;svd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;u_k&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;u&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[:,:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;v_t_k&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v_t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,:]&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;s_k&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reconstructed_array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;u_k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s_k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v_t_k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Now you can plug in different values of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;k&lt;/code&gt; into your function along with our original &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gray_array&lt;/code&gt; and you can
-decide what value of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;k&lt;/code&gt; you think is best. The smaller the value of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;k&lt;/code&gt;, the more compressed our final image will be,
-but be careful to not make it too fuzzy. The best value will vary for different pictures.
-    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;choose&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;gray_reduced&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lower_rank&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gray_array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;show_gray&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gray_reduced&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;As it is right now, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gray_reduced&lt;/code&gt; has the exact same dimensions as the original &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gray_array&lt;/code&gt; matrix. However, now
-we can call &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;svd&lt;/code&gt; on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gray_reduced&lt;/code&gt; and we can get rid of anything we don’t need. In reality, we only need the first &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;k&lt;/code&gt;
-only need the first &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;k&lt;/code&gt; columns of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;u&lt;/code&gt;, the first &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;k&lt;/code&gt; rows of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v_t&lt;/code&gt;, and the first &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;k&lt;/code&gt; values of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sigma&lt;/code&gt;. That will tell
-us how many values we really need to represent the image. We can use that to find the number of values we need.
-```python
-u_reduced,s_reduced,v_t_reduced = np.linalg.svd(gray_reduced)
-reduced_size = ((len(u_reduced[0]) * k) + (len(v_t_reduced) * k) + k)
-print(“Reduced size: “, reduced_size)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;relative_size= reduced_size/original_size
-print(“Original size: “, original_size)
-print(“Reduced size is what percent of original size: “, relative_size)
-```&lt;/p&gt;
-
-&lt;p&gt;Congratulations! You have now compressed an image using singular value decomposition!&lt;/p&gt;
-
-&lt;h2 id=&quot;attributions&quot;&gt;Attributions&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;Cover photo by &lt;a href=&quot;https://unsplash.com/@millarjb?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;Jack Millard&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com/s/photos/magnifying-glass?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;Unsplash&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Dog on the beach photo by &lt;a href=&quot;https://unsplash.com/@o5ky?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;Oscar Sutton&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com/?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;Unsplash&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;This post is adapted from a lab from the Computational Linear Algebra class at Brigham Young University.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Jessica Hamblin</name><email>hamblinjm@hotmail.com</email></author><category term="image compression" /><category term="reduction" /><category term="linear algebra" /><category term="svd" /><category term="noise" /><summary type="html">One common problem in data science is that our data is noisy. A good data scientist is able to distinguish between that noise and signal in the data. One great way to “cancel noise” in data represented in matrix form is to use singular value decomposition from linear algebra.</summary></entry><entry><title type="html">What are Cookies?</title><link href="/blog/Web-Cookies" rel="alternate" type="text/html" title="What are Cookies?" /><published>2021-11-05T00:00:00-06:00</published><updated>2021-11-05T00:00:00-06:00</updated><id>/blog/Web-Cookies</id><content type="html" xml:base="/blog/Web-Cookies">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
-
-&lt;p&gt;Web cookies have become an interesting phenomenon that has caused a variety of responses to the use of data used by everyday people.  Most don’t understand what they are or what they do but fear them because of the potential of privacy invasion.  Others say they are necessary for any user to have the optimal experience on any legitimate website that they may choose to visit.  And some few have decided to try and exploit them for their own benefit at the expense of others.  But what are cookies, and how can they be useful if used the right way in the hands of a data scientist?&lt;/p&gt;
-
-&lt;h2 id=&quot;what-are-cookies&quot;&gt;What are cookies?&lt;/h2&gt;
-
-&lt;p&gt;Put simply, web cookies are small text files created by a website server.  They are stored on a person’s computer as a history of their browsing experience on a website.  Information tracked could include a user ID created by the website for your computer, cart history, number of visits to a specific page, etc.  This data is used to enhance a user’s experience when they return next time.  Their cart will be up to date with all items and customizations still showing, and overall website experience will be enhanced since the information stored in cookies can be used to infer what the user will want to view next.
-Most of the time, these cookies are created to be anonymous.  They don’t have any other intentions besides functionality that is solely intended on helping you navigate their website.&lt;/p&gt;
-
-&lt;p&gt;While many types of cookies exist they can roughly be broken down into three categories:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;First party cookies&lt;/li&gt;
-  &lt;li&gt;Third party cookies&lt;/li&gt;
-  &lt;li&gt;Zombie cookies&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Each is collected and used in a different way.  First party cookies are created by the host website itself.  These will include website usage data and tracking, along with anything else that the site has been programmed to track.&lt;/p&gt;
-
-&lt;p&gt;Third party cookies are created from ads or other embedded content on a given website.  These cookies are created by companies trying to catch your attention and serve to track your interactions with them, along with any navigations to the host website.&lt;/p&gt;
-
-&lt;p&gt;Zombie cookies are interesting bits of data that are don’t really do anything.  They get embedded deeply into the memory of your browser on your computer and are extremely difficult to get rid of.  While this type is not common, they are mostly used to ban users from a domain. By storing this cookie, the website can see that a user does not have permission to access the website and will block their connection.&lt;/p&gt;
-
-&lt;h2 id=&quot;extreme-cookie-hype&quot;&gt;Extreme Cookie Hype&lt;/h2&gt;
-
-&lt;p&gt;Why did all the concern pop up about web cookies?  Recently every website seemingly pushes you an angry pop up demanding that you accept their cookies.  Many domains began requiring the acceptance or at least notification of these pieces of data when web laws were created around data usage in Europe.  While not required everywhere, many domains began pushing them everywhere to cover themselves legally.  As such they gained a lot of attention very quickly.  Data protection and privacy are becoming more important as data is quickly becoming a commodity from which businesses can grow and become more successful at an accelerated pace.&lt;/p&gt;
-
-&lt;p&gt;While this data is important, the concern users have that these snippets of data can be malevolent is real and limiting for businesses.  Can they be harmful?  On their own, the answer is no.  They are simple text files and contain nothing close to executable.  Nothing can be installed or changed on your personal computer through a cookie.  They truly are just data chunks to enhance your experience while surfing the web.  The danger comes from getting a virus on your computer which allows a hacker to gain control of your computer.  At this point if their goal is to get after the data stored in your cookies, they would be able to do it.  This could amount to, at worst, having your logins and passwords taken.&lt;/p&gt;
-
-&lt;p&gt;This is an uncommon occurrence, however, and the likelihood of a hacker deciding to get into your cookies and explore if any of them are storing your personal information is low.  Once someone gains that much access to your computer, the odds are that they won’t be fishing around in your amazon shopping cart to figure out what Christmas presents you’re getting for your loved ones this year.&lt;/p&gt;
-
-&lt;h2 id=&quot;cookies-in-the-hands-of-data-scientists&quot;&gt;Cookies in the Hands of Data Scientists&lt;/h2&gt;
-
-&lt;p&gt;The true and awesome use of cookies comes when someone who knows how to use it is able to run analytics and history on the data created on the server.  Data scientist are able to use the information stored in these cookies for several purposes.  Anything from cursor clicks to searches can be used to predict what appeals to a user and can be used to improve the website interface and algorithms.  Over time these small pieces of information pile into machine learning algorithms that will, in turn, directly change the future experiences of others who may visit the website.&lt;/p&gt;
-
-&lt;p&gt;Data scientists are also directly able to track and predict what products will appeal to a customer, how to market and display products on a company’s website (and in what order they should appear), and even what products to advertise when viewing a specific item in more detail.  Amazon is a great example of how these algorithms work.  Often times you will find something that truly suits your needs by viewing the suggested products on the page of something that you are already looking at.&lt;/p&gt;
-
-&lt;p&gt;Surfing the web is fun and it’s incredibly convenient for a machine to try and predict what you will want to see.  It’s very convenient for us as users that many of these algorithms cut out the work of navigating to a specific page after hours of searching and clicking.  Using data is extremely important for the overall use of a website and the invention of browser cookies is an awesome for a server to track information without having to store it all on sight.  As long as you only visit sights that are reputable, the risk that they pose to you is almost 0, and the chance that analytics will somehow enhance your experience is high.&lt;/p&gt;</content><author><name>Tyler Pettit</name><email>tyler.pettit82@gmail.com</email></author><category term="Cookies" /><category term="Safety" /><category term="Data Scientist" /><summary type="html">Introduction</summary></entry><entry><title type="html">Let’s talk JSON Basics</title><link href="/blog/json" rel="alternate" type="text/html" title="Let’s talk JSON Basics" /><published>2021-11-04T00:00:00-06:00</published><updated>2021-11-04T00:00:00-06:00</updated><id>/blog/json</id><content type="html" xml:base="/blog/json">&lt;p&gt;The first time I heard the term JSON, I thought that it was someone emphasizing a name weird. I’m probably alone in this error, but hopefully this post can help someone avoid my blunder and avoid embarrasment when asking which Jason we were talking about. &lt;em&gt;[I really wish I could claim this was hyperbole.]&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Well, you have to make mistakes to learn. I now know that JSON actually means: JavaScript Object Notation…&lt;/p&gt;
-
-&lt;p&gt;JSON is a format for storing and transporting data, created to
-be more readable for humans, as opposed to machine language or more complicated ways of data transport. Often JSON is referenced as being self-describing, and therefore easy to read. While inital experience with JSON might make you feel otherwise, experience and comparison to other methods quickly reveals JSON is quite nice. JSON itself is a more recent asset, credited to creators Douglas Crockford and Chip Morningstar in 2001. As the name denotes, JSON is derived from Javascript. However, luckily for all, JSON itself is language-independent, meaning that all programming languages can be adapted to parse JSON.&lt;/p&gt;
-
-&lt;p&gt;JSON contains data composed of attribute-value pairs and arrays,
-somewhat comparable to a Python dictionary. A key value is associated with an array of data, usually obtained by indexing.
-JSON is recognizable as each data item is contained in curly braces. Inside the curly braces, a key value is followed by a colon,
-with the values typically stored in brackets. JSON does not support comments, so any comments below exist for instruction purposes only. Also, some values have been arranged in differing ways to show how differing formats and spacing appears.
-Here is an example to show JSON in action:&lt;/p&gt;
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;first_array&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
-	&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;stat 426&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-	&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;is an&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-	&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;amazing class&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;If you wanted to have more than one key based array, you would simply put a comma after the values of the previous array:&lt;/p&gt;
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;first_array&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
-	&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;stat 426&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-	&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;is an&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-	&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;amazing class&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;     &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;comma&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;here&lt;/span&gt;
- &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;second_array&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-	 &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Inside an array, you can have stand alone values or you could have nested data. Again, this is best shown in an example:&lt;/p&gt;
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;outside_array&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;inside_array&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-      &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-      &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
-    &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;variable&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;hello!&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Here we have the data inside brackets. First we have the &lt;em&gt;outside_array&lt;/em&gt;, which contains the standalone &lt;em&gt;variable&lt;/em&gt; and a nested array &lt;em&gt;inside_array&lt;/em&gt;.
-Inside the &lt;em&gt;inside_array&lt;/em&gt;, we have key-value pairs.&lt;/p&gt;
-
-&lt;p&gt;Hopefully that gives a general idea behind the structure and potential that JSON holds. Let’s jump over to see how you would access the values inside. Actually obtaining the JSON is dependent on how it is stored and which language or method used to retrieve. For brevity’s sake we will focus on the general idea of obtaining values in the Javascript language. This idea translates nicely into other programming languages.&lt;/p&gt;
-
-&lt;p&gt;Looking at the last example, let’s call the whole item contained in the first pair of braces &lt;em&gt;Data&lt;/em&gt;.
-&lt;em&gt;Data&lt;/em&gt; is an object containing a singular &lt;em&gt;outside_array&lt;/em&gt;, and to get inside we would index &lt;em&gt;Data&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;To access values inside Data, we would use dot notation or bracket notation.
-Examples to access the &lt;em&gt;outside_array&lt;/em&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;Data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;outside_array&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;Data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;oustide_array&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;Data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;To access the inside_array, we will follow the same above methods:&lt;/p&gt;
-
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;Data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;outside_array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;inside_array&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;Data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;outside_array&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;inside_array&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;Data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;outside_array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Again, this is the idea behind accessing data in JSON. You can get JSON from varied sources, including APIs and URLs. Accessing each is also dependent on your environment and programming language. Most however do follow this general idea of indexing to find the desired value.
-For Python help: https://docs.python.org/3/library/json.html&lt;/p&gt;
-
-&lt;p&gt;Python JSON library&lt;/p&gt;
-
-&lt;p&gt;Thanks for reading!&lt;/p&gt;</content><author><name>Cal Barker</name><email>calbarker1@gmail.com</email></author><category term="JSON" /><category term="JavaScript" /><category term="Python" /><summary type="html">The first time I heard the term JSON, I thought that it was someone emphasizing a name weird. I’m probably alone in this error, but hopefully this post can help someone avoid my blunder and avoid embarrasment when asking which Jason we were talking about. [I really wish I could claim this was hyperbole.]</summary></entry></feed>
+&lt;p&gt;PyCaret has extensive &lt;a href=&quot;https://pycaret.org/guide/&quot;&gt;documentation&lt;/a&gt; and &lt;a href=&quot;https://pycaret.readthedocs.io/en/latest/tutorials.html&quot;&gt;tutorials&lt;/a&gt; for various levels, so feel free to dive into their tutorials to get yourself started or to explore additional capabilities of PyCaret that weren’t discussed in this post.&lt;/p&gt;</content><author><name>David Teuscher</name><email>dteuscher.37.12@gmail.com</email></author><category term="PyCaret" /><category term="Machine Learning" /><category term="Model Comparison" /><category term="Model Fitting" /><summary type="html">Introduction</summary></entry></feed>
