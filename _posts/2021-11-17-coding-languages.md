@@ -2,7 +2,7 @@
 title: What Coding Language Should I Learn?
 layout: post
 author: nmaustill
-post-image: !(/assets/images/blogimages/figs-11-17/post_image.jpg)
+post-image: /assets/images/blogimages/figs-11-17/post_image.jpeg
 description: find out which coding languages are helpful to know and why
 tags:
 - Python
@@ -25,11 +25,8 @@ Using Python checks all the boxes as far as analyzing data goes. You can read in
 Another advantage to learning Python is that it can be used as the backbone for many websites and applications. This isn't something that will interest everyone or even be of use to most people. However, if software engineering or building websites sounds appealing, I would look into this a little bit more. There are design spaces dedicated to building applications and websites using only Python code and it works quite well. In fact, bigger companies like Google, or Meta (once Facebook) use it in some applications like YouTube and Instagram on the backend because it is that powerful and easy to work with.
 
 Example graphs:
-![Basic Graph](/assets/images/blogimages/figs-11-17/python_example_3.png)
 
-![3D Graph](/assets/images/blogimages/figs-11-17/python_example_1.jpg)
-
-![Color Coded Graph](/assets/images/blogimages/figs-11-17/python_example_2.jpg)
+![Basic Graph](/assets/images/blogimages/figs-11-17/python_example_3.png)   ![3D Graph](/assets/images/blogimages/figs-11-17/python_example_1.jpg)    ![Color Coded Graph](/assets/images/blogimages/figs-11-17/python_example_2.jpg)
 
 ## The next best thing
 
@@ -69,9 +66,11 @@ Python and R do pretty well when it comes to data visualization and there are ma
 According to what I have seen, these platforms aren't always something that companies care to see that you have experience in, but for those that generally work with clients and need to show their work to others that don't know the data side of things this is a popular way to go.
 
 Example of what Tableau can do:
+
 ![Tableau](/assets/images/blogimages/figs-11-17/tableau_example.png)
 
 Example of Power BI:
+
 ![Power BI](/assets/images/blogimages/figs-11-17/powerbi_example.jpg)
 
 ## The one you didn't expect
@@ -83,19 +82,23 @@ VBA allows you to pull in data from databases using SQL as well as Microsoft Acc
 A lot about coding in Excel VBA isn't about modeling data or even data visualization (although it could be), it's about making sure everyone else that uses this same spreadsheet can input correct data and then press a button (or do nothing) and have everything get sorted, cleaned, manipulated, and even graphed exactly how they need it without ever having to learn to code themselves. This is the best suited for a business analyst because the end user would be within the company.
 
 Here is an example of VBA where the user hits the button 'Roll' and the code runs in order to randomize the letters on the game board:
+
 ![Excel VBA](/assets/images/blogimages/figs-11-17/excel_vba_example.jpg)
 
 ## Conclusion
 
 The list I have here isn't a perfect list of coding languages that everyone should learn. Out there in the real world, there are many other languages and platforms that you could learn in order to help out a company in your role as an analyst. I have found that these ones often come up in job applications as popular choices for companies to work with. There isn't just one language to rule them all because they all have their strengths. If you are just starting out, I would say start exploring Python because that is the most versatile and generally the easiest. If you are more advanced and have specific needs based on your interests or current job, look into something like Tableau for data visualization or Excel to help others handle their data needs. Regardless of where you are in your education though, more languages exist to help you accomplish the goals of your company or client so don't stop at these 6, keep learning and find the one(s) that fit your needs the best.
 
-
-
-###Get started learning about each coding language mentioned
+### Learn More
 
 Python: (https://www.python.org/doc/essays/blurb/)
+
 R: (https://www.r-project.org/)
+
 SQL: (https://www.w3schools.com/sql/sql_intro.asp)
+
 Tableau: (https://www.tableau.com)
+
 Power BI: (https://powerbi.microsoft.com/en-us/)
+
 Excel VBA: (https://docs.microsoft.com/en-us/office/vba/library-reference/concepts/getting-started-with-vba-in-office)
