@@ -3,7 +3,7 @@ title: "REVIEW: INVISIBLE WOMEN. EXPOSING DATA BIAS IN A WORLD DESIGNED BY MEN, 
 layout: post
 author: maddiehays
 post-image: '/assets/images/blogimages/figs-11-28/sky.jpg'
-description: "Find out what cold offices, car crash fatalities & heart attack misdiagnosis all have in common!"
+description: "Find out what cold offices, car crash fatalities & heart attack misdiagnoses all have in common"
 tags:
 - Book Review
 - Data Science
