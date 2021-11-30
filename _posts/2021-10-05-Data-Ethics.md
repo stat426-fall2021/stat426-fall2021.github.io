@@ -2,7 +2,7 @@
 title: Data Science Ethics
 layout: post
 author: cgreenhalgh
-post-image: /assets/images/blogimages/figs-10-d05/DataEthics.png
+post-image: /assets/images/blogimages/figs-10-05/DataEthics.png
 description: Data ethics is a new branch of data science that deals with ethical guidelines. These data ethics cover all aspects of data science including data security, transparency, getting data, and others. Data ethics are an important topic for all data scientists.
 tags:
 - Privacy
