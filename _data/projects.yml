@@ -1,73 +1,68 @@
-- name: Example Project from 2020
+- name: Example from 2020
   image: "https://raw.githubusercontent.com/abedurrant/All-NBA-Predictions-DataScienceProject/main/All-NBA_Plot2.png"
   link: "https://github.com/abedurrant/All-NBA-Predictions-DataScienceProject"
   description: Abe Durrant
-- name: BAR
+- name: PPD Body Image Issues
   image: /assets/images/projectimages/bar.png
   link: "https://github.com/stat426-fall2021/BARproject"
   description: Rosie Stewart, Bethany Bassett, Ashtyn Fiala
-- name: CAP
+- name: Movie Scores from IMDb
   image: /assets/images/projectimages/cap.jpg
   link: "https://github.com/stat426-fall2021/CAP_Project"
   description: Alexander Norris, Cal Barker, Pablo Higueros Lopez
-- name: Centennial
-  image: "https://www.digitalmusicnews.com/wp-
-content/uploads/2016/04/genre_breakdown_2015_1.png"
+- name: Genre Predictor
+  image: /assets/images/projectimages/centennial.png
   link: "https://github.com/Andrustn/426_Final"
   description: Trevor Andrus, Samuel Johnson, Connor Greenhalgh
 - name: NYPD Crime Classification
   image: /assets/images/projectimages/chickenwaffles.png
   link:  "https://github.com/18katesmit/NYPDComplaintClassification"
-  description: "Chicken and Waffles: Israel Bentley, Nicholas Austill, Kate Smith"
-- name: Front Row
+  description: Israel Bentley, Nicholas Austill, Kate Smith
+- name: "Winners of Survivor: Random or Predictable?"
   image: /assets/images/projectimages/frontrow.png
   link: "https://github.com/stat426-fall2021/classproject-front-row"
   description: Christina Rhees, Truman Jeppson
-- name: Grad1
+- name: Importance of Hustle Stats in the NBA
   image: /assets/images/projectimages/grad1.jpg
   link: "https://github.com/dteuscher1/Project426"
   description: Matthew Morgan, David Teuscher, McKay Gerratt, Brad Hymas
-- name: Hotels
+- name: An Analysis of Hotel Reservation Cancellations
   image: /assets/images/projectimages/hotels.jpg
   link: "https://github.com/jhdegn/hotel-reservations"
   description: Andrew Pope, Josh Degn
-- name: JAG
+- name: Predicting NBA Awards
   image: /assets/images/projectimages/jag.jpg
   link: "https://github.com/amanwebb/Predicting-NBA-Awards"
   description: Noah Landers, Austin Webb, Jake Szendre, Garrett Carr
-- name: JEF
+- name: STEM Compensation of FAANG
   image: /assets/images/projectimages/jef.jpg
   link: "https://github.com/mimanjh/426_final"
   description: Felicia Seng, Emily Liu, Jacob Hunsaker
-- name: LDS Tools
+- name: Olympic Marathon Prediction
   image: "https://i.insider.com/5da48be8cc4a0a4b616b702c?width=1000&format=jpeg&auto=webp"
   link: "https://github.com/JR-Development21/Final_Project"
   description: Jace Ritchie, Colin Mason, Gavin Williams
-- name: Lightning
+- name: Predicting CrossFit Athletes' Performance
   image: "https://raw.githubusercontent.com/hamblinjm/crossfit/main/WorkOutPic.jpg"
   link: "https://github.com/hamblinjm/crossfit"
   description: Braden Wellman, Spencer Kimball, Jessica Hamblin
-- name: LoTyRex
+- name: What Drives Streams?
   image: /assets/images/projectimages/lotyrex.jpg
   link: "https://github.com/rexmoss/lotyrex-finalproject"
   description: Jeong You, Tyler Pettit, Rex Moss
-- name: MRB
-  image: /assets/images/projectimages/mrb.jpg
-  link: "https://github.com/gmm2410/STAT426Project"
-  description: Ben Kinard, Gerardo Meza Mera, Rachel Pourre
-- name: MidiMix
+- name: Artificial Rodrigo
   image: /assets/images/projectimages/midimix.png
   link: "https://github.com/AdamLenning/ArtificialRodrigo"
   description: Sonny George, Adam Lenning
-- name: MRB
+- name: Bitcoin Prices
   image: /assets/images/projectimages/mrb.jpg
   link: "https://github.com/gmm2410/STAT426Project"
   description: Ben Kinard, Gerardo Meza Mera, Rachel Pourre
-- name: Passive-Regressive
+- name: TikTok Creator Engagement Rates
   image: /assets/images/projectimages/passive.png
   link: "https://github.com/tscotn/tiktok"
   description: Bryce Fuller, Scot Nielson, Rachel Hamilton
-- name: Zoom Crew
+- name: Film Ratings
   image: /assets/images/projectimages/zoom.png
   link: "https://github.com/stat426-fall2021/final-project-zoom-crew"
   description: John Black, Josh Gladwell, Maddie Hays
