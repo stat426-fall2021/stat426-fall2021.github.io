@@ -1,94 +1,36 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-11-24T13:45:41-07:00</updated><id>/feed.xml</id><title type="html">Stat 426 - Fall 2021</title><subtitle>Class Blog and Projects</subtitle><entry><title type="html">Top 10 Skills a future Data Scientist should learn while their machine is also learning.</title><link href="/blog/top-10-skills" rel="alternate" type="text/html" title="Top 10 Skills a future Data Scientist should learn while their machine is also learning." /><published>2021-11-22T00:00:00-07:00</published><updated>2021-11-22T00:00:00-07:00</updated><id>/blog/top-10-skills</id><content type="html" xml:base="/blog/top-10-skills">&lt;h2 id=&quot;intro&quot;&gt;Intro:&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-12-02T12:39:30-07:00</updated><id>/feed.xml</id><title type="html">Stat 426 - Fall 2021</title><subtitle>Class Blog and Projects</subtitle><entry><title type="html">REVIEW: INVISIBLE WOMEN. EXPOSING DATA BIAS IN A WORLD DESIGNED BY MEN, BY CAROLINE CRIADO PEREZ</title><link href="/blog/gender-data-gap" rel="alternate" type="text/html" title="REVIEW: INVISIBLE WOMEN. EXPOSING DATA BIAS IN A WORLD DESIGNED BY MEN, BY CAROLINE CRIADO PEREZ" /><published>2021-11-28T00:00:00-07:00</published><updated>2021-11-28T00:00:00-07:00</updated><id>/blog/gender-data-gap</id><content type="html" xml:base="/blog/gender-data-gap">&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-28/cover.jpg&quot; alt=&quot;Book-Cover&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;You are sitting in the chair at your desk, about to train a model so that you can use it to make predictions on your current data. However as soon as you run the code, you discover that it isn’t going to take as fast as you thought it was going to take. Instead of waiting 15 seconds, you will have to wait 5 minutes. The best thing to do to avoid this situation in the future is to upgrade your computer. However, not everyone has the time or the money to do so. Therefore the second best thing is to use this time while your machine is learning to learn how to become a better data scientist. As such, here are the Top 10 Skills a data scientist should know.&lt;/p&gt;
+&lt;p&gt;“One of the most important things to say about the gender data gap is that it is not generally malicious, or even deliberate. Quite the opposite. It is simply the product of a way of thinking that has been around for millennia and is therefore a kind of not thinking. A double not thinking, even: men go without saying, and women don’t get said at all. Because when we say human, on the whole, we mean man.”
+      ― Caroline Criado Perez&lt;/p&gt;
 
-&lt;h2 id=&quot;skill-1-being-curious&quot;&gt;Skill 1: Being Curious&lt;/h2&gt;
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-22/skill1.jpg&quot; alt=&quot;Skill 1&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;If you have ever felt confused when people talk about white male privilege but aren’t interested in op-ed pieces, or if you are curious about the role data plays in sexism but don’t know where to start, this is the book for you! Caroline Criado-Perez, author, provides detailed and well-researched examples in every sphere to demonstrate the gender data gap and why it matters.&lt;/p&gt;
 
-&lt;p&gt;The most important skill in being an effective data scientist isn’t actually about the field data science itself. It’s about the tendency to ask questions relentlessly. A successful data scientist isn’t someone who looks at data and doesn’t know what to say. Instead they are very curious to understand what the data is actually saying and also if it can answer questions that haven’t been asked in the first place. Therefore the most important skill in becoming a successful data scientist is being curious and always wondering about why it works the way that it works.&lt;/p&gt;
+&lt;h2 id=&quot;what-is-the-gender-data-gap&quot;&gt;What is the Gender Data Gap?&lt;/h2&gt;
 
-&lt;h2 id=&quot;skill-2-understanding-statistics&quot;&gt;Skill 2: Understanding Statistics&lt;/h2&gt;
+&lt;p&gt;The gender data gap is the fact that the majority of data we have in the world is based around the male body and the typical male life pattern. Data is fundamental to our world today.  We are dependent on data to make decisions in every aspect of life; health care, education, transportation, workplace and more.  But if the data isn’t representative of the population or if the data isn’t aggregated by gender, the results are biased.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-22/skill2.png&quot; alt=&quot;Skill 2&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;what-does-it-look-like&quot;&gt;What does it look like?&lt;/h2&gt;
 
-&lt;p&gt;However, just being able to ask intellectual questions isn’t very helpful if you don’t understand how to find the answers. Therefore just like coding, another skill a data scientist should have is an understanding of probability and statistics and also the best way to apply what you have learned. Often times a simple understanding of statistics is not enough and effective data scientists have to have a solid understanding of statistics so that they are able to come up with a better model or algorithm that can describe the data more clearly&lt;/p&gt;
+&lt;p&gt;Criado Perez gives example after example ranging from slightly annoying (women freezing in their offices because temperatures are adjusted for the higher metabolic rate of men), to deadly (women being more 17% more likely to be killed in car collisions because male dummies are used for safety testing) making it clear to see just how ubiquitous gender data bias is.
+Another example is with research on heart attacks.  Much of the research on heart attacks has focused on men. This has led to a life-threatening gender data gap because roughly two thirds of women experience less-typical symptoms.  A British cardiology study revealed that women experience 50% higher rates of heart attack misdiagnosis with fewer women surviving the first attack.
+One of the most alarming examples from this book was about medical research. Women are routinely excluded from clinical trials even though sex differences are found in every single organ and tissue and in the prevalence, course and severity of most common diseases.  Diseases that only affect women (ex. Pre-menstrual syndrome) are consistently under-studied, whereas male specific diseases have significantly more funding and research.  Even when women are included in clinical trials, data is rarely sex-aggregated which makes determining different responses between male and female impossible to determine. A pain medication that doesn’t work for men, may work great for women but without aggregating the data, you’d never know.&lt;/p&gt;
 
-&lt;h2 id=&quot;skill-3-communicating-with-your-machine&quot;&gt;Skill 3: Communicating with your machine&lt;/h2&gt;
+&lt;h2 id=&quot;why-should-we-care&quot;&gt;Why should we care?&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-22/skill3.jpg&quot; alt=&quot;Skill 3&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Unrepresentative data leads to bad results and conclusions. Data feeds into algorithms and hardware that turn into products and solutions that systematically favor half the population. Hardware, such as phone sizes or shelf heights, are simpler to fix.  Algorithms are more difficult. As future data scientists and statisticians it is important to understand the flaws and consequences of the way things are done now so we can make more informed decisions when we have more influence. Part of data science education is understanding the implications that limited perspectives and biases of have on society.&lt;/p&gt;
 
-&lt;p&gt;You can be one of the smartest mathematicians or understand the theory of probability really well, however if you don’t understand how to communicate with your machine and tell it what you want it to do, you aren’t going to get far in the data science world. This is because although you can come up with an impressive algorithm, if you aren’t able to write it in a language that a machine can understand you are then obviously unable to use thar algorithm. This is where knowledge of common data science languages such as Python, SQL or R is a necessity. Because machines aren’t able to make decisions on their own, we have to tell them what they need to do.&lt;/p&gt;
+&lt;h2 id=&quot;what-can-be-done&quot;&gt;What can be done?&lt;/h2&gt;
 
-&lt;h2 id=&quot;skill-4-manipulating-data&quot;&gt;Skill 4: Manipulating data.&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-22/skill4.png&quot; alt=&quot;Skill 4&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Another skill a data scientist should have is knowing how to prepare their data so that they are more easily able to draw conclusions from it. Majority of the data that data scientists receive isn’t very nice or  beautiful to look at. A lot of times the data is very unorganized and therefore in this current situation it is nearly impossible to draw conclusions and to discover and answer questions. Therefore an effective data scientist knows how to take any dataset and make it so that it is way easier to work with. Although this does not seem like that much of an important skill in data science, it is one of the most important skills because without it, the job of data scientist becomes much harder, nearly impossible.&lt;/p&gt;
-
-&lt;h2 id=&quot;skill-5-exploring-the-data&quot;&gt;Skill 5 Exploring the Data&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-22/skill5.png&quot; alt=&quot;Skill 5&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;This is also one of the most important skills that a data scientist should know. However it is also one of the hardest and most time consuming but also very rewarding in the end. This is because it takes a lot of patience and intelligence to draw conclusions from the data. An effective data scientist is someone who, when given tons of data, is then able to come to the company with an answer to questions that the company doesn’t even have. Therefore this skill goes hand in hand with the being curious skill because if you aren’t curious you will be unable to find concessions between the variables in the data.&lt;/p&gt;
-
-&lt;h2 id=&quot;skill-6-machine-learning&quot;&gt;Skill 6: Machine Learning&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-22/skill6.jpeg&quot; alt=&quot;Skill 6&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;For some reason there are many data scientists that don’t know much about machine learning. This is partly because it is somewhat of a new field and therefore not many people see the necessity of it. However machine learning techniques can put you ahead of the competition and make you very marketable. Therefore you should know techniques such as
-factorization machines, clustering, decision trees, deep learning, optimization, neural  networks and their frameworks such as spark and tensorflow.&lt;/p&gt;
-
-&lt;h2 id=&quot;skill-7-using-big-data&quot;&gt;Skill 7: Using big data&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-22/skill7.jpg&quot; alt=&quot;Skill 7&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Speaking of which, this leads us to another skill that data scientists should know which is the use of big data. This is because in the past decade the creation, capturing, copying, and consumption of data went up by a whopping 5000%. As such the data sets that are used today aren’t as simple as the datasets back then. Instead of a few tables with a few variables in each there are multiple tables with each table having multiple variables that somehow relate to each other. Therefore to develop insights from these types of data, data scientists should have a solid understanding of the most popular big data sets that are used.&lt;/p&gt;
-
-&lt;h2 id=&quot;skill-8-knowledge-of-business&quot;&gt;Skill 8: Knowledge of Business.&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-22/skill8.jpg&quot; alt=&quot;Skill 8&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The understanding of how business works is very essential in becoming a good data scientist. Because a data scientist who understands business then is able to understand the benefit that his/her finding has for the overall organization zigon of a whole. It is now not much about completing a task that was assigned but understanding the importance of the task and the role it has to the entire company.&lt;/p&gt;
-
-&lt;h2 id=&quot;skill-9-data-visualization&quot;&gt;Skill 9: Data Visualization&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-22/skill9.jpg&quot; alt=&quot;Skill 9&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Another important skill in becoming a data scientist is knowing how to present your data in a way that can help you describe to others your findings. This is when you have to figure out what way your data should be presented. Therefore you should have a solid understanding of different kinds of charts such as histograms, bar graphs, pie charts and also advanced charts such as waterfall charts. Also being able to plot functions on these charts is very useful. Not only does doing so make the next skill a lot easier, it also makes exploring your data easier as well.&lt;/p&gt;
-
-&lt;h2 id=&quot;skill-10-communicating-with-others&quot;&gt;Skill 10: Communicating with others&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-22/skill10.jpg&quot; alt=&quot;Skill 10&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Finally a very good skill that a data scientist should have is to be very effective in communication. Although you can find very valuable connections between variables if you aren’t able to communicate it to others in an effective way then it would be hard for others to understand your discoveries. That is why a data scientist should also work on his/her communication skills because it isn’t the machine that does the communication for them, it is them.&lt;/p&gt;
+&lt;p&gt;This book doesn’t try to explain why the gender data gap exists or who is to blame, it simply lays out data-backed examples to illustrate that the problem exists and that education on the issue and more diversity can alleviate the problem.&lt;br /&gt;
+Here is one example of how diversity can help with the gender data gap. Gyms, parks and sports grounds are typically male dominated.  Officials chalk this up to a difference in preferences between men and women. Recent studies show that when men and women’s preferences are accounted for in the design of these spaces, they are equally used between genders. Diversity is essential in groups of decision makers.  Many of the gender data bias is not due to explicit sexism, it is because the people in the room making the decisions are male, and either assume that female needs are the same as theirs, or they fail to remember women’s needs at all.  This applies to racial minorities and other marginalized groups.  The more perspectives are involved in planning, the less likely it is that bias will continue.&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 
-&lt;p&gt;Now you see why the Data Science Career is a very rewarding but also very difficult career to have. This is because the best data scientists are people who are very good at math, statistics, developing models but also very good at implementing models and drawing conclusions based on what they were given. However if you are able to learn the majority of the above skills you will be way ahead of the competition. Therefore although you’re not prolly going to be paid to develop these skills they will still make you a better data scientist overall.&lt;/p&gt;
+&lt;p&gt;I would highly recommend this book to everyone, men and women.  It has helped me see things through a new lense.  The book is full of Criado Perez’s humor and wit but is all very data driven so it isn’t just her opinions, she drives her point with facts.  In a world that is more and more data-driven, these types of conversations need to be had.  It is the way to make the world a more comfortable place for women and other groups that are routinely overlooked.  This book challenges the reader to take a step outside their own perspective and think about ways biased data presents itself in society.  Besides the examples given in this blogpost, where have you seen the gender data gap?&lt;/p&gt;
 
-&lt;h3 id=&quot;helpful-links&quot;&gt;Helpful Links&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Skill 3: &lt;a href=&quot;https://www.linkedin.com/learning/topics/python?accountId=2153100&amp;amp;u=2153100&amp;amp;success=true&amp;amp;authUUID=E%2BagPUnkQpCaU2Ws9EcJTA%3D%3D&quot;&gt;LinkedIn Python&lt;/a&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Skill 4: &lt;a href=&quot;https://www.datacamp.com/community/tutorials/web-scraping-using-python&quot;&gt;Web Scraping&lt;/a&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Skill 5: &lt;a href=&quot;https://www.listendata.com/2014/06/data-exploration-using-r.html&quot;&gt;Exploring the Data with R&lt;/a&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Skill 6: &lt;a href=&quot;https://www.mathworks.com/solutions/machine-learning/tutorials-examples.html?ef_id=CjwKCAiAv_KMBhAzEiwAs-rX1KcRG_OT51NYkQ0O7H4J7zE1rMJprL_OtC0pqfRPWafjpFTU2qHrMhoChsYQAvD_BwE:G:s&amp;amp;s_kwcid=AL!8664!3!521120568225!p!!g!!machine%20learning%20tutorial&amp;amp;s_eid=psn_57384016232&amp;amp;q=machine%20learning%20tutorial&amp;amp;gclid=CjwKCAiAv_KMBhAzEiwAs-rX1KcRG_OT51NYkQ0O7H4J7zE1rMJprL_OtC0pqfRPWafjpFTU2qHrMhoChsYQAvD_BwE&quot;&gt;Machine Learning with R&lt;/a&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Skill 7: &lt;a href=&quot;https://www.udemy.com/course/big-data-and-hadoop-essentials-free-tutorial/&quot;&gt;Hadoop Tutorial&lt;/a&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Skill 9: &lt;a href=&quot;https://flowingdata.com/category/tutorials/&quot;&gt;Data Visualization Tutorials&lt;/a&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Gavin Williams</name><email>gmw72718@gmail.com</email></author><category term="Big Data" /><category term="Data Science" /><category term="Top 10 Skills" /><category term="Machine Learning" /><summary type="html">Intro:</summary></entry><entry><title type="html">The Hidden Gems of ggplot2</title><link href="/blog/ggplot2" rel="alternate" type="text/html" title="The Hidden Gems of ggplot2" /><published>2021-11-22T00:00:00-07:00</published><updated>2021-11-22T00:00:00-07:00</updated><id>/blog/ggplot2</id><content type="html" xml:base="/blog/ggplot2">&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;This book can be purchased &lt;a href=&quot;https://www.amazon.com/Invisible-Women-Data-World-Designed/dp/1419729071&quot;&gt;here&lt;/a&gt;&lt;/p&gt;</content><author><name>Maddie Hays</name><email>madeleinehays7@gmail.com</email></author><category term="Book Review" /><category term="Data Science" /><category term="Statistics" /><category term="Feminism" /><summary type="html"></summary></entry><entry><title type="html">The Hidden Gems of ggplot2</title><link href="/blog/ggplot2" rel="alternate" type="text/html" title="The Hidden Gems of ggplot2" /><published>2021-11-22T00:00:00-07:00</published><updated>2021-11-22T00:00:00-07:00</updated><id>/blog/ggplot2</id><content type="html" xml:base="/blog/ggplot2">&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
 
 &lt;p&gt;Although much of the business world relies heavily on programs such as tableau to provide visualization on data analysis, there is a huge advantage to scripting languages such as R and Python to provide customizable plots and figures that clearly represent the data.This blog displays one of the cool uses for ggplot2, as well as helpful methods in bettering your visualization skills.&lt;/p&gt;
 
@@ -181,7 +123,97 @@ geom_tile provides a clean and simple way to create such a heat map. note that y
 &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;last_plot()&lt;/code&gt;&lt;br /&gt;
 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ggsave(“map_plot.png”, width = 5, height = 5)&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;Ultimately there are endless possibilities for creating the plot that you want through ggplot2. The important thing is to always be learning new and unique ways that ggplot2 can increase your fluency and skill in data visualization.&lt;/p&gt;</content><author><name>Christina Rhees</name><email>christina.rhees@gmail.com</email></author><category term="data visualization" /><category term="post" /><category term="ggplot2" /><summary type="html">Introduction</summary></entry><entry><title type="html">What Coding Language Should I Learn?</title><link href="/blog/coding-languages" rel="alternate" type="text/html" title="What Coding Language Should I Learn?" /><published>2021-11-17T00:00:00-07:00</published><updated>2021-11-17T00:00:00-07:00</updated><id>/blog/coding-languages</id><content type="html" xml:base="/blog/coding-languages">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Ultimately there are endless possibilities for creating the plot that you want through ggplot2. The important thing is to always be learning new and unique ways that ggplot2 can increase your fluency and skill in data visualization.&lt;/p&gt;</content><author><name>Christina Rhees</name><email>christina.rhees@gmail.com</email></author><category term="data visualization" /><category term="post" /><category term="ggplot2" /><summary type="html">Introduction</summary></entry><entry><title type="html">Top 10 Skills a future Data Scientist should learn while their machine is also learning.</title><link href="/blog/top-10-skills" rel="alternate" type="text/html" title="Top 10 Skills a future Data Scientist should learn while their machine is also learning." /><published>2021-11-22T00:00:00-07:00</published><updated>2021-11-22T00:00:00-07:00</updated><id>/blog/top-10-skills</id><content type="html" xml:base="/blog/top-10-skills">&lt;h2 id=&quot;intro&quot;&gt;Intro:&lt;/h2&gt;
+
+&lt;p&gt;You are sitting in the chair at your desk, about to train a model so that you can use it to make predictions on your current data. However as soon as you run the code, you discover that it isn’t going to take as fast as you thought it was going to take. Instead of waiting 15 seconds, you will have to wait 5 minutes. The best thing to do to avoid this situation in the future is to upgrade your computer. However, not everyone has the time or the money to do so. Therefore the second best thing is to use this time while your machine is learning to learn how to become a better data scientist. As such, here are the Top 10 Skills a data scientist should know.&lt;/p&gt;
+
+&lt;h2 id=&quot;skill-1-being-curious&quot;&gt;Skill 1: Being Curious&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-22/skill1.jpg&quot; alt=&quot;Skill 1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The most important skill in being an effective data scientist isn’t actually about the field data science itself. It’s about the tendency to ask questions relentlessly. A successful data scientist isn’t someone who looks at data and doesn’t know what to say. Instead they are very curious to understand what the data is actually saying and also if it can answer questions that haven’t been asked in the first place. Therefore the most important skill in becoming a successful data scientist is being curious and always wondering about why it works the way that it works.&lt;/p&gt;
+
+&lt;h2 id=&quot;skill-2-understanding-statistics&quot;&gt;Skill 2: Understanding Statistics&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-22/skill2.png&quot; alt=&quot;Skill 2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;However, just being able to ask intellectual questions isn’t very helpful if you don’t understand how to find the answers. Therefore just like coding, another skill a data scientist should have is an understanding of probability and statistics and also the best way to apply what you have learned. Often times a simple understanding of statistics is not enough and effective data scientists have to have a solid understanding of statistics so that they are able to come up with a better model or algorithm that can describe the data more clearly&lt;/p&gt;
+
+&lt;h2 id=&quot;skill-3-communicating-with-your-machine&quot;&gt;Skill 3: Communicating with your machine&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-22/skill3.jpg&quot; alt=&quot;Skill 3&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can be one of the smartest mathematicians or understand the theory of probability really well, however if you don’t understand how to communicate with your machine and tell it what you want it to do, you aren’t going to get far in the data science world. This is because although you can come up with an impressive algorithm, if you aren’t able to write it in a language that a machine can understand you are then obviously unable to use thar algorithm. This is where knowledge of common data science languages such as Python, SQL or R is a necessity. Because machines aren’t able to make decisions on their own, we have to tell them what they need to do.&lt;/p&gt;
+
+&lt;h2 id=&quot;skill-4-manipulating-data&quot;&gt;Skill 4: Manipulating data.&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-22/skill4.png&quot; alt=&quot;Skill 4&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Another skill a data scientist should have is knowing how to prepare their data so that they are more easily able to draw conclusions from it. Majority of the data that data scientists receive isn’t very nice or  beautiful to look at. A lot of times the data is very unorganized and therefore in this current situation it is nearly impossible to draw conclusions and to discover and answer questions. Therefore an effective data scientist knows how to take any dataset and make it so that it is way easier to work with. Although this does not seem like that much of an important skill in data science, it is one of the most important skills because without it, the job of data scientist becomes much harder, nearly impossible.&lt;/p&gt;
+
+&lt;h2 id=&quot;skill-5-exploring-the-data&quot;&gt;Skill 5 Exploring the Data&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-22/skill5.png&quot; alt=&quot;Skill 5&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is also one of the most important skills that a data scientist should know. However it is also one of the hardest and most time consuming but also very rewarding in the end. This is because it takes a lot of patience and intelligence to draw conclusions from the data. An effective data scientist is someone who, when given tons of data, is then able to come to the company with an answer to questions that the company doesn’t even have. Therefore this skill goes hand in hand with the being curious skill because if you aren’t curious you will be unable to find concessions between the variables in the data.&lt;/p&gt;
+
+&lt;h2 id=&quot;skill-6-machine-learning&quot;&gt;Skill 6: Machine Learning&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-22/skill6.jpeg&quot; alt=&quot;Skill 6&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;For some reason there are many data scientists that don’t know much about machine learning. This is partly because it is somewhat of a new field and therefore not many people see the necessity of it. However machine learning techniques can put you ahead of the competition and make you very marketable. Therefore you should know techniques such as
+factorization machines, clustering, decision trees, deep learning, optimization, neural  networks and their frameworks such as spark and tensorflow.&lt;/p&gt;
+
+&lt;h2 id=&quot;skill-7-using-big-data&quot;&gt;Skill 7: Using big data&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-22/skill7.jpg&quot; alt=&quot;Skill 7&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Speaking of which, this leads us to another skill that data scientists should know which is the use of big data. This is because in the past decade the creation, capturing, copying, and consumption of data went up by a whopping 5000%. As such the data sets that are used today aren’t as simple as the datasets back then. Instead of a few tables with a few variables in each there are multiple tables with each table having multiple variables that somehow relate to each other. Therefore to develop insights from these types of data, data scientists should have a solid understanding of the most popular big data sets that are used.&lt;/p&gt;
+
+&lt;h2 id=&quot;skill-8-knowledge-of-business&quot;&gt;Skill 8: Knowledge of Business.&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-22/skill8.jpg&quot; alt=&quot;Skill 8&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The understanding of how business works is very essential in becoming a good data scientist. Because a data scientist who understands business then is able to understand the benefit that his/her finding has for the overall organization zigon of a whole. It is now not much about completing a task that was assigned but understanding the importance of the task and the role it has to the entire company.&lt;/p&gt;
+
+&lt;h2 id=&quot;skill-9-data-visualization&quot;&gt;Skill 9: Data Visualization&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-22/skill9.jpg&quot; alt=&quot;Skill 9&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Another important skill in becoming a data scientist is knowing how to present your data in a way that can help you describe to others your findings. This is when you have to figure out what way your data should be presented. Therefore you should have a solid understanding of different kinds of charts such as histograms, bar graphs, pie charts and also advanced charts such as waterfall charts. Also being able to plot functions on these charts is very useful. Not only does doing so make the next skill a lot easier, it also makes exploring your data easier as well.&lt;/p&gt;
+
+&lt;h2 id=&quot;skill-10-communicating-with-others&quot;&gt;Skill 10: Communicating with others&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-22/skill10.jpg&quot; alt=&quot;Skill 10&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Finally a very good skill that a data scientist should have is to be very effective in communication. Although you can find very valuable connections between variables if you aren’t able to communicate it to others in an effective way then it would be hard for others to understand your discoveries. That is why a data scientist should also work on his/her communication skills because it isn’t the machine that does the communication for them, it is them.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Now you see why the Data Science Career is a very rewarding but also very difficult career to have. This is because the best data scientists are people who are very good at math, statistics, developing models but also very good at implementing models and drawing conclusions based on what they were given. However if you are able to learn the majority of the above skills you will be way ahead of the competition. Therefore although you’re not prolly going to be paid to develop these skills they will still make you a better data scientist overall.&lt;/p&gt;
+
+&lt;h3 id=&quot;helpful-links&quot;&gt;Helpful Links&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Skill 3: &lt;a href=&quot;https://www.linkedin.com/learning/topics/python?accountId=2153100&amp;amp;u=2153100&amp;amp;success=true&amp;amp;authUUID=E%2BagPUnkQpCaU2Ws9EcJTA%3D%3D&quot;&gt;LinkedIn Python&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Skill 4: &lt;a href=&quot;https://www.datacamp.com/community/tutorials/web-scraping-using-python&quot;&gt;Web Scraping&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Skill 5: &lt;a href=&quot;https://www.listendata.com/2014/06/data-exploration-using-r.html&quot;&gt;Exploring the Data with R&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Skill 6: &lt;a href=&quot;https://www.mathworks.com/solutions/machine-learning/tutorials-examples.html?ef_id=CjwKCAiAv_KMBhAzEiwAs-rX1KcRG_OT51NYkQ0O7H4J7zE1rMJprL_OtC0pqfRPWafjpFTU2qHrMhoChsYQAvD_BwE:G:s&amp;amp;s_kwcid=AL!8664!3!521120568225!p!!g!!machine%20learning%20tutorial&amp;amp;s_eid=psn_57384016232&amp;amp;q=machine%20learning%20tutorial&amp;amp;gclid=CjwKCAiAv_KMBhAzEiwAs-rX1KcRG_OT51NYkQ0O7H4J7zE1rMJprL_OtC0pqfRPWafjpFTU2qHrMhoChsYQAvD_BwE&quot;&gt;Machine Learning with R&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Skill 7: &lt;a href=&quot;https://www.udemy.com/course/big-data-and-hadoop-essentials-free-tutorial/&quot;&gt;Hadoop Tutorial&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Skill 9: &lt;a href=&quot;https://flowingdata.com/category/tutorials/&quot;&gt;Data Visualization Tutorials&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Gavin Williams</name><email>gmw72718@gmail.com</email></author><category term="Big Data" /><category term="Data Science" /><category term="Top 10 Skills" /><category term="Machine Learning" /><summary type="html">Intro:</summary></entry><entry><title type="html">What Coding Language Should I Learn?</title><link href="/blog/coding-languages" rel="alternate" type="text/html" title="What Coding Language Should I Learn?" /><published>2021-11-17T00:00:00-07:00</published><updated>2021-11-17T00:00:00-07:00</updated><id>/blog/coding-languages</id><content type="html" xml:base="/blog/coding-languages">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
 
 &lt;p&gt;I want to be a data analyst, which coding language should I learn? What if I want to be a business analyst, does that make a difference? Can I just learn one language or do I need to be able to write code for multiple platforms? Based on my own experience applying for jobs, there are many different coding languages that people can learn, but not all are used on a regular basis. Here are some of those languages and platforms that might help you get a head start in the world of data.&lt;/p&gt;
 
@@ -878,129 +910,4 @@ y_true = np.argmax(y_test, axis=-1)
 
 &lt;p&gt;This is a very simple and basic example of how a neural network works. However, can you see some of the potential uses of neural netwokrs? Neural networks are the basis of
 facial recognition, hand-writting recognition among many others. It is the most basic way of deep learning and artificial intelligence. Because of this, it is important to
-learn and understand how they work.&lt;/p&gt;</content><author><name>Pablo Higueros</name><email>nan</email></author><category term="Keras" /><category term="Neural Network" /><category term="Deep Learning" /><category term="Layers" /><category term="Sequential" /><summary type="html">Introduction - What is a neural network?</summary></entry><entry><title type="html">Quick Machine Learning with PyCaret</title><link href="/blog/quick-ml-pycaret" rel="alternate" type="text/html" title="Quick Machine Learning with PyCaret" /><published>2021-11-08T00:00:00-07:00</published><updated>2021-11-08T00:00:00-07:00</updated><id>/blog/quick-ml-pycaret</id><content type="html" xml:base="/blog/quick-ml-pycaret">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
-
-&lt;p&gt;When fitting a model for data, it can be a tedious process to fit many different models as you try to figure out which model is best for the data that you have. It is time consuming to code up multiple models and as a result only a few number of models are compared when trying to fit the best model. &lt;a href=&quot;https://pycaret.org/&quot;&gt;PyCaret&lt;/a&gt; is an open source low-code machine learning library in Python, which can be used to quickly fit many models and reduce the time spent coding and comparing models.&lt;/p&gt;
-
-&lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
-
-&lt;p&gt;The first thing to do is to install PyCaret. It is highly recommended to use a virtual environment when installing PyCaret to avoid conflicts with other packages. A virtual environment can be created and activated with the following commands:&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;conda create --name yourenvname python=3.8
-conda activate yourenvname
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Once you have created your virtual environment, PyCaret can be install by running the line below:&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pip install pycaret
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;PyCaret should then be installed as part of your virtual environment. It is recommended to be used in a notebook environment, such as Jupyter Notebook, Google Colab, or Azure Notebooks for example, because of html and interactive widgets that it uses. If you have issues installing PyCaret, you can refer to installation instructions found &lt;a href=&quot;https://pycaret.readthedocs.io/en/latest/installation.html&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;load-data&quot;&gt;Load Data&lt;/h2&gt;
-&lt;p&gt;There are a number of built in datasets that can be used to show the abilities of PyCaret. The Boston housing dataset is available and it provides information about housing in the Boston MA area. The response variable for this dataset is the median value of owner occupied homes. There is a get_data function in PyCaret. The function takes the name of the dataset.&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;from pycaret.datasets import get_data
-boston_full = get_data('boston')
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;A test set is created from the data to be tried on the model for prediction. PyCaret will automatically take the data given and split it into a training set and a validation set.&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;boston = boston_full.sample(frac=0.9, random_state=786)
-boston_unseen = boston_full.drop(boston.index)
-boston.reset_index(drop=True, inplace=True)
-boston_unseen.reset_index(drop=True, inplace=True)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;set-up-model&quot;&gt;Set up model&lt;/h2&gt;
-
-&lt;p&gt;PyCaret can deal with regression or classification problems, as well as clustering, anomaly detection, and natural language processing. The Boston data set is a regression problem, so we import everything from pycaret.regression. It is easy to set up a model with PyCaret. The setup function is used to specify the model for your data, where you specify the dataset you are using and the target variable. There are other options available, but this is the minimum needed to set up the model. When setting up the model, a box will appear and show what variable type PyCaret is assuming from the dataset.&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;from pycaret.regression import *
-reg1 = setup(data = boston, target = 'medv')
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-08/input.png&quot; alt=&quot;Model Input&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Once finished, there will be a printout that specifies information about the data, such as the response variable, whether there is missing values, what preprocessing steps should be taken and so forth. Any information about the model to be fit can be found in this table.&lt;/p&gt;
-
-&lt;h2 id=&quot;compare-baseline-models&quot;&gt;Compare baseline models&lt;/h2&gt;
-
-&lt;p&gt;One of the best features of PyCaret in my opinion is the ability to fit a bunch of baseline models initially to get an idea of which model is best. A number of models are fit and multiple metrics are fit to determine which baseline model is the best. These baseline models use the default values for tuning parameters. The folds argument specifies the number of folds for cross validation when comparing models.&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;compare_modes(folds = 5)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-08/modelcomp.png&quot; alt=&quot;Model Comparison&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;create-a-model&quot;&gt;Create a model&lt;/h2&gt;
-&lt;p&gt;After comparing the baseline models, you can choose a model that fits the best so you can tune it. The gradient boosting regressor was the best for the Boston data for five of the six metrics, so I’ll create that one and work to tune the model. Printing out the model will provide the model that is originally created with the hyper parameters values.&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gb = create_model('gbr')
-print(gb)
-
-GradientBoostingRegressor(alpha=0.9, ccp_alpha=0.0, criterion='friedman_mse', init=None, learning_rate=0.1, loss='ls', max_depth=3,max_features=None, max_leaf_nodes=None, min_impurity_decrease=0.0, min_impurity_split=None, min_samples_leaf=1, min_samples_split=2, min_weight_fraction_leaf=0.0, n_estimators=100, n_iter_no_change=None, presort='deprecated', random_state=2183, subsample=1.0, tol=0.0001, validation_fraction=0.1, verbose=0, warm_start=False)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;tune-a-model&quot;&gt;Tune a model&lt;/h2&gt;
-&lt;p&gt;The hyperparameters of a model can easily be tuned with the tune_model function, which only requires the model previously created. It then outputs the calculated metrics for 10 folds.&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;tuned_gb = tune_model(gb)
-print(tuned_gb)
-
-GradientBoostingRegressor(alpha=0.9, ccp_alpha=0.0, criterion='friedman_mse', init=None, learning_rate=0.1, loss='ls', max_depth=4, max_features='log2', max_leaf_nodes=None, min_impurity_decrease=0.0005, min_impurity_split=None, min_samples_leaf=3, min_samples_split=5, min_weight_fraction_leaf=0.0, n_estimators=190, n_iter_no_change=None, presort='deprecated', random_state=2183, subsample=0.45, tol=0.0001, validation_fraction=0.1, verbose=0, warm_start=False)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-08/tuned.png&quot; alt=&quot;Tuned Model&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;model-plots&quot;&gt;Model Plots&lt;/h2&gt;
-&lt;p&gt;After the model has been tuned for best performance, you can create some plots to easily visualize results. Some examples of plots are a residuals plot, a prediction error plot, and a feature importance plot. Examples of these plots for the Boston dataset and the gradient boosting regressor are shown below&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;plot_model(tuned_gb)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-08/Residuals.png&quot; alt=&quot;Residuals&quot; /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;plot_model(tuned_gb, plot = 'error')
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-08/error.png&quot; alt=&quot;Error&quot; /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;plot_model(tuned_gb, plot = 'feature')
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-08/feature_import.png&quot; alt=&quot;Feature Importance&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;predictions&quot;&gt;Predictions&lt;/h2&gt;
-
-&lt;p&gt;Once you are satisfied with your tuned model and are ready to fit it and make predictions, you can use the predict_model function to make predictions for your validation set. This will use the validation set that was automatically created when setting up the model. In addition to giving the predictions for each observation, it calculates the six metrics for the validation set and returns those values as well.&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;validation_preds = predict_model(tuned_gb)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-08/validation.png&quot; alt=&quot;Validation Performance&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;After testing the model on the validation set, it is helpful to then fit the model using the training and validation sets since it will likely help the performance of the model improve on unseen data. Once again, there is a single function in PyCaret that will do all of this. The finalize_model function will refit the model using the training and validation sets and then it can be applied to additional unseen data.&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;final_gb = finalize_model(tuned_gb)
-print(final_gb)
-
-GradientBoostingRegressor(alpha=0.9, ccp_alpha=0.0, criterion='friedman_mse', init=None, learning_rate=0.1, loss='ls', max_depth=4, max_features='log2', max_leaf_nodes=None, min_impurity_decrease=0.0005, min_impurity_split=None min_samples_leaf=3, min_samples_split=5, min_weight_fraction_leaf=0.0, n_estimators=190, n_iter_no_change=None, presort='deprecated', random_state=2183, subsample=0.45, tol=0.0001, validation_fraction=0.1, verbose=0, warm_start=False)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Predictions are made using the same function as before, but you supply the predict_model function with the unseen data. The predict_model function returns a data frame of the unseen data with an extra column named Label, which includes the predicted value. The performance of these predictions can be checked with the check_metric function.&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;from pycaret.utils import check_metric
-print(check_metric(unseen_predictions.medv, unseen_predictions.Label, 'RMSE'))
-print(check_metric(unseen_predictions.medv, unseen_predictions.Label, ‘R2’))
-
-2.9136
-0.8253
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
-
-&lt;p&gt;In just a few lines of code, we were able to compare a number of baseline models, tune a model, check the performance of the model on a validation set, refit the model with the training and validation set, and make predictions on the test set and produce good predictions. Although it is important to understand how these models work, it can be tedious to code out multiple models when comparing which model might be best for a certain dataset. PyCaret automates a lot of that process and provides additional flexibility as well. There are options to implement preprocessing, such as dealing with missing values, normalization, categorical variable encoding and so forth. There are options for ensemble methods in PyCaret as well.&lt;/p&gt;
-
-&lt;p&gt;With such flexibility, PyCaret seems to be an option that can save a lot of time when fitting a model to data. I will likely look for opportunities to use this to simplify projects that I am working on personally. If you have ever used PyCaret before, feel free to comment about how you used it in your work.&lt;/p&gt;
-
-&lt;p&gt;PyCaret has extensive &lt;a href=&quot;https://pycaret.org/guide/&quot;&gt;documentation&lt;/a&gt; and &lt;a href=&quot;https://pycaret.readthedocs.io/en/latest/tutorials.html&quot;&gt;tutorials&lt;/a&gt; for various levels, so feel free to dive into their tutorials to get yourself started or to explore additional capabilities of PyCaret that weren’t discussed in this post.&lt;/p&gt;</content><author><name>David Teuscher</name><email>dteuscher.37.12@gmail.com</email></author><category term="PyCaret" /><category term="Machine Learning" /><category term="Model Comparison" /><category term="Model Fitting" /><summary type="html">Introduction</summary></entry></feed>
+learn and understand how they work.&lt;/p&gt;</content><author><name>Pablo Higueros</name><email>nan</email></author><category term="Keras" /><category term="Neural Network" /><category term="Deep Learning" /><category term="Layers" /><category term="Sequential" /><summary type="html">Introduction - What is a neural network?</summary></entry></feed>

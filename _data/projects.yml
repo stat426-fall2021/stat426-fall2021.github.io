@@ -1,73 +1,73 @@
 - name: Example Project from 2020
-  image: https://raw.githubusercontent.com/abedurrant/All-NBA-Predictions-DataScienceProject/main/All-NBA_Plot2.png
-  link: https://github.com/abedurrant/All-NBA-Predictions-DataScienceProject
+  image: "https://raw.githubusercontent.com/abedurrant/All-NBA-Predictions-DataScienceProject/main/All-NBA_Plot2.png"
+  link: "https://github.com/abedurrant/All-NBA-Predictions-DataScienceProject"
   description: Abe Durrant
 - name: BAR
   image: /assets/images/projectimages/bar.png
-  link: https://github.com/stat426-fall2021/BARproject
+  link: "https://github.com/stat426-fall2021/BARproject"
   description: Rosie Stewart, Bethany Bassett, Ashtyn Fiala
 - name: CAP
   image: /assets/images/projectimages/cap.jpg
-  link: https://github.com/stat426-fall2021/CAP_Project
+  link: "https://github.com/stat426-fall2021/CAP_Project"
   description: Alexander Norris, Cal Barker, Pablo Higueros Lopez
 - name: Centennial
-  image: https://www.digitalmusicnews.com/wp-
-content/uploads/2016/04/genre_breakdown_2015_1.png
-  link: https://github.com/Andrustn/426_Final
+  image: "https://www.digitalmusicnews.com/wp-
+content/uploads/2016/04/genre_breakdown_2015_1.png"
+  link: "https://github.com/Andrustn/426_Final"
   description: Trevor Andrus, Samuel Johnson, Connor Greenhalgh
 - name: NYPD Crime Classification
   image: /assets/images/projectimages/chickenwaffles.png
-  link:  https://github.com/18katesmit/NYPDComplaintClassification
-  description: Chicken and Waffles: Israel Bentley, Nicholas Austill, Kate Smith
+  link:  "https://github.com/18katesmit/NYPDComplaintClassification"
+  description: "Chicken and Waffles: Israel Bentley, Nicholas Austill, Kate Smith"
 - name: Front Row
   image: /assets/images/projectimages/frontrow.png
-  link: https://github.com/stat426-fall2021/classproject-front-row
+  link: "https://github.com/stat426-fall2021/classproject-front-row"
   description: Christina Rhees, Truman Jeppson
 - name: Grad1
   image: /assets/images/projectimages/grad1.jpg
-  link: https://github.com/dteuscher1/Project426
+  link: "https://github.com/dteuscher1/Project426"
   description: Matthew Morgan, David Teuscher, McKay Gerratt, Brad Hymas
 - name: Hotels
   image: /assets/images/projectimages/hotels.jpg
-  link: https://github.com/jhdegn/hotel-reservations
+  link: "https://github.com/jhdegn/hotel-reservations"
   description: Andrew Pope, Josh Degn
 - name: JAG
   image: /assets/images/projectimages/jag.jpg
-  link: https://github.com/amanwebb/Predicting-NBA-Awards
+  link: "https://github.com/amanwebb/Predicting-NBA-Awards"
   description: Noah Landers, Austin Webb, Jake Szendre, Garrett Carr
 - name: JEF
   image: /assets/images/projectimages/jef.jpg
-  link: https://github.com/mimanjh/426_final
+  link: "https://github.com/mimanjh/426_final"
   description: Felicia Seng, Emily Liu, Jacob Hunsaker
 - name: LDS Tools
-  image: https://i.insider.com/5da48be8cc4a0a4b616b702c?width=1000&format=jpeg&auto=webp
-  link: https://github.com/JR-Development21/Final_Project
+  image: "https://i.insider.com/5da48be8cc4a0a4b616b702c?width=1000&format=jpeg&auto=webp"
+  link: "https://github.com/JR-Development21/Final_Project"
   description: Jace Ritchie, Colin Mason, Gavin Williams
 - name: Lightning
-  image: https://raw.githubusercontent.com/hamblinjm/crossfit/main/WorkOutPic.jpg
-  link: https://github.com/hamblinjm/crossfit
+  image: "https://raw.githubusercontent.com/hamblinjm/crossfit/main/WorkOutPic.jpg"
+  link: "https://github.com/hamblinjm/crossfit"
   description: Braden Wellman, Spencer Kimball, Jessica Hamblin
 - name: LoTyRex
   image: /assets/images/projectimages/lotyrex.jpg
-  link: 1.	https://github.com/rexmoss/lotyrex-finalproject
+  link: "https://github.com/rexmoss/lotyrex-finalproject"
   description: Jeong You, Tyler Pettit, Rex Moss
 - name: MRB
   image: /assets/images/projectimages/mrb.jpg
-  link: https://github.com/gmm2410/STAT426Project
+  link: "https://github.com/gmm2410/STAT426Project"
   description: Ben Kinard, Gerardo Meza Mera, Rachel Pourre
 - name: MidiMix
   image: /assets/images/projectimages/midimix.png
-  link: https://github.com/AdamLenning/ArtificialRodrigo
+  link: "https://github.com/AdamLenning/ArtificialRodrigo"
   description: Sonny George, Adam Lenning
 - name: MRB
   image: /assets/images/projectimages/mrb.jpg
-  link: https://github.com/gmm2410/STAT426Project
+  link: "https://github.com/gmm2410/STAT426Project"
   description: Ben Kinard, Gerardo Meza Mera, Rachel Pourre
 - name: Passive-Regressive
   image: /assets/images/projectimages/passive.png
-  link: https://github.com/tscotn/tiktok
+  link: "https://github.com/tscotn/tiktok"
   description: Bryce Fuller, Scot Nielson, Rachel Hamilton
 - name: Zoom Crew
   image: /assets/images/projectimages/zoom.png
-  link: https://github.com/stat426-fall2021/final-project-zoom-crew
+  link: "https://github.com/stat426-fall2021/final-project-zoom-crew"
   description: John Black, Josh Gladwell, Maddie Hays
