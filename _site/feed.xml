@@ -1,129 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-12-02T12:39:30-07:00</updated><id>/feed.xml</id><title type="html">Stat 426 - Fall 2021</title><subtitle>Class Blog and Projects</subtitle><entry><title type="html">REVIEW: INVISIBLE WOMEN. EXPOSING DATA BIAS IN A WORLD DESIGNED BY MEN, BY CAROLINE CRIADO PEREZ</title><link href="/blog/gender-data-gap" rel="alternate" type="text/html" title="REVIEW: INVISIBLE WOMEN. EXPOSING DATA BIAS IN A WORLD DESIGNED BY MEN, BY CAROLINE CRIADO PEREZ" /><published>2021-11-28T00:00:00-07:00</published><updated>2021-11-28T00:00:00-07:00</updated><id>/blog/gender-data-gap</id><content type="html" xml:base="/blog/gender-data-gap">&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-28/cover.jpg&quot; alt=&quot;Book-Cover&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;“One of the most important things to say about the gender data gap is that it is not generally malicious, or even deliberate. Quite the opposite. It is simply the product of a way of thinking that has been around for millennia and is therefore a kind of not thinking. A double not thinking, even: men go without saying, and women don’t get said at all. Because when we say human, on the whole, we mean man.”
-      ― Caroline Criado Perez&lt;/p&gt;
-
-&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
-
-&lt;p&gt;If you have ever felt confused when people talk about white male privilege but aren’t interested in op-ed pieces, or if you are curious about the role data plays in sexism but don’t know where to start, this is the book for you! Caroline Criado-Perez, author, provides detailed and well-researched examples in every sphere to demonstrate the gender data gap and why it matters.&lt;/p&gt;
-
-&lt;h2 id=&quot;what-is-the-gender-data-gap&quot;&gt;What is the Gender Data Gap?&lt;/h2&gt;
-
-&lt;p&gt;The gender data gap is the fact that the majority of data we have in the world is based around the male body and the typical male life pattern. Data is fundamental to our world today.  We are dependent on data to make decisions in every aspect of life; health care, education, transportation, workplace and more.  But if the data isn’t representative of the population or if the data isn’t aggregated by gender, the results are biased.&lt;/p&gt;
-
-&lt;h2 id=&quot;what-does-it-look-like&quot;&gt;What does it look like?&lt;/h2&gt;
-
-&lt;p&gt;Criado Perez gives example after example ranging from slightly annoying (women freezing in their offices because temperatures are adjusted for the higher metabolic rate of men), to deadly (women being more 17% more likely to be killed in car collisions because male dummies are used for safety testing) making it clear to see just how ubiquitous gender data bias is.
-Another example is with research on heart attacks.  Much of the research on heart attacks has focused on men. This has led to a life-threatening gender data gap because roughly two thirds of women experience less-typical symptoms.  A British cardiology study revealed that women experience 50% higher rates of heart attack misdiagnosis with fewer women surviving the first attack.
-One of the most alarming examples from this book was about medical research. Women are routinely excluded from clinical trials even though sex differences are found in every single organ and tissue and in the prevalence, course and severity of most common diseases.  Diseases that only affect women (ex. Pre-menstrual syndrome) are consistently under-studied, whereas male specific diseases have significantly more funding and research.  Even when women are included in clinical trials, data is rarely sex-aggregated which makes determining different responses between male and female impossible to determine. A pain medication that doesn’t work for men, may work great for women but without aggregating the data, you’d never know.&lt;/p&gt;
-
-&lt;h2 id=&quot;why-should-we-care&quot;&gt;Why should we care?&lt;/h2&gt;
-
-&lt;p&gt;Unrepresentative data leads to bad results and conclusions. Data feeds into algorithms and hardware that turn into products and solutions that systematically favor half the population. Hardware, such as phone sizes or shelf heights, are simpler to fix.  Algorithms are more difficult. As future data scientists and statisticians it is important to understand the flaws and consequences of the way things are done now so we can make more informed decisions when we have more influence. Part of data science education is understanding the implications that limited perspectives and biases of have on society.&lt;/p&gt;
-
-&lt;h2 id=&quot;what-can-be-done&quot;&gt;What can be done?&lt;/h2&gt;
-
-&lt;p&gt;This book doesn’t try to explain why the gender data gap exists or who is to blame, it simply lays out data-backed examples to illustrate that the problem exists and that education on the issue and more diversity can alleviate the problem.&lt;br /&gt;
-Here is one example of how diversity can help with the gender data gap. Gyms, parks and sports grounds are typically male dominated.  Officials chalk this up to a difference in preferences between men and women. Recent studies show that when men and women’s preferences are accounted for in the design of these spaces, they are equally used between genders. Diversity is essential in groups of decision makers.  Many of the gender data bias is not due to explicit sexism, it is because the people in the room making the decisions are male, and either assume that female needs are the same as theirs, or they fail to remember women’s needs at all.  This applies to racial minorities and other marginalized groups.  The more perspectives are involved in planning, the less likely it is that bias will continue.&lt;/p&gt;
-
-&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
-
-&lt;p&gt;I would highly recommend this book to everyone, men and women.  It has helped me see things through a new lense.  The book is full of Criado Perez’s humor and wit but is all very data driven so it isn’t just her opinions, she drives her point with facts.  In a world that is more and more data-driven, these types of conversations need to be had.  It is the way to make the world a more comfortable place for women and other groups that are routinely overlooked.  This book challenges the reader to take a step outside their own perspective and think about ways biased data presents itself in society.  Besides the examples given in this blogpost, where have you seen the gender data gap?&lt;/p&gt;
-
-&lt;p&gt;This book can be purchased &lt;a href=&quot;https://www.amazon.com/Invisible-Women-Data-World-Designed/dp/1419729071&quot;&gt;here&lt;/a&gt;&lt;/p&gt;</content><author><name>Maddie Hays</name><email>madeleinehays7@gmail.com</email></author><category term="Book Review" /><category term="Data Science" /><category term="Statistics" /><category term="Feminism" /><summary type="html"></summary></entry><entry><title type="html">The Hidden Gems of ggplot2</title><link href="/blog/ggplot2" rel="alternate" type="text/html" title="The Hidden Gems of ggplot2" /><published>2021-11-22T00:00:00-07:00</published><updated>2021-11-22T00:00:00-07:00</updated><id>/blog/ggplot2</id><content type="html" xml:base="/blog/ggplot2">&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
-
-&lt;p&gt;Although much of the business world relies heavily on programs such as tableau to provide visualization on data analysis, there is a huge advantage to scripting languages such as R and Python to provide customizable plots and figures that clearly represent the data.This blog displays one of the cool uses for ggplot2, as well as helpful methods in bettering your visualization skills.&lt;/p&gt;
-
-&lt;p&gt;ggplot2 was created by Hadley Whickam based on the idea of the grammar of graphics. The R package utilizes a system of layering elements and plots to create a final product. There are three main components in every plot. The data, which is the data you want to run through ggplot to create some type of visualization. The aesthetics, which controls certain elements of how the plot looks. And lastly, the geometry, which determines what type of visualization you are going to create with the data.&lt;/p&gt;
-
-&lt;h2 id=&quot;mapping&quot;&gt;Mapping&lt;/h2&gt;
-
-&lt;h4 id=&quot;heat-maps&quot;&gt;Heat Maps&lt;/h4&gt;
-
-&lt;p&gt;Heat maps are useful in situations where you have data with coordinate points, and you would like to observe the spatial relationship between those points, for some other variable.
-geom_tile provides a clean and simple way to create such a heat map. note that your data must be structured in a long format before running it through the geom_tile plot. The fill argument determines which variable will be used to color the map.&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ggplot(data, aes(x = longitude, y = latitude)) + geom_tile(aes(fill = variable))&lt;/code&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;geographical-maps&quot;&gt;Geographical Maps&lt;/h4&gt;
-
-&lt;p&gt;Taking a step further, you can also produce geographical maps of the observations if they are categorized by something like region, country, or state. To demonstrate this, we will be using a dataset that contains the Gross Domestic Product of each country in the year 2017.&lt;/p&gt;
-
-&lt;p&gt;The first step is to extract the coordinates of your locations using the map_data function, which is part of the maps package. To extract the coordinates of all countries, the input “world” is used. However, there are other options such as “state” which produces the coordinates for the United States. This code produces the latitude and longitude of each country, and then the code is joined to our original data. Using geom_polygon, we can then plot the map with the values filled in for each country.&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;install.packages(maps)&lt;/code&gt;&lt;br /&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;library(maps)&lt;/code&gt;&lt;br /&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;map &amp;lt;- map_data(&quot;world&quot;)&lt;/code&gt;&lt;br /&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;data &amp;lt;- lef_join(map, data, by = &quot;region&quot;)&lt;/code&gt;&lt;br /&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;map_plot &amp;lt;- ggplot(map_data, aes(x = long, y = lat, group = group)) + geom_polygon(aes(fill = GDP), color = &quot;black&quot;)&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-22/map.PNG&quot; alt=&quot;map&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;customization&quot;&gt;Customization&lt;/h2&gt;
-
-&lt;p&gt;Creating small changes in a plot can have a significant impact in the readability of the plot for your viewers. There are some important methods to make plots more pleasing to the eye and more concise in presenting the information. Using the above plot that we created, lets discuss some ways to customize the plot to our liking.&lt;/p&gt;
-
-&lt;h4 id=&quot;creating-subtitles&quot;&gt;creating subtitles&lt;/h4&gt;
-
-&lt;p&gt;Titles are commonly used in ggplot2, however subtitles can useful as well when more information needs to be provided. Subtitles are easy to include, and have a similar format to adding a title.&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;map_plot &amp;lt;- map_plot + labs(title = &quot;World GDP&quot;, 
-        subtitle = &quot;GDP of each country in the year 2017 in billions of dollars&quot;)&lt;/code&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;changing-the-theme&quot;&gt;changing the theme&lt;/h4&gt;
-
-&lt;p&gt;One way to make a plot stand out is to change the theme from the default ggplot2 setting. ggplot2 has some useful default themes that can be utilized by using the line theme_ and the theme title.&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;map_plot + theme_dark()&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-22/darkmap.PNG&quot; alt=&quot;darkmap&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Using the ggthemes package, other more customized themes can also be used. All that is required is to include the chosen theme as a function at the end of the plot.&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;install.packages(&quot;ggthemes&quot;)&lt;/code&gt;&lt;br /&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;library(ggthemes)&lt;/code&gt;&lt;br /&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;map_plot + theme_fivethirtyeight()&lt;/code&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;changing-the-color-scheme&quot;&gt;changing the color scheme&lt;/h4&gt;
-
-&lt;p&gt;This line of code creates a new spectrum of colors to use in the plot instead of the default range, where these colors are chosen between the low and high specified. The name element also changes the legend title of the plot. Conveniently, this line can be added to the end of any ggplot to establish the change. By changing the colors of the plot, it is easier to see the variation in GDP between countries.&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;map_plot + scale_fill_gradient(name = &quot;GDP&quot;, low = &quot;white&quot;, high = &quot;red&quot;)&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-22/colormap.PNG&quot; alt=&quot;colormap&quot; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;removing-elements&quot;&gt;Removing elements&lt;/h4&gt;
-
-&lt;p&gt;Often in data visualization, less really is more. To remove elements of a plot such as the axis titles and tick marks, simply use the element_blank function inside the theme of the plot. This can help the viewer to focus on the important information, and not on details that do not provide any value.&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;map_plot + theme(axis.text.x = element_blank(),
-       axis.text.y = element_blank(),
-       axis.title.x = element_blank(),
-       axis.title.y = element_blank(),
-       axis.ticks = element_blank())&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-22/simplemap.PNG&quot; alt=&quot;simplemap&quot; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;including-images&quot;&gt;Including Images&lt;/h4&gt;
-
-&lt;p&gt;Especially in business, it is common to include company logos or images in presentations. It is also possible to include images that overlap with your plot using the cowplot and magick packages, where x and y specify where the image should be placed, and scale indicates the size. The file path can be a url as shown below or to a local file.&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;install.packages(&quot;cowplot&quot;)&lt;/code&gt;&lt;br /&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;library(cowplot)&lt;/code&gt;&lt;br /&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;install.packages(&quot;magick&quot;)&lt;/code&gt;&lt;br /&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;library(magick)&lt;/code&gt;&lt;br /&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ggdraw() + draw_plot(map_plot) + draw_image(&quot;https://ggplot2.tidyverse.org/logo.png&quot;, x = .3, y = .3, scale = .2)&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-22/picmap.PNG&quot; alt=&quot;picmap&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
-
-&lt;p&gt;After you have created your plots, it is easy to save them as png files by executing the following code. The first function calls the plot that has most recently been modified, while the second saves it to your desired name.&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;last_plot()&lt;/code&gt;&lt;br /&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ggsave(“map_plot.png”, width = 5, height = 5)&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Ultimately there are endless possibilities for creating the plot that you want through ggplot2. The important thing is to always be learning new and unique ways that ggplot2 can increase your fluency and skill in data visualization.&lt;/p&gt;</content><author><name>Christina Rhees</name><email>christina.rhees@gmail.com</email></author><category term="data visualization" /><category term="post" /><category term="ggplot2" /><summary type="html">Introduction</summary></entry><entry><title type="html">Top 10 Skills a future Data Scientist should learn while their machine is also learning.</title><link href="/blog/top-10-skills" rel="alternate" type="text/html" title="Top 10 Skills a future Data Scientist should learn while their machine is also learning." /><published>2021-11-22T00:00:00-07:00</published><updated>2021-11-22T00:00:00-07:00</updated><id>/blog/top-10-skills</id><content type="html" xml:base="/blog/top-10-skills">&lt;h2 id=&quot;intro&quot;&gt;Intro:&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-12-08T10:59:04-07:00</updated><id>/feed.xml</id><title type="html">Stat 426 - Fall 2021</title><subtitle>Class Blog and Projects</subtitle><entry><title type="html">Top 10 Skills a future Data Scientist should learn while their machine is also learning.</title><link href="/blog/top-10-skills" rel="alternate" type="text/html" title="Top 10 Skills a future Data Scientist should learn while their machine is also learning." /><published>2021-11-22T00:00:00-07:00</published><updated>2021-11-22T00:00:00-07:00</updated><id>/blog/top-10-skills</id><content type="html" xml:base="/blog/top-10-skills">&lt;h2 id=&quot;intro&quot;&gt;Intro:&lt;/h2&gt;
 
 &lt;p&gt;You are sitting in the chair at your desk, about to train a model so that you can use it to make predictions on your current data. However as soon as you run the code, you discover that it isn’t going to take as fast as you thought it was going to take. Instead of waiting 15 seconds, you will have to wait 5 minutes. The best thing to do to avoid this situation in the future is to upgrade your computer. However, not everyone has the time or the money to do so. Therefore the second best thing is to use this time while your machine is learning to learn how to become a better data scientist. As such, here are the Top 10 Skills a data scientist should know.&lt;/p&gt;
 
@@ -213,7 +88,39 @@ factorization machines, clustering, decision trees, deep learning, optimization,
   &lt;li&gt;
     &lt;p&gt;Skill 9: &lt;a href=&quot;https://flowingdata.com/category/tutorials/&quot;&gt;Data Visualization Tutorials&lt;/a&gt;.&lt;/p&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Gavin Williams</name><email>gmw72718@gmail.com</email></author><category term="Big Data" /><category term="Data Science" /><category term="Top 10 Skills" /><category term="Machine Learning" /><summary type="html">Intro:</summary></entry><entry><title type="html">What Coding Language Should I Learn?</title><link href="/blog/coding-languages" rel="alternate" type="text/html" title="What Coding Language Should I Learn?" /><published>2021-11-17T00:00:00-07:00</published><updated>2021-11-17T00:00:00-07:00</updated><id>/blog/coding-languages</id><content type="html" xml:base="/blog/coding-languages">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+&lt;/ul&gt;</content><author><name>Gavin Williams</name><email>gmw72718@gmail.com</email></author><category term="Big Data" /><category term="Data Science" /><category term="Top 10 Skills" /><category term="Machine Learning" /><summary type="html">Intro:</summary></entry><entry><title type="html">REVIEW: INVISIBLE WOMEN. EXPOSING DATA BIAS IN A WORLD DESIGNED BY MEN, BY CAROLINE CRIADO PEREZ</title><link href="/blog/gender-data-gap" rel="alternate" type="text/html" title="REVIEW: INVISIBLE WOMEN. EXPOSING DATA BIAS IN A WORLD DESIGNED BY MEN, BY CAROLINE CRIADO PEREZ" /><published>2021-11-19T00:00:00-07:00</published><updated>2021-11-19T00:00:00-07:00</updated><id>/blog/gender-data-gap</id><content type="html" xml:base="/blog/gender-data-gap">&lt;p&gt;&lt;img src=&quot;/assets/images/blogimages/figs-11-28/cover.jpg&quot; alt=&quot;Book-Cover&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;“One of the most important things to say about the gender data gap is that it is not generally malicious, or even deliberate. Quite the opposite. It is simply the product of a way of thinking that has been around for millennia and is therefore a kind of not thinking. A double not thinking, even: men go without saying, and women don’t get said at all. Because when we say human, on the whole, we mean man.”
+      ― Caroline Criado Perez&lt;/p&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;If you have ever felt confused when people talk about white male privilege but aren’t interested in op-ed pieces, or if you are curious about the role data plays in sexism but don’t know where to start, this is the book for you! Caroline Criado-Perez, author, provides detailed and well-researched examples in every sphere to demonstrate the gender data gap and why it matters.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-the-gender-data-gap&quot;&gt;What is the Gender Data Gap?&lt;/h2&gt;
+
+&lt;p&gt;The gender data gap is the fact that the majority of data we have in the world is based around the male body and the typical male life pattern. Data is fundamental to our world today.  We are dependent on data to make decisions in every aspect of life; health care, education, transportation, workplace and more.  But if the data isn’t representative of the population or if the data isn’t aggregated by gender, the results are biased.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-does-it-look-like&quot;&gt;What does it look like?&lt;/h2&gt;
+
+&lt;p&gt;Criado Perez gives example after example ranging from slightly annoying (women freezing in their offices because temperatures are adjusted for the higher metabolic rate of men), to deadly (women being more 17% more likely to be killed in car collisions because male dummies are used for safety testing) making it clear to see just how ubiquitous gender data bias is.
+Another example is with research on heart attacks.  Much of the research on heart attacks has focused on men. This has led to a life-threatening gender data gap because roughly two thirds of women experience less-typical symptoms.  A British cardiology study revealed that women experience 50% higher rates of heart attack misdiagnosis with fewer women surviving the first attack.
+One of the most alarming examples from this book was about medical research. Women are routinely excluded from clinical trials even though sex differences are found in every single organ and tissue and in the prevalence, course and severity of most common diseases.  Diseases that only affect women (ex. Pre-menstrual syndrome) are consistently under-studied, whereas male specific diseases have significantly more funding and research.  Even when women are included in clinical trials, data is rarely sex-aggregated which makes determining different responses between male and female impossible to determine. A pain medication that doesn’t work for men, may work great for women but without aggregating the data, you’d never know.&lt;/p&gt;
+
+&lt;h2 id=&quot;why-should-we-care&quot;&gt;Why should we care?&lt;/h2&gt;
+
+&lt;p&gt;Unrepresentative data leads to bad results and conclusions. Data feeds into algorithms and hardware that turn into products and solutions that systematically favor half the population. Hardware, such as phone sizes or shelf heights, are simpler to fix.  Algorithms are more difficult. As future data scientists and statisticians it is important to understand the flaws and consequences of the way things are done now so we can make more informed decisions when we have more influence. Part of data science education is understanding the implications that limited perspectives and biases of have on society.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-can-be-done&quot;&gt;What can be done?&lt;/h2&gt;
+
+&lt;p&gt;This book doesn’t try to explain why the gender data gap exists or who is to blame, it simply lays out data-backed examples to illustrate that the problem exists and that education on the issue and more diversity can alleviate the problem.&lt;br /&gt;
+Here is one example of how diversity can help with the gender data gap. Gyms, parks and sports grounds are typically male dominated.  Officials chalk this up to a difference in preferences between men and women. Recent studies show that when men and women’s preferences are accounted for in the design of these spaces, they are equally used between genders. Diversity is essential in groups of decision makers.  Many of the gender data bias is not due to explicit sexism, it is because the people in the room making the decisions are male, and either assume that female needs are the same as theirs, or they fail to remember women’s needs at all.  This applies to racial minorities and other marginalized groups.  The more perspectives are involved in planning, the less likely it is that bias will continue.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;I would highly recommend this book to everyone, men and women.  It has helped me see things through a new lense.  The book is full of Criado Perez’s humor and wit but is all very data driven so it isn’t just her opinions, she drives her point with facts.  In a world that is more and more data-driven, these types of conversations need to be had.  It is the way to make the world a more comfortable place for women and other groups that are routinely overlooked.  This book challenges the reader to take a step outside their own perspective and think about ways biased data presents itself in society.  Besides the examples given in this blogpost, where have you seen the gender data gap?&lt;/p&gt;
+
+&lt;p&gt;This book can be purchased &lt;a href=&quot;https://www.amazon.com/Invisible-Women-Data-World-Designed/dp/1419729071&quot;&gt;here&lt;/a&gt;&lt;/p&gt;</content><author><name>Maddie Hays</name><email>madeleinehays7@gmail.com</email></author><category term="Book Review" /><category term="Data Science" /><category term="Statistics" /><category term="Feminism" /><summary type="html"></summary></entry><entry><title type="html">What Coding Language Should I Learn?</title><link href="/blog/coding-languages" rel="alternate" type="text/html" title="What Coding Language Should I Learn?" /><published>2021-11-17T00:00:00-07:00</published><updated>2021-11-17T00:00:00-07:00</updated><id>/blog/coding-languages</id><content type="html" xml:base="/blog/coding-languages">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
 
 &lt;p&gt;I want to be a data analyst, which coding language should I learn? What if I want to be a business analyst, does that make a difference? Can I just learn one language or do I need to be able to write code for multiple platforms? Based on my own experience applying for jobs, there are many different coding languages that people can learn, but not all are used on a regular basis. Here are some of those languages and platforms that might help you get a head start in the world of data.&lt;/p&gt;
 
@@ -341,12 +248,237 @@ pd.read_sql_query(query,sql_connect)
 
 &lt;p&gt;When it comes to interpreting numbers and data, it is important to slow down and think about what has led to this number that we are now seeing. When we do this, we can often avoid making rash decisions on numbers that don’t really mean anything or don’t mean what is being sugested. So the next time you see a staistic, take a minute to really think about what it is saying and if there might be any ulterior motives.&lt;/p&gt;
 
-&lt;p&gt;If you are looking for examples of the misleading use of statistics, there is no better place than a &lt;a href=&quot;https://www.reddit.com/r/badstats/&quot;&gt;reddit forum&lt;/a&gt;.&lt;/p&gt;</content><author><name>Sam Johnson</name><email>smbjohnson98@gmail.com</email></author><category term="Book Review" /><category term="Data Science" /><category term="Statistics" /><category term="Data Literacy" /><category term="Darrell Huff" /><summary type="html"></summary></entry><entry><title type="html">Non-Parametric Tests: Statistically Efficient or Technically Cheating?</title><link href="/blog/Non-Parametric-Tests" rel="alternate" type="text/html" title="Non-Parametric Tests: Statistically Efficient or Technically Cheating?" /><published>2021-11-13T00:00:00-07:00</published><updated>2021-11-13T00:00:00-07:00</updated><id>/blog/Non-Parametric%20Tests</id><content type="html" xml:base="/blog/Non-Parametric-Tests">&lt;h1 id=&quot;non-parametric-tests-statistically-efficient-or-technically-cheating&quot;&gt;Non-Parametric Tests: Statistically Efficient or Technically Cheating?&lt;/h1&gt;
+&lt;p&gt;If you are looking for examples of the misleading use of statistics, there is no better place than a &lt;a href=&quot;https://www.reddit.com/r/badstats/&quot;&gt;reddit forum&lt;/a&gt;.&lt;/p&gt;</content><author><name>Sam Johnson</name><email>smbjohnson98@gmail.com</email></author><category term="Book Review" /><category term="Data Science" /><category term="Statistics" /><category term="Data Literacy" /><category term="Darrell Huff" /><summary type="html"></summary></entry><entry><title type="html">How to scrape song lyrics in R: a webscraper for beginners</title><link href="/blog/lyric-scraper" rel="alternate" type="text/html" title="How to scrape song lyrics in R: a webscraper for beginners" /><published>2021-11-15T00:00:00-07:00</published><updated>2021-11-15T00:00:00-07:00</updated><id>/blog/lyric-scraper</id><content type="html" xml:base="/blog/lyric-scraper">&lt;h1 id=&quot;how-to-scrape-song-lyrics-in-r-a-webscraper-for-beginners&quot;&gt;How to scrape song lyrics in R: a webscraper for beginners&lt;/h1&gt;
+
+&lt;p&gt;Words are data, and some of the most influential words in pop culture are song lyrics.  In order to conduct any sort of word analysis, first you need the words to the song.&lt;/p&gt;
+
+&lt;p&gt;Luckily for us, azlyrics.com has an extremely organized and simple structure for all of their song lyric code on their webpage. Take a minute to observe the pattern of code for “Love Story” by Taylor Swift.&lt;/p&gt;
+
+&lt;p&gt;Note: You can view this same code by going to this url (https://www.azlyrics.com/lyrics/taylorswift/lovestory.html) and pressing Ctrl + u.  A new tab will open showing the html code for the website. The lyrics start around line 150.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-{r}&quot;&gt;&amp;lt;b&amp;gt;&quot;Love Story&quot;&amp;lt;/b&amp;gt;&amp;lt;br&amp;gt;
+&amp;lt;br&amp;gt;
+
+&amp;lt;div&amp;gt;
+&amp;lt;!-- Usage of azlyrics.com content by any third-party lyrics provider is prohibited by our licensing agreement. Sorry about that. --&amp;gt;
+We were both young when I first saw you&amp;lt;br&amp;gt;
+I close my eyes and the flashback starts:&amp;lt;br&amp;gt;
+I'm standing there&amp;lt;br&amp;gt;
+On a balcony in summer air&amp;lt;br&amp;gt;
+&amp;lt;br&amp;gt;
+See the lights, see the party, the ball gowns&amp;lt;br&amp;gt;
+See you make your way through the crowd&amp;lt;br&amp;gt;
+And say, &amp;amp;quot;Hello.&amp;amp;quot;&amp;lt;br&amp;gt;
+Little did I know&amp;lt;br&amp;gt;
+&amp;lt;br&amp;gt;
+That you were Romeo, you were throwing pebbles&amp;lt;br&amp;gt;
+And my daddy said, &amp;amp;quot;Stay away from Juliet.&amp;amp;quot;&amp;lt;br&amp;gt;
+And I was crying on the staircase&amp;lt;br&amp;gt;
+Begging you, &amp;amp;quot;Please don't go.&amp;amp;quot;&amp;lt;br&amp;gt;
+And I said&amp;lt;br&amp;gt;
+&amp;lt;br&amp;gt;
+&amp;amp;quot;Romeo, take me somewhere we can be alone&amp;lt;br&amp;gt;
+I'll be waiting. All there's left to do is run&amp;lt;br&amp;gt;
+You'll be the prince and I'll be the princess&amp;lt;br&amp;gt;
+It's a love story. Baby, just say 'Yes'.&amp;amp;quot;&amp;lt;br&amp;gt;
+&amp;lt;br&amp;gt;
+So, I sneak out to the garden to see you&amp;lt;br&amp;gt;
+We keep quiet 'cause we're dead if they knew&amp;lt;br&amp;gt;
+So, close your eyes&amp;lt;br&amp;gt;
+Escape this town for a little while&amp;lt;br&amp;gt;
+Oh, oh&amp;lt;br&amp;gt;
+&amp;lt;br&amp;gt;
+'Cause you were Romeo. I was a scarlet letter&amp;lt;br&amp;gt;
+And my daddy said, &amp;amp;quot;Stay away from Juliet.&amp;amp;quot;&amp;lt;br&amp;gt;
+But you were everything to me&amp;lt;br&amp;gt;
+I was begging you, &amp;amp;quot;Please don't go!&amp;amp;quot;&amp;lt;br&amp;gt;
+And I said&amp;lt;br&amp;gt;
+&amp;lt;br&amp;gt;
+&amp;amp;quot;Romeo, take me somewhere we can be alone&amp;lt;br&amp;gt;
+I'll be waiting. All there's left to do is run&amp;lt;br&amp;gt;
+You'll be the prince and I'll be the princess&amp;lt;br&amp;gt;
+It's a love story. Baby, just say 'Yes'&amp;lt;br&amp;gt;
+&amp;lt;br&amp;gt;
+Romeo, save me. They're trying to tell me how to feel&amp;lt;br&amp;gt;
+This love is difficult but it's real&amp;lt;br&amp;gt;
+Don't be afraid. We'll make it out of this mess&amp;lt;br&amp;gt;
+It's a love story. Baby, just say 'Yes'.&amp;amp;quot;&amp;lt;br&amp;gt;
+&amp;lt;br&amp;gt;
+Oh, oh, oh&amp;lt;br&amp;gt;
+&amp;lt;br&amp;gt;
+I got tired of waiting&amp;lt;br&amp;gt;
+Wondering if you were ever coming around&amp;lt;br&amp;gt;
+My faith in you was fading&amp;lt;br&amp;gt;
+When I met you on the outskirts of town&amp;lt;br&amp;gt;
+And I said&amp;lt;br&amp;gt;
+&amp;lt;br&amp;gt;
+&amp;amp;quot;Romeo, save me. I've been feeling so alone&amp;lt;br&amp;gt;
+I keep waiting for you, but you never come&amp;lt;br&amp;gt;
+Is this in my head? I don't know what to think.&amp;amp;quot;&amp;lt;br&amp;gt;
+He knelt to the ground and pulled out a ring and said&amp;lt;br&amp;gt;
+&amp;lt;br&amp;gt;
+&amp;amp;quot;Marry me, Juliet. You'll never have to be alone&amp;lt;br&amp;gt;
+I love you, and that's all I really know&amp;lt;br&amp;gt;
+I talked to your dad. Go pick out a white dress&amp;lt;br&amp;gt;
+It's a love story. Baby, just say 'Yes'.&amp;amp;quot;&amp;lt;br&amp;gt;
+&amp;lt;br&amp;gt;
+Oh, oh, oh, oh, oh, oh&amp;lt;br&amp;gt;
+&amp;lt;br&amp;gt;
+'Cause we were both young when I first saw you
+&amp;lt;/div&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Because of its consistency, we will be able to create a scraper that outputs lyrics for any song / artist combination that’s listed on their website.  Here’s how to make a beginning web scraper scrape any song lyrics you’d like:&lt;/p&gt;
+
+&lt;h3 id=&quot;step-1&quot;&gt;Step 1&lt;/h3&gt;
+
+&lt;p&gt;First, lets import the tidyverse.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-{r}&quot;&gt;library(tidyverse)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;step-2&quot;&gt;Step 2&lt;/h3&gt;
+
+&lt;p&gt;We need to find a way to produce the song’s unique url on azlyrics.com using only the artist name and song title.&lt;/p&gt;
+
+&lt;p&gt;The urls on AZlyrics.com have a very specific pattern to them.  They look like this:&lt;/p&gt;
+
+&lt;p&gt;https://www.azlyrics.com/lyrics/taylorswift/backtodecember.html&lt;/p&gt;
+
+&lt;p&gt;https://www.azlyrics.com/lyrics/edsheeran/shapeofyou.html&lt;/p&gt;
+
+&lt;p&gt;https://www.azlyrics.com/lyrics/adele/easyonme.html&lt;/p&gt;
+
+&lt;p&gt;Notice the pattern?  Because AZlyrics has a distinct pattern for their URL, we can generate unique web lyric pages easily with just an artist name and song title.&lt;/p&gt;
+
+&lt;p&gt;https://www.azlyrics.com/lyrics/ + artist + / + song + .html&lt;/p&gt;
+
+&lt;p&gt;Which we can paste together like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-{r}&quot;&gt;artist &amp;lt;- &quot;taylorswift&quot;
+song &amp;lt;- &quot;lovestory&quot;
+
+my_url &amp;lt;- str_c(&quot;https://azlyrics.com/lyrics/&quot;, artist, &quot;/&quot;, song, &quot;.html&quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;step-3&quot;&gt;Step 3&lt;/h3&gt;
+
+&lt;p&gt;Next, we need to pick where to start scraping.  In this case, every page of html code on AZlyrics contains “prohibited by our licensing agreement. Sorry about that.” on the line before the lyrics begin.  We will use this to show the scraper where to start scraping, and title it our “giveaway”.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-{r}&quot;&gt;giveaway &amp;lt;- &quot;prohibited by our licensing agreement. Sorry about that.&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Also, note that every page of code marks the end of the lyrics with “&amp;lt;/div&amp;gt;”.  We will use this in our final code to show the scraper where to stop scraping from.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-{r}&quot;&gt;# get starting line
+start &amp;lt;- grep(giveaway, read_lines(my_url)) + 1 # start at line after giveaway
+
+# get ending line
+end &amp;lt;- grep(&quot;&amp;lt;/div&amp;gt;&quot;, read_lines(my_url)[start:length(read_lines(my_url))])[1] + start
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;step-4&quot;&gt;Step 4&lt;/h3&gt;
+
+&lt;p&gt;Last, we use all the pieces we have put together so far to read each line of lyrics from start to end, and paste them all together.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-{r}&quot;&gt;paste(gsub(&quot;&amp;lt;br&amp;gt;|&amp;lt;/div&amp;gt;&quot;, &quot;&quot;, read_lines(my_url)[start:end]), collapse = &quot; &quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;putting-it-all-together&quot;&gt;Putting it all together&lt;/h3&gt;
+
+&lt;p&gt;Here is the complete function that will get lyrics for any song:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-{r}&quot;&gt;# Function to get lyrics from any artist
+getlyrics &amp;lt;- function(artist, song){
+  giveaway &amp;lt;- &quot;prohibited by our licensing agreement. Sorry about that.&quot;
+  my_url &amp;lt;- str_c(&quot;https://azlyrics.com/lyrics/&quot;, artist, &quot;/&quot;, song, &quot;.html&quot;)
+  start &amp;lt;- grep(giveaway, read_lines(my_url)) + 1 # start at line after giveaway
+  end &amp;lt;- grep(&quot;&amp;lt;/div&amp;gt;&quot;, read_lines(my_url)[start:length(read_lines(my_url))])[1] + start
+  paste(gsub(&quot;&amp;lt;br&amp;gt;|&amp;lt;/div&amp;gt;&quot;, &quot;&quot;, read_lines(my_url)[start:end]), collapse = &quot; &quot;)
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now all we have to do whenever we want song lyrics is input an artist name and song title into our function.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-{r}&quot;&gt;getlyrics(&quot;taylorswift&quot;, &quot;lovestory&quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Gives the following output:
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{r echo=TRUE}
+ [1] &quot;We were both young when I first saw you&quot;              
+ [2] &quot;I close my eyes and the flashback starts:&quot;            
+ [3] &quot;I'm standing there&quot;                                   
+ [4] &quot;On a balcony in summer air&quot;                           
+ [5] &quot;&quot;                                                     
+ [6] &quot;See the lights, see the party, the ball gowns&quot;        
+ [7] &quot;See you make your way through the crowd&quot;              
+ [8] &quot;And say, &amp;amp;quot;Hello.&amp;amp;quot;&quot;                          
+ [9] &quot;Little did I know&quot;                                    
+[10] &quot;&quot;                                                     
+[11] &quot;That you were Romeo, you were throwing pebbles&quot;       
+[12] &quot;And my daddy said, &amp;amp;quot;Stay away from Juliet.&amp;amp;quot;&quot;
+[13] &quot;And I was crying on the staircase&quot;                    
+[14] &quot;Begging you, &amp;amp;quot;Please don't go.&amp;amp;quot;&quot;            
+[15] &quot;And I said&quot;                                           
+[16] &quot;&quot;                                                     
+[17] &quot;&amp;amp;quot;Romeo, take me somewhere we can be alone&quot;       
+[18] &quot;I'll be waiting. All there's left to do is run&quot;       
+[19] &quot;You'll be the prince and I'll be the princess&quot;        
+[20] &quot;It's a love story. Baby, just say 'Yes'.&amp;amp;quot;&quot;
+[21] &quot;&quot;                                                     
+[22] &quot;So, I sneak out to the garden to see you&quot;             
+[23] &quot;We keep quiet 'cause we're dead if they knew&quot;         
+[24] &quot;So, close your eyes&quot;                                  
+[25] &quot;Escape this town for a little while&quot;                  
+[26] &quot;Oh, oh&quot;                                               
+[27] &quot;&quot;                                                     
+[28] &quot;'Cause you were Romeo. I was a scarlet letter&quot;        
+[29] &quot;And my daddy said, &amp;amp;quot;Stay away from Juliet.&amp;amp;quot;&quot;
+[30] &quot;But you were everything to me&quot;                        
+[31] &quot;I was begging you, &amp;amp;quot;Please don't go!&amp;amp;quot;&quot;      
+[32] &quot;And I said&quot;                                           
+[33] &quot;&quot;                                                     
+[34] &quot;&amp;amp;quot;Romeo, take me somewhere we can be alone&quot;       
+[35] &quot;I'll be waiting. All there's left to do is run&quot;       
+[36] &quot;You'll be the prince and I'll be the princess&quot;        
+[37] &quot;It's a love story. Baby, just say 'Yes'&quot;              
+[38] &quot;&quot;                                                     
+[39] &quot;Romeo, save me. They're trying to tell me how to feel&quot;
+[40] &quot;This love is difficult but it's real&quot;                 
+[41] &quot;Don't be afraid. We'll make it out of this mess&quot;      
+[42] &quot;It's a love story. Baby, just say 'Yes'.&amp;amp;quot;&quot;       
+[43] &quot;&quot;                                                     
+[44] &quot;Oh, oh, oh&quot;                                           
+[45] &quot;&quot;                                                     
+[46] &quot;I got tired of waiting&quot;                               
+[47] &quot;Wondering if you were ever coming around&quot;             
+[48] &quot;My faith in you was fading&quot;
+[49] &quot;When I met you on the outskirts of town&quot;              
+[50] &quot;And I said&quot;                                           
+[51] &quot;&quot;                                                     
+[52] &quot;&amp;amp;quot;Romeo, save me. I've been feeling so alone&quot;     
+[53] &quot;I keep waiting for you, but you never come&quot;           
+[54] &quot;Is this in my head? I don't know what to think.&amp;amp;quot;&quot;
+[55] &quot;He knelt to the ground and pulled out a ring and said&quot;
+[56] &quot;&quot;                                                     
+[57] &quot;&amp;amp;quot;Marry me, Juliet. You'll never have to be alone&quot;
+[58] &quot;I love you, and that's all I really know&quot;             
+[59] &quot;I talked to your dad. Go pick out a white dress&quot;      
+[60] &quot;It's a love story. Baby, just say 'Yes'.&amp;amp;quot;&quot;       
+[61] &quot;&quot;                                                     
+[62] &quot;Oh, oh, oh, oh, oh, oh&quot;                               
+[63] &quot;&quot;                                                     
+[64] &quot;'Cause we were both young when I first saw you&quot;
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Note: In order to create the correct url, all artist names and song titles must be all lowercase and not contain spaces.  For example, instead of “Taylor Swift” we will input “taylorswift” as our artist.  We could easily write code to fix this as a next step, but for now our scraper is working just fine for a beginner web scraper.&lt;/p&gt;
+
+&lt;p&gt;Note:  When using this scraper on a large scale, I have occasionally been temporarily blocked from scraping on the azlyrics website.  In my experience this has only happened when looping through many songs, and I regain access within a few hours.&lt;/p&gt;</content><author><name>Rachel Hamilton</name><email>rachelhamilton47@gmail.com</email></author><category term="webscraping" /><category term="lyrics" /><category term="tutorial" /><summary type="html">How to scrape song lyrics in R: a webscraper for beginners</summary></entry><entry><title type="html">Non-Parametric Tests: Statistically Efficient or Technically Cheating?</title><link href="/blog/Non-Parametric-Tests" rel="alternate" type="text/html" title="Non-Parametric Tests: Statistically Efficient or Technically Cheating?" /><published>2021-11-13T00:00:00-07:00</published><updated>2021-11-13T00:00:00-07:00</updated><id>/blog/Non-Parametric%20Tests</id><content type="html" xml:base="/blog/Non-Parametric-Tests">&lt;h1 id=&quot;non-parametric-tests-statistically-efficient-or-technically-cheating&quot;&gt;Non-Parametric Tests: Statistically Efficient or Technically Cheating?&lt;/h1&gt;
 &lt;p&gt;&lt;img src=&quot;https://i.ibb.co/xLgsGZV/Frank-Wilcoxon.png&quot; alt=&quot;This is an image&quot; /&gt;&lt;/p&gt;
+
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Tired of memorizing countless distributions and their parameters? Well, you’re in luck, because through non-parametric tests, you can run all of the same types of tests that you learned in your former statistics courses without worrying about distributions or parameters. Not only that, but, as it turns out, a lot of the data that we encounter in the real world is not normally distributed, which makes non-parametric tests that much more useful.&lt;/p&gt;
+
 &lt;h2 id=&quot;so-what-are-they&quot;&gt;So What Are They?&lt;/h2&gt;
 &lt;p&gt;In statistics, non-parametric tests are methods of statistical analysis that do not require a distribution to meet the required assumptions to be analyzed. For this reason, they are sometimes referred to as distribution-free tests. Nonparametric tests serve as an alternative to parametric tests such as a t-test or ANOVA which can only be employed if the data satisfies certain specific assumptions. Although using non-parametric tests results in losing power if the data is normally distributed, if the data is not normally distributed, using non-parametric tests will almost always be more powerful than using parametric tests.&lt;/p&gt;
+
 &lt;h2 id=&quot;specifically-when-to-use-them&quot;&gt;Specifically When to Use Them&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;&lt;em&gt;Data does not meet the assumptions about the population sample&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
@@ -373,36 +505,33 @@ pd.read_sql_query(query,sql_connect)
   &lt;li&gt;&lt;strong&gt;&lt;em&gt;Mann-Whitney U Test&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;The Mann-Whitney U Test is a non-parametric version of the independent samples t-test. The test primarily deals with two independent samples that contain ordinal data. Like the t-test, it is used to test whether two samples are likely to derive from the same population. Unlike its parametric brother, however, the Mann-Whitney U test bases its outcomes on rank, not raw numbers. This makes the test more robust, as it would not be affected by outliers as much as the t-test.[^1]
-[^1]: (https://sphweb.bumc.bu.edu/otlt/mph-modules/bs/bs704_nonparametric/bs704_nonparametric4.html)&lt;/p&gt;
+&lt;p&gt;The Mann-Whitney U Test is a non-parametric version of the independent samples t-test. The test primarily deals with two independent samples that contain ordinal data. Like the t-test, it is used to test whether two samples are likely to derive from the same population. Unlike its parametric brother, however, the Mann-Whitney U test bases its outcomes on rank, not raw numbers. This makes the test more robust, as it would not be affected by outliers as much as the t-test.&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;&lt;em&gt;The Kruskal-Wallis Test&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;The Kruskal-Wallis test, proposed by Kruskal and Wallis in 1952, is a nonparametric method for testing whether samples are originated from the same distribution. It works in a similar way to the Mann-Whitney U test, except it uses more than two groups. The null hypothesis of the Kruskal-Wallis test is that the mean ranks of the groups are the same, while the alternative hypothesis is that at least one of the mena ranks is different. It is the nonparametric equivalent one-way ANOVA, but unlike the one-way ANOVA, the nonparametric Kruskal-Wallis test does not assume a normal distribution of the underlying data.[^2]
-[^2]:https://sphweb.bumc.bu.edu/otlt/MPH-Modules/BS/R/R4_One-TwoSampleTests-ANOVA/R4_One-TwoSampleTests-ANOVA5.html&lt;/p&gt;
+&lt;p&gt;The Kruskal-Wallis test, proposed by Kruskal and Wallis in 1952, is a nonparametric method for testing whether samples are originated from the same distribution. It works in a similar way to the Mann-Whitney U test, except it uses more than two groups. The null hypothesis of the Kruskal-Wallis test is that the mean ranks of the groups are the same, while the alternative hypothesis is that at least one of the mena ranks is different. It is the nonparametric equivalent one-way ANOVA, but unlike the one-way ANOVA, the nonparametric Kruskal-Wallis test does not assume a normal distribution of the underlying data.&lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;example&quot;&gt;Example&lt;/h2&gt;
 
-&lt;p&gt;Enough talk, lets try to understand non-parametric tests through an actual example. Let’s use an easy and clear dataset to demonstrate a particular type of non-parametric test, the Mann-Whitney U Test. We will compare the number of accidents caused by distracted driving and drinking and driving in Utah from 2010 to 2020,[^3] and we will be using R throughout the entire process, so you can do it yourself when this is all done.
-[^3]:https://publicsafety.utah.gov/&lt;/p&gt;
+&lt;p&gt;Enough talk, lets try to understand non-parametric tests through an actual example. Let’s use an easy and clear dataset to demonstrate a particular type of non-parametric test, the Mann-Whitney U Test. We will compare the number of accidents caused by distracted driving and drinking and driving in Utah from 2010 to 2020,&lt;sup id=&quot;fnref:3&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; and we will be using R throughout the entire process, so you can do it yourself when this is all done.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;&lt;em&gt;EDA&lt;/em&gt;&lt;/strong&gt;
-```r
-Distracted &amp;lt;- c(4267,4363,4667,5138,5581,5816,5831,5825,5772,5601,4801)
-Alcohol &amp;lt;- c(1633,1406,1572,1624,1700,1883,1925,1825,1915,1923,1971)
-year &amp;lt;- c(2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;em&gt;EDA&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Utah_crash &amp;lt;-data.frame(Distracted, Alcohol, year)&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![image](https://i.ibb.co/58bzRTj/EDA.jpg)
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Distracted &amp;lt;- c(4267,4363,4667,5138,5581,5816,5831,5825,5772,5601,4801)
+Alcohol &amp;lt;- c(1633,1406,1572,1624,1700,1883,1925,1825,1915,1923,1971)
+year &amp;lt;- c(2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020)
 
-As we can clearly see, distracted driving causes many more accidents. We probably don't even need any type of formal test to prove that there is a statistically significant difference, but, again, we are using an easy example to see how non-parametric tests work.
+Utah_crash &amp;lt;-data.frame(Distracted, Alcohol, year)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.ibb.co/58bzRTj/EDA.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 
-```r
-hist(Utah_crash$Distracted, main = &quot;Distracted Driving&quot;, xlab= &quot;Number of Crashes&quot;)
+&lt;p&gt;As we can clearly see, distracted driving causes many more accidents. We probably don’t even need any type of formal test to prove that there is a statistically significant difference, but, again, we are using an easy example to see how non-parametric tests work.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;hist(Utah_crash$Distracted, main = &quot;Distracted Driving&quot;, xlab= &quot;Number of Crashes&quot;)
 hist(Utah_crash$Alcohol, main = &quot;Drinking and Driving&quot;, xlab= &quot;Number of Crashes&quot;)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -415,8 +544,9 @@ hist(Utah_crash$Alcohol, main = &quot;Drinking and Driving&quot;, xlab= &quot;Nu
 &lt;/ul&gt;
 
 &lt;p&gt;The code for running this test is as simple as running a t-test in R. Just input the datasets inside the function “Wilcox.test”&lt;/p&gt;
-&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;wilcox.test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Utah_crash&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Alcohol&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Utah_crash&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Distracted&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wilcox.test(Utah_crash$Alcohol,Utah_crash$Distracted)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Much like the t-test, this will provide a p-value to show if there is a statistically significant difference. In this case, the p-value was &lt;br /&gt;
 &lt;img src=&quot;https://render.githubusercontent.com/render/math?math=2.8351422*10^{-6}&quot; /&gt;. If the alpha level was 0.05 (or even much lower than that),
@@ -429,7 +559,20 @@ Sometimes it is best to use both and compare which test is more effective, then 
 non-parametric tests do not end with the two tests we talked about. Bootstraping and permuation tests are forms of
 non-parametric tests that are also very effective under certain circumstances.
 With this knowledge, we encourage you to use both parametric and non-parametric tests on a couple of datasets to see how
-they compare and how effective non-parametric tests can be in certain circumstances.&lt;/p&gt;</content><author><name>Jeong Heon You</name><email>nan</email></author><category term="R" /><category term="Non-Parametric tests" /><category term="Mann-Whitney U Test" /><category term="Utah Car Crashes" /><summary type="html">Non-Parametric Tests: Statistically Efficient or Technically Cheating? Introduction Tired of memorizing countless distributions and their parameters? Well, you’re in luck, because through non-parametric tests, you can run all of the same types of tests that you learned in your former statistics courses without worrying about distributions or parameters. Not only that, but, as it turns out, a lot of the data that we encounter in the real world is not normally distributed, which makes non-parametric tests that much more useful. So What Are They? In statistics, non-parametric tests are methods of statistical analysis that do not require a distribution to meet the required assumptions to be analyzed. For this reason, they are sometimes referred to as distribution-free tests. Nonparametric tests serve as an alternative to parametric tests such as a t-test or ANOVA which can only be employed if the data satisfies certain specific assumptions. Although using non-parametric tests results in losing power if the data is normally distributed, if the data is not normally distributed, using non-parametric tests will almost always be more powerful than using parametric tests. Specifically When to Use Them Data does not meet the assumptions about the population sample</summary></entry><entry><title type="html">Python in Visual Studio Code</title><link href="/blog/vscode" rel="alternate" type="text/html" title="Python in Visual Studio Code" /><published>2021-11-12T00:00:00-07:00</published><updated>2021-11-12T00:00:00-07:00</updated><id>/blog/vscode</id><content type="html" xml:base="/blog/vscode">&lt;h1 id=&quot;ide&quot;&gt;IDE&lt;/h1&gt;
+they compare and how effective non-parametric tests can be in certain circumstances.&lt;/p&gt;
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;https://sphweb.bumc.bu.edu/otlt/mph-modules/bs/bs704_nonparametric/bs704_nonparametric4.html &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;https://sphweb.bumc.bu.edu/otlt/MPH-Modules/BS/R/R4_One-TwoSampleTests-ANOVA/R4_One-TwoSampleTests-ANOVA5.html &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:3&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;https://publicsafety.utah.gov/ &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Jeong Heon You</name><email>nan</email></author><category term="R" /><category term="Non-Parametric tests" /><category term="Mann-Whitney U Test" /><category term="Utah Car Crashes" /><summary type="html">Non-Parametric Tests: Statistically Efficient or Technically Cheating?</summary></entry><entry><title type="html">Python in Visual Studio Code</title><link href="/blog/vscode" rel="alternate" type="text/html" title="Python in Visual Studio Code" /><published>2021-11-12T00:00:00-07:00</published><updated>2021-11-12T00:00:00-07:00</updated><id>/blog/vscode</id><content type="html" xml:base="/blog/vscode">&lt;h1 id=&quot;ide&quot;&gt;IDE&lt;/h1&gt;
 
 &lt;p&gt;In today’s world, coding has become an essential part of us. Apple’s CEO, Tim Cook, elaborated in the recent Silicon Slope Summit, “Teaching someone to code teaches them critical thinking skills … coding teaches you the art of the possible … you need to learn how to code even if you’re not going to be a coder.” Everyone needs to learn how to code!&lt;/p&gt;
 

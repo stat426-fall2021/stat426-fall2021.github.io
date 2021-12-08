@@ -1,7 +1,8 @@
-title: How to scrape song lyrics in R: a webscraper for beginners
+---
+title: "How to scrape song lyrics in R: a webscraper for beginners"
 layout: post
 author: rachel-hammy
-post-image: https://github.com/rachel-hammy/stat426-fall2021.github.io/blob/main/assets/images/blogimages/figs-11-15/raphael-lovaski-RjD01Is-KnI-unsplash.jpg
+post-image: https://github.com/rachel-hammy/stat426-fall2021.github.io/raw/main/assets/images/blogimages/figs-11-15/raphael-lovaski-RjD01Is-KnI-unsplash.jpg
 description: A step-by-step walkthrough of how to scrape song lyrics from azlyrics.com for beginners in R.
 tags:
 - webscraping
@@ -118,7 +119,7 @@ https://www.azlyrics.com/lyrics/ + artist + / + song + .html
 
 Which we can paste together like this:
 
-```{r echo=TRUE}
+```{r}
 artist <- "taylorswift"
 song <- "lovestory"
 
@@ -134,6 +135,7 @@ giveaway <- "prohibited by our licensing agreement. Sorry about that."
 ```
 
 Also, note that every page of code marks the end of the lyrics with “</div>”.  We will use this in our final code to show the scraper where to stop scraping from.
+
 ```{r}
 # get starting line
 start <- grep(giveaway, read_lines(my_url)) + 1 # start at line after giveaway
